@@ -1,0 +1,21 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Fichiers temporaires
+*.tmp
+*.log
+
+# Fichiers d'éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
