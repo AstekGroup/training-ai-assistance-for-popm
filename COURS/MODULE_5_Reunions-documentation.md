@@ -3,8 +3,6 @@
 **Version** : 1.0.0
 **Date de dernière mise à jour** : 2025-11-09
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
-**Date de dernière mise à jour** : 2024-12-19
-**Auteur** : Astek
 
 ---
 
