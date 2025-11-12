@@ -2,7 +2,7 @@
 
 **Date** : 2025-11-09
 **Branche** : `proposition-contenu-initial`
-**Auteur** : Philippe Pary (pairing Claude Sonnet)
+**Auteur** : Philippe Pary (pairing Cursor Composer)
 
 ---
 

@@ -1,8 +1,8 @@
 # Checklist : Adoption de l'IA pour PO/PM
 
 **Version** : 1.0.0
-**Date de dernière mise à jour** : 2025-11-19
-**Auteur** : Astek
+**Date de dernière mise à jour** : 2025-11-09
+**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
 
