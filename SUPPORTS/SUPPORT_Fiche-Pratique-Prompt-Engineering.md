@@ -1,8 +1,7 @@
 # Fiche pratique : Ingénierie de prompt pour PO/PM
 
-**Version** : 1.0.0  
-**Date de dernière mise à jour** : 2024-12-19  
-**Auteur** : Astek
+**Version** : 1.0.0
+
 
 ---
 
@@ -11,6 +10,7 @@
 L'ingénierie de prompt (prompt engineering) est l'art et la science de formuler des instructions efficaces pour obtenir les meilleurs résultats des modèles d'IA générative.
 
 **Pourquoi c'est important pour les PO/PM** :
+
 - Améliore la qualité des résultats obtenus
 - Réduit le temps de révision et d'itération
 - Permet d'obtenir des résultats directement utilisables
@@ -25,6 +25,7 @@ L'ingénierie de prompt (prompt engineering) est l'art et la science de formuler
 **Objectif** : Donner à l'IA le contexte nécessaire et un rôle à jouer
 
 **Exemple** :
+
 ```
 Tu es un Product Owner expérimenté travaillant dans une scale-up tech française.
 Tu as 10 ans d'expérience dans la gestion de produits digitaux B2B.
@@ -37,6 +38,7 @@ Tu as 10 ans d'expérience dans la gestion de produits digitaux B2B.
 **Objectif** : Définir précisément ce que vous voulez obtenir
 
 **Exemple** :
+
 ```
 Rédige une user story complète pour une fonctionnalité de connexion utilisateur
 avec authentification à deux facteurs.
@@ -49,6 +51,7 @@ avec authentification à deux facteurs.
 **Objectif** : Spécifier le format attendu du résultat
 
 **Exemple** :
+
 ```
 Format attendu :
 - User story (format INVEST)
@@ -66,6 +69,7 @@ Utilise des puces et une structure claire.
 **Objectif** : Préciser les limitations et exigences spécifiques
 
 **Exemple** :
+
 ```
 Contraintes :
 - Respecter les standards de sécurité RGPD
@@ -80,6 +84,7 @@ Contraintes :
 **Objectif** : Fournir des exemples pour guider l'IA
 
 **Exemple** :
+
 ```
 Voici 2 exemples de user stories bien rédigées :
 [exemples]
@@ -98,6 +103,7 @@ Maintenant, crée une user story similaire pour [nouvelle fonctionnalité].
 **Principe** : Demander à l'IA de réfléchir étape par étape
 
 **Exemple** :
+
 ```
 Pour prioriser ces features, procède étape par étape :
 
@@ -115,6 +121,7 @@ Pour prioriser ces features, procède étape par étape :
 **Principe** : Fournir plusieurs exemples avant de demander la tâche
 
 **Exemple** :
+
 ```
 Exemple 1 : [exemple complet]
 Exemple 2 : [exemple complet]
@@ -130,11 +137,13 @@ Maintenant, crée un [nouveau élément] similaire.
 **Principe** : Commencer large, puis préciser progressivement
 
 **Étape 1** : Prompt général
+
 ```
 Génère une user story pour une fonctionnalité de paiement.
 ```
 
 **Étape 2** : Affinement après premier résultat
+
 ```
 Améliore cette user story en ajoutant :
 - Critères d'acceptation détaillés
@@ -149,6 +158,7 @@ Améliore cette user story en ajoutant :
 **Principe** : Définir le persona et le ton de communication
 
 **Exemple** :
+
 ```
 Tu es un Product Owner présentant une roadmap à un comité de direction.
 Ton : Professionnel, concis, orienté business.
@@ -291,11 +301,13 @@ Ton : [professionnel / technique / accessible]
 ### ❌ Prompt trop vague
 
 **Mauvais** :
+
 ```
 Écris quelque chose sur les user stories.
 ```
 
 **Bon** :
+
 ```
 Rédige une user story complète pour [fonctionnalité spécifique] en suivant le format INVEST.
 ```
@@ -303,11 +315,13 @@ Rédige une user story complète pour [fonctionnalité spécifique] en suivant l
 ### ❌ Manque de contexte
 
 **Mauvais** :
+
 ```
 Priorise ces features.
 ```
 
 **Bon** :
+
 ```
 Tu es un PO. Priorise ces features pour [produit] en utilisant la méthode RICE, en tenant compte de [contexte spécifique].
 ```
@@ -317,6 +331,7 @@ Tu es un PO. Priorise ces features pour [produit] en utilisant la méthode RICE,
 **Mauvais** : Accepter le premier résultat sans affinement
 
 **Bon** : Itérer pour améliorer :
+
 1. Premier résultat → Identifier ce qui manque
 2. Prompt amélioré → Obtenir meilleur résultat
 3. Affinement final → Résultat optimal
@@ -334,6 +349,7 @@ Tu es un PO. Priorise ces features pour [produit] en utilisant la méthode RICE,
 ### ✅ Sois spécifique
 
 Plus tu es précis, meilleur est le résultat. Inclus :
+
 - Contexte détaillé
 - Format attendu
 - Contraintes
@@ -342,6 +358,7 @@ Plus tu es précis, meilleur est le résultat. Inclus :
 ### ✅ Itère progressivement
 
 Commence large, puis affine :
+
 1. Premier prompt : Vue d'ensemble
 2. Deuxième prompt : Détails spécifiques
 3. Troisième prompt : Affinements finaux
@@ -349,6 +366,7 @@ Commence large, puis affine :
 ### ✅ Valide toujours les résultats
 
 L'IA peut faire des erreurs (hallucinations). Toujours :
+
 - Vérifier les faits
 - Valider avec expertise humaine
 - Ajuster si nécessaire
@@ -372,4 +390,3 @@ Différents outils IA (ChatGPT, Claude, etc.) peuvent nécessiter des ajustement
 ---
 
 **Note** : Cette fiche pratique est développée par Astek (https://www.astek.net). N'hésitez pas à l'adapter à vos besoins spécifiques.
-

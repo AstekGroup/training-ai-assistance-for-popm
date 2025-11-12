@@ -144,7 +144,7 @@ Maintenir un glossaire centralisé dans `ANNEXES/glossaire.md` avec :
 - **Maintenir des notes de compatibilité** pour différentes versions d'outils
 - **Documenter les pratiques dépréciées** et chemins de migration
 - **Versionner les supports** de formation avec versioning sémantique (ex: v1.2.3)
-- **Historique des modifications** dans un fichier CHANGELOG.md
+- **Historique des modifications** dans le fichier DOCS/CHANGELOG.md et un fichier dédié dans le dossier DOCS au format YYYYMMDD-change_title.md
 
 ### Processus de validation
 
@@ -168,6 +168,6 @@ Chaque fichier de contenu doit inclure en en-tête :
 
 - Titre du module/support
 - Version
-- Date de dernière mise à jour
+- Date de dernière mise à jour (vérifie la date du jour via un outil ou via une recherche internet)
 - Auteur(s)
 - Objectifs d'apprentissage (pour les modules)

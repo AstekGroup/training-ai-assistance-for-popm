@@ -1,6 +1,8 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
 **Version** : 1.0.0
+**Date de dernière mise à jour** : 2025-11-09
+**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 **Date de dernière mise à jour** : 2024-12-19
 **Auteur** : Astek
 
@@ -527,9 +529,9 @@ D) La nécessité de formation
 
 ### Articles et études
 
-- [McKinsey Global Institute (2023). "The economic potential of generative AI"](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
-- [Harvard Business Review (2024). "How Product Managers Can Use AI to Build Better Products"](https://hbr.org)
-- [Product Management Today (2024). "AI Tools for Product Managers: A Comprehensive Guide"](https://www.productmanagementtoday.com)
+- [McKinsey Global Institute (2023). &#34;The economic potential of generative AI&#34;](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
+- [Harvard Business Review (2024). &#34;How Product Managers Can Use AI to Build Better Products&#34;](https://hbr.org)
+- [Product Management Today (2024). &#34;AI Tools for Product Managers: A Comprehensive Guide&#34;](https://www.productmanagementtoday.com)
 
 ### Outils à explorer
 

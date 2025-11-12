@@ -1,7 +1,10 @@
 # Template : User Story avec vérification INVEST
 
-**Version** : 1.0.0  
-**Date de dernière mise à jour** : 2024-12-19  
+**Version** : 1.0.0
+**Date de dernière mise à jour** : 2025-11-09
+**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
+
+**Date de dernière mise à jour** : 2024-12-19
 **Auteur** : Astek
 
 ---
@@ -10,12 +13,12 @@
 
 ### En-tête
 
-**ID** : [US-XXX]  
-**Titre** : [Titre court et descriptif]  
-**Date de création** : [JJ/MM/AAAA]  
-**Auteur** : [Nom]  
-**Statut** : [À faire / En cours / Terminé / Annulé]  
-**Sprint** : [Sprint X]  
+**ID** : [US-XXX]
+**Titre** : [Titre court et descriptif]
+**Date de création** : [JJ/MM/AAAA]
+**Auteur** : [Nom]
+**Statut** : [À faire / En cours / Terminé / Annulé]
+**Sprint** : [Sprint X]
 **Priorité** : [Haute / Moyenne / Basse]
 
 ---
@@ -23,6 +26,7 @@
 ## User Story
 
 **Format standard** :
+
 ```
 En tant que [type d'utilisateur],
 Je veux [action/fonctionnalité],
@@ -30,6 +34,7 @@ Afin de [bénéfice/valeur].
 ```
 
 **Exemple** :
+
 ```
 En tant qu'utilisateur connecté,
 Je veux pouvoir réinitialiser mon mot de passe,
@@ -44,6 +49,7 @@ Afin de retrouver l'accès à mon compte en cas d'oubli.
 [Contexte métier, problème à résoudre, opportunité]
 
 **Objectifs** :
+
 - [Objectif 1]
 - [Objectif 2]
 - [Objectif 3]
@@ -60,11 +66,12 @@ Afin de retrouver l'accès à mon compte en cas d'oubli.
 
 ### Scénario nominal (Happy Path)
 
-**Étant donné que** [condition initiale]  
-**Quand** [action utilisateur]  
+**Étant donné que** [condition initiale]
+**Quand** [action utilisateur]
 **Alors** [résultat attendu]
 
 **Exemple** :
+
 ```
 Étant donné que je suis un utilisateur avec un compte actif
 Quand je clique sur "Mot de passe oublié" et saisis mon email
@@ -74,21 +81,25 @@ Alors je reçois un email avec un lien de réinitialisation valide 24h
 ### Scénarios alternatifs
 
 **Scénario alternatif 1** : [Description]
+
 - **Étant donné que** [condition]
 - **Quand** [action]
 - **Alors** [résultat]
 
 **Scénario alternatif 2** : [Description]
+
 - [Détails]
 
 ### Scénarios d'erreur
 
 **Scénario d'erreur 1** : [Description]
+
 - **Étant donné que** [condition]
 - **Quand** [action]
 - **Alors** [message d'erreur ou comportement]
 
 **Scénario d'erreur 2** : [Description]
+
 - [Détails]
 
 ---
@@ -96,18 +107,23 @@ Alors je reçois un email avec un lien de réinitialisation valide 24h
 ## Notes techniques
 
 **Stack technique** :
+
 - [Technologies utilisées]
 
 **Contraintes techniques** :
+
 - [Contraintes à respecter]
 
 **Dépendances** :
+
 - [Autres user stories ou composants nécessaires]
 
 **API / Intégrations** :
+
 - [APIs ou services externes utilisés]
 
 **Performance** :
+
 - [Exigences de performance si applicables]
 
 ---
@@ -115,12 +131,15 @@ Alors je reçois un email avec un lien de réinitialisation valide 24h
 ## Design et UX
 
 **Maquettes / Wireframes** :
+
 - [Lien vers maquettes]
 
 **Comportements spécifiques** :
+
 - [Comportements UX particuliers]
 
 **Accessibilité** :
+
 - [Exigences d'accessibilité]
 
 ---
@@ -128,19 +147,21 @@ Alors je reçois un email avec un lien de réinitialisation valide 24h
 ## Métriques de succès
 
 **KPIs à mesurer** :
+
 - [Métrique 1] : [Objectif]
 - [Métrique 2] : [Objectif]
 
 **Comment mesurer** :
+
 - [Méthode de mesure]
 
 ---
 
 ## Estimation
 
-**Points de story** : [X]  
-**Complexité** : [S / M / L / XL]  
-**Effort estimé** : [X jours/personnes]  
+**Points de story** : [X]
+**Complexité** : [S / M / L / XL]
+**Effort estimé** : [X jours/personnes]
 **Confiance** : [Haute / Moyenne / Basse]
 
 **Justification** :
@@ -220,20 +241,20 @@ Alors je reçois un email avec un lien de réinitialisation valide 24h
 
 ## Historique
 
-| Date | Auteur | Action | Commentaire |
-|------|--------|--------|-------------|
-| [Date] | [Nom] | Création | [Commentaire] |
-| [Date] | [Nom] | Modification | [Commentaire] |
-| [Date] | [Nom] | Validation | [Commentaire] |
+| Date   | Auteur | Action       | Commentaire   |
+| ------ | ------ | ------------ | ------------- |
+| [Date] | [Nom]  | Création    | [Commentaire] |
+| [Date] | [Nom]  | Modification | [Commentaire] |
+| [Date] | [Nom]  | Validation   | [Commentaire] |
 
 ---
 
 ## Liens et références
 
-**Épique** : [Lien vers épique]  
-**Features liées** : [Liste]  
-**User stories dépendantes** : [Liste]  
-**Tickets techniques** : [Liste]  
+**Épique** : [Lien vers épique]
+**Features liées** : [Liste]
+**User stories dépendantes** : [Liste]
+**Tickets techniques** : [Liste]
 **Documents connexes** : [Liens]
 
 ---
@@ -268,4 +289,3 @@ Assure-toi que la user story respecte tous les critères INVEST.
 ---
 
 **Note** : Ce template est développé par Astek (https://www.astek.net). Adaptez-le selon vos besoins et standards d'équipe.
-
