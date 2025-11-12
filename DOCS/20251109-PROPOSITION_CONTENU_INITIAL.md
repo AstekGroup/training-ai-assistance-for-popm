@@ -1,8 +1,8 @@
 # Proposition initiale de contenu de cours
 
-**Date** : 2024-12-19  
-**Branche** : `proposition-contenu-initial`  
-**Auteur** : Astek (avec assistance IA)
+**Date** : 2025-11-09
+**Branche** : `proposition-contenu-initial`
+**Auteur** : Philippe Pary (pairing Claude Sonnet)
 
 ---
 
@@ -15,37 +15,38 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
 #### Modules de cours (COURS/)
 
 1. **MODULE_1_Acculturation.md**
+
    - Concepts fondamentaux de l'IA
    - Panorama des outils IA pour PO/PM
    - Impact organisationnel
    - Ingénierie de prompt de base
    - 3 exercices pratiques + quiz
-
 2. **MODULE_2_Qualite-couts-delais.md**
+
    - Amélioration qualité des livrables
    - Optimisation estimations
    - Prédiction délais
    - Détection risques
    - Business cases assistés
    - 4 exercices pratiques + quiz
-
 3. **MODULE_3_Automatisation-structuration.md**
+
    - Cartographie processus automatisables
    - Outils d'automatisation
    - Conception workflows
    - Structuration information
    - Reporting automatisé
    - 4 exercices pratiques + quiz
-
 4. **MODULE_4_Prise-de-decisions.md**
+
    - Analyse données et insights
    - Frameworks décision (RICE, SWOT)
    - Évaluation alternatives
    - Modélisation prédictive
    - Communication décisions
    - 4 exercices pratiques + quiz
-
 5. **MODULE_5_Reunions-documentation.md**
+
    - Transcription et synthèse réunions
    - Extraction action items
    - Génération documentation
@@ -55,16 +56,17 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
 #### Supports complémentaires (SUPPORTS/)
 
 1. **SUPPORT_Checklist-Adoption-IA.md**
+
    - Checklist complète en 4 phases
    - Critères de succès
    - Points d'attention
-
 2. **SUPPORT_Fiche-Pratique-Prompt-Engineering.md**
+
    - Techniques de prompt engineering
    - Prompts réutilisables pour PO/PM
    - Bonnes pratiques et erreurs à éviter
-
 3. **SUPPORT_Template-User-Story.md**
+
    - Template complet de user story
    - Vérification INVEST intégrée
    - Prompt IA pour génération
@@ -81,6 +83,7 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
 ### Conformité aux directives
 
 ✅ **Structure standardisée** : Chaque module contient :
+
 - Métadonnées (version, date, auteur)
 - Objectifs d'apprentissage clairs
 - Contenu théorique structuré
@@ -162,16 +165,17 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
 ### Améliorations possibles
 
 1. **Enrichissement des annexes** :
+
    - Compléter `ANNEXES/glossaire.md`
    - Compléter `ANNEXES/references.md`
    - Compléter `ANNEXES/ressources-externes.md`
-
 2. **Ajout de supports** :
+
    - Templates supplémentaires (business case, analyse risques)
    - Bibliothèque de prompts élargie
    - Vidéos de démonstration (si format vidéo souhaité)
-
 3. **Personnalisation** :
+
    - Adaptation selon publics spécifiques
    - Ajout d'exemples sectoriels
    - Personnalisation selon outils utilisés par l'organisation
@@ -196,6 +200,7 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
 ### Métadonnées
 
 Chaque module inclut :
+
 - Version (1.0.0)
 - Date de dernière mise à jour
 - Auteur (Astek)
@@ -222,7 +227,6 @@ Le contenu est prêt pour validation et peut être utilisé tel quel ou adapté 
 
 ---
 
-**Branche** : `proposition-contenu-initial`  
-**Date** : 2024-12-19  
+**Branche** : `proposition-contenu-initial`
+**Date** : 2024-12-19
 **Statut** : Proposition initiale - En attente de validation
-

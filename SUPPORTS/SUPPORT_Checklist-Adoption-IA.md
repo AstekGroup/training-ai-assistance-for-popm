@@ -1,12 +1,12 @@
 # Checklist : Adoption de l'IA pour PO/PM
 
-**Version** : 1.0.0  
-**Date de dernière mise à jour** : 2024-12-19  
+**Version** : 1.0.0
+**Date de dernière mise à jour** : 2025-11-19
 **Auteur** : Astek
 
 ---
 
-## Phase 1 : Préparation (Semaines 1-2)
+## Phase 1 : Préparation
 
 ### Identification des besoins
 
@@ -169,4 +169,3 @@
 ---
 
 **Note** : Cette checklist est développée par Astek (https://www.astek.net) et doit être adaptée selon le contexte spécifique de votre organisation.
-
