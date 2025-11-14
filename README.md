@@ -1,7 +1,7 @@
 # Formation : Outils IA pour Product Owners et Project Managers
 
-**Version** : 1.0.0  
-**Dernière mise à jour** : 2024-12-19  
+**Version** : 1.0.0
+**Dernière mise à jour** : 2025-11-19
 **Développé par** : [Astek](https://www.astek.net)
 
 ---
@@ -37,18 +37,21 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 ### Module 1 : Acculturation à l'IA pour PO/PM
 
 **Contenu** :
+
 - Concepts fondamentaux de l'IA (générative, analytique, prédictive)
 - Panorama des outils IA pour PO/PM
 - Impact organisationnel de l'intégration de l'IA
 - Principes de base de l'ingénierie de prompt
 
 **Livrables** :
+
 - Identification de cas d'usage IA pertinents
 - Maîtrise des techniques de prompt engineering de base
 
 ### Module 2 : Qualité, coûts et délais assistés par IA
 
 **Contenu** :
+
 - Amélioration de la qualité des user stories et spécifications
 - Optimisation des estimations avec analyse de données historiques
 - Prédiction de délais avec IA prédictive
@@ -56,6 +59,7 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 - Business cases assistés par IA
 
 **Livrables** :
+
 - User stories de qualité générées avec IA
 - Estimations assistées par IA
 - Analyse de risques complète
@@ -63,6 +67,7 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 ### Module 3 : Automatisation et structuration des projets avec l'IA
 
 **Contenu** :
+
 - Cartographie des processus automatisables
 - Outils d'automatisation (Zapier, Make, Power Automate)
 - Conception de workflows automatisés
@@ -70,12 +75,14 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 - Automatisation de reporting et tableaux de bord
 
 **Livrables** :
+
 - Workflow automatisé fonctionnel
 - Processus documenté et optimisé
 
 ### Module 4 : Prise de décisions assistée par IA
 
 **Contenu** :
+
 - Analyse de données et identification d'insights
 - Frameworks de décision assistés par IA (RICE, SWOT, multi-critères)
 - Évaluation comparative d'alternatives
@@ -83,12 +90,14 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 - Communication de décisions complexes
 
 **Livrables** :
+
 - Analyse de décision stratégique complète
 - Business case assisté par IA
 
 ### Module 5 : Réunions et documentation assistées par l'IA
 
 **Contenu** :
+
 - Transcription et synthèse automatique de réunions
 - Extraction d'action items avec l'IA
 - Génération et maintenance de documentation
@@ -96,6 +105,7 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 - Optimisation du temps de réunion
 
 **Livrables** :
+
 - Compte-rendu généré avec IA
 - Documentation projet complète
 
@@ -104,28 +114,34 @@ Cette formation est conçue pour permettre aux **Product Owners** et **Project M
 ## 🛠️ Outils IA présentés
 
 ### Outils de génération de contenu
+
 - ChatGPT, Claude, Gemini
 - GitHub Copilot, Cursor
 
 ### Outils d'analyse et synthèse
+
 - Notion AI, Obsidian avec plugins IA
 - Perplexity, Elicit
 
 ### Outils d'automatisation
+
 - Zapier, Make (ex-Integromat)
 - Microsoft Power Automate
 - Jira Automation, Notion Automation
 
 ### Outils d'assistance aux réunions
+
 - Otter.ai, Fireflies
 - Zoom IQ, Microsoft Teams avec IA
 
 ### Outils de gestion de projet
+
 - Jira avec AI Features
 - Monday.com, Asana avec IA
 - Forecast
 
 ### Outils d'analyse de données
+
 - Tableau avec IA
 - Power BI avec IA
 - Looker
@@ -173,6 +189,7 @@ PO PM-Assiste/
 ### Évaluation
 
 Chaque module comprend :
+
 - **Exercices pratiques** avec corrigés
 - **Quiz/QCM** pour validation des connaissances
 - **Études de cas** pour application concrète
@@ -238,6 +255,7 @@ Chaque module comprend :
 Ce contenu est développé et maintenu par **Astek** (https://www.astek.net).
 
 Pour toute question, suggestion ou contribution :
+
 - Consultez le `CHANGELOG.md` pour l'historique des modifications
 - Référez-vous à `AGENTS.md` pour les conventions de développement
 
@@ -248,22 +266,3 @@ Pour toute question, suggestion ou contribution :
 Ce contenu de formation est destiné à un usage interne et pour les clients d'Astek.
 
 **Note importante** : Le contenu est régulièrement mis à jour pour refléter l'évolution rapide des outils IA. Vérifiez régulièrement les mises à jour.
-
----
-
-## 🚀 Démarrage rapide
-
-1. **Lire ce README** pour comprendre la structure
-2. **Commencer par le Module 1** : Acculturation à l'IA
-3. **Suivre les modules dans l'ordre** pour une progression cohérente
-4. **Pratiquer avec les exercices** de chaque module
-5. **Consulter les supports** pour approfondir
-
-**Bon apprentissage !** 🎓
-
----
-
-**Dernière mise à jour** : 2024-12-19  
-**Version** : 1.0.0  
-**Développé par** : Astek (https://www.astek.net)
-
