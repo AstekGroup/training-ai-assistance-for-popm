@@ -1,7 +1,7 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
 **Version** : 1.0.0
-**Date de dernière mise à jour** : 2025-11-09
+**Date de dernière mise à jour** : 2025-11-18
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -330,7 +330,7 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 **Phase 2 - Déploiement (Mois 3-6)** :
 
 - Extension à toute l'équipe
-- Ajout d'[Otter.ai](https://otter.ai) pour les réunions
+- Utiliser [MS Teams Facilitator](https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams) pour les réunions
 - Intégration de [Notion AI](https://www.notion.so/product/ai) pour la documentation
 
 **Résultats Phase 2** :
@@ -382,7 +382,7 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 - Cas d'usage 1 : Génération de user stories avec [ChatGPT](https://chat.openai.com)
   - Gain : 2h/semaine, amélioration de la cohérence
   - Risque : Perte de réflexion métier si mal utilisé
-- Cas d'usage 2 : Synthèse de réunions avec [Otter.ai](https://otter.ai)
+- Cas d'usage 2 : Synthèse de réunions avec [MS Teams Facilitator](https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams)
   - Gain : 1h/semaine, meilleure traçabilité
   - Risque : Confidentialité des données
 - Cas d'usage 3 : Analyse de vélocité avec [Jira AI](https://www.atlassian.com/software/jira/features/ai)
