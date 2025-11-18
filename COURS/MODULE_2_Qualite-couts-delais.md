@@ -31,11 +31,11 @@ Le triangle de fer (Scope, Time, Cost) reste un pilier du management de projet. 
 
 ### 1.2 Impact mesurable de l'IA sur la qualité, coûts et délais
 
-**Données d'études** :
+**Données d'études récentes (2024)** :
 
-- Réduction de 30% des défauts dans les spécifications avec assistance IA ([Gartner, 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024))
-- Amélioration de 25% de la précision des estimations avec analyse prédictive ([PMI, 2023](https://www.pmi.org/learning/library/ai-impact-project-estimation-accuracy-13620))
-- Gain de 20% sur les délais grâce à la détection précoce de risques ([McKinsey, 2024](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2024))
+- **Qualité** : Réduction de 30% des défauts de qualité grâce à l'IA dans le contrôle qualité ([BMW case study, Automation World 2024](https://www.automationworld.com/analytics/article/55131223/reducing-quality-defects-with-ai)) - BMW a réduit ses taux de défauts de 30% en un an après l'implémentation de systèmes d'IA dans ses installations de production
+- **Coûts** : Réduction de 15-25% des coûts projet avec l'IA ([MDPI Systematic Review, 2024](https://www.mdpi.com/2673-3951/6/2/35)) - Les fabricants implémentant des solutions IA rapportent des réductions de coûts de 15-25% tout en améliorant la qualité et la fiabilité de livraison
+- **Productivité** : ROI moyen de 3.5x sur les investissements IA ([Microsoft Market Study, 2024](https://www.coherentsolutions.com/insights/ai-development-cost-estimation-pricing-structure-roi)) - Les entreprises technologiques réalisent des réductions de coûts de développement de 20-30% tout en améliorant les métriques de qualité logicielle
 
 ---
 
@@ -731,8 +731,8 @@ D) 50%
 ### Articles et études
 
 - [Gartner (2024). &#34;AI-Powered Project Management: Improving Quality and Predictability&#34;](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
-- [PMI (2023). &#34;The Impact of AI on Project Estimation Accuracy&#34;](https://www.pmi.org/learning/library/ai-impact-project-estimation-accuracy-13620)
-- [McKinsey (2024). &#34;AI in Project Management: A Data-Driven Approach&#34;](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2024)
+- [PMI (2023). &#34;Shaping the Future of Project Management With AI&#34;](https://www.pmi.org/learning/thought-leadership/ai-impact/shaping-the-future-of-project-management-with-ai)
+- [McKinsey (2024). &#34;The State of AI in 2024: Gen AI Adoption Spikes&#34;](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024)
 
 ### Outils recommandés
 
