@@ -1,7 +1,7 @@
 # Module 2 : Qualité, coûts et délais assistés par IA
 
-**Version** : 1.0.0
-**Date de dernière mise à jour** : 2025-11-09
+**Version** : 1.0.1
+**Date de dernière mise à jour** : 2025-11-18
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -45,7 +45,7 @@ Le triangle de fer (Scope, Time, Cost) reste un pilier du management de projet. 
 
 #### 2.1.1 Génération assistée de user stories
 
-**Outils recommandés** : [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai), [GitHub Copilot](https://github.com/features/copilot)
+**Outils recommandés** : [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai), [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.com/)
 
 **Processus** :
 
@@ -102,7 +102,7 @@ Chaque critère doit être :
 
 #### 2.2.1 Génération de documentation technique
 
-**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chat.openai.com), [Notion AI](https://www.notion.so/product/ai)
+**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chat.openai.com), [Notion AI](https://www.notion.so/product/ai), [Cursor](https://cursor.com/)
 
 **Processus** :
 
