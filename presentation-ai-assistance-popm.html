@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Formation IA Assistance pour PO/PM - Astek</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/monokai.css">
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --astek-green: #009c49;
+            --astek-teal: #00b0be;
+            --astek-dark: #2d2927;
+            --astek-light: #f8f9fa;
+            --astek-gradient: linear-gradient(135deg, #009c49, #00b0be);
+            --shadow-astek: 0 4px 12px rgba(0,156,73,0.15);
+            --shadow-light: 0 2px 8px rgba(0,156,73,0.08);
+        }
+
+        .reveal {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .reveal .slides section {
+            text-align: left;
+            font-size: 0.7em;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: none;
+            line-height: 1.3;
+            margin-bottom: 0.8em;
+        }
+
+        .reveal h1 {
+            font-size: 2em;
+            font-weight: 800;
+            color: var(--astek-green);
+        }
+
+        .reveal .title-slide h1:not([style]) {
+            background: var(--astek-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reveal h2 {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--astek-green);
+        }
+
+        .reveal h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--astek-teal);
+        }
+
+        .reveal h4 {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--astek-dark);
+        }
+
+        .reveal p, .reveal li {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: var(--astek-dark);
+        }
+
+        .astek-logo {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            width: 250px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        .reveal .title-slide h1 {
+            color: var(--astek-green);
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            font-weight: 800;
+        }
+
+        .reveal .title-slide h2 {
+            color: var(--astek-dark);
+            font-size: 1.2em;
+            margin-bottom: 0.8em;
+            font-weight: 500;
+        }
+
+        .reveal .progress {
+            color: var(--astek-green);
+            height: 4px;
+        }
+
+        .reveal .controls {
+            color: var(--astek-green);
+        }
+
+        .day-header {
+            background: var(--astek-gradient);
+            color: white;
+            padding: 3em 2em;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 1.5em;
+            box-shadow: 0 8px 32px rgba(0,156,73,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .day-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(255,255,255,0.05) 100%);
+            pointer-events: none;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .day-header h1, .day-header h2 {
+            color: white !important;
+            margin: 0.3em 0;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            background: none !important;
+            -webkit-text-fill-color: white !important;
+        }
+
+        .day-header h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+        }
+
+        .day-header h2 {
+            font-size: 1.3em;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        .tool-card {
+            background-color: white;
+            padding: 1.2em;
+            border-radius: 12px;
+            border-left: 4px solid var(--astek-green);
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .tool-card:hover {
+            box-shadow: var(--shadow-astek);
+            transform: translateY(-4px);
+        }
+
+        .tool-card h4 {
+            margin-top: 0;
+            color: var(--astek-dark);
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .tool-card p {
+            color: var(--astek-dark);
+            font-size: 0.9em;
+        }
+
+        .tool-card strong {
+            color: var(--astek-green);
+            font-weight: 700;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin: 1em 0;
+        }
+
+        .code-example {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #ffffff;
+            padding: 1em;
+            border-radius: 8px;
+            border-left: 4px solid var(--astek-green);
+            font-family: 'Courier New', monospace;
+            font-size: 0.75em;
+            line-height: 1.4;
+            margin: 1em 0;
+            box-shadow: var(--shadow-light);
+        }
+
+        .code-example h4 {
+            color: #00e676 !important;
+            font-weight: 700;
+            margin-top: 0.8em;
+            margin-bottom: 0.5em;
+        }
+
+        .code-example h4:first-child {
+            margin-top: 0;
+        }
+
+        .code-example p {
+            color: #ffffff;
+            margin: 0.5em 0;
+        }
+
+        .code-example ul, .code-example ol {
+            color: #ffffff;
+        }
+
+        .code-example li {
+            color: #ffffff;
+        }
+
+        .code-example strong {
+            color: #00e676;
+            font-weight: 700;
+        }
+
+        .exercise-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 1em;
+            margin: 0.8em 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: var(--shadow-light);
+        }
+
+        .exercise-box h4 {
+            color: #0c5460;
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        .exercise-box p,
+        .exercise-box li {
+            color: #0c5460;
+            font-size: 0.9em;
+        }
+
+        .exercise-box strong {
+            color: #17a2b8;
+            font-weight: 700;
+        }
+
+        .objective-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 1em;
+            margin: 0.8em 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: var(--shadow-light);
+        }
+
+        .objective-box h4 {
+            color: #155724;
+            margin-top: 0;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        .objective-box p,
+        .objective-box li {
+            color: #155724;
+            font-size: 0.9em;
+        }
+
+        .objective-box strong {
+            color: #28a745;
+            font-weight: 700;
+        }
+
+        .reveal ul {
+            list-style: none;
+            padding-left: 1.5em;
+        }
+
+        .reveal ul li:before {
+            content: '▸';
+            color: var(--astek-green);
+            font-weight: bold;
+            position: absolute;
+            left: -1.2em;
+        }
+
+        .reveal li {
+            margin: 0.5em 0;
+            position: relative;
+        }
+
+        .highlight {
+            background-color: var(--astek-teal);
+            color: white;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .qr-code {
+            text-align: center;
+            margin: 2em auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qr-code canvas,
+        .qr-code img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        @media (max-width: 1200px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Logo Astek -->
+        <img src="astek-logo.png" alt="Astek Logo" class="astek-logo">
+
+        <div class="slides">
+
+            <!-- ============================================ -->
+            <!-- SLIDE TITRE -->
+            <!-- ============================================ -->
+            <section class="title-slide">
+                <h1>Formation IA Assistance pour PO/PM</h1>
+                <h2>Optimisez votre efficacité avec l'Intelligence Artificielle</h2>
+                <p style="text-align: center; margin-top: 2em;">
+                    <strong>Philippe Pary</strong><br>
+                    philippe.pary@astek.net<br>
+                    <em>Formation professionnelle Astek</em>
+                </p>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- ACCUEIL ET INTRODUCTION -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>🎯 Bienvenue</h1>
+                    <h2>Introduction et Tour de Table</h2>
+                </section>
+
+                <section>
+                    <h2>📋 Objectifs de la formation</h2>
+                    <div class="objective-box">
+                        <h4>À l'issue de cette formation, vous serez capable de :</h4>
+                        <ul>
+                            <li>Maîtriser les outils IA pour PO/PM</li>
+                            <li>Améliorer la qualité de vos livrables</li>
+                            <li>Automatiser vos processus répétitifs</li>
+                            <li>Optimiser vos prises de décisions</li>
+                            <li>Gagner en efficacité sur les réunions et la documentation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>👥 Tour de table</h2>
+                    <div class="exercise-box">
+                        <h4>Présentez-vous !</h4>
+                        <ul>
+                            <li><strong>Qui êtes-vous ?</strong> (nom, fonction, expérience)</li>
+                            <li><strong>Quelles sont vos attentes</strong> pour cette formation ?</li>
+                            <li><strong>Avez-vous des projets concrets</strong> sur lesquels vous souhaitez appliquer l'IA ?</li>
+                            <li><strong>Quel est votre niveau actuel</strong> avec les outils IA ?</li>
+                        </ul>
+                    </div>
+                    <p style="text-align: center; margin-top: 1.5em; font-style: italic; color: var(--astek-teal);">
+                        💡 Ces informations nous aideront à adapter les exercices à vos cas d'usage
+                    </p>
+                </section>
+
+                <section>
+                    <h2>🗺️ Programme de la formation</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>Module 1</h4>
+                            <p><strong>Acculturation à l'IA</strong></p>
+                            <p style="font-size: 0.85em;">Concepts, outils, impact organisationnel</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Module 2</h4>
+                            <p><strong>Qualité, coûts, délais</strong></p>
+                            <p style="font-size: 0.85em;">User stories, estimations, risques</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Module 3</h4>
+                            <p><strong>Automatisation</strong></p>
+                            <p style="font-size: 0.85em;">Workflows, reporting, documentation</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Module 4</h4>
+                            <p><strong>Prise de décisions</strong></p>
+                            <p style="font-size: 0.85em;">Analyse de données, frameworks</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Module 5</h4>
+                            <p><strong>Réunions & Docs</strong></p>
+                            <p style="font-size: 0.85em;">Transcription, synthèse, action items</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Conclusion</h4>
+                            <p><strong>Synthèse & Évaluation</strong></p>
+                            <p style="font-size: 0.85em;">Récapitulatif et questionnaire</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- MODULE 1 : ACCULTURATION À L'IA -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>👩‍🎓 Module 1</h1>
+                    <h2>Acculturation à l'IA pour PO/PM</h2>
+                </section>
+
+                <section>
+                    <h2>🎯 Objectifs du Module 1</h2>
+                    <div class="objective-box">
+                        <ul>
+                            <li>Comprendre les concepts fondamentaux de l'IA</li>
+                            <li>Identifier les outils IA pertinents pour vos missions</li>
+                            <li>Évaluer l'impact organisationnel de l'IA</li>
+                            <li>Distinguer IA générative, analytique et prédictive</li>
+                            <li>Maîtriser l'ingénierie de prompt</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Pourquoi l'IA pour les PO/PM ?</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>⏱️ Gain de temps</h4>
+                            <p>6h/semaine en moyenne sur tâches répétitives</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>✨ Qualité améliorée</h4>
+                            <p>User stories, spécifications, analyses plus complètes</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Décisions optimisées</h4>
+                            <p>Analyse de données et prédictions précises</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💰 Coûts réduits</h4>
+                            <p>Automatisation de processus métier</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🤖 Types d'IA pertinents</h2>
+                    <div class="code-example">
+                        <h4>IA Générative</h4>
+                        <ul>
+                            <li>ChatGPT, Claude, Gemini, Mistral</li>
+                            <li>Génération de user stories, documentation</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1em;">IA Analytique</h4>
+                        <ul>
+                            <li>Tableau, Power BI, Looker</li>
+                            <li>Analyse de vélocité, identification de risques</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1em;">IA Prédictive</h4>
+                        <ul>
+                            <li>Forecast, Jira Advanced Roadmaps</li>
+                            <li>Estimation de délais, prédiction de risques</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🛠️ Panorama des outils IA</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>ChatGPT / Claude</h4>
+                            <p><strong>Usage :</strong> Génération de contenu</p>
+                            <p style="font-size: 0.85em;">User stories, analyses, synthèses</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Notion AI</h4>
+                            <p><strong>Usage :</strong> Documentation</p>
+                            <p style="font-size: 0.85em;">Synthèse de notes, organisation</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Otter.ai / Fireflies</h4>
+                            <p><strong>Usage :</strong> Réunions</p>
+                            <p style="font-size: 0.85em;">Transcription, extraction d'actions</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Jira AI</h4>
+                            <p><strong>Usage :</strong> Gestion de projet</p>
+                            <p style="font-size: 0.85em;">Estimation, détection de risques</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✍️ Ingénierie de prompt</h2>
+                    <div class="code-example">
+                        <h4>Structure d'un bon prompt :</h4>
+                        <p><strong>1. Contexte</strong> : Situation, rôle, objectif</p>
+                        <p><strong>2. Tâche</strong> : Ce que vous voulez obtenir</p>
+                        <p><strong>3. Format</strong> : Structure attendue</p>
+                        <p><strong>4. Contraintes</strong> : Limitations, exigences</p>
+
+                        <h4 style="margin-top: 1.5em;">Exemple :</h4>
+                        <p style="font-size: 0.9em; font-style: italic;">
+                            "Tu es un Product Owner expérimenté. Écris une user story pour une fonctionnalité de connexion utilisateur dans une application e-commerce, en suivant le format INVEST."
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Étude de cas</h2>
+                    <div class="objective-box">
+                        <h4>Scale-up fintech - Adoption de l'IA</h4>
+                        <p><strong>Contexte :</strong> 3 PO, 2 PM - 40% du temps sur documentation</p>
+                        <p><strong>Solution :</strong> ChatGPT + MS Teams + Notion AI</p>
+                        <p><strong>Résultats :</strong></p>
+                        <ul>
+                            <li>Gain : 6h/semaine par PO/PM</li>
+                            <li>ROI : 3x le coût des outils en 6 mois</li>
+                            <li>Qualité : +80% satisfaction développeurs</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎓 Exercice Module 1</h2>
+                    <div class="exercise-box">
+                        <h4>À faire maintenant :</h4>
+                        <ol>
+                            <li>Listez vos 5 tâches les plus chronophages</li>
+                            <li>Identifiez 3 cas d'usage IA pertinents</li>
+                            <li>Rédigez un prompt efficace pour une user story</li>
+                        </ol>
+                    </div>
+                    <p style="text-align: center; margin-top: 1.5em; font-style: italic;">
+                        💡 Utilisez votre projet concret évoqué lors du tour de table
+                    </p>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- MODULE 2 : QUALITÉ, COÛTS, DÉLAIS -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>🔍 Module 2</h1>
+                    <h2>Qualité, coûts et délais assistés par IA</h2>
+                </section>
+
+                <section>
+                    <h2>🎯 Objectifs du Module 2</h2>
+                    <div class="objective-box">
+                        <ul>
+                            <li>Améliorer la qualité des user stories et spécifications</li>
+                            <li>Optimiser l'estimation des coûts et délais</li>
+                            <li>Détecter et prévenir les risques projet</li>
+                            <li>Mesurer et améliorer la vélocité d'équipe</li>
+                            <li>Construire des business cases convaincants</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📊 Impact mesurable de l'IA</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>-30%</h4>
+                            <p>Défauts dans les spécifications</p>
+                            <p style="font-size: 0.8em; color: #666;">(Gartner, 2024)</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>+25%</h4>
+                            <p>Précision des estimations</p>
+                            <p style="font-size: 0.8em; color: #666;">(PMI, 2023)</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>+20%</h4>
+                            <p>Gain sur les délais</p>
+                            <p style="font-size: 0.8em; color: #666;">(McKinsey, 2024)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✨ Améliorer la qualité des user stories</h2>
+                    <div class="code-example">
+                        <h4>Processus assisté par IA :</h4>
+                        <ol>
+                            <li>Collecte du besoin métier brut</li>
+                            <li>Génération initiale avec IA</li>
+                            <li>Vérification critères INVEST automatique</li>
+                            <li>Affinement itératif</li>
+                        </ol>
+
+                        <h4 style="margin-top: 1.5em;">Critères INVEST :</h4>
+                        <ul style="font-size: 0.9em;">
+                            <li><strong>I</strong>ndependent - <strong>N</strong>egotiable - <strong>V</strong>aluable</li>
+                            <li><strong>E</strong>stimable - <strong>S</strong>mall - <strong>T</strong>estable</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📈 Estimation assistée par IA</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>Analyse historique</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Vélocité passée</li>
+                                <li>Temps réel vs estimé</li>
+                                <li>Identification de patterns</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Estimation par similarité</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Comparaison avec projets similaires</li>
+                                <li>Ajustement contexte spécifique</li>
+                                <li>Réduction des biais humains</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>⚠️ Détection et prévention des risques</h2>
+                    <div class="code-example">
+                        <h4>Analyse prédictive :</h4>
+                        <ul>
+                            <li>Patterns de risques dans projets similaires</li>
+                            <li>Détection précoce de signaux faibles</li>
+                            <li>Prédiction de probabilité d'occurrence</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1.5em;">Signaux à surveiller :</h4>
+                        <ul>
+                            <li>Délais dépassés • Budget dépassé</li>
+                            <li>Baisse de vélocité • Augmentation des bugs</li>
+                            <li>Changements fréquents de scope</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💼 Business cases assistés par IA</h2>
+                    <div class="objective-box">
+                        <h4>Éléments essentiels :</h4>
+                        <ol>
+                            <li>Problème à résoudre</li>
+                            <li>Solution proposée</li>
+                            <li>Analyse coût-bénéfice (ROI sur 3 ans)</li>
+                            <li>Risques et mitigation</li>
+                            <li>Plan de mise en œuvre</li>
+                            <li>Critères de succès et KPIs</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Étude de cas</h2>
+                    <div class="objective-box">
+                        <h4>E-commerce - Refonte plateforme de paiement</h4>
+                        <p><strong>Défi :</strong> Estimation initiale 6 mois, budget 500k€</p>
+                        <p><strong>Solution IA :</strong> Analyse de 15 projets similaires</p>
+                        <p><strong>Résultats :</strong></p>
+                        <ul>
+                            <li>Estimation révisée : 7 mois, 550k€ (plus réaliste)</li>
+                            <li>Défauts spécifications : -40%</li>
+                            <li>Livraison : conforme à l'estimation révisée</li>
+                            <li>Détection précoce → évité 2 mois de retard</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎓 Exercice Module 2</h2>
+                    <div class="exercise-box">
+                        <h4>À faire maintenant :</h4>
+                        <ol>
+                            <li>Générez une user story complète avec vérification INVEST</li>
+                            <li>Estimez un projet avec analyse de données historiques</li>
+                            <li>Identifiez les 5 risques majeurs d'un projet</li>
+                            <li>Créez un business case avec ROI</li>
+                        </ol>
+                    </div>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- MODULE 3 : AUTOMATISATION -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>⚡ Module 3</h1>
+                    <h2>Automatisation et structuration</h2>
+                </section>
+
+                <section>
+                    <h2>🎯 Objectifs du Module 3</h2>
+                    <div class="objective-box">
+                        <ul>
+                            <li>Identifier les processus répétitifs à automatiser</li>
+                            <li>Concevoir des workflows automatisés</li>
+                            <li>Structurer l'information projet avec l'IA</li>
+                            <li>Automatiser reporting et tableaux de bord</li>
+                            <li>Créer des systèmes d'alertes intelligents</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🚀 Pourquoi automatiser ?</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>⏱️ Gain de temps</h4>
+                            <p>20-30% du temps libéré sur tâches répétitives</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🎯 Réduction d'erreurs</h4>
+                            <p>Élimination des erreurs humaines</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Cohérence</h4>
+                            <p>Standardisation des processus</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📈 Scalabilité</h4>
+                            <p>Plus de projets sans plus de ressources</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🛠️ Outils d'automatisation</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Zapier</h4>
+                            <p><strong>Points forts :</strong> 5000+ intégrations, facile</p>
+                            <p style="font-size: 0.85em;">Idéal pour workflows simples</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Make (ex-Integromat)</h4>
+                            <p><strong>Points forts :</strong> Logique complexe</p>
+                            <p style="font-size: 0.85em;">Pour automatisations avancées</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Power Automate</h4>
+                            <p><strong>Points forts :</strong> Microsoft 365, RPA</p>
+                            <p style="font-size: 0.85em;">Écosystème Microsoft</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Jira Automation</h4>
+                            <p><strong>Points forts :</strong> Natif Jira</p>
+                            <p style="font-size: 0.85em;">Gestion de projet intégrée</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🔄 Patterns d'automatisation</h2>
+                    <div class="code-example">
+                        <h4>1. Collecte → Traitement → Distribution</h4>
+                        <p>Exemple : Reporting automatique hebdomadaire</p>
+
+                        <h4 style="margin-top: 1.5em;">2. Détection → Alerte → Action</h4>
+                        <p>Exemple : Gestion de risques proactive</p>
+
+                        <h4 style="margin-top: 1.5em;">3. Création → Enrichissement → Validation</h4>
+                        <p>Exemple : Génération de user stories</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📊 Automatisation de reporting</h2>
+                    <div class="objective-box">
+                        <h4>Workflow automatisé :</h4>
+                        <ol>
+                            <li>Collecte données (Jira, GitHub, Analytics)</li>
+                            <li>Calcul métriques (vélocité, burndown, % complétion)</li>
+                            <li>Génération rapport avec IA (texte + graphiques)</li>
+                            <li>Distribution (email, Slack, Confluence)</li>
+                        </ol>
+                        <p style="margin-top: 1em;"><strong>Gain :</strong> 3h/semaine par PM</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Étude de cas</h2>
+                    <div class="objective-box">
+                        <h4>Scale-up SaaS - Automatisation complète</h4>
+                        <p><strong>Contexte :</strong> 4 PO, 2 PM - 40% du temps sur tâches admin</p>
+                        <p><strong>Solution :</strong> Zapier + ChatGPT + Jira Automation</p>
+                        <p><strong>Résultats globaux :</strong></p>
+                        <ul>
+                            <li>PO : 6h/semaine gagnées (30% tâches admin)</li>
+                            <li>PM : 8h/semaine gagnées (40% reporting)</li>
+                            <li>Qualité : -50% erreurs, +35% cohérence</li>
+                            <li>ROI : 14x en 6 mois</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎓 Exercice Module 3</h2>
+                    <div class="exercise-box">
+                        <h4>À faire maintenant :</h4>
+                        <ol>
+                            <li>Cartographiez un processus répétitif de votre quotidien</li>
+                            <li>Concevez un workflow automatisé (déclencheurs, actions)</li>
+                            <li>Choisissez les outils appropriés</li>
+                            <li>Estimez le gain de temps et le ROI</li>
+                        </ol>
+                    </div>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- MODULE 4 : PRISE DE DÉCISIONS -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>✅ Module 4</h1>
+                    <h2>Prise de décisions assistée par IA</h2>
+                </section>
+
+                <section>
+                    <h2>🎯 Objectifs du Module 4</h2>
+                    <div class="objective-box">
+                        <ul>
+                            <li>Analyser des données pour extraire des insights</li>
+                            <li>Utiliser des frameworks de décision (RICE, SWOT)</li>
+                            <li>Évaluer des alternatives avec l'IA</li>
+                            <li>Utiliser la modélisation prédictive</li>
+                            <li>Communiquer efficacement les décisions complexes</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📊 Analyse de données avec IA</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>Extraction d'insights</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Identification de patterns</li>
+                                <li>Corrélations cachées</li>
+                                <li>Tendances émergentes</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Visualisation intelligente</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Graphiques auto-générés</li>
+                                <li>Dashboards dynamiques</li>
+                                <li>Recommendations visuelles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎯 Frameworks de décision</h2>
+                    <div class="code-example">
+                        <h4>RICE (Reach, Impact, Confidence, Effort)</h4>
+                        <p>Score = (Reach × Impact × Confidence) / Effort</p>
+
+                        <h4 style="margin-top: 1.5em;">SWOT (Strengths, Weaknesses, Opportunities, Threats)</h4>
+                        <p>Analyse forces/faiblesses internes + opportunités/menaces externes</p>
+
+                        <h4 style="margin-top: 1.5em;">Analyse multi-critères</h4>
+                        <p>Pondération de critères (coût, délai, qualité, risque)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🔮 Modélisation prédictive</h2>
+                    <div class="objective-box">
+                        <h4>Cas d'usage :</h4>
+                        <ul>
+                            <li><strong>Prédiction de succès</strong> : Probabilité d'adoption d'une feature</li>
+                            <li><strong>Simulation "What-if"</strong> : Impact de différents scénarios</li>
+                            <li><strong>Détection d'anomalies</strong> : Signaux faibles de problèmes</li>
+                            <li><strong>Optimisation de roadmap</strong> : Séquencement optimal</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💬 Communication de décisions</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>Narratif généré par IA</h4>
+                            <p style="font-size: 0.85em;">Transformation données → histoire cohérente</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Adaptation au public</h4>
+                            <p style="font-size: 0.85em;">Direction vs Équipe technique vs Métier</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎓 Exercice Module 4</h2>
+                    <div class="exercise-box">
+                        <h4>À faire maintenant :</h4>
+                        <ol>
+                            <li>Analysez un jeu de données avec extraction d'insights</li>
+                            <li>Utilisez le framework RICE pour prioriser 5 features</li>
+                            <li>Évaluez 3 alternatives avec analyse multi-critères</li>
+                            <li>Créez une présentation de décision adaptée à la direction</li>
+                        </ol>
+                    </div>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- MODULE 5 : RÉUNIONS ET DOCUMENTATION -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>Module 5</h1>
+                    <h2>Réunions et documentation assistées par IA</h2>
+                </section>
+
+                <section>
+                    <h2>🎯 Objectifs du Module 5</h2>
+                    <div class="objective-box">
+                        <ul>
+                            <li>Transcrire et synthétiser les réunions automatiquement</li>
+                            <li>Extraire action items et décisions</li>
+                            <li>Générer et maintenir une documentation de qualité</li>
+                            <li>Créer des comptes-rendus efficaces</li>
+                            <li>Optimiser le temps passé en réunion</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📊 Le coût des réunions</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>23h/semaine</h4>
+                            <p>Temps moyen en réunion pour les cadres</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>67%</h4>
+                            <p>Des managers déclarent que trop de réunions les empêchent de travailler</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>30%</h4>
+                            <p>Du temps de réunion considéré comme improductif</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎙️ Outils de transcription</h2>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Otter.ai</h4>
+                            <p><strong>Points forts :</strong> Temps réel, identification speakers</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Fireflies.ai</h4>
+                            <p><strong>Points forts :</strong> Analytics, recherche avancée</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>MS Teams / Zoom</h4>
+                            <p><strong>Points forts :</strong> Natif, résumés auto</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Microsoft Loop</h4>
+                            <p><strong>Points forts :</strong> Collaboration temps réel</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📝 Synthèse intelligente</h2>
+                    <div class="code-example">
+                        <h4>Structure d'un compte-rendu efficace :</h4>
+                        <ol>
+                            <li><strong>En-tête</strong> : Date, participants, objectifs</li>
+                            <li><strong>Résumé exécutif</strong> : 2-3 phrases clés</li>
+                            <li><strong>Points discutés</strong> : Principaux sujets</li>
+                            <li><strong>Décisions prises</strong> : Liste claire</li>
+                            <li><strong>Action items</strong> : Qui fait quoi, quand</li>
+                            <li><strong>Prochaines étapes</strong> : Ce qui vient ensuite</li>
+                            <li><strong>Questions ouvertes</strong> : Sujets à suivre</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Extraction d'action items</h2>
+                    <div class="objective-box">
+                        <h4>Pour chaque action item :</h4>
+                        <ul>
+                            <li><strong>Action</strong> : Formulation claire et actionnable</li>
+                            <li><strong>Responsable</strong> : Nom ou équipe</li>
+                            <li><strong>Échéance</strong> : Date limite</li>
+                            <li><strong>Priorité</strong> : Haute/Moyenne/Basse</li>
+                            <li><strong>Dépendances</strong> : Liens avec autres actions</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Documentation assistée</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>Génération automatique</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Docs techniques à partir de code</li>
+                                <li>Guides utilisateurs</li>
+                                <li>Procédures métier</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Maintenance intelligente</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Détection de contenu obsolète</li>
+                                <li>Mises à jour automatiques</li>
+                                <li>Vérification de complétude</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Étude de cas</h2>
+                    <div class="objective-box">
+                        <h4>Scale-up tech - Transformation des réunions</h4>
+                        <p><strong>Problème :</strong> 15h/semaine en réunions, 5h sur comptes-rendus</p>
+                        <p><strong>Solution :</strong> Otter.ai + ChatGPT + Notion AI</p>
+                        <p><strong>Résultats globaux :</strong></p>
+                        <ul>
+                            <li>PO/PM : 6h/semaine libérées</li>
+                            <li>Traçabilité décisions : +80%</li>
+                            <li>Comptes-rendus : -70% temps passé</li>
+                            <li>ROI : 10x en 6 mois</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎓 Exercice Module 5</h2>
+                    <div class="exercise-box">
+                        <h4>À faire maintenant :</h4>
+                        <ol>
+                            <li>Transcrivez et synthétisez une réunion</li>
+                            <li>Extrayez les action items avec responsables</li>
+                            <li>Générez une documentation pour une feature</li>
+                            <li>Créez un workflow d'automatisation de réunion</li>
+                        </ol>
+                    </div>
+                </section>
+            </section>
+
+            <!-- ============================================ -->
+            <!-- CONCLUSION -->
+            <!-- ============================================ -->
+            <section>
+                <section class="day-header">
+                    <h1>🏁 Conclusion</h1>
+                    <h2>Synthèse et Prochaines Étapes</h2>
+                </section>
+
+                <section>
+                    <h2>📚 Récapitulatif des modules</h2>
+                    <div class="tools-grid" style="grid-template-columns: 1fr;">
+                        <div class="tool-card">
+                            <h4>👩‍🎓 Module 1 - Acculturation</h4>
+                            <p>Comprendre l'IA et identifier les outils pertinents pour PO/PM</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔍 Module 2 - Qualité, coûts, délais</h4>
+                            <p>Optimiser user stories, estimations et gestion de risques avec l'IA</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚡ Module 3 - Automatisation</h4>
+                            <p>Libérer 20-30% du temps via workflows automatisés intelligents</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>✅ Module 4 - Prise de décisions</h4>
+                            <p>Analyser les données et utiliser des frameworks pour décider mieux</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📝 Module 5 - Réunions & Documentation</h4>
+                            <p>Réduire de 50-70% le temps passé sur comptes-rendus et documentation</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Points clés à retenir</h2>
+                    <div class="objective-box">
+                        <ol>
+                            <li><strong>L'IA est un levier puissant</strong> pour améliorer productivité et qualité</li>
+                            <li><strong>L'adoption doit être progressive</strong> et accompagnée</li>
+                            <li><strong>L'ingénierie de prompt</strong> est une compétence clé</li>
+                            <li><strong>L'automatisation libère du temps</strong> pour la valeur métier</li>
+                            <li><strong>L'humain reste essentiel</strong> dans la boucle de décision</li>
+                            <li><strong>La vérification est cruciale</strong> : toujours valider les résultats IA</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🚀 Prochaines étapes</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>1. Mise en pratique immédiate</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Identifier 3 cas d'usage prioritaires</li>
+                                <li>Tester sur projets réels</li>
+                                <li>Mesurer l'impact</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Adoption progressive</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Commencer par un outil/processus</li>
+                                <li>Étendre progressivement</li>
+                                <li>Partager les bonnes pratiques</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. Formation continue</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Suivre l'évolution des outils</li>
+                                <li>Participer à des communautés</li>
+                                <li>Continuer à apprendre</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>4. Partage et collaboration</h4>
+                            <ul style="font-size: 0.85em;">
+                                <li>Partager retours d'expérience</li>
+                                <li>Créer bibliothèque de prompts</li>
+                                <li>Former les équipes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💬 Temps de débrief</h2>
+                    <div class="exercise-box">
+                        <h4>Échangeons !</h4>
+                        <ul>
+                            <li>Qu'avez-vous appris de plus marquant ?</li>
+                            <li>Quel module vous sera le plus utile ?</li>
+                            <li>Quelles actions allez-vous mettre en place dès demain ?</li>
+                            <li>Des questions ou points à clarifier ?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📋 Évaluation de la formation</h2>
+                    <div style="text-align: center; margin: 2em 0;">
+                        <p style="font-size: 1.2em; margin-bottom: 1.5em;">
+                            <strong>Merci de prendre quelques minutes pour évaluer cette formation</strong>
+                        </p>
+
+                        <div class="qr-code" id="qrcode">
+                            <!-- QR Code will be generated here -->
+                        </div>
+
+                        <p style="margin-top: 1.5em; font-size: 1em;">
+                            Ou accédez directement au questionnaire :<br>
+                            <a href="https://forms.cloud.microsoft.com/e/1ZCtTM3FdU" target="_blank" style="color: var(--astek-green); font-weight: 600;">
+                                https://forms.cloud.microsoft.com/e/1ZCtTM3FdU
+                            </a>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="title-slide">
+                    <h1 style="font-size: 2.5em;">Merci ! 🚀</h1>
+                    <h2 style="font-size: 1.5em;">Continuez à explorer l'IA</h2>
+                    <p style="text-align: center; margin-top: 2em; font-size: 1.1em;">
+                        <strong>Philippe Pary</strong><br>
+                        philippe.pary@astek.net
+                    </p>
+                    <p style="text-align: center; margin-top: 2em; font-style: italic;">
+                        Formation développée par Astek<br>
+                        Mise à jour régulière pour refléter l'évolution des outils et pratiques IA
+                    </p>
+                </section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            controlsTutorial: true,
+            controlsLayout: 'bottom-right',
+            controlsBackArrows: 'faded',
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            rtl: false,
+            navigationMode: 'default',
+            shuffle: false,
+            fragments: true,
+            fragmentInURL: false,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+
+        // Generate QR Code when slide is visible
+        Reveal.on('slidechanged', (event) => {
+            if (event.currentSlide.querySelector('#qrcode')) {
+                const qrcodeEl = document.getElementById('qrcode');
+                if (qrcodeEl && qrcodeEl.children.length === 0) {
+                    new QRCode(qrcodeEl, {
+                        text: 'https://forms.cloud.microsoft.com/e/1ZCtTM3FdU',
+                        width: 256,
+                        height: 256,
+                        colorDark: '#000000',
+                        colorLight: '#ffffff',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+                }
+            }
+        });
+
+        // Check if QR code slide is initially visible
+        Reveal.on('ready', () => {
+            const qrcodeEl = document.getElementById('qrcode');
+            if (qrcodeEl && qrcodeEl.offsetParent !== null && qrcodeEl.children.length === 0) {
+                new QRCode(qrcodeEl, {
+                    text: 'https://forms.cloud.microsoft.com/e/1ZCtTM3FdU',
+                    width: 256,
+                    height: 256,
+                    colorDark: '#000000',
+                    colorLight: '#ffffff',
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+        });
+    </script>
+</body>
+</html>
