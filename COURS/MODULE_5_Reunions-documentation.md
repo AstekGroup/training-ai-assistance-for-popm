@@ -67,11 +67,6 @@
 - Intégrations nombreuses
 - Analytics de réunions
 
-**[Zoom IQ](https://zoom.us/ai) / [Microsoft Teams](https://www.microsoft.com/microsoft-teams) avec IA** :
-
-- Transcription intégrée
-- Résumés automatiques
-- Disponible dans les solutions natives
 
 **[Microsoft Teams Facilitator](https://www.microsoft.com/microsoft-teams)** :
 
