@@ -689,66 +689,195 @@ Longueur : [courte/moyenne/longue]
 
 ## 8. Exercices pratiques
 
-### Exercice 1 : Analyse de données et génération d'insights
+> [!NOTE]
+> Ces exercices sont conçus pour une session d'1 heure (3 × 20 minutes). Chaque exercice illustre un **framework de décision** différent assisté par IA : RICE, SWOT, et analyse de scénarios.
 
-**Objectif** : Transformer des données brutes en insights actionnables avec IA
+### Exercice 1 : Priorisation RICE automatisée
 
-**Instructions** :
+**Objectif** : Utiliser l'IA pour calculer les scores RICE et prioriser des features
 
-1. Rassemblez des données réelles ou fictives d'un projet/produit
-2. Utilisez l'IA pour analyser ces données
-3. Identifiez 5 insights actionnables
-4. Pour chaque insight, proposez une action concrète
-5. Priorisez les actions par impact
+**Durée** : 20 minutes
 
-**Livrable** : Document avec insights + plan d'action
+**Scénario** : Vous êtes PO d'une plateforme SaaS de gestion de projet. Vous avez 6 features candidates pour le prochain trimestre, mais vous ne pouvez en développer que 3.
 
-### Exercice 2 : Matrice de priorisation assistée par IA
+**Framework RICE** : `Score = (Reach × Impact × Confidence) / Effort`
 
-**Objectif** : Prioriser des features/initiatives avec assistance IA
+**Étape 1** : Analyser les 6 features candidates (3 min)
 
-**Instructions** :
+Features :
+- A : Intégration Slack
+- B : Mode hors-ligne
+- C : Templates de projets
+- D : Dashboard exécutif
+- E : Intégration Jira bidirectionnelle
+- F : Gestion de ressources
 
-1. Listez 8-10 features/initiatives à prioriser
-2. Utilisez l'IA pour estimer Impact et Effort (ou RICE)
-3. Créez la matrice de priorisation
-4. Validez et ajustez les estimations
-5. Justifiez le classement final
+Contexte : 5000 utilisateurs actifs, 4 développeurs, clients PME tech
 
-**Livrable** : Matrice de priorisation + justification
+**Étape 2** : Utiliser l'IA pour les scores RICE (12 min)
 
-### Exercice 3 : Analyse de scénarios pour une décision stratégique
+Prompt :
+```
+Tu es expert en priorisation RICE.
+Contexte : Plateforme SaaS, 5000 MAU, 4 devs
 
-**Objectif** : Modéliser différents scénarios pour une décision importante
+Pour ces 6 features : [liste]
 
-**Instructions** :
+Estime pour chacune :
+- Reach (users/trimestre)
+- Impact (0.25 à 3)
+- Confidence (0.5 à 1.0)
+- Effort (personnes-mois)
+- Score RICE
 
-1. Choisissez une décision stratégique (réelle ou fictive)
-2. Utilisez l'IA pour générer 3 scénarios (optimiste, réaliste, pessimiste)
-3. Pour chaque scénario, détaillez :
-   - Hypothèses
-   - Conséquences
-   - Probabilités
-   - Signaux à surveiller
-4. Recommandez un scénario avec justification
-5. Identifiez les risques principaux
+Fournis tableau avec classement final.
+Recommande top 3 features.
+```
 
-**Livrable** : Analyse de scénarios complète + recommandation
+**Étape 3** : Analyser et valider (3 min)
 
-### Exercice 4 : Communication de décision assistée par IA
+| Critère | Sans IA | Avec IA | Gain |
+|---------|---------|---------|------|
+| Temps | 2-3h débat | 15 min | **90%** |
+| Objectivité | Subjective | Data-driven | ✅ |
+| Consensus | 6/10 | 9/10 | +50% |
 
-**Objectif** : Créer une communication claire pour une décision complexe
+**Étape 4** : Mesurer le gain (2 min)
 
-**Instructions** :
+ROI : 90% de temps économisé + consensus équipe amélioré
 
-1. Choisissez une décision à communiquer
-2. Définissez l'audience (direction/équipe/stakeholders)
-3. Utilisez l'IA pour générer la communication
-4. Adaptez et personnalisez le contenu
-5. Créez une présentation ou document final
-6. Présentez à un pair (simulation)
+---
 
-**Livrable** : Communication finalisée + feedback
+### Exercice 2 : Analyse SWOT enrichie par IA
+
+**Objectif** : Analyser une décision stratégique de manière structurée
+
+**Durée** : 20 minutes
+
+**Scénario** : Décision stratégique : Faut-il lancer une application mobile native (iOS + Android) ?
+
+**Contexte** :
+- App web de gestion de tâches, 8000 MAU
+- Budget : 150k€, Délai : 6-9 mois
+- Nécessite 2 devs mobiles (recrutement)
+- 30% des users demandent une app mobile
+
+**Framework SWOT** : Analyse 4 dimensions (Forces, Faiblesses, Opportunités, Menaces)
+
+**Étape 1** : Générer l'analyse SWOT (13 min)
+
+Prompt :
+```
+Tu es expert stratégie produit.
+
+Décision : Lancer app mobile native pour app web gestion tâches
+Contexte : [données ci-dessus]
+
+Génère analyse SWOT complète :
+Pour chaque quadrant (S, W, O, T) :
+- 5-7 éléments
+- Justification
+- Impact (Faible/Moyen/Élevé)
+
+Fournis :
+- Recommandation (GO/NO-GO/GO avec conditions)
+- Actions prioritaires
+- Plan mitigation
+- Alternatives (PWA, React Native, etc.)
+```
+
+**Étape 2** : Analyser et décider (4 min)
+
+Résultat attendu :
+- SWOT 4 quadrants complet
+- Recommandation : "GO avec conditions - Privilégier React Native"
+- Alternatives : React Native / PWA / No-code
+
+**Étape 3** : Mesurer le gain (3 min)
+
+| Critère | Sans SWOT | Avec SWOT IA | Gain |
+|---------|-----------|--------------|------|
+| Couverture | 40% | 95% | +137% |
+| Temps | 1-2 jours | 15 min | **95%** |
+| Alternatives | 1 | 3+ | +200% |
+
+---
+
+### Exercice 3 : Modélisation de scénarios "What-If"
+
+**Objectif** : Anticiper les conséquences en modélisant plusieurs futurs possibles
+
+**Durée** : 20 minutes
+
+**Scénario** : Choisir entre 2 stratégies de growth pour les 12 prochains mois :
+
+**Stratégie A : Focus ACQUISITION**
+- Budget marketing : 200k€
+- Objectif : +300% nouveaux clients
+- Budget R&D : -30%
+
+**Stratégie B : Focus RÉTENTION**
+- Budget produit : 150k€
+- Objectif : Réduire churn de 8% à 3%
+- Budget marketing : 50k€
+
+**Données** : 500 clients, 100k€ MRR, Churn 8%, CAC 800€, LTV 2400€
+
+**Étape 1** : Modéliser 3 scénarios par stratégie (15 min)
+
+Prompt :
+```
+Pour CHAQUE stratégie, modélise 3 scénarios (Optimiste/Réaliste/Pessimiste) :
+
+Calcule sur 12 mois :
+- Clients finaux
+- MRR final
+- Croissance MRR (%)
+- Churn moyen
+- Rentabilité
+
+Calcule valeur attendue :
+(0.2 × Optimiste + 0.6 × Réaliste + 0.2 × Pessimiste)
+
+Recommandation + signaux à surveiller
+```
+
+**Étape 2** : Comparer les stratégies (3 min)
+
+| Critère | Stratégie A | Stratégie B | Gagnant |
+|---------|-------------|-------------|---------|
+| Valeur attendue | 198k€ MRR | 119k€ MRR | 🏆 A |
+| Risque échec | Élevé | Faible | B |
+| Scalabilité | Forte | Limitée | A |
+
+Recommandation : Stratégie A si risque acceptable + plan de mitigation
+
+**Étape 3** : Mesurer le gain (2 min)
+
+| Critère | Sans scénarios | Avec scénarios | Gain |
+|---------|----------------|----------------|------|
+| Risques identifiés | "On verra" | 3 scénarios chiffrés | 100% |
+| Signaux d'alerte | Aucun | 4 métriques claires | 100% |
+| Plan B | Non prévu | Pivot documenté | 100% |
+
+---
+
+### Synthèse : Les 3 frameworks maîtrisés
+
+| Framework | Quand l'utiliser | Temps gagné | ROI |
+|-----------|------------------|-------------|-----|
+| **RICE** | Priorisation features | 90% (3h → 15min) | Immédiat |
+| **SWOT** | Décisions stratégiques | 95% (2j → 15min) | Élevé |
+| **Scénarios** | Anticiper conséquences | 100% (impossible manuellement) | Critique |
+
+**ROI total** : **~50 heures/an économisées** sur décisions stratégiques
+
+### Challenge pour la semaine
+
+Appliquez AU MOINS 1 framework sur une vraie décision :
+- [ ] RICE : Prioriser 5-10 items du backlog
+- [ ] SWOT : Analyser une décision stratégique en cours
+- [ ] Scénarios : Modéliser 2 options avec 3 scénarios chacune
 
 ---
 
