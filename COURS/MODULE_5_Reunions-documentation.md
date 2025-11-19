@@ -609,70 +609,200 @@ Longueur : 1-2 pages maximum
 
 ## 7. Exercices pratiques
 
-### Exercice 1 : Transcription et synthèse de réunion
+> [!NOTE]
+> Ces exercices sont conçus pour une session d'1 heure. Chaque exercice illustre un **workflow complet** d'optimisation des réunions et de la documentation avec l'IA.
 
-**Objectif** : Utiliser l'IA pour transcrire et synthétiser une réunion
+### Prérequis techniques
 
-**Instructions** :
+Avant la session, demandez aux apprenants de créer :
+- ✅ Compte Microsoft Teams (professionnel ou essai gratuit)
+- ✅ Compte Gladia.io gratuit : https://gladia.io
+- ✅ Compte Notion gratuit : https://notion.so
 
-1. Enregistrez une réunion (ou utilisez une transcription existante)
-2. Utilisez [Otter.ai](https://otter.ai) ou un outil similaire pour transcription
-3. Utilisez [ChatGPT](https://chat.openai.com)/[Claude](https://claude.ai) pour créer une synthèse structurée
-4. Extrayez les action items
-5. Créez un compte-rendu final
-6. Comparez avec votre méthode habituelle
+### Exercice 1 : MS Teams - Transcription et exploitation avec Loop
 
-**Livrable** : Compte-rendu généré avec IA + analyse comparative
+**Objectif** : Enregistrer une réunion avec MS Teams et exploiter la transcription pour générer des action items collaboratifs
 
-### Exercice 2 : Génération de documentation
+**Durée** : 20 minutes
 
-**Objectif** : Créer une documentation complète avec assistance IA
+**Le problème** : Après chaque réunion, 30-45 min passées à rédiger le compte-rendu, identifier les action items et envoyer à l'équipe.
 
-**Instructions** :
+**Workflow automatisé** :
 
-1. Choisissez une feature/projet à documenter
-2. Rassemblez les informations disponibles (spécifications, code, réunions)
-3. Utilisez l'IA pour générer une documentation structurée
-4. Affinez et complétez le contenu
-5. Vérifiez la complétude avec IA
-6. Structurez et organisez la documentation
+**Démo live (5 min)**
+- Organiser une réunion Teams test
+- Activer enregistrement + transcription en direct
+- Simuler une mini-réunion (2-3 min)
+- Montrer où retrouver la transcription
 
-**Livrable** : Documentation complète + processus documenté
+**Étape 1** : Télécharger la transcription (2 min)
+- Accéder au chat de réunion → Onglet "Transcription"
+- Télécharger au format .vtt ou .docx
 
-### Exercice 3 : Automatisation de workflow réunion
+**Étape 2** : Extraire les action items avec ChatGPT (8 min)
 
-**Objectif** : Concevoir un workflow automatisé pour les réunions
+Prompt :
+```
+Analyse cette transcription MS Teams et extrais les action items.
 
-**Instructions** :
+Pour CHAQUE action :
+- 🎯 ACTION : Description claire
+- 👤 RESPONSABLE : Personne assignée
+- 📅 ÉCHÉANCE : Date/délai mentionné
+- ⚡ PRIORITÉ : Haute/Moyenne/Basse
+- 📌 CONTEXTE : Pourquoi (1 phrase)
 
-1. Choisissez un type de réunion récurrente (daily, sprint planning, etc.)
-2. Concevez le workflow automatisé :
-   - Transcription
-   - Synthèse
-   - Extraction action items
-   - Distribution
-3. Identifiez les outils nécessaires
-4. Documentez le workflow
-5. Estimez le gain de temps
+Format : Tableau Markdown
+```
 
-**Livrable** : Workflow documenté + estimation ROI
+**Étape 3** : Créer un composant Microsoft Loop (5 min)
+- Ouvrir Loop (loop.microsoft.com)
+- Créer "Liste de tâches" avec action items
+- Assigner responsables (@mention)
+- Partager dans chat Teams → suivi collaboratif temps réel
 
-### Exercice 4 : Amélioration de documentation existante
+**ROI** :
 
-**Objectif** : Améliorer une documentation existante avec IA
+| Critère | Manuel | Avec IA | Gain |
+|---------|--------|---------|------|
+| Temps | 30-45 min | 5 min | **89%** |
+| Risque oubli | Élevé | Nul | 100% |
+| Collaboration | Email statique | Loop dynamique | 100% |
 
-**Instructions** :
+---
 
-1. Sélectionnez une documentation existante (votre projet ou exemple)
-2. Utilisez l'IA pour analyser et identifier :
-   - Sections manquantes
-   - Informations incomplètes
-   - Améliorations de clarté
-   - Structuration optimale
-3. Utilisez l'IA pour améliorer la documentation
-4. Comparez avant/après
+### Exercice 2 : Gladia.io - De la vidéo à la communication multi-canal
 
-**Livrable** : Documentation améliorée + rapport d'améliorations
+**Objectif** : Transcrire une vidéo, générer des sous-titres et créer du contenu pour communication externe
+
+**Durée** : 25 minutes
+
+**Le problème** : Vidéo de démo/conference enregistrée → besoin de transcrire, sous-titrer et promouvoir (3-4h de travail manuel).
+
+**Workflow automatisé** :
+
+**Étape 1** : Upload vidéo sur Gladia.io (5 min)
+- Créer compte Gladia (1h gratuit/mois)
+- Upload vidéo (MP4, MOV, etc.)
+- Activer timestamps ✅
+- Lancer transcription (attendre 2-5 min)
+
+**Étape 2** : Générer sous-titres SRT (5 min)
+
+Prompt :
+```
+Transforme cette transcription Gladia en fichier SRT :
+- Max 2 lignes par sous-titre
+- Max 42 caractères/ligne
+- Format: HH:MM:SS,MS --> HH:MM:SS,MS
+```
+
+**Étape 3** : Post LinkedIn (7 min)
+
+Prompt :
+```
+Rédige un POST LINKEDIN (150-200 mots) :
+1. Accroche (question/stat)
+2. 3 insights clés de la vidéo
+3. Call to action
+4. 3-5 hashtags
+
+Ton : Professionnel et engageant
+```
+
+**Étape 4** : Post Viva Engage (3 min)
+
+Prompt :
+```
+Post Viva Engage interne (max 100 mots) :
+1. Annonce la vidéo
+2. 3-4 bullets (ce que ça change)
+3. Appel feedback
+```
+
+**Étape 5** : Article blog (5 min)
+
+Prompt :
+```
+Article blog 800-1000 mots :
+- Introduction
+- 3 sections (points clés)
+- Citations marquantes
+- Conclusion + CTA
+
+Format : Markdown
+```
+
+**ROI** :
+
+| Tâche | Manuel | Avec IA | Gain |
+|-------|--------|---------|------|
+| Transcription | 2h | 3 min | **98%** |
+| Sous-titres | 1h | 5 min | **92%** |
+| 2 posts sociaux | 50 min | 5 min | **90%** |
+| Article blog | 2h | 5 min | **96%** |
+| **TOTAL** | **5h 50min** | **18 min** | **95%** |
+
+---
+
+### Exercice 3 : Knowledge base intelligente avec Notion AI
+
+**Objectif** : Créer une base de connaissances structurée avec recherche sémantique
+
+**Durée** : 15 minutes
+
+**Le problème** : Documentation dispersée (Docs, emails, Confluence, Jira) → 20-30 min/jour de recherche d'info.
+
+**Workflow structuré** :
+
+**Étape 1** : Créer base Notion (3 min)
+- Créer workspace "Documentation Projet"
+- 4 pages : Spécifications, Décisions (ADR), FAQ, Changelog
+
+**Étape 2** : Utiliser Notion AI pour structurer (5 min)
+- Générer index automatique (Ask AI)
+- Créer liens sémantiques entre pages
+- Générer FAQ consolidée depuis toutes les pages
+
+**Étape 3** : Tester recherche sémantique (5 min)
+
+**Test 1 - Mots-clés classiques** :
+- Rechercher "remboursement" → 1 page
+
+**Test 2 - Question sémantique** :
+- Ask AI : "Comment un client récupère son argent ?"
+- Résultats : 3 pages pertinentes (FAQ, ADR, Changelog)
+
+**Test 3 - Question complexe** :
+- "Contraintes de sécurité cartes bancaires ?"
+- Résultats : 2 pages (Specs PCI-DSS, ADR Stripe)
+
+**Étape 4** : Mesurer la différence (2 min)
+
+| Critère | Mots-clés | Sémantique AI | Gain |
+|---------|-----------|---------------|------|
+| Pertinence | 60% | 95% | +58% |
+| Temps recherche | 20-30 min/jour | 2-3 min/jour | **90%** |
+| Couverture résultats | 1 page | 3 pages liées | +200% |
+
+---
+
+### Synthèse : Les 3 workflows maîtrisés
+
+| Workflow | Outil | Use case | ROI |
+|----------|-------|----------|-----|
+| **Réunion → Actions** | Teams + Loop | Comptes-rendus automatisés | 89% |
+| **Vidéo → Communication** | Gladia + ChatGPT | Contenu multi-canal | 95% |
+| **Doc → Recherche** | Notion AI | Knowledge base intelligente | 90% |
+
+**ROI total** : **~8h/semaine économisées** sur réunions et documentation
+
+### Challenge pour la semaine
+
+Appliquez AU MOINS 1 workflow :
+- [ ] Teams : Transcrire 1 réunion + extraire action items + Loop
+- [ ] Gladia : Transcrire 1 vidéo + générer 2+ contenus
+- [ ] Notion : Centraliser 5+ pages doc + tester recherche sémantique
 
 ---
 
