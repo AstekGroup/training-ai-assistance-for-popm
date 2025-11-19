@@ -565,88 +565,209 @@ Format : Professionnel, adapté à un comité de direction
 
 ## 8. Exercices pratiques
 
-### Exercice 1 : Génération de user stories de qualité
+> [!NOTE]
+> Ces exercices sont conçus pour une session d'1 heure (environ 20 minutes par exercice). Chaque exercice illustre **une dimension du triptyque Qualité / Coûts / Délais** de manière concrète et mesurable.
 
-**Objectif** : Générer des user stories complètes et de qualité avec l'IA
+### Exercice 1 : QUALITÉ - Transformer une spec floue en spec testable
 
-**Instructions** :
+**Objectif** : Mesurer l'impact de l'IA sur la qualité des livrables (specs, user stories)
 
-1. Choisissez une fonctionnalité de votre produit
-2. Collectez les besoins bruts (3-5 points)
-3. Utilisez [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai) pour générer :
-   - 3 user stories respectant INVEST
-   - 5 critères d'acceptation par user story
-   - Notes techniques pour l'équipe
-4. Vérifiez et affinez les résultats
-5. Comparez avec vos user stories habituelles
+**Durée** : 20 minutes
 
-**Critères d'évaluation** :
+**Le problème** : Vous recevez cette spécification floue d'un stakeholder :
 
-- Respect des critères INVEST
-- Clarté et spécificité
-- Complétude des critères d'acceptation
-- Utilisabilité directe
+```
+L'utilisateur doit pouvoir se connecter facilement à l'application.
+Si le mot de passe est incorrect, on affiche un message d'erreur.
+Il faut que ce soit sécurisé et rapide.
+```
 
-### Exercice 2 : Estimation assistée par IA
+**Étape 1 - Identifier les ambiguïtés** (5 min)
 
-**Objectif** : Estimer un projet en utilisant l'analyse de données historiques
+Prompt :
+```
+Tu es un expert QA. Analyse cette spécification et liste toutes les ambiguïtés,
+informations manquantes et risques de mauvaise interprétation :
+[spec]
 
-**Instructions** :
+Pour chaque problème identifié, pose une question précise au PO.
+```
 
-1. Rassemblez les données de 5-10 projets/stories passés avec :
-   - Description
-   - Complexité estimée initialement
-   - Temps réel passé
-   - Résultat (succès/échec)
-2. Utilisez l'IA pour analyser ces données et identifier des patterns
-3. Estimez un nouveau projet en utilisant ces patterns
-4. Comparez avec une estimation "traditionnelle"
-5. Justifiez les différences
+**Étape 2 - Générer des critères testables** (10 min)
 
-**Template** :
+Prompt :
+```
+Génère 7 critères d'acceptation en format Gherkin (Given/When/Then) couvrant :
+1. Scénario nominal (connexion réussie)
+2. Échec mot de passe invalide
+3. Compte bloqué après 3 tentatives
+4. Timeout de session
+5. Temps de réponse < 2s
+6. Accessibilité (lecteur d'écran)
+7. Chiffrement des données
+```
 
-- Projets historiques : [tableau]
-- Patterns identifiés : [liste]
-- Estimation nouveau projet : [détails]
-- Comparaison avec estimation traditionnelle : [analyse]
+**Étape 3 - Comparer avant/après** (5 min)
 
-### Exercice 3 : Analyse de risques avec IA
+Tableau comparatif :
+- Testabilité : 0 critères → 7 critères testables
+- Complétude : 30% → 100%
+- Risque défauts : Élevé → Faible (-60% défauts estimés)
 
-**Objectif** : Identifier et analyser les risques d'un projet avec assistance IA
+**Débrief** :
+- Combien d'ambiguïtés identifiées ?
+- Combien de bugs évités grâce à la spec améliorée ?
 
-**Instructions** :
+---
 
-1. Décrivez un projet réel ou fictif (contexte, objectifs, contraintes)
-2. Utilisez l'IA pour identifier les risques
-3. Pour les 5 risques les plus critiques :
-   - Évaluez probabilité et impact
-   - Identifiez les signaux d'alerte
-   - Générez un plan de mitigation
-4. Créez un tableau de suivi des risques
+### Exercice 2 : COÛTS - Estimer avec précision grâce aux données historiques
 
-**Livrable** : Tableau de risques avec plans de mitigation
+**Objectif** : Comprendre comment l'IA réduit les erreurs d'estimation et les dépassements budgétaires
 
-### Exercice 4 : Business case assisté par IA
+**Durée** : 20 minutes
 
-**Objectif** : Créer un business case complet avec assistance IA
+**Le scénario** : Estimer une fonctionnalité de **paiement multi-devises**
 
-**Instructions** :
+**Données historiques** :
 
-1. Choisissez un projet nécessitant un budget
-2. Utilisez l'IA pour générer un business case complet
-3. Affinez et personnalisez le contenu
-4. Créez une présentation synthétique (5-7 slides)
-5. Présentez à un pair (simulation comité de direction)
+| Projet passé | Complexité | Temps estimé | Temps réel | Écart |
+|--------------|-----------|--------------|------------|-------|
+| Paiement CB simple | Moyenne | 3 sem | 5 sem | +67% |
+| Intégration Stripe | Moyenne | 4 sem | 4.5 sem | +12% |
+| Wallet interne | Élevée | 8 sem | 12 sem | +50% |
+| Export factures | Faible | 1 sem | 1.5 sem | +50% |
 
-**Structure attendue** :
+**Étape 1 - Estimation instinctive** (2 min)
 
-- Executive summary
-- Problème/Opportunité
-- Solution
-- ROI (3 ans)
-- Risques et mitigation
-- Plan de mise en œuvre
-- Recommandation
+Sans IA, votre estimation : _____ semaines
+
+**Étape 2 - Estimation assistée par IA** (10 min)
+
+Prompt :
+```
+Tu es un expert en estimation de projets IT.
+
+Historique de l'équipe : [tableau ci-dessus]
+
+Nouveau projet : Paiement multi-devises (15 devises, conversion temps réel,
+gestion commissions, affichage localisé)
+
+Étape par étape :
+1. Analyse les patterns d'écart dans l'historique
+2. Identifie le projet similaire
+3. Ajuste l'estimation selon les différences
+4. Fournis 3 estimations : optimiste, réaliste, pessimiste
+5. Calcule le niveau de confiance (%)
+6. Liste les risques impactant l'estimation
+```
+
+**Étape 3 - Calculer l'impact coût** (5 min)
+
+Si équipe = 3 dev à 600€/jour :
+- Estimation instinct : ___ semaines = ___€
+- Estimation IA (réaliste) : ___ semaines = ___€
+- **Écart budgétaire évité : ±___€**
+
+**Étape 4 - Mesurer les économies** (3 min)
+
+Sur 10 projets/an, économies totales = ___€
+
+**Débrief** :
+- Écart entre estimation instinct et IA ?
+- Quel pattern l'IA a identifié dans vos données ?
+- Économies projetées sur l'année ?
+
+---
+
+### Exercice 3 : DÉLAIS - Détecter les risques de retard avant qu'il soit trop tard
+
+**Objectif** : Utiliser l'IA pour anticiper les retards et prendre des actions correctives à temps
+
+**Durée** : 20 minutes
+
+**Le scénario** : Projet de 6 sprints, vous êtes au Sprint 3 (livraison prévue dans 6 semaines)
+
+**Situation actuelle** :
+
+```
+Sprint 1 : 21/25 points (84%)
+Sprint 2 : 18/25 points (72%)
+Sprint 3 : 15/25 points à J+8
+
+Backlog restant : 115 points
+Objectif : Livrer 100 points critiques dans 6 semaines
+
+Contraintes :
+- 3 stories bloquées (8 points)
+- 1 dev senior absent Sprint 5
+- 12 bugs non estimés découverts
+```
+
+**Étape 1 - Votre intuition** (2 min)
+
+Sans IA :
+- Livraison à temps ? OUI / NON
+- Probabilité : ___%
+- Plus grande inquiétude : ___
+
+**Étape 2 - Analyse prédictive IA** (12 min)
+
+Prompt :
+```
+Tu es un expert Agile.
+
+Contexte : [données ci-dessus]
+
+Mission :
+1. Calcule vélocité moyenne et tendance
+2. Projette les points réalisables dans les 3 sprints restants
+3. Identifie les 5 risques majeurs menaçant les délais
+4. Pour chaque risque : probabilité, impact délai, signal d'alerte, action corrective
+5. Fournis 3 scénarios : optimiste, réaliste, pessimiste
+```
+
+**Étape 3 - Plan d'action** (5 min)
+
+Pour les 2 risques les plus critiques :
+- Risque 1 : ___ → Action : ___ → Gain : ___ semaines
+- Risque 2 : ___ → Action : ___ → Gain : ___ semaines
+
+Décision :
+- [ ] Réduire le scope
+- [ ] Négocier un délai
+- [ ] Ajouter des ressources
+- [ ] Autre
+
+**Étape 4 - Impact détection précoce** (1 min)
+
+- Sans IA : Détection au Sprint 5 (trop tard)
+- Avec IA : Détection au Sprint 3 → **+4 semaines d'avance pour agir**
+
+**Débrief** :
+- Intuition vs analyse IA ?
+- Quel risque oublié ?
+- Quelle action corrective choisie ?
+- Semaines de retard évitées ?
+
+---
+
+### Points clés à retenir
+
+| Dimension | Solution IA | Gain mesurable |
+|-----------|-------------|----------------|
+| **📐 QUALITÉ** | Génération de critères testables | -60% défauts |
+| **💰 COÛTS** | Estimation basée sur données | ±20-30% précision |
+| **⏰ DÉLAIS** | Analyse prédictive continue | +4 sem anticipation |
+
+**💡 Les 3 dimensions sont liées** :
+```
+Meilleure QUALITÉ → Moins de COÛTS de correction → DÉLAIS respectés
+```
+
+**Challenge pour la semaine** :
+1. Identifiez 1 spec floue → Exercice 1
+2. Identifiez 1 estimation à faire → Exercice 2
+3. Identifiez 1 indicateur de risque → Exercice 3
 
 ---
 
