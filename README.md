@@ -1,7 +1,7 @@
 # Formation : Outils IA pour Product Owners et Project Managers
 
-**Version** : 1.0.0
-**Dernière mise à jour** : 2025-11-09
+**Version** : 1.0.1
+**Dernière mise à jour** : 2025-11-19
 **Développé par** : [Astek](https://www.astek.net)
 
 ---

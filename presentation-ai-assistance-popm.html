@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Formation IA Assistance pour PO/PM - Astek</title>
+    <title>Formation IA Assistance pour PO/PM - Astek (Version Enrichie)</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
@@ -12,7 +13,9 @@
     <!-- Google Fonts - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
@@ -21,8 +24,8 @@
             --astek-dark: #2d2927;
             --astek-light: #f8f9fa;
             --astek-gradient: linear-gradient(135deg, #009c49, #00b0be);
-            --shadow-astek: 0 4px 12px rgba(0,156,73,0.15);
-            --shadow-light: 0 2px 8px rgba(0,156,73,0.08);
+            --shadow-astek: 0 4px 12px rgba(0, 156, 73, 0.15);
+            --shadow-light: 0 2px 8px rgba(0, 156, 73, 0.08);
         }
 
         .reveal {
@@ -34,7 +37,10 @@
             font-size: 0.7em;
         }
 
-        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4 {
             text-align: center;
             font-family: 'Poppins', sans-serif;
             text-transform: none;
@@ -73,7 +79,8 @@
             color: var(--astek-dark);
         }
 
-        .reveal p, .reveal li {
+        .reveal p,
+        .reveal li {
             font-size: 0.9em;
             line-height: 1.4;
             color: var(--astek-dark);
@@ -118,7 +125,7 @@
             border-radius: 20px;
             text-align: center;
             margin-bottom: 1.5em;
-            box-shadow: 0 8px 32px rgba(0,156,73,0.3);
+            box-shadow: 0 8px 32px rgba(0, 156, 73, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -130,22 +137,30 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(255,255,255,0.05) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 40%, rgba(255, 255, 255, 0.05) 100%);
             pointer-events: none;
             animation: shimmer 3s ease-in-out infinite;
         }
 
         @keyframes shimmer {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
         }
 
-        .day-header h1, .day-header h2 {
+        .day-header h1,
+        .day-header h2 {
             color: white !important;
             margin: 0.3em 0;
             position: relative;
             z-index: 1;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
             background: none !important;
             -webkit-text-fill-color: white !important;
         }
@@ -228,7 +243,8 @@
             margin: 0.5em 0;
         }
 
-        .code-example ul, .code-example ol {
+        .code-example ul,
+        .code-example ol {
             color: #ffffff;
         }
 
@@ -321,18 +337,35 @@
             font-weight: 500;
         }
 
-        .qr-code {
-            text-align: center;
-            margin: 2em auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .roi-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 0.3em 0.8em;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+            margin: 0.2em;
         }
 
-        .qr-code canvas,
-        .qr-code img {
-            margin: 0 auto;
-            display: block;
+        .metric-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5em;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .metric-card h3 {
+            color: white !important;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .metric-card p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0.5em 0 0 0;
         }
 
         @media (max-width: 1200px) {
@@ -356,22 +389,18 @@
 
         <div class="slides">
 
-            <!-- ============================================ -->
             <!-- SLIDE TITRE -->
-            <!-- ============================================ -->
             <section class="title-slide">
                 <h1>Formation IA Assistance pour PO/PM</h1>
                 <h2>Optimisez votre efficacité avec l'Intelligence Artificielle</h2>
                 <p style="text-align: center; margin-top: 2em;">
                     <strong>Philippe Pary</strong><br>
                     philippe.pary@astek.net<br>
-                    <em>Formation professionnelle Astek</em>
+                    <em>Formation professionnelle Astek - Version Enrichie</em>
                 </p>
             </section>
 
-            <!-- ============================================ -->
             <!-- ACCUEIL ET INTRODUCTION -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>🎯 Bienvenue</h1>
@@ -399,7 +428,8 @@
                         <ul>
                             <li><strong>Qui êtes-vous ?</strong> (nom, fonction, expérience)</li>
                             <li><strong>Quelles sont vos attentes</strong> pour cette formation ?</li>
-                            <li><strong>Avez-vous des projets concrets</strong> sur lesquels vous souhaitez appliquer l'IA ?</li>
+                            <li><strong>Avez-vous des projets concrets</strong> sur lesquels vous souhaitez appliquer
+                                l'IA ?</li>
                             <li><strong>Quel est votre niveau actuel</strong> avec les outils IA ?</li>
                         </ul>
                     </div>
@@ -414,7 +444,7 @@
                         <div class="tool-card">
                             <h4>Module 1</h4>
                             <p><strong>Acculturation à l'IA</strong></p>
-                            <p style="font-size: 0.85em;">Concepts, outils, impact organisationnel</p>
+                            <p style="font-size: 0.85em;">Concepts, outils, prompt engineering</p>
                         </div>
                         <div class="tool-card">
                             <h4>Module 2</h4>
@@ -424,7 +454,7 @@
                         <div class="tool-card">
                             <h4>Module 3</h4>
                             <p><strong>Automatisation</strong></p>
-                            <p style="font-size: 0.85em;">Workflows, reporting, documentation</p>
+                            <p style="font-size: 0.85em;">Workflows, reporting, ROI</p>
                         </div>
                         <div class="tool-card">
                             <h4>Module 4</h4>
@@ -445,9 +475,7 @@
                 </section>
             </section>
 
-            <!-- ============================================ -->
             <!-- MODULE 1 : ACCULTURATION À L'IA -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>👩‍🎓 Module 1</h1>
@@ -516,22 +544,30 @@
                     <h2>🛠️ Panorama des outils IA</h2>
                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; margin: 1em 0;">
                         <div class="tool-card">
-                            <h4><a href="https://chat.openai.com" target="_blank" style="color: var(--astek-green); text-decoration: none;">ChatGPT</a> / <a href="https://claude.ai" target="_blank" style="color: var(--astek-green); text-decoration: none;">Claude</a></h4>
+                            <h4><a href="https://chat.openai.com" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">ChatGPT</a> / <a
+                                    href="https://claude.ai" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Claude</a></h4>
                             <p><strong>Usage :</strong> Génération de contenu</p>
                             <p style="font-size: 0.85em;">User stories, analyses, synthèses</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://www.notion.so/product/ai" target="_blank" style="color: var(--astek-green); text-decoration: none;">Notion AI</a></h4>
+                            <h4><a href="https://www.notion.so/product/ai" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Notion AI</a></h4>
                             <p><strong>Usage :</strong> Documentation</p>
                             <p style="font-size: 0.85em;">Synthèse de notes, organisation</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams" target="_blank" style="color: var(--astek-green); text-decoration: none;">MS Teams Facilitator</a> / <a href="https://fireflies.ai" target="_blank" style="color: var(--astek-green); text-decoration: none;">Fireflies</a></h4>
+                            <h4><a href="https://learn.microsoft.com/en-us/microsoftteams/facilitator-teams"
+                                    target="_blank" style="color: var(--astek-green); text-decoration: none;">MS
+                                    Teams</a> / <a href="https://fireflies.ai" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Fireflies</a></h4>
                             <p><strong>Usage :</strong> Réunions</p>
                             <p style="font-size: 0.85em;">Transcription, extraction d'actions</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://www.atlassian.com/software/jira/features/ai" target="_blank" style="color: var(--astek-green); text-decoration: none;">Jira AI</a></h4>
+                            <h4><a href="https://www.atlassian.com/software/jira/features/ai" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Jira AI</a></h4>
                             <p><strong>Usage :</strong> Gestion de projet</p>
                             <p style="font-size: 0.85em;">Estimation, détection de risques</p>
                         </div>
@@ -549,7 +585,8 @@
 
                         <h4 style="margin-top: 1.5em;">Exemple :</h4>
                         <p style="font-size: 0.9em; font-style: italic;">
-                            "Tu es un Product Owner expérimenté. Écris une user story pour une fonctionnalité de connexion utilisateur dans une application e-commerce, en suivant le format INVEST."
+                            "Tu es un Product Owner expérimenté. Écris une user story pour une fonctionnalité de
+                            connexion utilisateur dans une application e-commerce, en suivant le format INVEST."
                         </p>
                     </div>
                 </section>
@@ -569,25 +606,213 @@
                     </div>
                 </section>
 
+                <!-- EXERCICES MODULE 1 - VERSION ENRICHIE -->
                 <section>
-                    <h2>🎓 Exercice Module 1</h2>
-                    <div class="exercise-box">
-                        <h4>À faire maintenant :</h4>
-                        <ol>
-                            <li>Listez vos 5 tâches les plus chronophages</li>
-                            <li>Identifiez 3 cas d'usage IA pertinents</li>
-                            <li>Rédigez un prompt efficace pour une user story</li>
-                        </ol>
+                    <h2>🎓 Exercices pratiques - Module 1</h2>
+                    <div class="objective-box">
+                        <h4>Session pratique : 1 heure</h4>
+                        <p>3 exercices progressifs pour maîtriser l'ingénierie de prompt</p>
                     </div>
-                    <p style="text-align: center; margin-top: 1.5em; font-style: italic;">
-                        💡 Utilisez votre projet concret évoqué lors du tour de table
-                    </p>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>Exercice 1</h4>
+                            <p><strong>Méthode ACTF</strong></p>
+                            <p style="font-size: 0.85em;">Structurer un prompt efficace</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 2</h4>
+                            <p><strong>Itération</strong></p>
+                            <p style="font-size: 0.85em;">Affiner progressivement</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 3</h4>
+                            <p><strong>Few-Shot Learning</strong></p>
+                            <p style="font-size: 0.85em;">Standardiser par l'exemple</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 1 : MÉTHODE ACTF -->
+                <section>
+                    <h2>📝 Exercice 1 : Méthode ACTF</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Apprendre à structurer un prompt efficace avec la méthode ACTF</p>
+                        <p><strong>A</strong>cteur + <strong>C</strong>ontexte + <strong>T</strong>âche +
+                            <strong>F</strong>ormat
+                        </p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Scénario</h4>
+                        <p>User story pour "notification de rappel avant échéance" dans une app de gestion de tâches</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📝 Exercice 1 : Étapes</h2>
+                    <div class="code-example">
+                        <h4>Étape 1 - Prompt basique (mauvais exemple)</h4>
+                        <p>"Écris une user story pour les notifications"</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Transformez avec ACTF (10 min)</h4>
+                        <p><strong>A - Acteur</strong> : "Tu es un Product Owner senior avec 8 ans d'expérience..."</p>
+                        <p><strong>C - Contexte</strong> : Décrivez le produit, les utilisateurs cibles</p>
+                        <p><strong>T - Tâche</strong> : Que doit faire précisément l'IA ?</p>
+                        <p><strong>F - Format</strong> : INVEST ? Avec critères d'acceptation ? En Gherkin ?</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Testez (5 min)</h4>
+                        <p>Copiez votre prompt dans ChatGPT/Claude et observez la qualité</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Exercice 1 : Débrief</h2>
+                    <div class="objective-box">
+                        <h4>Points clés à retenir</h4>
+                        <ul>
+                            <li>Un bon prompt = précision maximale du contexte</li>
+                            <li>ACTF transforme un résultat vague en résultat utilisable</li>
+                            <li>Le temps investi dans le prompt se récupère x10</li>
+                        </ul>
+                    </div>
+                    <div class="exercise-box">
+                        <h4>Questions de réflexion</h4>
+                        <ul>
+                            <li>Quelle structure a donné le meilleur résultat ?</li>
+                            <li>Combien d'itérations avant satisfaction ?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 2 : ITÉRATION -->
+                <section>
+                    <h2>🔁 Exercice 2 : L'art de l'itération</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Maîtriser l'itération de prompts pour améliorer progressivement un résultat</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Problème</h4>
+                        <p>User story générée avec critères d'acceptation trop vagues et non testables</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🔁 Exercice 2 : Itérations successives</h2>
+                    <div class="code-example">
+                        <h4>Itération 1 - Préciser les critères (6 min)</h4>
+                        <p>"Réécrire les critères d'acceptation en format Gherkin (Given/When/Then) pour qu'ils soient
+                            testables par l'équipe QA."</p>
+
+                        <h4 style="margin-top: 1em;">Itération 2 - Ajouter contraintes (6 min)</h4>
+                        <p>"Ajoute 3 notes techniques concernant : canal de notification, timing de déclenchement,
+                            customisation utilisateur"</p>
+
+                        <h4 style="margin-top: 1em;">Itération 3 - Compléter métriques (6 min)</h4>
+                        <p>"Ajoute une section 'Métriques de succès' avec 3 KPIs mesurables"</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Exercice 2 : Débrief</h2>
+                    <div class="objective-box">
+                        <h4>Points clés à retenir</h4>
+                        <ul>
+                            <li>Le premier résultat n'est JAMAIS le bon</li>
+                            <li>L'itération est normale et souhaitable</li>
+                            <li>Chaque itération améliore la précision</li>
+                        </ul>
+                    </div>
+                    <div class="exercise-box">
+                        <h4>Questions</h4>
+                        <ul>
+                            <li>Combien d'itérations avez-vous faites ?</li>
+                            <li>Quand estimez-vous le résultat "production-ready" ?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 3 : FEW-SHOT LEARNING -->
+                <section>
+                    <h2>🎯 Exercice 3 : Few-Shot Learning</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Utiliser des exemples pour obtenir des résultats cohérents et conformes à vos standards</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Cas d'usage</h4>
+                        <p>Générer des Release Notes dans le format exact de votre équipe</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎯 Exercice 3 : Construisez votre prompt</h2>
+                    <div class="code-example" style="font-size: 0.65em;">
+                        <h4>Format standard (exemples à fournir)</h4>
+                        <p>📦 Version 2.3.0 - 2024-10-15</p>
+                        <p>✨ Nouvelles fonctionnalités</p>
+                        <p>• [FEAT-245] Ajout du mode sombre</p>
+                        <p>🔧 Améliorations</p>
+                        <p>• [IMP-189] Temps de chargement -40%</p>
+                        <p>🐛 Corrections</p>
+                        <p>• [FIX-312] Crash upload &gt;10MB corrigé</p>
+
+                        <h4 style="margin-top: 1em;">Prompt Few-Shot (15 min)</h4>
+                        <p>"Voici le format standard : [exemples]. En suivant EXACTEMENT ce format, génère Release Notes
+                            pour version 2.4.0..."</p>
+
+                        <h4 style="margin-top: 1em;">Testez (5 min)</h4>
+                        <p>Le format est-il respecté ? Les emojis ? La structure ?</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Exercice 3 : Débrief</h2>
+                    <div class="objective-box">
+                        <h4>Points clés à retenir</h4>
+                        <ul>
+                            <li>Fournir des exemples = cohérence garantie</li>
+                            <li>Few-Shot excellent pour standardisation</li>
+                            <li>Gain massif sur documents récurrents</li>
+                        </ul>
+                    </div>
+                    <div class="exercise-box">
+                        <h4>Application pratique</h4>
+                        <p>Quels documents de votre quotidien PO/PM pourraient bénéficier de Few-Shot Learning ?</p>
+                        <ul style="font-size: 0.85em;">
+                            <li>Comptes-rendus de réunion</li>
+                            <li>Rapports de sprint</li>
+                            <li>Spécifications techniques</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Récapitulatif Module 1</h2>
+                    <div class="objective-box">
+                        <h4>Ce que vous avez appris</h4>
+                        <ul>
+                            <li>✅ Structurer un prompt avec ACTF</li>
+                            <li>✅ Itérer pour affiner les résultats</li>
+                            <li>✅ Utiliser Few-Shot pour standardiser</li>
+                        </ul>
+                    </div>
+                    <div class="tool-card">
+                        <h4>💡 Action immédiate</h4>
+                        <p>Créez votre bibliothèque personnelle de prompts réutilisables pour vos tâches récurrentes !
+                        </p>
+                    </div>
                 </section>
             </section>
 
-            <!-- ============================================ -->
+
             <!-- MODULE 2 : QUALITÉ, COÛTS, DÉLAIS -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>🔍 Module 2</h1>
@@ -599,7 +824,7 @@
                     <div class="objective-box">
                         <ul>
                             <li>Améliorer la qualité des user stories et spécifications</li>
-                            <li>Optimiser l'estimation des coûts et délais</li>
+                            <li>Optim...iser l'estimation des coûts et délais</li>
                             <li>Détecter et prévenir les risques projet</li>
                             <li>Mesurer et améliorer la vélocité d'équipe</li>
                             <li>Construire des business cases convaincants</li>
@@ -610,132 +835,202 @@
                 <section>
                     <h2>📊 Impact mesurable de l'IA</h2>
                     <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>-30%</h4>
+                        <div class="metric-card">
+                            <h3>-30%</h3>
                             <p>Défauts de qualité</p>
-                            <p style="font-size: 0.8em; color: #666;">(<a href="https://www.automationworld.com/analytics/article/55131223/reducing-quality-defects-with-ai" target="_blank" style="color: var(--astek-teal); text-decoration: none;">BMW Case Study, 2024</a>)</p>
+                            <p style="font-size: 0.7em; margin-top: 0.8em; opacity: 0.9;">
+                                (<a href="https://www.automationworld.com/analytics/article/55131223/reducing-quality-defects-with-ai"
+                                    target="_blank" style="color: white; text-decoration: underline;">BMW Case Study,
+                                    2024</a>)
+                            </p>
                         </div>
-                        <div class="tool-card">
-                            <h4>15-25%</h4>
+                        <div class="metric-card">
+                            <h3>15-25%</h3>
                             <p>Réduction des coûts projet</p>
-                            <p style="font-size: 0.8em; color: #666;">(<a href="https://www.mdpi.com/2673-3951/6/2/35" target="_blank" style="color: var(--astek-teal); text-decoration: none;">MDPI Review, 2024</a>)</p>
+                            <p style="font-size: 0.7em; margin-top: 0.8em; opacity: 0.9;">
+                                (<a href="https://www.mdpi.com/2673-3951/6/2/35" target="_blank"
+                                    style="color: white; text-decoration: underline;">MDPI Review, 2024</a>)
+                            </p>
                         </div>
-                        <div class="tool-card">
-                            <h4>3.5x ROI</h4>
+                        <div class="metric-card">
+                            <h3>3.5x ROI</h3>
                             <p>Retour sur investissement moyen</p>
-                            <p style="font-size: 0.8em; color: #666;">(<a href="https://www.coherentsolutions.com/insights/ai-development-cost-estimation-pricing-structure-roi" target="_blank" style="color: var(--astek-teal); text-decoration: none;">Microsoft Study, 2024</a>)</p>
+                            <p style="font-size: 0.7em; margin-top: 0.8em; opacity: 0.9;">
+                                (<a href="https://www.coherentsolutions.com/insights/ai-development-cost-estimation-pricing-structure-roi"
+                                    target="_blank" style="color: white; text-decoration: underline;">Microsoft Study,
+                                    2024</a>)
+                            </p>
                         </div>
                     </div>
                 </section>
 
+                <!-- EXERCICES MODULE 2 - VERSION ENRICHIE -->
                 <section>
-                    <h2>✨ Améliorer la qualité des user stories</h2>
-                    <div class="code-example">
-                        <h4>Processus assisté par IA :</h4>
-                        <ol>
-                            <li>Collecte du besoin métier brut</li>
-                            <li>Génération initiale avec IA</li>
-                            <li>Vérification critères INVEST automatique</li>
-                            <li>Affinement itératif</li>
-                        </ol>
-
-                        <h4 style="margin-top: 1.5em;">Critères INVEST :</h4>
-                        <ul style="font-size: 0.9em;">
-                            <li><strong>I</strong>ndependent - <strong>N</strong>egotiable - <strong>V</strong>aluable</li>
-                            <li><strong>E</strong>stimable - <strong>S</strong>mall - <strong>T</strong>estable</li>
-                        </ul>
+                    <h2>🎓 Exercices pratiques - Module 2</h2>
+                    <div class="objective-box">
+                        <h4>Session pratique : 1 heure</h4>
+                        <p>Chaque exercice illustre <strong>une dimension du triptyque</strong></p>
                     </div>
-                </section>
-
-                <section>
-                    <h2>📈 Estimation assistée par IA</h2>
-                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
                         <div class="tool-card">
-                            <h4>Analyse historique</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Vélocité passée</li>
-                                <li>Temps réel vs estimé</li>
-                                <li>Identification de patterns</li>
-                            </ul>
+                            <h4>📐 QUALITÉ</h4>
+                            <p><strong>Spec floue → Testable</strong></p>
+                            <span class="roi-badge">-600% défauts</span>
+                            <span class="roi-badge">20 min</span>
                         </div>
                         <div class="tool-card">
-                            <h4>Estimation par similarité</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Comparaison avec projets similaires</li>
-                                <li>Ajustement contexte spécifique</li>
-                                <li>Réduction des biais humains</li>
-                            </ul>
+                            <h4>💰 COÛTS</h4>
+                            <p><strong>Estimation IA</strong></p>
+                            <span class="roi-badge">±20% précision</span>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⏰ DÉLAIS</h4>
+                            <p><strong>Détection risques</strong></p>
+                            <span class="roi-badge">+4 sem anticipation</span>
+                            <span class="roi-badge">20 min</span>
                         </div>
                     </div>
                 </section>
 
+                <!-- EXERCICE 1 : QUALITÉ -->
                 <section>
-                    <h2>⚠️ Détection et prévention des risques</h2>
-                    <div class="code-example">
-                        <h4>Analyse prédictive :</h4>
-                        <ul>
-                            <li>Patterns de risques dans projets similaires</li>
-                            <li>Détection précoce de signaux faibles</li>
-                            <li>Prédiction de probabilité d'occurrence</li>
-                        </ul>
-
-                        <h4 style="margin-top: 1.5em;">Signaux à surveiller :</h4>
-                        <ul>
-                            <li>Délais dépassés • Budget dépassé</li>
-                            <li>Baisse de vélocité • Augmentation des bugs</li>
-                            <li>Changements fréquents de scope</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>💼 Business cases assistés par IA</h2>
-                    <div class="objective-box">
-                        <h4>Éléments essentiels :</h4>
-                        <ol>
-                            <li>Problème à résoudre</li>
-                            <li>Solution proposée</li>
-                            <li>Analyse coût-bénéfice (ROI sur 3 ans)</li>
-                            <li>Risques et mitigation</li>
-                            <li>Plan de mise en œuvre</li>
-                            <li>Critères de succès et KPIs</li>
-                        </ol>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>📚 Étude de cas</h2>
-                    <div class="objective-box">
-                        <h4>E-commerce - Refonte plateforme de paiement</h4>
-                        <p><strong>Défi :</strong> Estimation initiale 6 mois, budget 500k€</p>
-                        <p><strong>Solution IA :</strong> Analyse de 15 projets similaires</p>
-                        <p><strong>Résultats :</strong></p>
-                        <ul>
-                            <li>Estimation révisée : 7 mois, 550k€ (plus réaliste)</li>
-                            <li>Défauts spécifications : -40%</li>
-                            <li>Livraison : conforme à l'estimation révisée</li>
-                            <li>Détection précoce → évité 2 mois de retard</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>🎓 Exercice Module 2</h2>
+                    <h2>📐 Exercice 1 : QUALITÉ - Spec testable</h2>
                     <div class="exercise-box">
-                        <h4>À faire maintenant :</h4>
-                        <ol>
-                            <li>Générez une user story complète avec vérification INVEST</li>
-                            <li>Estimez un projet avec analyse de données historiques</li>
-                            <li>Identifiez les 5 risques majeurs d'un projet</li>
-                            <li>Créez un business case avec ROI</li>
-                        </ol>
+                        <h4>🎯 Objectif</h4>
+                        <p>Mesurer l'impact de l'IA sur la qualité des livrables</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Le problème - Spec floue reçue</h4>
+                        <p>"L'utilisateur doit pouvoir se connecter facilement.</p>
+                        <p>Si le mot de passe est incorrect, on affiche un message d'erreur.</p>
+                        <p>Il faut que ce soit sécurisé et rapide."</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📐 Exercice 1 : Étapes</h2>
+                    <div class="code-example">
+                        <h4>Étape 1 - Identifier les ambiguïtés (5 min)</h4>
+                        <p>Prompt : "Tu es un expert QA. Liste toutes les ambiguïtés de cette spec..."</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Générer critères testables (10 min)</h4>
+                        <p>Prompt : "Génère 7 critères d'acceptation en format Gherkin couvrant :</p>
+                        <ul style="font-size: 0.9em;">
+                            <li>Scénario nominal (connexion réussie)</li>
+                            <li>Échec mot de passe invalide</li>
+                            <li>Compte bloqué après 3 tentatives</li>
+                            <li>Timeout + performance + accessibilité + chiffrement</li>
+                        </ul>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Comparer avant/après (5 min)</h4>
+                        <p><strong>Métrique :</strong> 0 critères → 7 critères testables | -60% défauts estimés</p>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 2 : COÛTS -->
+                <section>
+                    <h2>💰 Exercice 2 : COÛTS - Estimation précise</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Réduire les erreurs d'estimation et dépassements budgétaires</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Scénario</h4>
+                        <p>Estimer "paiement multi-devises" avec données historiques</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💰 Exercice 2 : Étapes</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Étape 1 - Estimation instinctive (2 min)</h4>
+                        <p>Sans IA, combien de semaines ? ___</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Estimation assistée IA (10 min)</h4>
+                        <p>Prompt : "Tu es expert estimation IT. Historique : [tableau projets passés]</p>
+                        <p>Analyse patterns d'écart → Projet similaire → Ajuste estimation →</p>
+                        <p>Fournis 3 estimations : optimiste, réaliste, pessimiste + confiance %"</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Impact coût (5 min)</h4>
+                        <p>Si équipe = 3 dev à 600€/jour :</p>
+                        <p>Estimation instinct : ___ sem = ___€</p>
+                        <p>Estimation IA réaliste : ___ sem = ___€</p>
+                        <p><strong>Écart budgétaire évité = ±___€</strong></p>
+
+                        <h4 style="margin-top: 1em;">Étape 4 - ROI annuel (3 min)</h4>
+                        <p>Sur 10 projets/an, économies totales = ___€</p>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 3 : DÉLAIS -->
+                <section>
+                    <h2>⏰ Exercice 3 : DÉLAIS - Détection précoce</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Anticiper les retards et prendre des actions correctives à temps</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Scénario</h4>
+                        <p>Projet 6 sprints, vous êtes au Sprint 3 (livraison dans 6 semaines)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>⏰ Exercice 3 : Analyse prédictive</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Situation actuelle</h4>
+                        <p>Sprint 1 : 21/25 points (84%) | Sprint 2 : 18/25 (72%) | Sprint 3 : 15/25 à J+8</p>
+                        <p>Backlog restant : 115 points | Objectif : 100 points critiques dans 6 sem</p>
+                        <p>Contraintes : 3 stories bloquées (8 pts) + 1 dev absent Sprint 5 + 12 bugs non estimés</p>
+
+                        <h4 style="margin-top: 1em;">Étape 1 - Votre intuition (2 min)</h4>
+                        <p>Livraison à temps ? OUI / NON | Probabilité : ___% | Inquiétude : ___</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Analyse IA (12 min)</h4>
+                        <p>Prompt : "Expert Agile. Calcule vélocité + tendance →</p>
+                        <p>Projette points réalisables → 5 risques majeurs →</p>
+                        <p>Pour chaque : probabilité, impact, action corrective → 3 scénarios"</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Plan d'action (5 min)</h4>
+                        <p>2 risques critiques : ___ → Action : ___ → Gain : ___ sem</p>
+
+                        <h4 style="margin-top: 1em;">Impact détection précoce</h4>
+                        <p>Sans IA : Détection Sprint 5 (trop tard) | Avec IA : Sprint 3 → <strong>+4 sem
+                                d'avance</strong></p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Récapitulatif Module 2</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>📐 QUALITÉ</h4>
+                            <p>Génération critères testables</p>
+                            <span class="roi-badge">-60% défauts</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💰 COÛTS</h4>
+                            <p>Estimation basée données</p>
+                            <span class="roi-badge">±20% précision</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⏰ DÉLAIS</h4>
+                            <p>Analyse prédictive continue</p>
+                            <span class="roi-badge">+4 sem anticipation</span>
+                        </div>
+                    </div>
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>💡 Les 3 dimensions sont liées</h4>
+                        <p>Meilleure QUALITÉ → Moins de COÛTS de correction → DÉLAIS respectés</p>
                     </div>
                 </section>
             </section>
 
-            <!-- ============================================ -->
             <!-- MODULE 3 : AUTOMATISATION -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>⚡ Module 3</h1>
@@ -757,7 +1052,7 @@
 
                 <section>
                     <h2>🚀 Pourquoi automatiser ?</h2>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; margin: 1em 0;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
                         <div class="tool-card">
                             <h4>⏱️ Gain de temps</h4>
                             <p>20-30% du temps libéré sur tâches répétitives</p>
@@ -779,91 +1074,163 @@
 
                 <section>
                     <h2>🛠️ Outils d'automatisation</h2>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; margin: 1em 0;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
                         <div class="tool-card">
-                            <h4><a href="https://zapier.com" target="_blank" style="color: var(--astek-green); text-decoration: none;">Zapier</a></h4>
+                            <h4><a href="https://zapier.com" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Zapier</a></h4>
                             <p><strong>Points forts :</strong> 5000+ intégrations, facile</p>
                             <p style="font-size: 0.85em;">Idéal pour workflows simples</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://www.make.com" target="_blank" style="color: var(--astek-green); text-decoration: none;">Make</a> (ex-Integromat)</h4>
+                            <h4><a href="https://www.make.com" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Make</a> (ex-Integromat)
+                            </h4>
                             <p><strong>Points forts :</strong> Logique complexe</p>
                             <p style="font-size: 0.85em;">Pour automatisations avancées</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://powerautomate.microsoft.com" target="_blank" style="color: var(--astek-green); text-decoration: none;">Power Automate</a></h4>
+                            <h4><a href="https://powerautomate.microsoft.com" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Power Automate</a></h4>
                             <p><strong>Points forts :</strong> Microsoft 365, RPA</p>
                             <p style="font-size: 0.85em;">Écosystème Microsoft</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://www.atlassian.com/software/jira/features/automation" target="_blank" style="color: var(--astek-green); text-decoration: none;">Jira Automation</a></h4>
+                            <h4><a href="https://www.atlassian.com/software/jira/features/automation" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Jira Automation</a></h4>
                             <p><strong>Points forts :</strong> Natif Jira</p>
                             <p style="font-size: 0.85em;">Gestion de projet intégrée</p>
                         </div>
                     </div>
                 </section>
 
+                <!-- EXERCICES MODULE 3 - VERSION ENRICHIE -->
                 <section>
-                    <h2>🔄 Patterns d'automatisation</h2>
-                    <div class="code-example">
-                        <h4>1. Collecte → Traitement → Distribution</h4>
-                        <p>Exemple : Reporting automatique hebdomadaire</p>
-
-                        <h4 style="margin-top: 1.5em;">2. Détection → Alerte → Action</h4>
-                        <p>Exemple : Gestion de risques proactive</p>
-
-                        <h4 style="margin-top: 1.5em;">3. Création → Enrichissement → Validation</h4>
-                        <p>Exemple : Génération de user stories</p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>📊 Automatisation de reporting</h2>
+                    <h2>🎓 Exercices pratiques - Module 3</h2>
                     <div class="objective-box">
-                        <h4>Workflow automatisé :</h4>
-                        <ol>
-                            <li>Collecte données (Jira, GitHub, Analytics)</li>
-                            <li>Calcul métriques (vélocité, burndown, % complétion)</li>
-                            <li>Génération rapport avec IA (texte + graphiques)</li>
-                            <li>Distribution (email, Slack, Confluence)</li>
-                        </ol>
-                        <p style="margin-top: 1em;"><strong>Gain :</strong> 3h/semaine par PM</p>
+                        <h4>Session pratique : 1 heure</h4>
+                        <p>2 niveaux d'automatisation : SIMPLE → INTERMÉDIAIRE</p>
+                    </div>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>Exercice 1 - SIMPLE</h4>
+                            <p><strong>Template Release Notes</strong></p>
+                            <span class="roi-badge">90% gain temps</span>
+                            <span class="roi-badge">22,5h/an</span>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 2 - INTERMÉDIAIRE</h4>
+                            <p><strong>Workflow Zapier</strong></p>
+                            <span class="roi-badge">100% traçabilité</span>
+                            <span class="roi-badge">40h/an</span>
+                            <span class="roi-badge">30 min</span>
+                        </div>
                     </div>
                 </section>
 
+                <!-- EXERCICE 1 : TEMPLATE SIMPLE -->
                 <section>
-                    <h2>📚 Étude de cas</h2>
-                    <div class="objective-box">
-                        <h4>Scale-up SaaS - Automatisation complète</h4>
-                        <p><strong>Contexte :</strong> 4 PO, 2 PM - 40% du temps sur tâches admin</p>
-                        <p><strong>Solution :</strong> Zapier + ChatGPT + Jira Automation</p>
-                        <p><strong>Résultats globaux :</strong></p>
-                        <ul>
-                            <li>PO : 6h/semaine gagnées (30% tâches admin)</li>
-                            <li>PM : 8h/semaine gagnées (40% reporting)</li>
-                            <li>Qualité : -50% erreurs, +35% cohérence</li>
-                            <li>ROI : 14x en 6 mois</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>🎓 Exercice Module 3</h2>
+                    <h2>📝 Exercice 1 : Template Release Notes</h2>
                     <div class="exercise-box">
-                        <h4>À faire maintenant :</h4>
-                        <ol>
-                            <li>Cartographiez un processus répétitif de votre quotidien</li>
-                            <li>Concevez un workflow automatisé (déclencheurs, actions)</li>
-                            <li>Choisissez les outils appropriés</li>
-                            <li>Estimez le gain de temps et le ROI</li>
-                        </ol>
+                        <h4>🎯 Objectif</h4>
+                        <p>Créer un prompt template réutilisable pour automatiser la génération</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Le problème</h4>
+                        <p>Chaque vendredi, rédiger Release Notes = 30 min (collecte, catégorisation, rédaction,
+                            formatage)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📝 Exercice 1 : Construire le prompt</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Données exemple</h4>
+                        <p>PROJ-245 : Ajout du mode sombre | PROJ-251 : Export PDF rapports</p>
+                        <p>PROJ-189 : Amélioration temps chargement (-40%)</p>
+                        <p>PROJ-312 : Fix crash upload fichiers >10MB | PROJ-318 : Fix affichage dates US</p>
+
+                        <h4 style="margin-top: 1em;">Étape 1 - Prompt template (10 min)</h4>
+                        <p>Tu es un Product Owner qui rédige des Release Notes.</p>
+                        <p>FORMAT : 📦 Version [VERSION] - [DATE]</p>
+                        <p>✨ Nouvelles fonctionnalités • [CODE] Description utilisateur</p>
+                        <p>🔧 Améliorations •... 🐛 Corrections •...</p>
+                        <p>RÈGLES : Trier par catégorie, langage simple, métriques si applicable</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Tester (5 min)</h4>
+                        <p>Ajuster jusqu'à satisfaction → Sauvegarder dans "Prompts_Réutilisables.md"</p>
+
+                        <h4 style="margin-top: 1em;">ROI mesuré</h4>
+                        <p>Temps : 30 min → 2-3 min = <strong>90% gain</strong></p>
+                        <p>50 semaines × 27 min = <strong>22,5 heures/an économisées 🚀</strong></p>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 2 : WORKFLOW ZAPIER -->
+                <section>
+                    <h2>⚡ Exercice 2 : Workflow Zapier complet</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Créer un workflow automatisé : Formulaire → Email de notification</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 30 minutes</h4>
+                        <h4>📊 Le problème</h4>
+                        <p>Demandes de features dispersées (emails, réunions, couloirs) → Risque d'oubli, pas de
+                            traçabilité</p>
+                        <h4>🔧 Prérequis</h4>
+                        <p>Compte Zapier gratuit + Compte Google</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>⚡ Exercice 2 : Architecture</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Workflow</h4>
+                        <p>Google Form (collecte) → Zapier (automatisation) → Email au PO (notification)</p>
+
+                        <h4 style="margin-top: 1em;">Étape 1 - Google Form (7 min)</h4>
+                        <p>Champs : Titre | Description | Priorité (Basse/Moyenne/Haute/Critique)</p>
+                        <p>Impact attendu | Demandeur | Email demandeur</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Créer Zap (15 min)</h4>
+                        <p><strong>Déclencheur :</strong> "Google Forms - New Response"</p>
+                        <p><strong>Action :</strong> "Email by Zapier - Send Outbound Email"</p>
+                        <p>Subject : 🆕 Nouvelle demande - Priorité {{Priorité}}</p>
+                        <p>Body : 📋 TITRE | 📝 DESCRIPTION | ⚡ PRIORITÉ | 🎯 IMPACT | 👤 DEMANDEUR | ⏰ DATE</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Tester (3 min)</h4>
+                        <p>Soumettre demande test → Vérifier réception email</p>
+
+                        <h4 style="margin-top: 1em;">ROI mesuré</h4>
+                        <p>Centralisation : ❌ Dispersé → ✅ Unique | Risque oubli : ⚠️ Élevé → ✅ Nul</p>
+                        <p>20 demandes/mois × 10 min = <strong>40h/an économisées 🚀</strong></p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Récapitulatif Module 3</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>📝 Template Prompt</h4>
+                            <p>Automatisation SIMPLE via prompt réutilisable</p>
+                            <span class="roi-badge">22,5h/an</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚡ Workflow Zapier</h4>
+                            <p>Automatisation INTERMÉDIAIRE avec intégrations</p>
+                            <span class="roi-badge">40h/an</span>
+                        </div>
+                    </div>
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>💡 Challenge pour la semaine</h4>
+                        <p>Automatisez AU MOINS 1 tâche répétitive de votre quotidien !</p>
                     </div>
                 </section>
             </section>
 
-            <!-- ============================================ -->
             <!-- MODULE 4 : PRISE DE DÉCISIONS -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>✅ Module 4</h1>
@@ -874,95 +1241,313 @@
                     <h2>🎯 Objectifs du Module 4</h2>
                     <div class="objective-box">
                         <ul>
-                            <li>Analyser des données pour extraire des insights</li>
-                            <li>Utiliser des frameworks de décision (RICE, SWOT)</li>
-                            <li>Évaluer des alternatives avec l'IA</li>
-                            <li>Utiliser la modélisation prédictive</li>
-                            <li>Communiquer efficacement les décisions complexes</li>
+                            <li>Maîtriser 3 frameworks de décision (RICE, SWOT, Scénarios)</li>
+                            <li>Structurer vos décisions de manière data-driven</li>
+                            <li>Modéliser plusieurs futurs possibles</li>
+                            <li>Réduire les biais et améliorer l'objectivité</li>
+                            <li>Communiquer vos décisions de façon traçable</li>
                         </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>📊 Analyse de données avec IA</h2>
-                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
-                        <div class="tool-card">
-                            <h4>Extraction d'insights</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Identification de patterns</li>
-                                <li>Corrélations cachées</li>
-                                <li>Tendances émergentes</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>Visualisation intelligente</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Graphiques auto-générés</li>
-                                <li>Dashboards dynamiques</li>
-                                <li>Recommendations visuelles</li>
-                            </ul>
-                        </div>
                     </div>
                 </section>
 
                 <section>
                     <h2>🎯 Frameworks de décision</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+                        <div class="tool-card">
+                            <h4>RICE</h4>
+                            <p><strong>Priorisation</strong></p>
+                            <p style="font-size: 0.85em;">Features, initiatives</p>
+                            <span class="roi-badge">90% temps gagné</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>SWOT</h4>
+                            <p><strong>Décisions stratégiques</strong></p>
+                            <p style="font-size: 0.85em;">Analyse 360°</p>
+                            <span class="roi-badge">95% temps gagné</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Scénarios</h4>
+                            <p><strong>Anticipation</strong></p>
+                            <p style="font-size: 0.85em;">Best/Worst case</p>
+                            <span class="roi-badge">Impossible manuellement</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXERCICES MODULE 4 -->
+                <section>
+                    <h2>🎓 Exercices pratiques - Module 4</h2>
+                    <div class="objective-box">
+                        <h4>Session pratique : 1 heure</h4>
+                        <p>3 frameworks de décision pour des choix éclairés et traçables</p>
+                    </div>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>Exercice 1</h4>
+                            <p><strong>RICE Framework</strong></p>
+                            <p style="font-size: 0.85em;">Prioriser 6 features objectivement</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 2</h4>
+                            <p><strong>Analyse SWOT</strong></p>
+                            <p style="font-size: 0.85em;">App mobile native : GO/NO-GO ?</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 3</h4>
+                            <p><strong>Scénarios What-If</strong></p>
+                            <p style="font-size: 0.85em;">Acquisition vs Rétention</p>
+                            <span class="roi-badge">20 min</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 1 : RICE -->
+                <section>
+                    <h2>🎯 Exercice 1 : RICE Framework</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Prioriser 6 features avec un framework data-driven</p>
+                        <p><strong>RICE</strong> = (Reach × Impact × Confidence) / Effort</p>
+                    </div>
                     <div class="code-example">
-                        <h4>RICE (Reach, Impact, Confidence, Effort)</h4>
-                        <p>Score = (Reach × Impact × Confidence) / Effort</p>
-
-                        <h4 style="margin-top: 1.5em;">SWOT (Strengths, Weaknesses, Opportunities, Threats)</h4>
-                        <p>Analyse forces/faiblesses internes + opportunités/menaces externes</p>
-
-                        <h4 style="margin-top: 1.5em;">Analyse multi-critères</h4>
-                        <p>Pondération de critères (coût, délai, qualité, risque)</p>
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Contexte</h4>
+                        <p>Plateforme SaaS de gestion de projet - 5000 utilisateurs</p>
+                        <p>6 features candidates, capacité pour seulement 3</p>
                     </div>
                 </section>
 
                 <section>
-                    <h2>🔮 Modélisation prédictive</h2>
+                    <h2>🎯 Exercice 1 : Les 6 features</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>A - Intégration Slack</h4>
+                        <p>Notifications pour tâches importantes</p>
+
+                        <h4 style="margin-top: 1em;">B - Mode hors-ligne</h4>
+                        <p>Consulter/éditer sans connexion</p>
+
+                        <h4 style="margin-top: 1em;">C - Templates de projets</h4>
+                        <p>Bibliothèque 20+ templates prêts (Agile, Waterfall, Marketing)</p>
+
+                        <h4 style="margin-top: 1em;">D - Dashboard exécutif</h4>
+                        <p>Vue consolidée KPIs pour dirigeants</p>
+
+                        <h4 style="margin-top: 1em;">E - Intégration Jira bidirectionnelle</h4>
+                        <p>Synchronisation complète pour équipes hybrides</p>
+
+                        <h4 style="margin-top: 1em;">F - Gestion de ressources</h4>
+                        <p>Planification et allocation (personnes, matériel)</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎯 Exercice 1 : Prompt RICE</h2>
+                    <div class="code-example" style="font-size: 0.65em;">
+                        <h4>Prompt à utiliser</h4>
+                        <p>Tu es un expert en priorisation produit utilisant le framework RICE.</p>
+                        <p>Contexte : Plateforme SaaS, 5000 utilisateurs, 4 développeurs</p>
+                        <p>Pour CHAQUE feature, estime :</p>
+                        <ul style="font-size: 0.95em;">
+                            <li>REACH : Utilisateurs touchés/trimestre (justifié)</li>
+                            <li>IMPACT : 0.25=Minimal, 0.5=Faible, 1=Moyen, 2=Élevé, 3=Massif</li>
+                            <li>CONFIDENCE : 50%=0.5, 80%=0.8, 100%=1.0</li>
+                            <li>EFFORT : Personnes-mois (backend, frontend, QA)</li>
+                            <li>SCORE RICE = (R × I × C) / E</li>
+                        </ul>
+                        <p>Fournis TABLEAU avec classement et recommande les 3 features prioritaires.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Exercice 1 : Résultat attendu</h2>
+                    <div class="code-example" style="font-size: 0.65em;">
+                        <h4>Tableau de scores RICE</h4>
+                        <p>Feature C - Templates : Score 4267 🥇</p>
+                        <p>Feature A - Slack : Score 6300 🥇</p>
+                        <p>Feature D - Dashboard : Score 1050 🥈</p>
+                        <p>Feature E - Jira : Score 200</p>
+                        <p>Feature B - Hors-ligne : Score 125</p>
+                        <p>Feature F - Ressources : Score 107</p>
+                    </div>
                     <div class="objective-box">
-                        <h4>Cas d'usage :</h4>
+                        <h4>ROI mesuré</h4>
+                        <ul style="font-size: 0.85em;">
+                            <li>Temps : 2-3h débat → 15 min = <strong>90% gain</strong></li>
+                            <li>Objectivité : Subjective → Data-driven</li>
+                            <li>Consensus équipe : 6/10 → 9/10 (+50%)</li>
+                            <li>Traçabilité : 0% → 100%</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 2 : SWOT -->
+                <section>
+                    <h2>🔍 Exercice 2 : Analyse SWOT</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Analyser une décision stratégique de manière structurée 360°</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Décision</h4>
+                        <p>Lancer une application mobile native (iOS + Android) ?</p>
+                        <p>Budget : 150k€ | Délai : 6-9 mois | 2 devs mobiles à recruter</p>
+                        <p>30% des users demandent une app mobile</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🔍 Exercice 2 : Framework SWOT</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Structure SWOT</h4>
+                        <p><strong>STRENGTHS (Forces internes)</strong></p>
+                        <p>Ce que vous maîtrisez : équipe, produit, tech</p>
+
+                        <p style="margin-top: 1em;"><strong>WEAKNESSES (Faiblesses internes)</strong></p>
+                        <p>Vos points faibles : compétences manquantes, contraintes</p>
+
+                        <p style="margin-top: 1em;"><strong>OPPORTUNITIES (Opportunités externes)</strong></p>
+                        <p>Marché, tendances, nouveaux segments</p>
+
+                        <p style="margin-top: 1em;"><strong>THREATS (Menaces externes)</strong></p>
+                        <p>Concurrence, risques, évolutions du marché</p>
+
+                        <h4 style="margin-top: 1.5em;">Interne vs Externe</h4>
+                        <p>Interne = Sous votre contrôle | Externe = Hors contrôle</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🔍 Exercice 2 : Résultat SWOT</h2>
+                    <div class="objective-box" style="font-size: 0.75em;">
+                        <h4>STRENGTHS ✅</h4>
                         <ul>
-                            <li><strong>Prédiction de succès</strong> : Probabilité d'adoption d'une feature</li>
-                            <li><strong>Simulation "What-if"</strong> : Impact de différents scénarios</li>
-                            <li><strong>Détection d'anomalies</strong> : Signaux faibles de problèmes</li>
-                            <li><strong>Optimisation de roadmap</strong> : Séquencement optimal</li>
+                            <li>Base 8000 utilisateurs engagée</li>
+                            <li>Forte demande (30% = 2400 users)</li>
+                            <li>Budget disponible (150k€)</li>
+                        </ul>
+                    </div>
+                    <div class="exercise-box" style="font-size: 0.75em;">
+                        <h4>WEAKNESSES ❌</h4>
+                        <ul>
+                            <li>Aucune expertise mobile native</li>
+                            <li>Recrutement difficile/coûteux</li>
+                            <li>Time-to-market long (6-9 mois)</li>
+                            <li>Coût maintenance double</li>
                         </ul>
                     </div>
                 </section>
 
                 <section>
-                    <h2>💬 Communication de décisions</h2>
-                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
-                        <div class="tool-card">
-                            <h4>Narratif généré par IA</h4>
-                            <p style="font-size: 0.85em;">Transformation données → histoire cohérente</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4>Adaptation au public</h4>
-                            <p style="font-size: 0.85em;">Direction vs Équipe technique vs Métier</p>
-                        </div>
+                    <h2>💡 Exercice 2 : Recommandation</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>OPPORTUNITIES 🚀</h4>
+                        <p>• Marché mobile en croissance</p>
+                        <p>• Différenciation vs concurrents PWA</p>
+                        <p>• Nouveaux segments (mobile-only users)</p>
+
+                        <h4 style="margin-top: 1em;">THREATS ⚡</h4>
+                        <p>• Concurrents déjà établis</p>
+                        <p>• Évolution rapide plateformes iOS/Android</p>
+                        <p>• Coûts App Store/Play Store</p>
+
+                        <h4 style="margin-top: 1.5em;">RECOMMANDATION IA</h4>
+                        <p><strong>GO avec conditions</strong> : Privilégier React Native pour capitaliser sur
+                            l'expertise web
+                            existante. MVP 3-4 mois avec 2-3 features clés.</p>
+
+                        <h4 style="margin-top: 1em;">ALTERNATIVES</h4>
+                        <p>1. React Native (recommandé) | 2. PWA | 3. FlutterFlow</p>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 3 : SCÉNARIOS -->
+                <section>
+                    <h2>🔮 Exercice 3 : Scénarios What-If</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Modéliser plusieurs futurs possibles pour anticiper les conséquences</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Décision</h4>
+                        <p>Startup SaaS B2B - 500 clients, 100k€ MRR, 8% churn</p>
+                        <p><strong>Stratégie A</strong> : Focus ACQUISITION (200k€ marketing)</p>
+                        <p><strong>Stratégie B</strong> : Focus RÉTENTION (améliorer produit)</p>
                     </div>
                 </section>
 
                 <section>
-                    <h2>🎓 Exercice Module 4</h2>
-                    <div class="exercise-box">
-                        <h4>À faire maintenant :</h4>
-                        <ol>
-                            <li>Analysez un jeu de données avec extraction d'insights</li>
-                            <li>Utilisez le framework RICE pour prioriser 5 features</li>
-                            <li>Évaluez 3 alternatives avec analyse multi-critères</li>
-                            <li>Créez une présentation de décision adaptée à la direction</li>
-                        </ol>
+                    <h2>🔮 Exercice 3 : 3 scénarios par stratégie</h2>
+                    <div class="code-example" style="font-size: 0.65em;">
+                        <h4>Pour chaque stratégie, modélisez :</h4>
+                        <p><strong>Scénario OPTIMISTE</strong> (20% probabilité)</p>
+                        <p>Tout se passe bien, objectifs dépassés</p>
+
+                        <p style="margin-top: 0.8em;"><strong>Scénario RÉALISTE</strong> (60% probabilité)</p>
+                        <p>Résultats attendus, plan respecté</p>
+
+                        <p style="margin-top: 0.8em;"><strong>Scénario PESSIMISTE</strong> (20% probabilité)</p>
+                        <p>Problèmes, objectifs non atteints</p>
+
+                        <h4 style="margin-top: 1.5em;">Métrique clé : Valeur attendue</h4>
+                        <p>VE = 0.2 × Optimiste + 0.6 × Réaliste + 0.2 × Pessimiste</p>
+
+                        <h4 style="margin-top: 1em;">Objectif</h4>
+                        <p>Comparer VE de A vs B + identifier signaux d'alerte</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>💡 Exercice 3 : Comparaison</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>STRATÉGIE A : Acquisition</h4>
+                        <p>Optimiste : 360k€ MRR (+260%) | 20% prob</p>
+                        <p>Réaliste : 180k€ MRR (+80%) | 60% prob</p>
+                        <p>Pessimiste : 90k€ MRR (-10%) | 20% prob</p>
+                        <p><strong>Valeur attendue : 198k€ MRR</strong></p>
+
+                        <h4 style="margin-top: 1em;">STRATÉGIE B : Rétention</h4>
+                        <p>Optimiste : 140k€ MRR (+40%) | 20% prob</p>
+                        <p>Réaliste : 120k€ MRR (+20%) | 60% prob</p>
+                        <p>Pessimiste : 95k€ MRR (-5%) | 20% prob</p>
+                        <p><strong>Valeur attendue : 119k€ MRR</strong></p>
+
+                        <h4 style="margin-top: 1.5em;">RECOMMANDATION</h4>
+                        <p>Stratégie A si risque accepté (+79k€ VE)</p>
+                        <p>Surveiller churn : Si &gt;10% après 3 mois → Pivoter vers B</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Récapitulatif Module 4</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>🎯 RICE</h4>
+                            <p>Priorisation objective</p>
+                            <span class="roi-badge">3h → 15min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔍 SWOT</h4>
+                            <p>Analyse 360° structurée</p>
+                            <span class="roi-badge">2j → 15min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔮 Scénarios</h4>
+                            <p>Modélisation futurs</p>
+                            <span class="roi-badge">Plan B inclus</span>
+                        </div>
+                    </div>
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>💡 ROI estimé</h4>
+                        <p><strong>50 heures/an économisées</strong> sur décisions stratégiques</p>
                     </div>
                 </section>
             </section>
 
-            <!-- ============================================ -->
             <!-- MODULE 5 : RÉUNIONS ET DOCUMENTATION -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>📝 Module 5</h1>
@@ -973,11 +1558,11 @@
                     <h2>🎯 Objectifs du Module 5</h2>
                     <div class="objective-box">
                         <ul>
-                            <li>Transcrire et synthétiser les réunions automatiquement</li>
-                            <li>Extraire action items et décisions</li>
-                            <li>Générer et maintenir une documentation de qualité</li>
-                            <li>Créer des comptes-rendus efficaces</li>
-                            <li>Optimiser le temps passé en réunion</li>
+                            <li>Automatiser les comptes-rendus de réunion</li>
+                            <li>Extraire action items automatiquement</li>
+                            <li>Générer du contenu multi-canal depuis vidéos</li>
+                            <li>Créer une knowledge base avec recherche sémantique</li>
+                            <li>Libérer du temps sur les tâches administratives</li>
                         </ul>
                     </div>
                 </section>
@@ -985,128 +1570,234 @@
                 <section>
                     <h2>📊 Le coût des réunions</h2>
                     <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>23h/semaine</h4>
-                            <p>Temps moyen en réunion pour les cadres</p>
+                        <div class="metric-card">
+                            <h3>23h</h3>
+                            <p>par semaine en réunion (cadres)</p>
                         </div>
-                        <div class="tool-card">
-                            <h4>67%</h4>
-                            <p>Des managers déclarent que trop de réunions les empêchent de travailler</p>
+                        <div class="metric-card">
+                            <h3>67%</h3>
+                            <p>trop de réunions empêchent de travailler</p>
                         </div>
-                        <div class="tool-card">
-                            <h4>30%</h4>
-                            <p>Du temps de réunion considéré comme improductif</p>
+                        <div class="metric-card">
+                            <h3>30%</h3>
+                            <p>du temps considéré improductif</p>
                         </div>
                     </div>
                 </section>
 
                 <section>
                     <h2>🎙️ Outils de transcription</h2>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; margin: 1em 0;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em;">
                         <div class="tool-card">
-                            <h4><a href="https://otter.ai" target="_blank" style="color: var(--astek-green); text-decoration: none;">Otter.ai</a></h4>
-                            <p><strong>Points forts :</strong> Temps réel, identification speakers</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4><a href="https://gladia.io" target="_blank" style="color: var(--astek-green); text-decoration: none;">Gladia.io</a></h4>
-                            <p><strong>Points forts :</strong> API transcription, workflows personnalisés</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4><a href="https://www.microsoft.com/microsoft-teams" target="_blank" style="color: var(--astek-green); text-decoration: none;">MS Teams</a> / <a href="https://zoom.us" target="_blank" style="color: var(--astek-green); text-decoration: none;">Zoom</a></h4>
+                            <h4><a href="https://www.microsoft.com/microsoft-teams" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">MS Teams</a></h4>
                             <p><strong>Points forts :</strong> Natif, résumés auto</p>
                         </div>
                         <div class="tool-card">
-                            <h4><a href="https://loop.microsoft.com" target="_blank" style="color: var(--astek-green); text-decoration: none;">Microsoft Loop</a></h4>
+                            <h4><a href="https://gladia.io" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Gladia.io</a></h4>
+                            <p><strong>Points forts :</strong> API, workflows personnalisés</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4><a href="https://otter.ai" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Otter.ai</a></h4>
+                            <p><strong>Points forts :</strong> Temps réel, identification speakers</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4><a href="https://loop.microsoft.com" target="_blank"
+                                    style="color: var(--astek-green); text-decoration: none;">Microsoft Loop</a></h4>
                             <p><strong>Points forts :</strong> Collaboration temps réel</p>
                         </div>
                     </div>
                 </section>
 
+                <!-- EXERCICES MODULE 5 -->
                 <section>
-                    <h2>📝 Synthèse intelligente</h2>
-                    <div class="code-example">
-                        <h4>Structure d'un compte-rendu efficace :</h4>
-                        <ol>
-                            <li><strong>En-tête</strong> : Date, participants, objectifs</li>
-                            <li><strong>Résumé exécutif</strong> : 2-3 phrases clés</li>
-                            <li><strong>Points discutés</strong> : Principaux sujets</li>
-                            <li><strong>Décisions prises</strong> : Liste claire</li>
-                            <li><strong>Action items</strong> : Qui fait quoi, quand</li>
-                            <li><strong>Prochaines étapes</strong> : Ce qui vient ensuite</li>
-                            <li><strong>Questions ouvertes</strong> : Sujets à suivre</li>
-                        </ol>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>✅ Extraction d'action items</h2>
+                    <h2>🎓 Exercices pratiques - Module 5</h2>
                     <div class="objective-box">
-                        <h4>Pour chaque action item :</h4>
-                        <ul>
-                            <li><strong>Action</strong> : Formulation claire et actionnable</li>
-                            <li><strong>Responsable</strong> : Nom ou équipe</li>
-                            <li><strong>Échéance</strong> : Date limite</li>
-                            <li><strong>Priorité</strong> : Haute/Moyenne/Basse</li>
-                            <li><strong>Dépendances</strong> : Liens avec autres actions</li>
-                        </ul>
+                        <h4>Session pratique : 1 heure</h4>
+                        <p>3 workflows pour optimiser réunions et documentation</p>
                     </div>
-                </section>
-
-                <section>
-                    <h2>📚 Documentation assistée</h2>
-                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
                         <div class="tool-card">
-                            <h4>Génération automatique</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Docs techniques à partir de code</li>
-                                <li>Guides utilisateurs</li>
-                                <li>Procédures métier</li>
-                            </ul>
+                            <h4>Exercice 1</h4>
+                            <p><strong>MS Teams + Loop</strong></p>
+                            <p style="font-size: 0.85em;">Réunion → Action items</p>
+                            <span class="roi-badge">89% gain</span>
+                            <span class="roi-badge">20 min</span>
                         </div>
                         <div class="tool-card">
-                            <h4>Maintenance intelligente</h4>
-                            <ul style="font-size: 0.85em;">
-                                <li>Détection de contenu obsolète</li>
-                                <li>Mises à jour automatiques</li>
-                                <li>Vérification de complétude</li>
-                            </ul>
+                            <h4>Exercice 2</h4>
+                            <p><strong>Gladia → Communication</strong></p>
+                            <p style="font-size: 0.85em;">Vidéo → 4 contenus</p>
+                            <span class="roi-badge">95% gain</span>
+                            <span class="roi-badge">25 min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Exercice 3</h4>
+                            <p><strong>Notion AI</strong></p>
+                            <p style="font-size: 0.85em;">Knowledge base sémantique</p>
+                            <span class="roi-badge">90% gain</span>
+                            <span class="roi-badge">15 min</span>
                         </div>
                     </div>
                 </section>
 
+                <!-- EXERCICE 1 : MS TEAMS -->
                 <section>
-                    <h2>📚 Étude de cas</h2>
-                    <div class="objective-box">
-                        <h4>Scale-up tech - Transformation des réunions</h4>
-                        <p><strong>Problème :</strong> 15h/semaine en réunions, 5h sur comptes-rendus</p>
-                        <p><strong>Solution :</strong> Otter.ai + ChatGPT + Notion AI</p>
-                        <p><strong>Résultats globaux :</strong></p>
-                        <ul>
-                            <li>PO/PM : 6h/semaine libérées</li>
-                            <li>Traçabilité décisions : +80%</li>
-                            <li>Comptes-rendus : -70% temps passé</li>
-                            <li>ROI : 10x en 6 mois</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>🎓 Exercice Module 5</h2>
+                    <h2>📹 Exercice 1 : MS Teams + Loop</h2>
                     <div class="exercise-box">
-                        <h4>À faire maintenant :</h4>
-                        <ol>
-                            <li>Transcrivez et synthétisez une réunion</li>
-                            <li>Extrayez les action items avec responsables</li>
-                            <li>Générez une documentation pour une feature</li>
-                            <li>Créez un workflow d'automatisation de réunion</li>
-                        </ol>
+                        <h4>🎯 Objectif</h4>
+                        <p>Automatiser les comptes-rendus avec transcription et action items collaboratifs</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 20 minutes</h4>
+                        <h4>📊 Le problème</h4>
+                        <p>30-45 min après chaque réunion pour :</p>
+                        <ul style="font-size: 0.9em;">
+                            <li>Réécouter l'enregistrement</li>
+                            <li>Rédiger le compte-rendu</li>
+                            <li>Identifier les action items</li>
+                            <li>Envoyer par email</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📹 Exercice 1 : Workflow complet</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Étape 1 - Enregistrer réunion Teams (3 min)</h4>
+                        <p>• Activer "Enregistrer et transcrire"</p>
+                        <p>• Transcription en temps réel activée</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Extraire action items (8 min)</h4>
+                        <p>Prompt ChatGPT : "Analyse cette transcription MS Teams...</p>
+                        <p>Pour CHAQUE action item, fournis :</p>
+                        <p>🎯 ACTION | 👤 RESPONSABLE | 📅 ÉCHÉANCE | ⚡ PRIORITÉ | 📌 CONTEXTE"</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Créer composant Loop (5 min)</h4>
+                        <p>• Liste de tâches partagée</p>
+                        <p>• Assignation @mention des responsables</p>
+                        <p>• Synchronisation temps réel</p>
+
+                        <h4 style="margin-top: 1em;">ROI mesuré</h4>
+                        <p>45 min → 5 min = <strong>89% gain | Traçabilité 100%</strong></p>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 2 : GLADIA -->
+                <section>
+                    <h2>🎬 Exercice 2 : Vidéo → Communication</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Transformer une vidéo en 4 contenus : transcription + sous-titres + posts + article</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 25 minutes</h4>
+                        <h4>📊 Le problème</h4>
+                        <p>Vidéo de démo/conférence 15 min → 3-4h manuelles</p>
+                        <ul style="font-size: 0.9em;">
+                            <li>Transcription manuelle</li>
+                            <li>Sous-titres</li>
+                            <li>Posts réseaux sociaux</li>
+                            <li>Article de blog</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>🎬 Exercice 2 : De 1 à 4 contenus</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Étape 1 - Upload Gladia.io (5 min)</h4>
+                        <p>• Créer compte gratuit (1h transcription/mois)</p>
+                        <p>• Upload vidéo • Timestamps activés • Transcription</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Génération sous-titres SRT (5 min)</h4>
+                        <p>Prompt : "Transforme en fichier SRT professionnel...</p>
+                        <p>Max 2 lignes, 42 caractères/ligne, découpage naturel"</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Post LinkedIn (7 min)</h4>
+                        <p>Structure : Accroche + 3 insights + CTA + Hashtags</p>
+
+                        <h4 style="margin-top: 1em;">Étape 4 - Post Viva Engage (3 min)</h4>
+                        <p>Version interne courte et collaborative</p>
+
+                        <h4 style="margin-top: 1em;">Étape 5 - Article blog (5 min)</h4>
+                        <p>800-1000 mots structurés avec citations</p>
+
+                        <h4 style="margin-top: 1.5em;">ROI total : 5h50 → 18 min = 95% gain 🚀</h4>
+                    </div>
+                </section>
+
+                <!-- EXERCICE 3 : NOTION -->
+                <section>
+                    <h2>📚 Exercice 3 : Notion AI Knowledge Base</h2>
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif</h4>
+                        <p>Créer une base de connaissances avec recherche sémantique</p>
+                    </div>
+                    <div class="code-example">
+                        <h4>⏱️ Durée : 15 minutes</h4>
+                        <h4>📊 Le problème</h4>
+                        <p>Documentation dispersée :</p>
+                        <ul style="font-size: 0.9em;">
+                            <li>Specs dans Google Docs</li>
+                            <li>Décisions dans emails</li>
+                            <li>FAQ dans Confluence</li>
+                            <li>→ 20-30 min/jour de recherche</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>📚 Exercice 3 : Recherche sémantique</h2>
+                    <div class="code-example" style="font-size: 0.7em;">
+                        <h4>Étape 1 - Créer workspace Notion (3 min)</h4>
+                        <p>4 pages : Spécifications | ADR | FAQ | Changelog</p>
+
+                        <h4 style="margin-top: 1em;">Étape 2 - Structurer avec Notion AI (5 min)</h4>
+                        <p>• Générer index automatique</p>
+                        <p>• Créer liens sémantiques entre pages</p>
+                        <p>• FAQ consolidée de tout le workspace</p>
+
+                        <h4 style="margin-top: 1em;">Étape 3 - Tester recherche sémantique (5 min)</h4>
+                        <p>Question : "Comment un client récupère son argent ?"</p>
+                        <p>IA trouve : FAQ (remboursement) + Changelog (feature) + ADR (Stripe refunds)</p>
+
+                        <h4 style="margin-top: 1em;">VS Recherche mots-clés classique</h4>
+                        <p>Mots-clés exacts : 1 page | Sémantique : 3 pages pertinentes</p>
+
+                        <h4 style="margin-top: 1.5em;">ROI : 30 min → 3 min/jour = 90% gain</h4>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>✅ Récapitulatif Module 5</h2>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="tool-card">
+                            <h4>📹 Teams + Loop</h4>
+                            <p>Action items automatisés</p>
+                            <span class="roi-badge">45min → 5min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🎬 Gladia → Contenus</h4>
+                            <p>1 vidéo → 4 contenus</p>
+                            <span class="roi-badge">5h50 → 18min</span>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📚 Notion AI</h4>
+                            <p>Recherche sémantique</p>
+                            <span class="roi-badge">30min → 3min/jour</span>
+                        </div>
+                    </div>
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>💡 ROI estimé</h4>
+                        <p><strong>8 heures/semaine économisées</strong> sur réunions et documentation ! 🚀</p>
                     </div>
                 </section>
             </section>
 
-            <!-- ============================================ -->
             <!-- CONCLUSION -->
-            <!-- ============================================ -->
             <section>
                 <section class="day-header">
                     <h1>🏁 Conclusion</h1>
@@ -1118,23 +1809,23 @@
                     <div class="tools-grid" style="grid-template-columns: 1fr;">
                         <div class="tool-card">
                             <h4>👩‍🎓 Module 1 - Acculturation</h4>
-                            <p>Comprendre l'IA et identifier les outils pertinents pour PO/PM</p>
+                            <p>ACTF, Itération, Few-Shot → Maîtrise du prompt engineering</p>
                         </div>
                         <div class="tool-card">
                             <h4>🔍 Module 2 - Qualité, coûts, délais</h4>
-                            <p>Optimiser user stories, estimations et gestion de risques avec l'IA</p>
+                            <p>Spec testable (-60% défauts), Estimation IA (±20%), Détection risques (+4 sem)</p>
                         </div>
                         <div class="tool-card">
                             <h4>⚡ Module 3 - Automatisation</h4>
-                            <p>Libérer 20-30% du temps via workflows automatisés intelligents</p>
+                            <p>Template prompts (22,5h/an), Workflows Zapier (40h/an)</p>
                         </div>
                         <div class="tool-card">
                             <h4>✅ Module 4 - Prise de décisions</h4>
-                            <p>Analyser les données et utiliser des frameworks pour décider mieux</p>
+                            <p>RICE, SWOT, Scénarios (50h/an économisées)</p>
                         </div>
                         <div class="tool-card">
                             <h4>📝 Module 5 - Réunions & Documentation</h4>
-                            <p>Réduire de 50-70% le temps passé sur comptes-rendus et documentation</p>
+                            <p>Teams/Loop, Gladia, Notion AI (8h/semaine économisées)</p>
                         </div>
                     </div>
                 </section>
@@ -1211,13 +1902,15 @@
                             <strong>Merci de prendre quelques minutes pour évaluer cette formation</strong>
                         </p>
 
-                        <div class="qr-code" id="qrcode">
-                            <!-- QR Code will be generated here -->
+                        <!-- QR Code Container -->
+                        <div id="qrcode"
+                            style="display: inline-block; padding: 20px; background: white; border-radius: 10px; margin-bottom: 1em;">
                         </div>
 
                         <p style="margin-top: 1.5em; font-size: 1em;">
-                            Ou accédez directement au questionnaire :<br>
-                            <a href="https://forms.cloud.microsoft.com/e/1ZCtTM3FdU" target="_blank" style="color: var(--astek-green); font-weight: 600;">
+                            Lien questionnaire :<br>
+                            <a href="https://forms.cloud.microsoft.com/e/1ZCtTM3FdU" target="_blank"
+                                style="color: var(--astek-green); font-weight: 600;">
                                 https://forms.cloud.microsoft.com/e/1ZCtTM3FdU
                             </a>
                         </p>
@@ -1232,7 +1925,7 @@
                         philippe.pary@astek.net
                     </p>
                     <p style="text-align: center; margin-top: 2em; font-style: italic;">
-                        Formation développée par Astek<br>
+                        Formation développée par Astek - Version Enrichie V2<br>
                         Mise à jour régulière pour refléter l'évolution des outils et pratiques IA
                     </p>
                 </section>
@@ -1252,57 +1945,34 @@
             hash: true,
             transition: 'slide',
             transitionSpeed: 'default',
-            backgroundTransition: 'fade',
             controls: true,
-            controlsTutorial: true,
-            controlsLayout: 'bottom-right',
-            controlsBackArrows: 'faded',
             progress: true,
             center: true,
-            touch: true,
-            loop: false,
-            rtl: false,
-            navigationMode: 'default',
-            shuffle: false,
-            fragments: true,
-            fragmentInURL: false,
-            embedded: false,
-            help: true,
-            showNotes: false,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            hash: true,
+            slideNumber: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            dependencies: [
+                { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js', async: true, callback: function () { hljs.highlightAll(); } }
+            ]
         });
 
-        // Generate QR Code when slide is visible
-        Reveal.on('slidechanged', (event) => {
+        // Génération du QR Code
+        Reveal.on('slidechanged', event => {
             if (event.currentSlide.querySelector('#qrcode')) {
                 const qrcodeEl = document.getElementById('qrcode');
                 if (qrcodeEl && qrcodeEl.children.length === 0) {
                     new QRCode(qrcodeEl, {
-                        text: 'https://forms.cloud.microsoft.com/e/1ZCtTM3FdU',
+                        text: "https://forms.cloud.microsoft.com/e/1ZCtTM3FdU",
                         width: 256,
                         height: 256,
-                        colorDark: '#000000',
-                        colorLight: '#ffffff',
+                        colorDark: "#000000",
+                        colorLight: "#ffffff",
                         correctLevel: QRCode.CorrectLevel.H
                     });
                 }
             }
         });
-
-        // Check if QR code slide is initially visible
-        Reveal.on('ready', () => {
-            const qrcodeEl = document.getElementById('qrcode');
-            if (qrcodeEl && qrcodeEl.offsetParent !== null && qrcodeEl.children.length === 0) {
-                new QRCode(qrcodeEl, {
-                    text: 'https://forms.cloud.microsoft.com/e/1ZCtTM3FdU',
-                    width: 256,
-                    height: 256,
-                    colorDark: '#000000',
-                    colorLight: '#ffffff',
-                    correctLevel: QRCode.CorrectLevel.H
-                });
-            }
-        });
     </script>
 </body>
+
 </html>
