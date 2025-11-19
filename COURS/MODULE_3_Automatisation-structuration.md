@@ -631,74 +631,182 @@ Priorité : Haute
 
 ## 8. Exercices pratiques
 
-### Exercice 1 : Cartographie de processus automatisable
+> [!NOTE]
+> Ces exercices sont conçus pour une session d'1 heure. Ils permettent d'expérimenter **2 niveaux d'automatisation** : prompts réutilisables (niveau 1) et workflows Zapier (niveau 2).
 
-**Objectif** : Identifier et cartographier un processus à automatiser
+### Prérequis techniques
 
-**Instructions** :
+Avant la session, demandez aux apprenants de créer :
+- ✅ Compte Zapier gratuit : https://zapier.com/sign-up
+- ✅ Compte Google (Gmail + Google Forms)
 
-1. Choisissez un processus répétitif de votre quotidien (ex: reporting, gestion backlog)
-2. Cartographiez le processus actuel (étapes, acteurs, données)
-3. Identifiez les points d'automatisation possibles
-4. Estimez le gain de temps potentiel
-5. Priorisez les automatisations (impact vs difficulté)
+### Exercice 1 : Automatisation SIMPLE - Template de contenu réutilisable
 
-**Livrable** : Diagramme de processus + analyse d'automatisation
+**Objectif** : Créer un prompt template pour automatiser la génération de Release Notes
 
-### Exercice 2 : Conception de workflow automatisé
+**Durée** : 20 minutes
 
-**Objectif** : Concevoir un workflow automatisé complet
+**Le problème** : Chaque vendredi, rédiger les Release Notes de la semaine prend 30 minutes (collecte, catégorisation, rédaction, formatage).
 
-**Instructions** :
+**Mission** : Créer un prompt ChatGPT qui transforme automatiquement une liste de tickets en Release Notes formatées
 
-1. Choisissez un processus de l'exercice 1
-2. Concevez le workflow automatisé :
-   - Déclencheurs
-   - Conditions
-   - Actions
-   - Exceptions
-3. Choisissez les outils appropriés
-4. Documentez le workflow
-5. Estimez le temps de mise en place
+**Données d'exemple** :
+```
+PROJ-245 : Ajout du mode sombre
+PROJ-251 : Export PDF des rapports  
+PROJ-189 : Amélioration temps de chargement (-40%)
+PROJ-312 : Fix crash upload fichiers >10MB
+PROJ-318 : Fix affichage dates format US
+```
 
-**Template** :
+**Étape 1** : Construire le prompt template (10 min)
 
-- Processus : [nom]
-- Déclencheur : [événement]
-- Conditions : [si/alors]
-- Actions : [liste]
-- Exceptions : [cas particuliers]
-- Outils : [liste]
-- Temps setup : [estimation]
+```
+Tu es un Product Owner qui rédige des Release Notes.
 
-### Exercice 3 : Mise en place d'un workflow simple
+FORMAT STANDARD :
+📦 Version [VERSION] - [DATE]
 
-**Objectif** : Implémenter un workflow automatisé simple
+✨ Nouvelles fonctionnalités
+• [CODE] Description orientée utilisateur
 
-**Instructions** :
+🔧 Améliorations
+• [CODE] Description avec métrique si applicable
 
-1. Créez un compte sur [Zapier](https://zapier.com) ou [Make](https://www.make.com) (version gratuite)
-2. Implémentez un workflow simple :
-   - Exemple : Nouveau message Slack → Création tâche dans outil de gestion
-   - Ou : Fin de journée → Génération résumé activités
-3. Testez le workflow
-4. Documentez les résultats et difficultés
+🐛 Corrections de bugs
+• [CODE] Description du problème résolu
 
-**Livrable** : Workflow fonctionnel + documentation
+RÈGLES :
+- Trier automatiquement par catégorie
+- Langage simple orienté bénéfice utilisateur
+- Inclure les métriques quand pertinent
 
-### Exercice 4 : Génération automatique de rapport
+TICKETS : [LISTE DES TICKETS]
+Version : [A REMPLIR]
+Date : [A REMPLIR]
+```
 
-**Objectif** : Automatiser la génération d'un rapport avec IA
+**Étape 2** : Tester et itérer (5 min)
 
-**Instructions** :
+- Tester avec les données d'exemple
+- Ajuster jusqu'à satisfaction
+- Sauvegarder dans "Prompts_Réutilisables.md"
 
-1. Collectez des données d'un projet (réel ou fictif)
-2. Utilisez [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai) pour générer un rapport structuré
-3. Créez un prompt réutilisable pour ce type de rapport
-4. Testez le prompt sur plusieurs jeux de données
-5. Affinez le prompt pour améliorer les résultats
+**Étape 3** : Mesurer le gain (5 min)
 
-**Livrable** : Prompt optimisé + exemple de rapport généré
+| Critère | Avant | Après | Gain |
+|---------|-------|-------|------|
+| Temps | 30 min | 2-3 min | **90%** |
+| Catégorisation | Manuelle | Auto | 100% |
+| Cohérence | Variable | Standard | ✅ |
+
+**ROI** : 50 semaines × 27 min = **22,5 heures/an économisées** 🚀
+
+---
+
+### Exercice 2 : Automatisation INTERMÉDIAIRE - Workflow Zapier complet
+
+**Objectif** : Créer un workflow automatisé de collecte et notification
+
+**Durée** : 30 minutes
+
+**Le problème** : Les demandes de features arrivent de manière dispersée (emails, réunions, couloirs) avec risque d'oubli élevé et pas de traçabilité.
+
+**Mission** : Créer un système automatisé : Formulaire → Email de notification
+
+**Architecture du workflow** :
+
+```
+Google Form (collecte) 
+    ↓
+Zapier (automatisation)
+    ↓
+Email au PO (notification)
+```
+
+**Étape 1** : Créer le Google Form (7 min)
+
+Champs du formulaire :
+- Titre de la demande (texte court)
+- Description détaillée (paragraphe)
+- Priorité (Choix : Basse / Moyenne / Haute / Critique)
+- Impact attendu (paragraphe)
+- Demandeur (texte court)
+- Email du demandeur (email)
+
+**Étape 2** : Créer le Zap (15 min)
+
+**Déclencheur** : "Google Forms - New Response in Spreadsheet"
+- Connecter compte Google
+- Sélectionner le formulaire
+- Tester le déclencheur
+
+**Action** : "Email by Zapier - Send Outbound Email"
+- **To** : votre email
+- **Subject** : `🆕 Nouvelle demande - Priorité {{Priorité}}`
+- **Body** :
+```
+Nouvelle demande produit soumise :
+
+📋 TITRE : {{Titre}}
+📝 DESCRIPTION : {{Description}}
+⚡ PRIORITÉ : {{Priorité}}
+🎯 IMPACT : {{Impact attendu}}
+👤 DEMANDEUR : {{Demandeur}} ({{Email}})
+⏰ DATE : {{Timestamp}}
+
+✅ Prochaine étape : Évaluer sous 48h
+```
+
+**Étape 3** : Tester en conditions réelles (3 min)
+
+- Soumettre une demande test via le formulaire
+- Vérifier la réception de l'email
+- Ajuster le formatage si nécessaire
+
+**Étape 4** : Mesurer l'impact (2 min)
+
+| Critère | Avant | Après | Amélioration |
+|---------|-------|-------|--------------|
+| Centralisation | ❌ Dispersé | ✅ Unique | 100% |
+| Traçabilité | ❌ Faible | ✅ Auto | 100% |
+| Risque oubli | ⚠️ Élevé | ✅ Nul | 100% |
+| Temps/demande | 10 min | 0 min | **100%** |
+
+**ROI** : 20 demandes/mois × 10 min = **3,3h/mois = 40h/an économisées** 🚀
+
+---
+
+### Bonus : Améliorations possibles
+
+**Option 1** : Ajouter une action "Google Sheets - Create Row" pour tracker toutes les demandes
+
+**Option 2** : Ajouter un Cc au demandeur pour confirmation automatique
+
+**Option 3** : Logique conditionnelle (plan payant) :
+```
+IF Priorité = "Critique"
+  THEN Email avec 🚨 + CC au manager
+```
+
+---
+
+### Débrief collectif (10 min)
+
+**Questions à discuter** :
+1. Quelle automatisation vous a le plus impressionné ?
+2. Quel gain de temps total calculé ? (Ex1 + Ex2)
+3. Quelle tâche de VOTRE quotidien allez-vous automatiser ?
+4. Difficultés rencontrées ?
+
+### Challenge pour la semaine
+
+Automatisez AU MOINS 1 tâche répétitive de votre quotidien :
+- [ ] Identifier la tâche (répétitivité × temps × ROI)
+- [ ] Choisir l'approche (prompt ou Zapier)
+- [ ] Mettre en place et tester
+- [ ] Mesurer le temps économisé après 1 semaine
+- [ ] Partager le retour d'expérience
 
 ---
 
