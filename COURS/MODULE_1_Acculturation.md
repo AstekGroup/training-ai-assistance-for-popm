@@ -1,6 +1,6 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
-**Version** : 1.0.0
+**Version** : 2.0.0
 **Date de dernière mise à jour** : 2025-11-18
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 

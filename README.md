@@ -1,6 +1,6 @@
 # Formation : Outils IA pour Product Owners et Project Managers
 
-**Version** : 1.0.1
+**Version** : 2.0.0
 **Dernière mise à jour** : 2025-11-19
 **Développé par** : [Astek](https://www.astek.net)
 
@@ -198,7 +198,7 @@ PO PM-Assiste/
 Chaque module comprend :
 
 - **Exercices pratiques** avec corrigés
-- **Quiz/QCM** pour validation des connaissances
+
 - **Études de cas** pour application concrète
 - **Projets pratiques** pour consolidation
 
