@@ -1,6 +1,6 @@
 # Exercices Module 5 : Réunions et Documentation assistées par l'IA
 
-**Durée totale** : 1 heure (3 exercices)  
+**Durée totale** : 40 minutes (2 x 20 minutes)  
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Microsoft Teams (avec compte professionnel)
@@ -12,10 +12,9 @@
 
 ## 🎯 Objectif pédagogique
 
-Maîtriser **3 workflows d'IA** pour optimiser les réunions et la documentation :
+Maîtriser **2 workflows d'IA** pour optimiser les réunions et la documentation :
 - **Workflow 1** : Réunion → Transcription → Action items (MS Teams + Loop)
 - **Workflow 2** : Vidéo → Transcription → Sous-titres → Communication (Gladia + ChatGPT)
-- **Workflow 3** : Documentation → Structuration → Recherche sémantique (Notion AI)
 
 **Principe** : Libérer du temps sur les tâches administratives pour se concentrer sur la valeur métier
 
@@ -381,197 +380,14 @@ Style : Sous-titres clairs, paragraphes courts, facile à scanner
 
 ---
 
-## 📚 Exercice 3 : Knowledge base intelligente avec Notion AI
 
-**Durée** : 15 minutes  
-**Objectif** : Créer une base de connaissances structurée avec recherche sémantique
 
-### Le problème
-
-Votre documentation projet est **dispersée** :
-- Spécifications dans Google Docs
-- Décisions dans emails
-- FAQ dans Confluence
-- Changelog dans Jira
-
-**Conséquences** :
-- ⏱️ Recherche d'information : 20-30 min par jour
-- ❌ Perte d'information
-- 🔄 Questions répétitives dans l'équipe
-- 📊 Pas de vue d'ensemble
-
----
-
-### ✅ Mission : Centraliser et structurer avec Notion AI
-
-#### **Étape 1 : Créer une base Notion projet** (3 min)
-
-**Instructions** :
-
-1. **Créer un compte Notion** (si pas déjà fait)
-   - Aller sur [notion.so](https://www.notion.so)
-   - S'inscrire (gratuit pour usage individuel)
-
-2. **Créer un workspace "Projet Demo"**
-   - Nouveau workspace ou nouvelle page
-   - Titre : "📁 Documentation Projet - [Nom]"
-
-3. **Créer 4 pages de documentation** (utiliser templates fournis ou créer) :
-
-**Page 1 : 📋 Spécifications Produit**
-```markdown
-# Spécifications Produit - Feature Paiement
-
-## Vue d'ensemble
-Notre plateforme SaaS intègre un nouveau système de paiement multi-devises...
-
-## Fonctionnalités
-- Paiement par carte (Visa, Mastercard, Amex)
-- Paiement par virement SEPA
-- Support de 15 devises avec conversion temps réel
-- Stockage sécurisé des moyens de paiement
-
-## Spécifications techniques
-- Gateway : Stripe
-- PCI-DSS compliant
-- 3D Secure v2
-- Webhooks pour notifications temps réel
-```
-
-**Page 2 : ✅ Décisions Architecture**
-```markdown
-# Décisions Architecture (ADR)
-
-## ADR-001 : Choix du payment gateway
-
-**Date** : 15/11/2025
-**Statut** : Accepté
-**Contexte** : Besoin d'intégrer paiements CB et virements
-**Décision** : Utiliser Stripe comme gateway unique
-**Conséquences** : 
-- Coût : 1.4% + 0.25€ par transaction
-- Temps d'intégration : 2 sprints
-- Avantages : Support multi-devises natif, webhooks fiables
-```
-
-**Page 3 : ❓ FAQ Équipe**
-```markdown
-# FAQ - Questions fréquentes
-
-## Comment gérer les remboursements ?
-Utiliser l'API Stripe Refunds. Délai : 5-10 jours ouvrés.
-
-## Quelles devises sont supportées ?
-15 devises : EUR, USD, GBP, JPY, CAD, AUD, CHF, SEK, NOK, DKK, PLN, CZK, HUF, RON, BGN
-
-## Que faire si un paiement échoue ?
-Retry automatique après 24h. Email de notification au client.
-```
-
-**Page 4 : 📝 Changelog**
-```markdown
-# Changelog Feature Paiement
-
-## v2.1.0 - 18/11/2025
-- ✨ Ajout support Apple Pay
-- 🔧 Amélioration temps de réponse (-40%)
-- 🐛 Fix affichage erreur sur mobile
-
-## v2.0.0 - 01/11/2025
-- ✨ Lancement multi-devises
-- ✨ Ajout virements SEPA
-```
-
----
-
-#### **Étape 2 : Utiliser Notion AI pour structurer** (5 min)
-
-**Actions avec Notion AI** :
-
-1. **Générer un index automatique**
-   - Créer une page "🗂️ Index"
-   - Sélectionner la page → "Ask AI"
-   - Prompt : "Génère un index de toutes les pages de documentation avec leur contenu principal"
-
-2. **Créer des liens sémantiques**
-   - Sur la page "Spécifications", sélectionner un paragraphe
-   - "Ask AI" → "Trouve les pages liées à ce contenu"
-   - Ajouter des liens manuellement vers les ADR et FAQ mentionnés
-
-3. **Générer une FAQ consolidée**
-   - Créer une nouvelle page "❓ FAQ Complète"
-   - "Ask AI" avec ce prompt :
-   ```
-   Analyse toutes les pages de ce workspace et génère une FAQ complète
-   regroupant toutes les questions-réponses par thématique.
-   Format : Questions en gras, réponses concises.
-   ```
-
----
-
-#### **Étape 3 : Tester la recherche sémantique** (5 min)
-
-**Comparer recherche classique vs sémantique** :
-
-**Test 1 : Recherche par mots-clés (classique)**
-- Rechercher : "remboursement"
-- Résultats attendus : 1 page (FAQ)
-
-**Test 2 : Recherche sémantique (Notion AI)**
-- Utiliser "Ask AI" sur l'ensemble du workspace :
-- Question : "Comment un client peut-il récupérer son argent si le produit ne lui convient pas ?"
-- Résultats attendus : 
-  - FAQ (mention remboursements)
-  - Changelog (fonctionnalité ajoutée)
-  - ADR (process de refund Stripe)
-
-**Test 3 : Question complexe**
-- Question : "Quelles sont les contraintes de sécurité pour stocker les cartes bancaires ?"
-- Résultats attendus :
-  - Spécifications (mention PCI-DSS, 3D Secure)
-  - ADR (choix Stripe avec compliance)
-
----
-
-#### **Étape 4 : Mesurer la différence** (2 min)
-
-| Critère | Recherche mots-clés | Recherche sémantique Notion AI | Amélioration |
-|---------|---------------------|-------------------------------|--------------|
-| **Question 1** | 1 page trouvée | 3 pages pertinentes | +200% |
-| **Question 2** | 0 résultat (termes différents) | 2 pages pertinentes | ∞ |
-| **Question 3** | 1 page (si mots exacts) | 2 pages (comprend le contexte) | +100% |
-| **Temps de recherche** | 5-10 min (lire chaque page) | 30 sec (réponse directe) | **95%** |
-
-**Tableau comparatif général** :
-
-| Critère | Documentation dispersée | Knowledge base Notion AI | Gain |
-|---------|------------------------|--------------------------|------|
-| **Temps de recherche** | 20-30 min/jour | 2-3 min/jour | **90%** |
-| **Pertinence résultats** | 60% (mots-clés exacts) | 95% (comprend le sens) | +58% |
-| **Centralisation** | ❌ 5+ outils différents | ✅ 1 seul espace | 100% |
-| **Mise à jour** | ⚠️ Manuelle, souvent oubliée | ✅ Détecte les pages obsolètes | Auto |
-
----
-
-### 💡 Leçon clé
-
-La **recherche sémantique** change la donne : au lieu de chercher des **mots-clés**, on pose des **questions en langage naturel** et l'IA comprend **l'intention** pour trouver les contenus pertinents.
-
-**Appliquez ce principe pour** :
-- Documentation produit
-- Base de connaissances client (support)
-- Onboarding de nouveaux membres
-- Archives de décisions (ADR)
-
----
-
-## 🎓 Synthèse : Les 3 workflows maîtrisés
+## 🎓 Synthèse : Les 2 workflows maîtrisés
 
 | Workflow | Outil principal | Use case | Temps gagné |
 |----------|----------------|----------|-------------|
 | **1. Réunion → Action items** | MS Teams + Loop | Comptes-rendus automatisés | 89% (45min → 5min) |
 | **2. Vidéo → Communication** | Gladia.io + ChatGPT | Contenu multi-canal depuis vidéo | 95% (5h50 → 18min) |
-| **3. Documentation → Recherche** | Notion AI | Base de connaissances intelligente | 90% (30min → 3min/jour) |
 
 ---
 
@@ -581,7 +397,6 @@ La **recherche sémantique** change la donne : au lieu de chercher des **mots-cl
 
 ✅ **1 workflow Teams + Loop** opérationnel pour vos réunions  
 ✅ **4 contenus générés** depuis 1 vidéo (transcription, sous-titres, posts LinkedIn + Viva Engage, article)  
-✅ **1 knowledge base Notion** structurée avec recherche sémantique  
 ✅ **3 prompts réutilisables** pour transcription, communication, documentation  
 
 **ROI total estimé** : **~8 heures/semaine économisées** sur réunions et documentation ! 🚀
@@ -595,12 +410,10 @@ La **recherche sémantique** change la donne : au lieu de chercher des **mots-cl
 1. **Quel workflow vous a le plus impressionné ?**
    - Teams + Loop ?
    - Gladia → 4 contenus ?
-   - Recherche sémantique Notion ?
 
 2. **Quelle est la première application que vous allez mettre en place lundi ?**
    - Activer transcription Teams pour vos réunions ?
    - Transcrire une vidéo de démo pour créer du contenu ?
-   - Centraliser votre doc dans Notion ?
 
 3. **Difficultés rencontrées ?**
    - Problèmes d'accès aux outils ?
@@ -609,7 +422,6 @@ La **recherche sémantique** change la donne : au lieu de chercher des **mots-cl
 4. **ROI estimé pour votre contexte ?**
    - Combien de réunions/semaine ?
    - Combien de vidéos/mois ?
-   - Temps de recherche doc quotidien ?
 
 ---
 
@@ -629,11 +441,7 @@ La **recherche sémantique** change la donne : au lieu de chercher des **mots-cl
 - [ ] Générer 2 contenus minimum (posts + article)
 - [ ] Publier et mesurer l'engagement
 
-### Option 3 : Workflow Documentation
-- [ ] Centraliser 5+ pages de doc dans Notion
-- [ ] Utiliser Notion AI pour structurer et lier
-- [ ] Tester la recherche sémantique
-- [ ] Former 2 collègues à l'utilisation
+
 
 ---
 
@@ -680,7 +488,3 @@ Créez votre fichier `Prompts_Reunions_Documentation.md` avec :
 - [Guide Microsoft Loop Getting Started](https://support.microsoft.com/loop)
 - [Gladia.io API Documentation](https://docs.gladia.io)
 - [Notion AI Guide](https://www.notion.so/help/guides/using-notion-ai)
-
----
-
-**💬 Questions ? Partagez vos workflows automatisés avec le groupe !**

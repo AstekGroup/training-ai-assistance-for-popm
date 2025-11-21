@@ -1,6 +1,6 @@
 # Exercices Module 4 : Prendre de meilleures décisions avec l'IA
 
-**Durée totale** : 1 heure (3 × 20 minutes)  
+**Durée totale** : 40 minutes (2x20 minutes)
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : Accès à [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
 
@@ -19,7 +19,6 @@ Maîtriser **3 frameworks de décision** assistés par IA pour prendre des déci
 
 ## 🎯 Exercice 1 : Priorisation RICE automatisée
 
-**Durée** : 20 minutes  
 **Framework** : RICE (Reach × Impact × Confidence / Effort)  
 **Objectif** : Utiliser l'IA pour calculer les scores RICE et prioriser des features
 
@@ -347,180 +346,12 @@ Le **SWOT + IA** force une **analyse structurée 360°** (interne/externe, posit
 
 ---
 
-## 🔮 Exercice 3 : Modélisation de scénarios "What-If"
-
-**Durée** : 20 minutes  
-**Framework** : Analyse de scénarios (Optimiste / Réaliste / Pessimiste)  
-**Objectif** : Anticiper les conséquences d'une décision en modélisant plusieurs futurs possibles
-
-### Le problème
-
-Vous êtes PM d'une **startup SaaS B2B**. Vous devez choisir entre **2 stratégies de growth** pour les 12 prochains mois :
-
-**Stratégie A : Focus ACQUISITION**  
-- Investir massivement en marketing (200k€) pour acquérir de nouveaux clients
-- Objectif : +300% de nouveaux clients
-- Réduire le budget R&D produit de 30%
-
-**Stratégie B : Focus RÉTENTION**  
-- Investir en amélioration produit pour réduire le churn
-- Objectif : Réduire le churn de 8% à 3%
-- Budget marketing réduit à 50k€
-
-**Données actuelles** :
-- 500 clients (MRR moyen : 200€/client = 100k€ MRR total)
-- Churn : 8% mensuel
-- Coût d'acquisition client (CAC) : 800€
-- Lifetime Value (LTV) : 2400€ (12 mois en moyenne)
-
-**Sans modélisation** : Vous choisissez "au feeling" et découvrez 6 mois plus tard que c'était la mauvaise décision.
-
----
-
-### ✅ Mission : Modéliser 3 scénarios pour CHAQUE stratégie
-
-#### **Étape 1** : Comprendre l'analyse de scénarios (2 min)
-
-Pour chaque décision stratégique, on modélise **3 scénarios** :
-
-1. **Scénario OPTIMISTE** : Tout se passe bien (probabilité ~20%)
-2. **Scénario RÉALISTE** : Résultats attendus (probabilité ~60%)
-3. **Scénario PESSIMISTE** : Tout va mal (probabilité ~20%)
-
-**Objectif** : Comparer la **valeur attendue** de chaque stratégie et identifier les **signaux à surveiller**.
-
----
-
-#### **Étape 2** : Utiliser l'IA pour modéliser les scénarios (15 min)
-
-**Prompt à utiliser** :
-
-```
-Tu es un expert en stratégie SaaS B2B.
-
-Contexte du produit :
-- Startup SaaS B2B
-- 500 clients actuels
-- MRR moyen : 200€/client = 100k€ MRR total
-- Churn actuel : 8% mensuel
-- CAC : 800€
-- LTV : 2400€ (12 mois en moyenne)
-
-Décision à modéliser sur 12 mois :
-
-STRATÉGIE A : Focus ACQUISITION
-- Budget marketing : 200k€
-- Objectif : +300% nouveaux clients (1500 nouveaux clients)
-- Budget R&D produit : -30% (risque dégradation produit)
-
-STRATÉGIE B : Focus RÉTENTION
-- Budget amélioration produit : 150k€
-- Objectif : Réduire churn de 8% à 3% mensuel
-- Budget marketing : 50k€
-
-Pour CHACUNE des 2 stratégies, modélise 3 SCÉNARIOS (Optimiste, Réaliste, Pessimiste) :
-
-Pour chaque scénario, calcule sur 12 mois :
-1. Nombre de clients finaux
-2. MRR final
-3. Croissance MRR (%)
-4. Churn moyen sur la période
-5. CAC / LTV ratio
-6. Rentabilité estimée
-
-Ensuite :
-- Calcule la VALEUR ATTENDUE de chaque stratégie
-  (Valeur attendue = 0.2 × Optimiste + 0.6 × Réaliste + 0.2 × Pessimiste)
-- Fournis une RECOMMANDATION avec justification
-- Liste les SIGNAUX À SURVEILLER pour détecter si on dévie du scénario réaliste
-- Identifie les HYPOTHÈSES CRITIQUES pour chaque stratégie
-
-Présente sous forme de TABLEAUX clairs et comparatifs.
-```
-
----
-
-#### **Étape 3** : Analyser les résultats (2 min)
-
-**Résultat attendu** (exemple simplifié) :
-
-### STRATÉGIE A : Focus ACQUISITION
-
-| Scénario | Probabilité | Clients finaux | MRR final | Croissance MRR | Churn | Résultat |
-|----------|-------------|----------------|-----------|----------------|-------|----------|
-| **Optimiste** | 20% | 1800 | 360k€ | +260% | 6% | 🔥 Excellent |
-| **Réaliste** | 60% | 1200 | 180k€ | +80% | 9% | ✅ Bon |
-| **Pessimiste** | 20% | 600 | 90k€ | -10% | 12% | ❌ Échec |
-
-**Valeur attendue** : `0.2×360k + 0.6×180k + 0.2×90k = 198k€ MRR`
-
----
-
-### STRATÉGIE B : Focus RÉTENTION
-
-| Scénario | Probabilité | Clients finaux | MRR final | Croissance MRR | Churn | Résultat |
-|----------|-------------|----------------|-----------|----------------|-------|----------|
-| **Optimiste** | 20% | 650 | 140k€ | +40% | 2% | ✅ Très stable |
-| **Réaliste** | 60% | 580 | 120k€ | +20% | 4% | ✅ Stable |
-| **Pessimiste** | 20% | 480 | 95k€ | -5% | 6% | ⚠️ Stagnation |
-
-**Valeur attendue** : `0.2×140k + 0.6×120k + 0.2×95k = 119k€ MRR`
-
----
-
-### COMPARAISON
-
-| Critère | Stratégie A (Acquisition) | Stratégie B (Rétention) | Gagnant |
-|---------|---------------------------|-------------------------|---------|
-| **Valeur attendue** | 198k€ | 119k€ | 🏆 **A** |
-| **Risque échec** | ⚠️ Élevé (scénario pessimiste = -10%) | ✅ Faible | B |
-| **Scalabilité** | 🚀 Forte | ⚠️ Limitée | A |
-| **Stabilité** | ❌ Variable | ✅ Stable | B |
-
-**RECOMMANDATION IA** :  
-> "**Stratégie A recommandée** si vous acceptez le risque. Valeur attendue supérieure (+79k€ MRR), mais risque d'échec réel. **Plan de mitigation** : Surveiller le churn mensuellement. Si churn > 10% après 3 mois, pivoter vers stratégie B hybride."
-
-**SIGNAUX À SURVEILLER** :
-- 📊 Churn mensuel (alerte si > 10%)
-- 💰 CAC réel vs estimé (alerte si > 1000€)
-- 📈 Taux de conversion marketing (alerte si < 2%)
-- 😊 NPS clients (alerte si < 30)
-
----
-
-#### **Étape 4** : Mesurer le gain (1 min)
-
-| Critère | Sans scénarios | Avec scénarios IA | Gain |
-|---------|----------------|-------------------|------|
-| **Risques identifiés** | ❌ "On verra bien" | ✅ 3 scénarios chiffrés | 100% |
-| **Hypothèses testées** | 1 (optimiste) | 3 (optimiste/réaliste/pessimiste) | +200% |
-| **Signaux d'alerte** | ❌ Aucun | ✅ 4 métriques claires | 100% |
-| **Confiance décision** | 4/10 | 8/10 | +100% |
-| **Plan B** | ❌ Pas prévu | ✅ Pivot documenté | 100% |
-
----
-
-### 💡 Leçon clé
-
-L'**analyse de scénarios + IA** transforme une décision **binaire** (A ou B) en décision **éclairée** avec :
-- Compréhension des risques (best case / worst case)
-- Valeur attendue calculée objectivement
-- Signaux d'alerte pour pivoter rapidement si nécessaire
-
-**Appliquez les scénarios pour** :
-- Choix stratégiques (growth, pricing, marché)
-- Décisions budgétaires (investissement, recrutement)
-- Planification produit (roadmap, pivots)
-
----
-
-## 🎓 Synthèse : Les 3 frameworks de décision maîtrisés
+## 🎓 Synthèse : Les 2 frameworks de décision maîtrisés
 
 | Framework | Quand l'utiliser | Ce qu'il apporte | Temps gagné |
 |-----------|------------------|------------------|-------------|
 | **🎯 RICE** | Priorisation de features/initiatives | Classement objectif data-driven | 90% (3h → 15min) |
 | **🔍 SWOT** | Décisions stratégiques complexes | Analyse 360° (forces/faiblesses/opportunités/menaces) | 95% (2j → 15min) |
-| **🔮 Scénarios** | Anticiper conséquences d'une décision | Modélisation de futurs possibles + plan B | 100% (impossible manuellement) |
 
 ---
 
@@ -530,57 +361,30 @@ L'**analyse de scénarios + IA** transforme une décision **binaire** (A ou B) e
 
 ✅ **1 tableau RICE** pour 6 features avec scores et classement  
 ✅ **1 analyse SWOT complète** avec recommandation et alternatives  
-✅ **6 scénarios modélisés** (3 par stratégie) avec valeur attendue  
-✅ **3 prompts réutilisables** pour vos décisions futures  
+  
 ✅ **Compétence** : Structurer vos décisions avec des frameworks éprouvés  
 
-**ROI total** : **~50 heures/an économisées** sur les décisions stratégiques
+
 
 ---
 
-## 💬 Débrief collectif (facultatif, si temps)
+## 💬 Débrief collectif (10 min)
 
 ### Questions à discuter en groupe :
 
-1. **Quel framework vous a le plus convaincu ?** (RICE / SWOT / Scénarios)
+1. **Quel framework vous a le plus convaincu ?** (RICE ou SWOT)
 
 2. **Avez-vous été surpris par les résultats de l'IA ?**
    - Le classement RICE était-il attendu ?
    - La recommandation SWOT vous a-t-elle fait changer d'avis ?
-   - Les scénarios pessimistes étaient-ils réalistes ?
 
 3. **Quelle décision en cours dans vos projets pourrait bénéficier de ces frameworks ?**
    - Priorisation backlog → RICE
    - Choix techno/stratégique → SWOT
-   - Choix entre 2 stratégies → Scénarios
 
 4. **Difficultés rencontrées ?**
    - Prompts qui ne donnent pas de bons résultats ?
    - Manque de données pour nourrir l'analyse ?
-
----
-
-## 🎯 Challenge pour la semaine
-
-**Mission** : Appliquez AU MOINS 1 framework sur une vraie décision en cours
-
-### Option 1 : Priorisation RICE
-- [ ] Lister 5-10 items à prioriser (features, initiatives, bugs)
-- [ ] Utiliser le prompt RICE adapté à votre contexte
-- [ ] Partager le classement avec votre équipe
-- [ ] Mesurer l'adhésion vs une priorisation classique
-
-### Option 2 : Analyse SWOT
-- [ ] Identifier une décision stratégique en cours
-- [ ] Générer l'analyse SWOT complète
-- [ ] Présenter à votre manager ou équipe
-- [ ] Documenter la décision prise
-
-### Option 3 : Scénarios What-If
-- [ ] Choisir une décision avec 2 options
-- [ ] Modéliser 3 scénarios par option (6 total)
-- [ ] Calculer la valeur attendue
-- [ ] Définir les signaux d'alerte à surveiller
 
 ---
 
@@ -596,7 +400,7 @@ L'**analyse de scénarios + IA** transforme une décision **binaire** (A ou B) e
 > **Garbage In, Garbage Out** : La qualité de l'analyse dépend de la qualité des données et du contexte fournis. Soyez précis dans vos prompts.
 
 > [!NOTE]
-> **Documentez vos décisions** : Sauvegardez les analyses RICE/SWOT/Scénarios pour justifier vos choix et apprendre de vos décisions passées.
+> **Documentez vos décisions** : Sauvegardez les analyses RICE/SWOT pour justifier vos choix et apprendre de vos décisions passées.
 
 ---
 
@@ -607,17 +411,10 @@ L'**analyse de scénarios + IA** transforme une décision **binaire** (A ou B) e
 Créez votre fichier `Prompts_Decision.md` avec :
 - ✅ Prompt RICE (fait aujourd'hui)
 - ✅ Prompt SWOT (fait aujourd'hui)
-- ✅ Prompt Scénarios (fait aujourd'hui)
 - 💡 Prompt Analyse multi-critères
-- 💡 Prompt Arbre de décision
 - 💡 Prompt Matrice Eisenhower (Urgent/Important)
 
 ### Lectures recommandées
 
 - [RICE Framework by Intercom](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)
 - [SWOT Analysis Guide](https://www.mindtools.com/pages/article/newTMC_05.htm)
-- [Scenario Planning for Product Managers](https://www.productplan.com/learn/scenario-planning/)
-
----
-
-**💬 Questions ? Partagez vos décisions assistées par IA avec le groupe !**
