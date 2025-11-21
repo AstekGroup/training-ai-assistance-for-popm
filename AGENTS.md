@@ -28,13 +28,13 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
 - Gérer la diversité des niveaux (junior à senior)
 - Adapter le contenu aux différents profils (PO, PM)
 - Favoriser l'alternance entre théorie et pratique
-- Pour chaque notion théorique abordée, prévoir soit un exercice de mise en application, soit un quiz/QCM
+- Pour chaque notion théorique abordée, prévoir un exercice de mise en application
 - Créer des parcours d'apprentissage progressifs et cohérents
 
 **Ratio pédagogique recommandé :**
 
 - 40% théorie / 60% pratique
-- Minimum 1 exercice ou quiz par notion théorique majeure
+- Minimum 1 exercice par notion théorique majeure
 - Études de cas réelles pour chaque module
 
 ## Structure du contenu
@@ -60,7 +60,7 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
   - Objectifs d'apprentissage
   - Contenu théorique structuré
   - Exercices pratiques avec corrigés
-  - Quiz/QCM avec réponses
+
   - Études de cas
   - Ressources complémentaires
 
@@ -109,7 +109,7 @@ Maintenir un glossaire centralisé dans `ANNEXES/glossaire.md` avec :
 - **Objectifs d'apprentissage clairs** et mesurables pour chaque module
 - **Construction progressive** des compétences à travers les sessions
 - **Exercices pratiques** renforçant les concepts théoriques
-- **Méthodes d'évaluation** pour la validation des compétences (quiz, exercices notés, projets pratiques)
+- **Méthodes d'évaluation** pour la validation des compétences (exercices notés, projets pratiques)
 - **Feedback constructif** dans les corrigés d'exercices
 
 ### Pertinence business
@@ -159,8 +159,8 @@ Maintenir un glossaire centralisé dans `ANNEXES/glossaire.md` avec :
 
 - **Modules** : `MODULE_X_Nom-du-module.md` (ex: `MODULE_1_Acculturation.md`)
 - **Supports** : `SUPPORT_Nom-du-support.md` (ex: `SUPPORT_Template-User-Story.md`)
-- **Exercices** : `EXERCICE_X_Y_Nom.md` (ex: `EXERCICE_1_2_Analyse-de-cas.md`)
-- **Quiz** : `QUIZ_X_Y_Nom.md` (ex: `QUIZ_1_1_Concepts-IA.md`)
+- **Exercices** : `EXERCICE_X_Nom.md` (ex: `EXERCICE_1_Prompt-Engineering.md`)
+
 
 ### Métadonnées
 
