@@ -290,7 +290,3 @@ Exemples :
 
 > [!NOTE]
 > **Confidentialité** : Ne partagez jamais de données sensibles (clients, stratégie) avec les IA publiques. Utilisez des versions entreprise si nécessaire.
-
----
-
-**💬 Questions ? Partagez vos prompts les plus efficaces avec le groupe !**

@@ -1,6 +1,6 @@
 # Exercices Module 3 : Automatiser vos tâches répétitives avec l'IA
 
-**Durée totale** : 1 heure (2 exercices + débrief)  
+**Durée totale** : 2 heures (2 exercices + débrief)  
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Compte Zapier gratuit (à créer avant la session)
@@ -21,8 +21,6 @@ Comprendre et expérimenter **2 niveaux d'automatisation** pour libérer du temp
 
 ## 📝 Exercice 1 : Automatisation SIMPLE - Template de contenu réutilisable
 
-**Durée** : 20 minutes  
-**Niveau** : ⭐ Débutant  
 **Objectif** : Créer un prompt template pour automatiser la génération de Release Notes
 
 ### Le problème
@@ -172,294 +170,63 @@ D'autres contenus à automatiser avec la même approche :
 
 ---
 
-## ⚙️ Exercice 2 : Automatisation INTERMÉDIAIRE - Workflow Zapier complet
+## ⚙️ Exercice 2 : Design de Workflow (Zapier ou GumLoop)
 
 **Durée** : 30 minutes  
 **Niveau** : ⭐⭐ Intermédiaire  
-**Objectif** : Créer votre premier workflow Zapier opérationnel
+**Objectif** : Concevoir la logique d'un workflow automatisé (sans se perdre dans la technique)
 
 ### Le problème
 
-Votre équipe et vos stakeholders vous envoient des **demandes de features de manière dispersée** :
-- 📧 Par email
-- 💬 En réunion (oubliées ensuite)
-- 🗣️ Dans les couloirs
-- 💬 Dans Slack/Teams
-- 📞 Par téléphone
+Votre équipe reçoit des **demandes de features de partout** (Email, Slack, Réunion, Couloir).
+Résultat : Oublis, perte d'info, et charge mentale.
 
-**Conséquences** :
-- ❌ Risque d'oubli élevé
-- ❌ Pas de traçabilité
-- ❌ Difficile à prioriser
-- ❌ Temps perdu à chercher "qui a demandé quoi"
+### ✅ Mission : Designer votre "Machine à Feedback"
 
----
+Plutôt que de cliquer partout tout de suite, nous allons **dessiner** la logique. C'est l'étape la plus importante.
 
-### ✅ Mission : Créer un système de collecte automatisé
+**Le Flux Cible** :
+`Formulaire de collecte` -> `IA (Analyse)` -> `Outil de gestion (Jira/Notion)`
 
-**Workflow à construire** :
+#### Étape 1 : Le Formulaire (L'entrée)
+Créez un Google Form rapide avec :
+1. Titre
+2. Description
+3. Email du demandeur
 
-```
-┌─────────────────────┐
-│  Stakeholder        │
-│  remplit formulaire │ 
-└──────────┬──────────┘
-           │
-           │ Déclencheur automatique
-           ▼
-┌─────────────────────┐
-│  Google Forms       │
-│  (Centralisation)   │
-└──────────┬──────────┘
-           │
-           │ Workflow Zapier
-           ▼
-┌─────────────────────┐
-│  Email au PO        │
-│  (Notification)     │
-└─────────────────────┘
-```
+#### Étape 2 : La Logique (Le Cerveau)
+C'est ici que vous choisissez votre arme.
 
-**Résultat attendu** : Dès qu'un besoin est soumis, vous recevez un email formaté automatiquement.
+**Option A : La voie Classique (Zapier)**
+*Idéal pour connecter des outils simples.*
+1. **Trigger** : "New Response in Google Form"
+2. **Action** : "Send Email" (Pour vous notifier)
+3. **Action** : "Create Card in Trello/Jira"
+
+**Option B : La voie Moderne (GumLoop) 🚀**
+*Idéal pour traiter intelligemment le texte.*
+1. Allez sur [GumLoop.com](https://www.gumloop.com)
+2. Créez un flow :
+   - **Input** : Le texte de la demande
+   - **AI Block** : "Catégorise cette demande (Bug/Feature) et résume-la en 1 phrase."
+   - **Output** : Envoi du résultat par email ou dans un Google Sheet.
+
+#### Étape 3 : L'Implémentation (15 min)
+Choisissez l'un des deux outils et tentez de créer le lien **Formulaire -> Email**.
+
+**Si vous bloquez techniquement** : Ce n'est pas grave ! L'important est d'avoir compris la logique "Trigger -> Action". Notez sur papier les étapes exactes que vous voudriez que le robot fasse.
 
 ---
 
-### Étape 1 : Créer le formulaire de collecte (7 min)
-
-#### Créer un Google Form avec ces champs :
-
-1. **Titre de la demande** (Texte court)
-   - Description : "En une phrase, décrivez votre besoin"
-
-2. **Description détaillée** (Paragraphe)
-   - Description : "Expliquez le contexte et ce que vous souhaitez"
-
-3. **Priorité** (Choix multiple)
-   - Options : Basse / Moyenne / Haute / Critique
-
-4. **Impact attendu** (Paragraphe)
-   - Description : "Quel problème cela résout ? Pour qui ?"
-
-5. **Demandeur** (Texte court)
-   - Description : "Votre nom"
-
-6. **Email du demandeur** (Email)
-   - Description : "Votre email pour suivi"
-
-#### Configuration du formulaire :
-
-- **Titre du formulaire** : "Demande de nouvelle fonctionnalité produit"
-- **Description** : "Soumettez vos idées et besoins produit via ce formulaire. Vous serez notifié de l'évaluation sous 48h."
-- **Paramètres** : 
-  - ✅ Limiter à 1 réponse (optionnel)
-  - ✅ Collecter les adresses email
-
-**💡 Astuce** : Utilisez un Google Form template pour aller plus vite !
-
----
-
-### Étape 2 : Créer le compte Zapier (3 min)
-
-Si ce n'est pas déjà fait :
-
-1. Aller sur [https://zapier.com/sign-up](https://zapier.com/sign-up)
-2. Créer un compte gratuit (avec votre email Google)
-3. Vérifier votre email
-4. Accéder au dashboard
-
-**Plan gratuit Zapier** : 
-- ✅ 100 tâches/mois (largement suffisant pour débuter)
-- ✅ Workflows en 2 étapes
-- ✅ Rafraichissement toutes les 15 min
-
----
-
-### Étape 3 : Construire votre premier Zap (15 min)
-
-#### **Action 1 : Créer un nouveau Zap**
-
-1. Cliquer sur "**Create Zap**"
-2. Nommer le Zap : "Collecte besoins produit → Email PO"
-
----
-
-#### **Action 2 : Configurer le DÉCLENCHEUR**
-
-**Étape 2.1** : Choisir l'app
-- Rechercher : "**Google Forms**"
-- Sélectionner : "**New Response in Spreadsheet**"
-
-**Étape 2.2** : Connecter votre compte Google
-- Cliquer sur "**Sign in to Google**"
-- Autoriser Zapier à accéder à Google Forms
-
-**Étape 2.3** : Configurer le déclencheur
-- **Spreadsheet** : Sélectionner le formulaire créé
-- **Worksheet** : "Form Responses 1" (par défaut)
-
-**Étape 2.4** : Tester le déclencheur
-- Cliquer sur "**Test trigger**"
-- Si aucune donnée : soumettre un formulaire test
-- Vérifier que les données apparaissent
-
----
-
-#### **Action 3 : Configurer l'ACTION (Email)**
-
-**Étape 3.1** : Choisir l'app
-- Rechercher : "**Email by Zapier**"
-- Sélectionner : "**Send Outbound Email**"
-
-**Étape 3.2** : Configurer l'email
-
-**To (Destinataire)** :
-```
-votre.email@example.com
-```
-*(Remplacez par votre vraie adresse email)*
-
-**Subject (Sujet)** :
-```
-🆕 Nouvelle demande produit - Priorité {{Priorité}}
-```
-*(Utilisez le champ dynamique en cliquant sur le "+" à droite)*
-
-**Body (Corps du message)** :
-```
-Bonjour,
-
-Une nouvelle demande produit vient d'être soumise.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-📋 TITRE
-{{Titre de la demande}}
-
-📝 DESCRIPTION DÉTAILLÉE
-{{Description détaillée}}
-
-⚡ PRIORITÉ
-{{Priorité}}
-
-🎯 IMPACT ATTENDU
-{{Impact attendu}}
-
-👤 DEMANDEUR
-{{Demandeur}} 
-📧 Email : {{Email du demandeur}}
-
-⏰ REÇU LE
-{{Timestamp}}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-✅ PROCHAINE ÉTAPE
-Évaluer la demande et répondre au demandeur sous 48h.
-
----
-Ce message est généré automatiquement par votre workflow Zapier.
-```
-
-**💡 Astuce** : Cliquez sur le **"+"** pour insérer les champs dynamiques du formulaire
-
----
-
-#### **Action 4 : Tester le Zap**
-
-1. Cliquer sur "**Test step**"
-2. Vérifier que l'email de test est bien reçu
-3. Vérifier le formatage et les données
-
----
-
-#### **Action 5 : Activer le Zap**
-
-1. Cliquer sur "**Publish**"
-2. Votre workflow est maintenant **actif** ! 🎉
-
----
-
-### Étape 4 : Tester en conditions réelles (3 min)
-
-1. **Partagez** le lien de votre Google Form avec un collègue (ou remplissez-le vous-même)
-2. **Soumettez** une demande de test
-3. **Vérifiez** que vous recevez l'email automatiquement (délai max 15 min en plan gratuit)
-4. **Ajustez** le formatage si nécessaire en modifiant le Zap
-
----
-
-### Étape 5 : Mesurer l'impact et le ROI (2 min)
-
-Complétez ce tableau de gains :
-
-| Critère | Avant (Dispersé) | Après (Automatisé) | Amélioration |
-|---------|------------------|-------------------|--------------|
-| **Centralisation** | ❌ Emails, Slack, réunions | ✅ Formulaire unique | 100% |
-| **Traçabilité** | ❌ Faible, manuellement | ✅ Automatique (Google Sheet) | 100% |
-| **Risque d'oubli** | ⚠️ Élevé | ✅ Nul (email systématique) | 100% |
-| **Temps de traitement** | 10 min/demande | 0 min (auto) | **100% ⚡** |
-| **Visibilité** | ❌ Seul le PO sait | ✅ Notification immédiate | +100% |
-
-**ROI calculé** :
-
-```
-Hypothèse : 20 demandes/mois
-
-Avant : 20 × 10 min = 200 min/mois
-Après : 0 min (automatique)
-
-Économie mensuelle : 200 min = 3,3 heures
-Économie annuelle : 40 heures 🚀
-
-Temps de setup : 30 min
-ROI atteint après : 3 demandes = 1,5 jour !
-```
-
----
-
-## 🚀 Bonus : Améliorations possibles du workflow
-
-### Option 1 : Ajouter une copie au demandeur
-
-Dans l'email Zapier, ajouter un champ **Cc** :
-```
-Cc: {{Email du demandeur}}
-```
-
-**Bénéfice** : Le demandeur reçoit une confirmation automatique de sa soumission.
-
----
-
-### Option 2 : Tracker les demandes dans un Google Sheet
-
-**Ajouter une action supplémentaire au Zap** :
-
-1. Action : "**Google Sheets - Create Spreadsheet Row**"
-2. Colonnes : 
-   - Titre
-   - Description
-   - Priorité
-   - Demandeur
-   - Email
-   - Date
-   - Statut (par défaut : "À évaluer")
-
-**Bénéfice** : Vous avez un tableau de suivi automatique de toutes les demandes.
-
----
-
-### Option 3 : Notification différenciée selon priorité
-
-**Ajouter une condition au Zap** (nécessite plan payant) :
-
-```
-IF Priorité = "Critique"
-  THEN Email avec 🚨 dans sujet + CC au manager
-ELSE
-  THEN Email normal
-```
-
-**Bénéfice** : Les demandes critiques sont escaladées automatiquement.
+### Étape 4 : Mesurer l'impact
+
+| Critère | Avant (Chaos) | Après (Système) |
+|---------|---------------|-----------------|
+| **Centralisation** | ❌ Dispersé | ✅ Unique |
+| **Traçabilité** | ❌ Faible | ✅ Totale |
+| **Temps de tri** | 10 min/demande | 0 min (IA) |
+
+**ROI** : Pour 20 demandes/mois = **40h/an économisées** (et 0 oubli).
 
 ---
 
@@ -583,7 +350,3 @@ Créez votre propre fichier `Prompts_Réutilisables.md` avec :
 - Prompt Email Stakeholders
 - Prompt User Stories
 - Prompt Synthèse de Réunion
-
----
-
-**💬 Questions ? Besoin d'aide pour automatiser une tâche spécifique ? Partagez avec le groupe !**

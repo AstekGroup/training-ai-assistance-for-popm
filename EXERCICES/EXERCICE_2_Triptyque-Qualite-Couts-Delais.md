@@ -370,7 +370,3 @@ Moins de retravail = DÉLAIS respectés
 
 > [!TIP]
 > **La donnée est reine** : Plus vous alimentez l'IA avec des données historiques précises, plus ses prédictions seront fiables. Documentez vos projets !
-
----
-
-**💬 Questions ? Partagez vos résultats d'analyse avec le groupe !**
