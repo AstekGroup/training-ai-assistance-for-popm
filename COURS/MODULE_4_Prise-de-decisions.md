@@ -138,26 +138,7 @@ Ton : Professionnel mais empathique.
 
 ---
 
-## 5. Exercice Pratique : Le "Sprint Decision" (20 min)
 
-**Objectif** : Prioriser un backlog de crise en 15 minutes chrono.
-
-**Scénario** :
-Vous êtes PO. Il reste 2 sprints avant la fin de l'année.
-Votre backlog contient 10 features, mais la capacité de l'équipe ne permet d'en faire que 3.
-La direction met la pression pour la feature "Dashboard", les commerciaux veulent "Export Excel", et le support supplie pour "Fix Login Bug".
-
-**Mission** :
-1.  Prendre la liste des 10 features (fournie par le formateur).
-2.  Utiliser ChatGPT pour faire une analyse RICE rapide.
-3.  Générer un email de justification pour dire "Non" aux commerciaux (ou à la direction !).
-
-**Livrable** : Le classement RICE et l'email de communication.
-
-| Temps | 1-2 jours | 15 min | **95%** |
-| Alternatives | 1 | 3+ | +200% |
-
----
 
 ### Synthèse : Les 3 frameworks maîtrisés
 
