@@ -112,6 +112,159 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - Utiliser des prompts précis et contextuels
 - Itérer et affiner les résultats
 
+### 2.4 Comment fonctionnent réellement les IA génératives ?
+
+#### 2.4.1 Le principe de base : prédiction de mots
+
+Les IA génératives comme [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai) ou [Gemini](https://gemini.google.com) fonctionnent sur un principe fondamental : **la prédiction du mot suivant le plus probable**.
+
+**Analogie simple** : Imaginez que vous lisez "Il fait beau, je vais sortir mon..." - votre cerveau anticipe naturellement "parapluie" (s'il pleut) ou "chapeau" (s'il fait soleil). Les LLM font exactement cela, mais à une échelle massive.
+
+**Processus en 3 étapes** :
+
+1. **Tokenisation** : Le texte est découpé en "tokens" (morceaux de mots)
+   - Exemple : "Product Owner" → ["Product", " Owner"] (2 tokens)
+   - Un token ≈ 4 caractères en français, ≈ 0.75 mots
+
+2. **Analyse du contexte** : Le modèle analyse tous les tokens précédents pour comprendre le contexte
+
+3. **Prédiction** : Le modèle calcule les probabilités pour chaque mot possible et choisit le plus probable
+
+**Exemple concret** :
+
+```
+Prompt : "En tant que Product Owner, je dois rédiger une..."
+→ L'IA calcule : "user story" (85%), "documentation" (10%), "présentation" (3%)...
+→ L'IA choisit : "user story"
+```
+
+#### 2.4.2 Pourquoi les IA sont mauvaises en calculs ?
+
+**Raison fondamentale** : Les LLM ne calculent pas, ils **prédisent ce qui ressemble à un calcul**.
+
+**Exemple révélateur** :
+
+```
+Question : "Combien font 127 × 83 ?"
+Ce que fait l'IA :
+1. Reconnaît le pattern "X × Y ?"
+2. Cherche dans sa mémoire des exemples similaires
+3. Prédit un nombre qui "semble correct"
+4. Ne fait PAS réellement la multiplication
+```
+
+**Pourquoi cette limitation ?**
+
+1. **Architecture non adaptée** :
+   - Les LLM sont optimisés pour le langage, pas pour l'arithmétique
+   - Ils n'ont pas de "calculatrice interne"
+   - Chaque chiffre est traité comme un token de texte, pas comme un nombre
+
+2. **Apprentissage par patterns** :
+   - L'IA a vu "2 + 2 = 4" des milliers de fois → elle le "sait"
+   - Elle n'a jamais vu "8347 × 9281 = ?" → elle devine
+
+3. **Pas de vérification** :
+   - Un humain peut vérifier son calcul
+   - L'IA ne "sait" pas si sa réponse est mathématiquement correcte
+
+**Implications pratiques pour les PO/PM** :
+
+- ❌ Ne jamais faire confiance aux calculs directs (budgets, vélocité, ROI)
+- ✅ Utiliser l'IA pour structurer les formules, puis calculer avec Excel/Google Sheets
+- ✅ Demander à l'IA d'expliquer la méthode de calcul, pas de faire le calcul
+
+**Exemple d'usage correct** :
+
+```
+❌ Mauvais : "Calcule le ROI de ce projet : investissement 150 000€, 
+             gains annuels 45 000€ sur 5 ans"
+
+✅ Bon : "Explique-moi la formule pour calculer le ROI d'un projet, 
+         puis crée un tableau Excel avec les formules appropriées"
+```
+
+#### 2.4.3 Pourquoi les IA ne savent pas mesurer le temps ?
+
+**Raison fondamentale** : Les LLM n'ont **pas de notion du temps présent** ni d'horloge interne.
+
+**Ce que "sait" une IA** :
+
+- Sa date de coupure d'entraînement (ex: "mes données vont jusqu'à avril 2024")
+- Les dates mentionnées dans la conversation en cours
+- Les patterns temporels dans son entraînement
+
+**Ce qu'elle ne sait PAS** :
+
+- Quelle heure il est maintenant
+- Quel jour nous sommes
+- Combien de temps s'est écoulé depuis le début de la conversation
+
+**Exemple révélateur** :
+
+```
+Vous : "Quelle heure est-il ?"
+IA : "Je n'ai pas accès à l'heure actuelle..."
+
+Vous : "Nous sommes le 21 novembre 2025 à 14h30. 
+       Dans combien de temps sera-t-il 16h ?"
+IA : "Dans 1 heure et 30 minutes" ✓ (calcul basé sur l'info fournie)
+
+[10 minutes plus tard]
+Vous : "Quelle heure est-il maintenant ?"
+IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
+```
+
+**Pourquoi cette limitation ?**
+
+1. **Pas de capteur temporel** :
+   - L'IA n'a pas accès à une horloge système
+   - Elle ne "vit" pas dans le temps réel
+   - Chaque réponse est indépendante temporellement
+
+2. **Entraînement statique** :
+   - Les données d'entraînement sont figées à une date précise
+   - L'IA ne "sait" rien des événements postérieurs
+
+3. **Pas de mémoire du temps écoulé** :
+   - L'IA ne compte pas les secondes entre vos messages
+   - Elle ne peut pas mesurer la durée d'une conversation
+
+**Implications pratiques pour les PO/PM** :
+
+- ❌ Ne pas demander "Combien de temps ai-je passé sur cette tâche ?"
+- ❌ Ne pas demander "Quelle est la date limite dans 3 semaines ?"
+- ✅ Fournir explicitement les dates et heures dans vos prompts
+- ✅ Utiliser des outils dédiés (calendriers, time trackers) pour la gestion du temps
+
+**Exemple d'usage correct** :
+
+```
+❌ Mauvais : "J'ai commencé ce projet il y a 2 semaines, 
+             combien de temps reste-t-il si la deadline est dans 1 mois ?"
+
+✅ Bon : "Le projet a démarré le 1er novembre 2025, 
+         la deadline est le 1er décembre 2025. 
+         Aujourd'hui nous sommes le 15 novembre. 
+         Aide-moi à planifier les 16 jours restants."
+```
+
+#### 2.4.4 Solutions et outils complémentaires
+
+**Pour les calculs** :
+
+- **[Wolfram Alpha](https://www.wolframalpha.com)** : Moteur de calcul computationnel
+- **Plugins ChatGPT** : Code Interpreter, Wolfram
+- **Intégrations** : Connecter l'IA à des calculatrices via API
+
+**Pour la gestion du temps** :
+
+- **Outils avec accès temps réel** : Certaines IA peuvent maintenant accéder à l'heure via plugins
+- **Intégrations calendrier** : [Zapier](https://zapier.com), [Make](https://www.make.com) pour connecter IA et calendriers
+- **Assistants spécialisés** : [Motion](https://www.usemotion.com), [Reclaim](https://reclaim.ai) pour la planification temporelle
+
+**Règle d'or** : Utilisez l'IA pour ce qu'elle fait bien (langage, structure, créativité) et des outils spécialisés pour le reste (calculs, temps, données en temps réel).
+
 ---
 
 ## 3. Panorama des outils IA pour PO/PM
