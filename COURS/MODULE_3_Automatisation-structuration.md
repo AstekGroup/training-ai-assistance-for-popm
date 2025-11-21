@@ -100,3 +100,7 @@ Comment traiter 500 feedbacks par semaine ?
 
 Une fois les données dans Airtable/Notion, utilisez l'IA pour demander :
 *"Quels sont les 5 problèmes les plus fréquents sur le module Paiement le mois dernier ?"*
+
+---
+
+**Note** : Ce contenu est développé par [Astek](https://www.astek.net) et sera régulièrement mis à jour pour refléter l'évolution des outils et pratiques IA.

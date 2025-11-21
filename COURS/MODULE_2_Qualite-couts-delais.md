@@ -45,8 +45,6 @@ Le triangle de fer (Scope, Time, Cost) reste un pilier du management de projet. 
 
 #### 2.1.1 Génération assistée de user stories
 
-**Outils recommandés** : [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai), [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.com/)
-
 **Processus** :
 
 1. **Collecte du besoin** : Récupérer les besoins métier bruts
@@ -90,8 +88,6 @@ Chaque critère doit être :
 
 #### 2.1.3 Vérification de cohérence et complétude
 
-**Outils** : [ChatGPT](https://chat.openai.com) avec plugins, [Claude](https://claude.ai) avec analyse de documents
-
 **Cas d'usage** :
 
 - Vérifier la cohérence entre user stories
@@ -102,8 +98,6 @@ Chaque critère doit être :
 
 #### 2.2.1 Génération de documentation technique
 
-**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chat.openai.com), [Notion AI](https://www.notion.so/product/ai), [Cursor](https://cursor.com/)
-
 **Processus** :
 
 1. Analyser le code ou les spécifications
@@ -113,8 +107,6 @@ Chaque critère doit être :
 **Exemple** : Documentation d'API générée automatiquement à partir du code
 
 #### 2.2.2 Amélioration de la lisibilité
-
-**Outils** : [Grammarly](https://www.grammarly.com), [ChatGPT](https://chat.openai.com) pour révision
 
 **Cas d'usage** :
 
@@ -161,8 +153,6 @@ Spécification :
 
 #### 3.1.1 Analyse de données historiques
 
-**Outils** : [Jira](https://www.atlassian.com/software/jira) avec AI, [Monday.com](https://monday.com), outils de BI avec IA
-
 **Processus** :
 
 1. Collecter les données historiques (vélocité, temps réel vs estimé)
@@ -197,8 +187,6 @@ Justifie ton estimation en expliquant :
 
 #### 3.1.3 Estimation en points de story
 
-**Outils** : [Jira AI](https://www.atlassian.com/software/jira/features/ai), outils de planification avec IA
-
 **Processus** :
 
 1. Analyser les user stories avec l'IA
@@ -209,8 +197,6 @@ Justifie ton estimation en expliquant :
 ### 3.2 Prédiction de délais avec IA prédictive
 
 #### 3.2.1 Modèles prédictifs de livraison
-
-**Outils** : [Forecast](https://www.forecast.app), [Jira Advanced Roadmaps](https://www.atlassian.com/software/jira/features/advanced-roadmaps), [Monday.com](https://monday.com)
 
 **Fonctionnalités** :
 
@@ -238,8 +224,6 @@ Justifie ton estimation en expliquant :
 
 #### 3.3.1 Analyse de coûts assistée par IA
 
-**Outils** : [Tableau](https://www.tableau.com) avec IA, [Power BI](https://powerbi.microsoft.com), outils financiers avec IA
-
 **Cas d'usage** :
 
 - Analyse des écarts budget réel vs prévu
@@ -263,8 +247,6 @@ Justifie ton estimation en expliquant :
 ### 4.1 Analyse de vélocité avec IA
 
 #### 4.1.1 Calcul et visualisation de la vélocité
-
-**Outils** : [Jira](https://www.atlassian.com/software/jira) avec AI, outils de BI avec IA
 
 **Métriques à suivre** :
 
@@ -300,8 +282,6 @@ Données :
 ### 4.2 Prédiction de vélocité future
 
 #### 4.2.1 Modèles prédictifs
-
-**Outils** : [Forecast](https://www.forecast.app), outils de planification avec IA
 
 **Utilisation** :
 
@@ -351,8 +331,6 @@ Pour chaque action, indique :
 
 #### 5.1.1 Analyse prédictive de risques
 
-**Outils** : [Jira](https://www.atlassian.com/software/jira) avec AI, outils de gestion de risques avec IA
-
 **Techniques** :
 
 - Analyse de patterns de risques dans projets similaires
@@ -387,8 +365,6 @@ Pour chaque risque :
 ### 5.2 Monitoring de risques en temps réel
 
 #### 5.2.1 Alertes automatiques
-
-**Outils** : [Jira](https://www.atlassian.com/software/jira) avec AI, outils de monitoring avec IA
 
 **Signaux à surveiller** :
 
@@ -489,8 +465,6 @@ Format : Professionnel, adapté à un comité de direction
 
 #### 6.3.1 Génération de présentations
 
-**Outils** : [ChatGPT](https://chat.openai.com) avec plugins, [Gamma](https://gamma.app), [Beautiful.ai](https://www.beautiful.ai), [Tome](https://tome.app)
-
 **Processus** :
 
 1. Générer le contenu avec l'IA
@@ -503,349 +477,11 @@ Format : Professionnel, adapté à un comité de direction
 
 ---
 
-## 7. Étude de cas : Optimisation d'un projet e-commerce
 
-### Contexte
 
-**Entreprise** : E-commerce français (500 employés)
-**Projet** : Refonte de la plateforme de paiement
-**Défi initial** : Estimation à 6 mois, budget 500k€, nombreuses incertitudes
 
-### Solution mise en place
 
-**Phase 1 - Estimation assistée** :
 
-- Analyse de 15 projets similaires passés avec IA
-- Estimation révisée : 7 mois, 550k€ (plus réaliste)
-- Identification de 12 risques majeurs
-
-**Phase 2 - Suivi qualité** :
-
-- Génération assistée de spécifications avec [ChatGPT](https://chat.openai.com)
-- Vérification automatique de complétude
-- Réduction de 40% des défauts de spécification
-
-**Phase 3 - Monitoring prédictif** :
-
-- Tableau de bord avec alertes IA
-- Détection précoce de risque de retard (mois 4)
-- Actions correctives mises en place rapidement
-
-### Résultats
-
-**Qualité** :
-
-- Réduction de 35% des bugs en production
-- Amélioration de la satisfaction développeurs (4.5/5)
-
-**Coûts** :
-
-- Budget réel : 545k€ (vs 550k€ estimé)
-- ROI positif dès le mois 8 post-livraison
-
-**Délais** :
-
-- Livraison : 7 mois (conforme à l'estimation révisée)
-- Détection précoce de risques a permis d'éviter 2 mois de retard
-
-### Leçons apprises
-
-✅ **Ce qui a fonctionné** :
-
-- Estimation basée sur données historiques
-- Monitoring prédictif continu
-- Qualité des spécifications améliorée
-
-❌ **Ce qui n'a pas fonctionné** :
-
-- Sur-confiance initiale dans les prédictions IA
-- Nécessité d'ajustements manuels réguliers
-
----
-
-## 8. Exercices pratiques
-
-> [!NOTE]
-> Ces exercices sont conçus pour une session d'1 heure (environ 20 minutes par exercice). Chaque exercice illustre **une dimension du triptyque Qualité / Coûts / Délais** de manière concrète et mesurable.
-
-### Exercice 1 : QUALITÉ - Transformer une spec floue en spec testable
-
-**Objectif** : Mesurer l'impact de l'IA sur la qualité des livrables (specs, user stories)
-
-**Durée** : 20 minutes
-
-**Le problème** : Vous recevez cette spécification floue d'un stakeholder :
-
-```
-L'utilisateur doit pouvoir se connecter facilement à l'application.
-Si le mot de passe est incorrect, on affiche un message d'erreur.
-Il faut que ce soit sécurisé et rapide.
-```
-
-**Étape 1 - Identifier les ambiguïtés** (5 min)
-
-Prompt :
-```
-Tu es un expert QA. Analyse cette spécification et liste toutes les ambiguïtés,
-informations manquantes et risques de mauvaise interprétation :
-[spec]
-
-Pour chaque problème identifié, pose une question précise au PO.
-```
-
-**Étape 2 - Générer des critères testables** (10 min)
-
-Prompt :
-```
-Génère 7 critères d'acceptation en format Gherkin (Given/When/Then) couvrant :
-1. Scénario nominal (connexion réussie)
-2. Échec mot de passe invalide
-3. Compte bloqué après 3 tentatives
-4. Timeout de session
-5. Temps de réponse < 2s
-6. Accessibilité (lecteur d'écran)
-7. Chiffrement des données
-```
-
-**Étape 3 - Comparer avant/après** (5 min)
-
-Tableau comparatif :
-- Testabilité : 0 critères → 7 critères testables
-- Complétude : 30% → 100%
-- Risque défauts : Élevé → Faible (-60% défauts estimés)
-
-**Débrief** :
-- Combien d'ambiguïtés identifiées ?
-- Combien de bugs évités grâce à la spec améliorée ?
-
----
-
-### Exercice 2 : COÛTS - Estimer avec précision grâce aux données historiques
-
-**Objectif** : Comprendre comment l'IA réduit les erreurs d'estimation et les dépassements budgétaires
-
-**Durée** : 20 minutes
-
-**Le scénario** : Estimer une fonctionnalité de **paiement multi-devises**
-
-**Données historiques** :
-
-| Projet passé | Complexité | Temps estimé | Temps réel | Écart |
-|--------------|-----------|--------------|------------|-------|
-| Paiement CB simple | Moyenne | 3 sem | 5 sem | +67% |
-| Intégration Stripe | Moyenne | 4 sem | 4.5 sem | +12% |
-| Wallet interne | Élevée | 8 sem | 12 sem | +50% |
-| Export factures | Faible | 1 sem | 1.5 sem | +50% |
-
-**Étape 1 - Estimation instinctive** (2 min)
-
-Sans IA, votre estimation : _____ semaines
-
-**Étape 2 - Estimation assistée par IA** (10 min)
-
-Prompt :
-```
-Tu es un expert en estimation de projets IT.
-
-Historique de l'équipe : [tableau ci-dessus]
-
-Nouveau projet : Paiement multi-devises (15 devises, conversion temps réel,
-gestion commissions, affichage localisé)
-
-Étape par étape :
-1. Analyse les patterns d'écart dans l'historique
-2. Identifie le projet similaire
-3. Ajuste l'estimation selon les différences
-4. Fournis 3 estimations : optimiste, réaliste, pessimiste
-5. Calcule le niveau de confiance (%)
-6. Liste les risques impactant l'estimation
-```
-
-**Étape 3 - Calculer l'impact coût** (5 min)
-
-Si équipe = 3 dev à 600€/jour :
-- Estimation instinct : ___ semaines = ___€
-- Estimation IA (réaliste) : ___ semaines = ___€
-- **Écart budgétaire évité : ±___€**
-
-**Étape 4 - Mesurer les économies** (3 min)
-
-Sur 10 projets/an, économies totales = ___€
-
-**Débrief** :
-- Écart entre estimation instinct et IA ?
-- Quel pattern l'IA a identifié dans vos données ?
-- Économies projetées sur l'année ?
-
----
-
-### Exercice 3 : DÉLAIS - Détecter les risques de retard avant qu'il soit trop tard
-
-**Objectif** : Utiliser l'IA pour anticiper les retards et prendre des actions correctives à temps
-
-**Durée** : 20 minutes
-
-**Le scénario** : Projet de 6 sprints, vous êtes au Sprint 3 (livraison prévue dans 6 semaines)
-
-**Situation actuelle** :
-
-```
-Sprint 1 : 21/25 points (84%)
-Sprint 2 : 18/25 points (72%)
-Sprint 3 : 15/25 points à J+8
-
-Backlog restant : 115 points
-Objectif : Livrer 100 points critiques dans 6 semaines
-
-Contraintes :
-- 3 stories bloquées (8 points)
-- 1 dev senior absent Sprint 5
-- 12 bugs non estimés découverts
-```
-
-**Étape 1 - Votre intuition** (2 min)
-
-Sans IA :
-- Livraison à temps ? OUI / NON
-- Probabilité : ___%
-- Plus grande inquiétude : ___
-
-**Étape 2 - Analyse prédictive IA** (12 min)
-
-Prompt :
-```
-Tu es un expert Agile.
-
-Contexte : [données ci-dessus]
-
-Mission :
-1. Calcule vélocité moyenne et tendance
-2. Projette les points réalisables dans les 3 sprints restants
-3. Identifie les 5 risques majeurs menaçant les délais
-4. Pour chaque risque : probabilité, impact délai, signal d'alerte, action corrective
-5. Fournis 3 scénarios : optimiste, réaliste, pessimiste
-```
-
-**Étape 3 - Plan d'action** (5 min)
-
-Pour les 2 risques les plus critiques :
-- Risque 1 : ___ → Action : ___ → Gain : ___ semaines
-- Risque 2 : ___ → Action : ___ → Gain : ___ semaines
-
-Décision :
-- [ ] Réduire le scope
-- [ ] Négocier un délai
-- [ ] Ajouter des ressources
-- [ ] Autre
-
-**Étape 4 - Impact détection précoce** (1 min)
-
-- Sans IA : Détection au Sprint 5 (trop tard)
-- Avec IA : Détection au Sprint 3 → **+4 semaines d'avance pour agir**
-
-**Débrief** :
-- Intuition vs analyse IA ?
-- Quel risque oublié ?
-- Quelle action corrective choisie ?
-- Semaines de retard évitées ?
-
----
-
-### Points clés à retenir
-
-| Dimension | Solution IA | Gain mesurable |
-|-----------|-------------|----------------|
-| **📐 QUALITÉ** | Génération de critères testables | -60% défauts |
-| **💰 COÛTS** | Estimation basée sur données | ±20-30% précision |
-| **⏰ DÉLAIS** | Analyse prédictive continue | +4 sem anticipation |
-
-**💡 Les 3 dimensions sont liées** :
-```
-Meilleure QUALITÉ → Moins de COÛTS de correction → DÉLAIS respectés
-```
-
-**Challenge pour la semaine** :
-1. Identifiez 1 spec floue → Exercice 1
-2. Identifiez 1 estimation à faire → Exercice 2
-3. Identifiez 1 indicateur de risque → Exercice 3
-
----
-
-## 9. Quiz d'évaluation
-
-### Q1 : Quel est l'avantage principal de l'estimation assistée par IA basée sur l'historique ?
-
-A) Élimine complètement le besoin d'expertise humaine
-B) Réduit les biais humains et prend en compte les données réelles
-C) Garantit toujours des estimations précises
-D) Remplace les réunions d'estimation
-
-**Réponse** : B
-
-### Q2 : Quels sont les critères INVEST pour une user story de qualité ?
-
-A) Important, Necessary, Valuable, Estimable, Small, Testable
-B) Independent, Negotiable, Valuable, Estimable, Small, Testable
-C) Independent, Necessary, Valuable, Estimable, Small, Testable
-D) Important, Negotiable, Valuable, Estimable, Small, Testable
-
-**Réponse** : B
-
-### Q3 : Quel type d'IA est le plus adapté pour prédire les risques de retard d'un projet ?
-
-A) IA générative
-B) IA analytique
-C) IA prédictive
-D) IA conversationnelle
-
-**Réponse** : C
-
-### Q4 : Quelle métrique est la plus importante pour mesurer la vélocité d'une équipe ?
-
-A) Le nombre de tâches complétées
-B) La vélocité moyenne sur plusieurs sprints
-C) La vélocité du dernier sprint
-D) Le nombre d'heures travaillées
-
-**Réponse** : B
-
-### Q5 : Dans un business case, quel élément est le plus critique pour obtenir l'approbation ?
-
-A) La description détaillée de la solution technique
-B) L'analyse ROI avec bénéfices quantifiables
-C) Le plan de mise en œuvre détaillé
-D) La liste complète des risques
-
-**Réponse** : B
-
-### Q6 : Quel est le principal avantage de la détection précoce de risques avec l'IA ?
-
-A) Élimination complète des risques
-B) Possibilité de mettre en place des actions correctives avant l'impact
-C) Réduction automatique des coûts
-D) Garantie de livraison à temps
-
-**Réponse** : B
-
-### Q7 : Quelle technique permet d'améliorer la qualité des spécifications avec l'IA ?
-
-A) Génération automatique sans révision
-B) Génération initiale + vérification de complétude + affinement
-C) Copie de spécifications similaires
-D) Utilisation exclusive de templates
-
-**Réponse** : B
-
-### Q8 : Quel est l'impact mesurable typique de l'IA sur la réduction des défauts dans les spécifications selon les études ?
-
-A) 10%
-B) 20%
-C) 30%
-D) 50%
-
-**Réponse** : C
-
----
 
 ## 10. Ressources complémentaires
 
@@ -896,9 +532,7 @@ Consultez le dossier `SUPPORTS/` pour :
 - **Module 4** : Prise de décisions assistée par IA
 - **Module 5** : Réunions et documentation assistées par l'IA
 
-### Action immédiate
 
-Avant le prochain module, testez l'estimation assistée par IA sur un projet réel ou fictif. Comparez avec votre méthode habituelle et mesurez les différences.
 
 ---
 
