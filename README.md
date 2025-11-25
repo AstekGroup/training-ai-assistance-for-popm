@@ -1,23 +1,20 @@
 # Formation : Outils IA pour Product Owners et Project Managers
 
-**Version** : 2.0.0
-**Dernière mise à jour** : 2025-11-19
-**Développé par** : [Astek](https://www.astek.net)
+> Cette formation est conçue pour permettre aux Product Owners et Project Managers de maîtriser les outils d'intelligence artificielle pertinents pour leurs missions quotidiennes.
 
 ---
 
-## 📋 Vue d'ensemble
+| ℹ️ Informations | Détails |
+| :--- | :--- |
+| **📅 Durée** | 2 jours |
+| **👥 Public** | Product Owners, Project Managers, Chefs de projet produit |
+| **💪 Pré-requis** | Aucun pré-requis technique spécifique |
+| **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
+| **🔄 Mise à jour** | 25 novembre 2025 |
 
-Cette formation est conçue pour permettre aux **Product Owners** et **Project Managers** de maîtriser les outils d'intelligence artificielle pertinents pour leurs missions quotidiennes. Elle combine théorie et pratique pour améliorer la productivité, la qualité des livrables et l'efficacité des processus.
+---
 
-### Public cible
-
-- Product Owners (junior à senior)
-- Project Managers (junior à senior)
-- Chefs de projet produit
-- Toute personne en charge de la gestion de produits ou projets digitaux
-
-### Objectifs de la formation
+## 🎯 Objectifs pédagogiques
 
 À l'issue de cette formation, les participants seront capables de :
 
