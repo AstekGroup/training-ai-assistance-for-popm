@@ -4,13 +4,13 @@
 
 ---
 
-| ℹ️ Informations | Détails |
-| :--- | :--- |
-| **📅 Durée** | 2 jours |
-| **👥 Public** | Product Owners, Project Managers, Chefs de projet produit |
-| **💪 Pré-requis** | Aucun pré-requis technique spécifique |
-| **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Mise à jour** | 25 novembre 2025 |
+| ℹ️ Informations         | Détails                                                  |
+| :------------------------ | :-------------------------------------------------------- |
+| **📅 Durée**       | 2 jours                                                   |
+| **👥 Public**       | Product Owners, Project Managers, Chefs de projet produit |
+| **💪 Pré-requis**  | Aucun pré-requis technique spécifique                   |
+| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                   |
+| **🔄 Mise à jour** | 25 novembre 2025                                          |
 
 ---
 
@@ -24,8 +24,6 @@
 4. ✅ Automatiser les processus répétitifs pour gagner du temps
 5. ✅ Prendre des décisions éclairées assistées par l'IA
 6. ✅ Optimiser les réunions et la documentation avec des outils IA
-
-**Ratio pédagogique** : 40% théorie / 60% pratique
 
 ---
 
@@ -145,7 +143,7 @@
 
 ---
 
-## 📁 Organisation du dépôt
+## 📁 Structure du dépôt
 
 ```
 PO PM-Assiste/
@@ -180,37 +178,7 @@ PO PM-Assiste/
 
 ---
 
-## 🎯 Modalités pédagogiques
-
-### Format de livraison
-
-- **Ateliers interactifs** avec démonstrations en direct d'outils IA
-- **Analyse d'études de cas** de vrais projets français/francophones
-- **Exercices pratiques** avec outils IA adaptés aux PO/PM
-- **Discussions de groupe** sur l'impact organisationnel
-- **Mises en situation** réalistes basées sur des scénarios métier
-
-### Évaluation
-
-Chaque module comprend :
-
-- **Exercices pratiques** avec corrigés
-
-- **Études de cas** pour application concrète
-- **Projets pratiques** pour consolidation
-
----
-
-## 📊 Résultats attendus
-
-### Gains mesurables
-
-- **Gain de temps** : 20-30% sur tâches répétitives
-- **Amélioration qualité** : Réduction de 30-40% des défauts dans les spécifications
-- **Précision estimations** : Amélioration de 25% avec analyse prédictive
-- **ROI** : 3-10x le coût des outils en 6 mois
-
-### Compétences acquises
+## 📊 Compétences acquises
 
 - Maîtrise des outils IA pertinents pour PO/PM
 - Capacité à automatiser les processus répétitifs
@@ -220,7 +188,7 @@ Chaque module comprend :
 
 ---
 
-## 🔄 Maintenance et mises à jour
+## � Maintenance et mises à jour
 
 ### Fréquence des mises à jour
 
@@ -238,7 +206,7 @@ Chaque module comprend :
 
 ---
 
-## 📖 Ressources complémentaires
+## �📖 Ressources complémentaires
 
 ### Documentation
 
@@ -254,19 +222,6 @@ Chaque module comprend :
 
 ---
 
-## 🤝 Contribution
-
-Ce contenu est développé et maintenu par **Astek** (https://www.astek.net).
-
-Pour toute question, suggestion ou contribution :
-
-- Consultez le `CHANGELOG.md` pour l'historique des modifications
-- Référez-vous à `AGENTS.md` pour les conventions de développement
-
----
-
 ## 📝 Licence et utilisation
 
 Ce contenu de formation est destiné à un usage interne et pour les clients d'Astek.
-
-**Note importante** : Le contenu est régulièrement mis à jour pour refléter l'évolution rapide des outils IA. Vérifiez régulièrement les mises à jour.
