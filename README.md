@@ -27,6 +27,28 @@
 
 ---
 
+## 🛠️ Outils couverts
+
+- 💬 ChatGPT : <https://chat.openai.com>
+- 🤖 Claude : <https://claude.ai>
+- 💎 Gemini : <https://gemini.google.com>
+- 🐙 GitHub Copilot : <https://github.com/features/copilot>
+- ✨ Cursor : <https://cursor.sh>
+- 📝 Notion AI : <https://notion.so/product/ai>
+- 🔍 Perplexity : <https://perplexity.ai>
+- 🔗 Zapier : <https://zapier.com>
+- 🔄 Make : <https://make.com>
+- ⚡ Power Automate : <https://powerautomate.microsoft.com>
+- 🎯 Jira : <https://jira.atlassian.com>
+- 📊 Monday.com : <https://monday.com>
+- 🗣️ Otter.ai : <https://otter.ai>
+- 🔥 Fireflies : <https://fireflies.ai>
+- 📈 Tableau : <https://tableau.com>
+- 📊 Power BI : <https://powerbi.microsoft.com>
+
+---
+
+
 ## 📚 Structure de la formation
 
 ### Module 1 : Acculturation à l'IA pour PO/PM
@@ -106,43 +128,6 @@
 
 ---
 
-## 🛠️ Outils IA présentés
-
-### Outils de génération de contenu
-
-- ChatGPT, Claude, Gemini
-- GitHub Copilot, Cursor
-
-### Outils d'analyse et synthèse
-
-- Notion AI, Obsidian avec plugins IA
-- Perplexity, Elicit
-
-### Outils d'automatisation
-
-- Zapier, Make (ex-Integromat)
-- Microsoft Power Automate
-- Jira Automation, Notion Automation
-
-### Outils d'assistance aux réunions
-
-- Otter.ai, Fireflies
-- Zoom IQ, Microsoft Teams avec IA
-
-### Outils de gestion de projet
-
-- Jira avec AI Features
-- Monday.com, Asana avec IA
-- Forecast
-
-### Outils d'analyse de données
-
-- Tableau avec IA
-- Power BI avec IA
-- Looker
-
----
-
 ## 📁 Structure du dépôt
 
 ```
@@ -175,50 +160,6 @@ PO PM-Assiste/
 ├── CHANGELOG.md                    # Historique des modifications
 └── README.md                       # Ce fichier
 ```
-
----
-
-## 📊 Compétences acquises
-
-- Maîtrise des outils IA pertinents pour PO/PM
-- Capacité à automatiser les processus répétitifs
-- Amélioration de la qualité et de l'efficacité
-- Prise de décisions plus éclairées
-- Optimisation du temps et des ressources
-
----
-
-## � Maintenance et mises à jour
-
-### Fréquence des mises à jour
-
-- **Trimestrielle** : Suivi de l'évolution des outils IA
-- **Semestrielle** : Actualisation des études de cas
-- **Annuelle** : Révision complète du contenu
-
-### Processus de mise à jour
-
-1. Veille sur l'évolution des outils IA
-2. Collecte de feedback des participants
-3. Mise à jour du contenu
-4. Validation pédagogique
-5. Publication dans le dépôt
-
----
-
-## �📖 Ressources complémentaires
-
-### Documentation
-
-- **Glossaire** : Définitions des termes techniques (`ANNEXES/glossaire.md`)
-- **Références** : Articles, études, ressources externes (`ANNEXES/references.md`)
-- **Ressources externes** : Liens vers outils, formations, communautés (`ANNEXES/ressources-externes.md`)
-
-### Supports pratiques
-
-- **Checklist d'adoption IA** : Guide pas à pas pour l'adoption (`SUPPORTS/SUPPORT_Checklist-Adoption-IA.md`)
-- **Fiche pratique prompt engineering** : Techniques et exemples (`SUPPORTS/SUPPORT_Fiche-Pratique-Prompt-Engineering.md`)
-- **Template user story** : Template complet avec vérification INVEST (`SUPPORTS/SUPPORT_Template-User-Story.md`)
 
 ---
 
