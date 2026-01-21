@@ -1,6 +1,6 @@
-# Formation : Outils IA pour Product Owners et Project Managers
+# Training: AI Tools for Product Owners and Project Managers
 
-> Cette formation est conçue pour permettre aux Product Owners et Project Managers de maîtriser les outils d'intelligence artificielle pertinents pour leurs missions quotidiennes.
+> This training is designed to enable Product Owners and Project Managers to master the artificial intelligence tools relevant to their daily missions.
 
 ---
 
