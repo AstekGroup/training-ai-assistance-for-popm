@@ -1,7 +1,7 @@
 # Module 3 : Automatisation et structuration des projets avec l'IA
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2025-11-21
+**Date de dernière mise à jour** : 2026-03-26
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -61,7 +61,7 @@ Une version de ChatGPT pré-configurée avec :
 
 ---
 
-## 3. Niveau 2 : Automatisation de Workflows (Zapier, Make & GumLoop)
+## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make & GumLoop)
 
 Connecter les outils entre eux pour que l'information circule sans copier-coller.
 
@@ -71,6 +71,7 @@ Il existe aujourd'hui 3 acteurs majeurs pour automatiser vos tâches, du plus si
 
 | Outil | Description |
 | :--- | :--- |
+| **Rovo** | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian où l'IA est au cœur du flux. |
 | **Zapier** | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter. |
 | **Make** | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions. |
 | **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération où l'IA est au cœur du flux. |
@@ -85,7 +86,7 @@ Comment traiter 500 feedbacks par semaine ?
 
 **Source** : Typeform, Intercom, App Store Reviews, Emails support.
 
-**Workflow (Zapier)** :
+**Workflow classique** :
 1.  **Trigger** : Nouveau feedback reçu.
 2.  **Analyse Sémantique (OpenAI)** :
     *   *Sentiment* : Positif/Négatif/Neutre.
@@ -94,12 +95,14 @@ Comment traiter 500 feedbacks par semaine ?
 3.  **Routing** :
     *   Si "Bug Critique" → Alerte Slack #Devs.
     *   Si "Feature Request" → Ajout dans Airtable "Idées".
-4.  **Stockage** : Tout va dans une base de données "Insights" (Airtable/Notion).
+4.  **Stockage** : Tout va dans une base de données "Insights" ou des outils dédiés comme [Productboard AI](https://www.productboard.com) ou [Dovetail AI](https://dovetail.com/ai/).
 
 ### 4.2 Interroger la base de connaissance
 
-Une fois les données dans Airtable/Notion, utilisez l'IA pour demander :
+Une fois les données dans la base, utilisez l'IA pour demander :
 *"Quels sont les 5 problèmes les plus fréquents sur le module Paiement le mois dernier ?"*
+
+*(Note: Pour les documentations techniques complexes générées automatiquement, des outils comme [Kiro Code2Doc](https://kiro.dev) facilitent l'industrialisation).*
 
 ---
 

@@ -1,7 +1,7 @@
 # Module 5 : Réunions et documentation assistées par l'IA
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2025-11-09
+**Date de dernière mise à jour** : 2026-03-26
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -68,9 +68,9 @@
 - Analytics de réunions
 
 
-**[Microsoft Teams Facilitator](https://www.microsoft.com/microsoft-teams)** :
+**[Microsoft 365 Copilot dans Teams](https://www.microsoft.com/microsoft-teams)** :
 
-- Assistant IA pour animer les réunions
+- Assistant IA pour animer et documenter les réunions
 - Suggestions de questions et points à aborder
 - Gestion du timing et de l'agenda
 - Détection de sujets hors agenda
@@ -244,7 +244,7 @@ Durée totale : [durée souhaitée]
 
 **Technique** : Générer des slides ou documents de présentation
 
-**Outils** : [ChatGPT](https://chat.openai.com) avec plugins, [Gamma](https://gamma.app), [Beautiful.ai](https://www.beautiful.ai), [Tome](https://tome.app)
+**Outils** : [ChatGPT](https://chatgpt.com) avec plugins, [Gamma](https://gamma.app), [Beautiful.ai](https://www.beautiful.ai), [Canva Docs/Presentations avec IA](https://www.canva.com)
 
 **Cas d'usage** :
 
@@ -263,7 +263,7 @@ Durée totale : [durée souhaitée]
 - Rappels de points à couvrir
 - Alertes sur timing
 
-**Outils** : [Microsoft Teams Facilitator](https://www.microsoft.com/microsoft-teams), outils de réunion avec IA intégrée
+**Outils** : [Microsoft 365 Copilot dans Teams](https://www.microsoft.com/microsoft-teams), outils de réunion avec IA intégrée
 
 #### 3.2.2 Facilitation de réunions
 
@@ -313,7 +313,7 @@ Durée totale : [durée souhaitée]
 - Documentation de code
 - Procédures techniques
 
-**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chat.openai.com), outils de documentation avec IA
+**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chatgpt.com), [Kiro Code2Doc](https://kiro.dev), outils de documentation avec IA
 
 **Processus** :
 
@@ -454,10 +454,11 @@ Format :
 1. En-tête (date, participants, durée)
 2. Résumé exécutif (3-4 phrases)
 3. Points clés discutés (avec contexte)
-4. Décisions prises (formulation claire)
+4. Décisions prises (formulation claire, avec niveau de certitude)
 5. Action items (tableau : Action / Responsable / Échéance / Priorité)
-6. Prochaines étapes
-7. Questions ouvertes / Points à suivre
+6. Sujets reportés / Désaccords (ce qui n'a pas été tranché)
+7. Prochaines étapes
+8. Questions ouvertes / Points à suivre
 
 Ton : Professionnel, concis, actionnable
 Style : Facile à scanner rapidement
@@ -519,18 +520,17 @@ Longueur : 1-2 pages maximum
 
 ### Articles et études
 
-- [Harvard Business Review (2023). &#34;How AI is Transforming Meetings&#34;](https://hbr.org/topic/subject/artificial-intelligence)
-- [MIT Technology Review (2024). &#34;The Future of Work: AI-Powered Documentation&#34;](https://www.technologyreview.com/topic/artificial-intelligence/)
-- [Gartner (2024). &#34;Meeting Management Tools: AI Capabilities Comparison&#34;](https://www.gartner.com/en/documents/meeting-management-tools-ai-capabilities-comparison)
+- [Harvard Business Review. &#34;How AI is Transforming Meetings&#34;](https://hbr.org/topic/subject/artificial-intelligence)
+- [MIT Technology Review. &#34;The Future of Work: AI-Powered Documentation&#34;](https://www.technologyreview.com/topic/artificial-intelligence/)
+- [Lenny's Newsletter. &#34;How PMs are using AI&#34;](https://www.lennysnewsletter.com/)
 
 ### Outils recommandés
 
 - **[Otter.ai](https://otter.ai)** : Transcription et synthèse réunions
 - **[Fireflies.ai](https://fireflies.ai)** : Enregistrement et transcription
-- **[Notion AI](https://www.notion.so/product/ai)** : Documentation avec IA
-- **[ChatGPT](https://chat.openai.com) / [Claude](https://claude.ai)** : Synthèse et génération de contenu
-- **[Zoom IQ](https://zoom.us/ai) / [Microsoft Teams](https://www.microsoft.com/microsoft-teams) avec IA** : Transcription intégrée
-- **[Microsoft Teams Facilitator](https://www.microsoft.com/microsoft-teams)** : Animation et facilitation de réunions assistées par IA
+- **[Notion AI](https://www.notion.so/product/ai)** / **[Glean](https://www.glean.com)** : Knowledge Management et Recherche
+- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI](https://mistral.ai)** : Synthèse et génération de contenu
+- **[Zoom AI Companion](https://zoom.us/ai) / [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-teams)** : Transcription et facilitation intégrée
 - **[Microsoft Loop](https://loop.microsoft.com)** : Collaboration et documentation en temps réel
 
 ### Templates et exemples

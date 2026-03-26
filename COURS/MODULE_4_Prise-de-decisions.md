@@ -1,7 +1,7 @@
 # Module 4 : Prise de décisions assistée par IA
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2025-11-21
+**Date de dernière mise à jour** : 2026-03-27
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -57,11 +57,13 @@ Identifie :
 
 **Exemple de prompt** :
 ```
-Voici 50 commentaires clients sur notre nouvelle interface :
+Agis comme un User Researcher Senior. Analyse ces 50 retours qualitatifs :
 [COLLER COMMENTAIRES]
 
-Synthétise les 3 principaux points de friction et les 3 points les plus appréciés.
-Donne un score de sentiment global sur 10.
+1. Extrais les 3 pain points principaux et classe-les par ordre de sévérité (Critique, Majeur, Mineur), en indiquant la fréquence.
+2. Identifie les 2 "Aha! moments" ou fonctionnalités les plus plébiscitées.
+3. Formate le résultat dans un tableau Markdown clair.
+4. Donne un score de sentiment global sur 10.
 ```
 
 ---
@@ -155,15 +157,16 @@ Ton : Professionnel mais empathique.
 
 ### Articles et études
 
-- [Harvard Business Review (2024). &#34;AI-Assisted Decision Making: A Framework for Leaders&#34;](https://hbr.org/topic/subject/artificial-intelligence)
-- [MIT Sloan Review (2023). &#34;How AI Can Improve Strategic Decision Making&#34;](https://mitsloan.mit.edu/ideas-made-to-matter/how-ai-can-improve-strategic-decision-making)
-- [McKinsey (2024). &#34;The Future of Decision Making: Human-AI Collaboration&#34;](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-future-of-decision-making)
+- [Lenny's Newsletter. &#34;How PMs are using AI&#34;](https://www.lennysnewsletter.com/)
+- [Silicon Valley Product Group (SVPG). &#34;AI and Product Teams&#34;](https://www.svpg.com/)
+- [Harvard Business Review. &#34;AI-Assisted Decision Making: A Framework for Leaders&#34;](https://hbr.org/topic/subject/artificial-intelligence)
 
 ### Outils recommandés
 
-- **[Tableau](https://www.tableau.com/products/ai-ml) / [Power BI](https://powerbi.microsoft.com/fr-fr/ai/)** : Analyse de données avec IA
-- **[ChatGPT](https://chat.openai.com) / [Claude](https://claude.ai)** : Analyse et génération d'insights
-- **[Perplexity](https://www.perplexity.ai)** : Recherche et synthèse d'informations
+- **[Productboard AI](https://www.productboard.com) / [Dovetail AI](https://dovetail.com/ai/)** : Tri et catégorisation des feedbacks
+- **[Tableau](https://www.tableau.com/products/ai-ml)** : Analyse de données avec IA
+- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI](https://mistral.ai)** : Analyse qualitative et génération d'insights
+- **[Perplexity](https://www.perplexity.ai) / [Genspark](https://www.genspark.ai)** : Recherche et synthèse web
 - **Decision-making frameworks** : Templates et outils
 
 ### Templates et frameworks

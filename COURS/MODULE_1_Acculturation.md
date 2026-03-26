@@ -1,7 +1,7 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2026-03-16
+**Date de dernière mise à jour** : 2026-03-26
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -59,12 +59,14 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 #### 2.1.1 IA générative
 
-- **Définition** : Génère du contenu nouveau (texte, images, code) à partir de données d'entraînement
-- **Exemples d'outils** : [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Mistral](https://mistral.ai)
+- **Définition** : Génère du contenu nouveau (texte, images, code, interfaces) à partir de données d'entraînement
+- **Exemples d'outils texte** : [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Mistral AI](https://mistral.ai)
+- **Exemples d'outils image et UI** : [Midjourney](https://www.midjourney.com), [DALL-E](https://openai.com/dall-e-3), [Google Nano Banana](https://deepmind.google/technologies/gemini/) (images haute qualité), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev) (UI et maquettes)
 - **Cas d'usage PO/PM** :
   - Rédaction de user stories et spécifications
   - Génération de documentation projet
-  - Création de présentations et rapports
+  - Création de wireframes et maquettes d'interface
+  - Génération d'images d'illustration pour présentations
 
 #### 2.1.2 IA analytique
 
@@ -116,7 +118,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 #### 2.4.1 Le principe de base : prédiction de mots
 
-Les IA génératives comme [ChatGPT](https://chat.openai.com), [Claude](https://claude.ai) ou [Gemini](https://gemini.google.com) fonctionnent sur un principe fondamental : **la prédiction du mot suivant le plus probable**.
+Les IA génératives comme [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com) ou [Mistral AI](https://mistral.ai) fonctionnent sur un principe fondamental : **la prédiction du mot suivant le plus probable**.
 
 **Analogie simple** : Imaginez que vous lisez "Il fait beau, je vais sortir mon..." - votre cerveau anticipe naturellement "parapluie" (s'il pleut) ou "chapeau" (s'il fait soleil). Les LLM font exactement cela, mais à une échelle massive.
 
@@ -271,7 +273,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.1 Outils de génération de contenu
 
-#### [ChatGPT](https://chat.openai.com) / [Claude](https://claude.ai) / [Gemini](https://gemini.google.com)
+#### [ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Gemini](https://gemini.google.com) / [Mistral AI](https://mistral.ai)
 
 - **Fonctionnalités** : Génération de texte, analyse, synthèse
 - **Cas d'usage** :
@@ -281,23 +283,32 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 - **Avantages** : Polyvalent, facile d'utilisation
 - **Limites** : Nécessite vérification, coûts selon usage
 
-#### [Google Antigravity](https://antigravity.google), [GitHub Copilot](https://github.com/features/copilot) / [Cursor](https://cursor.sh)
+#### Génération d'Images et d'UI ([Google Nano Banana](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
 
-- **Fonctionnalités** : Assistance au code
+- **Fonctionnalités** : Création d'images haute qualité, wireframes, maquettes UI
+- **Cas d'usage** :
+  - Google Nano Banana : Génération et retouche poussée d'images réalistes
+  - Galileo AI & v0.dev : Prototype d'interfaces basé sur des instructions textuelles
+  - Midjourney : Visuels d'ambiance et concept art
+- **Avantages** : Permet au PO de matérialiser instantanément un besoin fonctionnel en UI.
+
+#### [Google Antigravity](https://antigravity.google), [GitHub Copilot](https://github.com/features/copilot) / [Cursor](https://cursor.com)
+
+- **Fonctionnalités** : Assistance au code et à la documentation (ex: [Kiro](https://kiro.dev) pour le Code2Doc)
 - **Cas d'usage** : Compréhension de code technique pour PO
 - **Note** : Utile pour comprendre le contexte technique sans coder
 
 ### 3.2 Outils d'analyse et de synthèse
 
-#### [Notion AI](https://www.notion.so/product/ai) / [Obsidian](https://obsidian.md) avec plugins IA
+#### [Notion AI](https://www.notion.so/product/ai) / [Obsidian](https://obsidian.md) / [Glean](https://www.glean.com)
 
-- **Fonctionnalités** : Synthèse de notes, génération de contenu
-- **Cas d'usage** : Documentation projet, synthèse de réunions
+- **Fonctionnalités** : Synthèse de notes, gestion de la connaissance entreprise
+- **Cas d'usage** : Documentation projet, base de connaissances produit unifiée
 
-#### [Perplexity](https://www.perplexity.ai) / [Elicit](https://elicit.com)
+#### [Perplexity](https://www.perplexity.ai) / [Genspark](https://www.genspark.ai) / [Elicit](https://elicit.com)
 
-- **Fonctionnalités** : Recherche et synthèse d'informations
-- **Cas d'usage** : Veille concurrentielle, recherche de solutions
+- **Fonctionnalités** : Recherche web augmentée et synthèse d'informations
+- **Cas d'usage** : Veille concurrentielle, recherche de solutions marché
 
 ### 3.3 Outils d'automatisation de processus
 
@@ -420,9 +431,11 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 #### Technique 1 : Rôle et contexte
 
+L'attribution d'un persona ("Agis comme...") est excellente pour définir le ton, le public cible ou la forme de la réponse. **Cependant, attention à ses limites pour les analyses précises**. Selon une [étude récente (ArXiv:2603.18507)](https://arxiv.org/html/2603.18507v1), si l'utilisation de personas d'experts améliore grandement l'alignement (ton, style, format), elle peut paradoxalement détériorer la précision et l'exactitude des informations retournées (baisse de performance sur des benchmarks de connaissances). Il faut donc privilégier les personas pour la création de contenu, mais adopter des prompts directs et neutres pour l'analyse de données strictes.
+
 ```
-Mauvais : "Écris une user story"
-Bon : "Tu es un Product Owner expérimenté. Écris une user story pour une fonctionnalité de connexion utilisateur dans une application e-commerce, en suivant le format INVEST."
+Mauvais : "Écris une user story pour la connexion"
+Bon : "Tu es un Product Owner Senior expert en méthodologie Agile. Rédige une User Story avec le formalisme 'En tant que / Je veux / Afin de', incluant 3 critères d'acceptation au format Gherkin (Given/When/Then), pour la fonctionnalité de connexion via Google."
 ```
 
 #### Technique 2 : Exemples (Few-shot learning)
@@ -470,17 +483,17 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 
 ### Articles et études
 
-- [McKinsey Global Institute (2023). &#34;The economic potential of generative AI&#34;](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
-- [Harvard Business Review (2024). &#34;How Product Managers Can Use AI to Build Better Products&#34;](https://hbr.org)
-- [Product Management Today (2024). &#34;AI Tools for Product Managers: A Comprehensive Guide&#34;](https://www.productmanagementtoday.com)
+- [McKinsey Global Institute. &#34;The State of AI&#34; (2025/2026)](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+- [Lenny's Newsletter. &#34;How PMs are using AI&#34;](https://www.lennysnewsletter.com/)
+- [Silicon Valley Product Group. &#34;AI and Product Teams&#34;](https://www.svpg.com/)
 
 ### Outils à explorer
 
-- **[ChatGPT](https://chat.openai.com)** : Génération de texte, analyse, synthèse
-- **[Claude](https://claude.ai)** : Génération de texte, analyse, synthèse
-- **[Perplexity](https://www.perplexity.ai)** : Recherche et synthèse d'informations
-- **[Otter.ai](https://otter.ai)** : Transcription et synthèse de réunions
-- **[Notion AI](https://www.notion.so/product/ai)** : Documentation et synthèse avec IA
+- **[ChatGPT](https://chatgpt.com)**, **[Claude](https://claude.ai)**, **[Mistral AI](https://mistral.ai)** : Génération de texte
+- **[Google Nano Banana (Gemini Image)](https://deepmind.google/technologies/gemini/)**, **[Galileo AI](https://www.usegalileo.ai)** : Génération d'images et maquettes UI
+- **[Perplexity](https://www.perplexity.ai)**, **[Genspark](https://www.genspark.ai)** : Recherche et synthèse web
+- **[Otter.ai](https://otter.ai)** : Transcription réunions
+- **[Notion AI](https://www.notion.so/product/ai)**, **[Glean](https://www.glean.com)** : Knowledge Management
 
 ### Formations complémentaires
 

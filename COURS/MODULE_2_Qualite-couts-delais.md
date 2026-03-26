@@ -1,7 +1,7 @@
 # Module 2 : Qualité, coûts et délais assistés par IA
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2025-11-18
+**Date de dernière mise à jour** : 2026-03-26
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -55,14 +55,14 @@ Le triangle de fer (Scope, Time, Cost) reste un pilier du management de projet. 
 **Exemple de prompt** :
 
 ```
-Tu es un Product Owner expérimenté. Analyse cette user story et vérifie qu'elle respecte les critères INVEST :
+Examine cette User Story au regard des critères INVEST. 
+User Story : "En tant qu'utilisateur, je veux me connecter"
 
-"En tant qu'utilisateur, je veux me connecter"
+Pour chaque critère (I, N, V, E, S, T) :
+- Donne une note de 1 à 5
+- Ajoute une justification courte
 
-Pour chaque critère INVEST, indique :
-- Si le critère est respecté (Oui/Non)
-- Une suggestion d'amélioration si nécessaire
-- Une version améliorée de la user story
+Si le score total est inférieur à 24/30, rédige directement une proposition de correction optimisée.
 ```
 
 #### 2.1.2 Génération de critères d'acceptation
@@ -487,17 +487,17 @@ Format : Professionnel, adapté à un comité de direction
 
 ### Articles et études
 
-- [Gartner (2024). &#34;AI-Powered Project Management: Improving Quality and Predictability&#34;](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)
-- [PMI (2023). &#34;Shaping the Future of Project Management With AI&#34;](https://www.pmi.org/learning/thought-leadership/ai-impact/shaping-the-future-of-project-management-with-ai)
-- [McKinsey (2024). &#34;The State of AI in 2024: Gen AI Adoption Spikes&#34;](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2024)
+- [Standish Group. &#34;Chaos Report - AI in Project Management&#34;](https://standishgroup.com)
+- [State of Agile. &#34;State of Agile Report&#34;](https://stateofagile.com)
+- [McKinsey. &#34;The State of AI&#34;](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
 
 ### Outils recommandés
 
 - **Jira avec AI** : [Estimation et prédiction](https://www.atlassian.com/software/jira/features/ai)
 - **Forecast** : [Prédiction de délais](https://www.forecast.app)
 - **Monday.com** : [Planification avec IA](https://monday.com/product/ai)
-- **Tableau / Power BI** : [Analyse de données avec IA](https://www.tableau.com/products/ai-ml) / [Power BI](https://powerbi.microsoft.com/fr-fr/ai/)
-- **[ChatGPT](https://chat.openai.com) / [Claude](https://claude.ai)** : Génération de contenu qualité
+- **Tableau / Power BI** : [Analyse de données avec IA](https://www.tableau.com/products/ai-ml)
+- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI](https://mistral.ai)** : Génération de contenu qualité
 
 ### Templates
 
