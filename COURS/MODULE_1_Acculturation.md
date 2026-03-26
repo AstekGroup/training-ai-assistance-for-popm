@@ -1,7 +1,7 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2025-11-18
+**Date de dernière mise à jour** : 2026-03-16
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -325,10 +325,10 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.5 Outils de gestion de projet assistés par IA
 
-#### [Jira](https://www.atlassian.com/software/jira) avec AI Features
+#### [Rovo](https://www.atlassian.com/fr/software/rovo)
 
-- **Fonctionnalités** : Estimation automatique, détection de risques
-- **Cas d'usage** : Planification, suivi de projet
+- **Fonctionnalité** : Intégration IA dans la suite Atlassian (Jira, Confluence…) avec connecteurs externe (Google, M365, Adobe …) et gestion de workfows
+- **Cas d'usage** : Planification, suivi de projet, automatisation des tâches répétitives
 
 #### [Monday.com](https://monday.com) / [Asana](https://asana.com) avec IA
 
