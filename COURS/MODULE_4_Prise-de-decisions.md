@@ -1,7 +1,7 @@
 # Module 4 : Prise de décisions assistée par IA
 
 **Version** : 2.0.0
-**Date de dernière mise à jour** : 2026-03-27
+**Date de dernière mise à jour** : 2026-03-26
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
