@@ -9,6 +9,7 @@
 ## 🎯 Objectif pédagogique
 
 Comprendre concrètement comment l'IA peut agir sur **chacune des 3 dimensions d'un projet** :
+
 - **Qualité** → Améliorer les spécifications pour réduire les défauts
 - **Coûts** → Estimer avec précision pour éviter les dépassements
 - **Délais** → Détecter les risques pour livrer à temps
@@ -33,6 +34,7 @@ Il faut que ce soit sécurisé et rapide.
 ```
 
 **🚨 Problèmes identifiés** :
+
 - Trop vague ("facilement", "rapide" = non mesurable)
 - Critères d'acceptation absents
 - Scénarios d'erreur incomplets
@@ -54,6 +56,7 @@ Pour chaque problème identifié, pose une question précise au PO.
 ```
 
 **Attendu** :
+
 - Liste des ambiguïtés (ex: "Qu'est-ce que 'facilement' ?")
 - Questions clarifiantes
 - Risques de mauvaise implémentation
@@ -79,6 +82,7 @@ Chaque critère DOIT être mesurable et testable par l'équipe QA.
 ```
 
 **Attendu** :
+
 - Critères précis et testables
 - Format : `Given [état initial], When [action], Then [résultat attendu]`
 - Métriques chiffrées quand applicable
@@ -89,18 +93,21 @@ Chaque critère DOIT être mesurable et testable par l'équipe QA.
 
 Créez un tableau comparatif :
 
-| Critère | Spec initiale | Spec améliorée | Gain qualité |
-|---------|---------------|----------------|--------------|
-| **Clarté** | ⭐ (très floue) | ⭐⭐⭐⭐⭐ | Mesurable |
-| **Testabilité** | ❌ Non testable | ✅ 7 critères testables | +700% |
-| **Complétude** | 30% couvert | 100% couvert | +70% |
-| **Risque défauts** | Élevé | Faible | -60% défauts estimés |
+
+| Critère            | Spec initiale  | Spec améliorée         | Gain qualité         |
+| ------------------ | -------------- | ---------------------- | -------------------- |
+| **Clarté**         | ⭐ (très floue) | ⭐⭐⭐⭐⭐                  | Mesurable            |
+| **Testabilité**    | ❌ Non testable | ✅ 7 critères testables | +700%                |
+| **Complétude**     | 30% couvert    | 100% couvert           | +70%                 |
+| **Risque défauts** | Élevé          | Faible                 | -60% défauts estimés |
+
 
 ---
 
 ### 💬 Débrief (collectif)
 
 **Questions à discuter** :
+
 1. Combien d'ambiguïtés avez-vous identifié ? (comparez avec vos voisins)
 2. Quel critère d'acceptation était le plus difficile à rendre testable ?
 3. **Estimation** : Combien de bugs en moins grâce à la spec améliorée ?
@@ -120,12 +127,14 @@ Votre équipe doit développer une **fonctionnalité de paiement multi-devises**
 
 **Données historiques de votre équipe** :
 
-| Projet passé | Complexité estimée | Temps estimé | Temps réel | Écart |
-|--------------|-------------------|--------------|------------|-------|
-| Projet A - Paiement CB simple | Moyenne | 3 semaines | 5 semaines | +67% |
-| Projet B - Intégration Stripe | Moyenne | 4 semaines | 4,5 semaines | +12% |
-| Projet C - Wallet interne | Élevée | 8 semaines | 12 semaines | +50% |
-| Projet D - Export factures | Faible | 1 semaine | 1,5 semaine | +50% |
+
+| Projet passé                  | Complexité estimée | Temps estimé | Temps réel   | Écart |
+| ----------------------------- | ------------------ | ------------ | ------------ | ----- |
+| Projet A - Paiement CB simple | Moyenne            | 3 semaines   | 5 semaines   | +67%  |
+| Projet B - Intégration Stripe | Moyenne            | 4 semaines   | 4,5 semaines | +12%  |
+| Projet C - Wallet interne     | Élevée             | 8 semaines   | 12 semaines  | +50%  |
+| Projet D - Export factures    | Faible             | 1 semaine    | 1,5 semaine  | +50%  |
+
 
 ### ✅ Mission : Estimer le nouveau projet avec l'IA
 
@@ -165,6 +174,7 @@ comprenant :
 ```
 
 **Attendu** :
+
 - Analyse des patterns d'écart (ex: "L'équipe sous-estime de 40% en moyenne")
 - 3 scénarios chiffrés
 - Niveau de confiance
@@ -176,13 +186,16 @@ comprenant :
 
 Complétez ce tableau :
 
-| Méthode | Estimation | Si équipe = 3 dev à 600€/jour | Budget projet |
-|---------|------------|-------------------------------|---------------|
-| **Instinct** | ___ semaines | ___ jours × 3 × 600€ | **___€** |
-| **IA (réaliste)** | ___ semaines | ___ jours × 3 × 600€ | **___€** |
-| **Écart** | ___ semaines | | **± ___€** |
+
+| Méthode           | Estimation   | Si équipe = 3 dev à 600€/jour | Budget projet |
+| ----------------- | ------------ | ----------------------------- | ------------- |
+| **Instinct**      | ___ semaines | ___ jours × 3 × 600€          | **___€**      |
+| **IA (réaliste)** | ___ semaines | ___ jours × 3 × 600€          | **___€**      |
+| **Écart**         | ___ semaines |                               | **± ___€**    |
+
 
 **Risque de dépassement** :
+
 - Avec estimation instinct : ___%
 - Avec estimation IA : ___%
 
@@ -204,6 +217,7 @@ Exemple : |4 semaines - 6 semaines| × 5 jours × 3 dev × 600€ = 18 000€ é
 ### 💬 Débrief (collectif)
 
 **Questions à discuter** :
+
 1. Quelle était l'écart entre votre estimation instinct et celle de l'IA ?
 2. Quel pattern l'IA a-t-elle identifié dans vos données historiques ?
 3. **Estimation** : Combien d'euros économisés sur 10 projets/an avec cette méthode ?
@@ -234,6 +248,7 @@ Objectif : Livrer 100% des fonctionnalités critiques (100 points) dans 6 semain
 ```
 
 **📊 Données complémentaires** :
+
 - 3 stories bloquées en attente de validation client (8 points)
 - 1 développeur senior en congés Sprint 5 (2 semaines)
 - 12 bugs découverts en Sprint 2 (non estimés initialement)
@@ -243,6 +258,7 @@ Objectif : Livrer 100% des fonctionnalités critiques (100 points) dans 6 semain
 #### **Étape 1** : Votre intuition (2 min)
 
 **Sans IA**, répondez :
+
 - Allez-vous livrer à temps ? **OUI / NON**
 - Probabilité de livraison complète : **___%**
 - Votre plus grande inquiétude : **_________________**
@@ -275,6 +291,7 @@ Mission :
 ```
 
 **Attendu** :
+
 - Calcul de vélocité (moyenne, tendance)
 - Projection réaliste des points livrables
 - 5 risques détaillés
@@ -286,26 +303,31 @@ Mission :
 
 Remplissez ce tableau pour les **2 risques les plus critiques** :
 
-| Risque | Impact délais | Action corrective | Responsable | Délai | Coût |
-|--------|---------------|-------------------|-------------|-------|------|
-| **Exemple** : Vélocité en baisse | +2 semaines | Réduire le scope de 15% (15 points non-critiques) | PO | Immédiat | 0€ |
-| **Risque 1** : | | | | | |
-| **Risque 2** : | | | | | |
+
+| Risque                           | Impact délais | Action corrective                                 | Responsable | Délai    | Coût |
+| -------------------------------- | ------------- | ------------------------------------------------- | ----------- | -------- | ---- |
+| **Exemple** : Vélocité en baisse | +2 semaines   | Réduire le scope de 15% (15 points non-critiques) | PO          | Immédiat | 0€   |
+| **Risque 1** :                   |               |                                                   |             |          |      |
+| **Risque 2** :                   |               |                                                   |             |          |      |
+
 
 **Décision finale** :
-- [ ] Maintenir le scope et négocier un délai supplémentaire
-- [ ] Réduire le scope pour tenir le délai
-- [ ] Ajouter des ressources (coût : ___€)
-- [ ] Autre : __________
+
+- Maintenir le scope et négocier un délai supplémentaire
+- Réduire le scope pour tenir le délai
+- Ajouter des ressources (coût : ___€)
+- Autre : __________
 
 ---
 
 #### **Étape 4** : Mesurer l'impact de la détection précoce (1 min)
 
 **Sans IA** : Quand auriez-vous détecté le risque ?
+
 - ❌ Sprint 5 (trop tard, retard inévitable)
 
 **Avec IA** : Détection au Sprint 3
+
 - ✅ **Gain de temps** : 4 semaines d'avance pour agir
 - ✅ **Actions possibles** : Réduire scope, ajouter ressources, négocier délai
 - ✅ **Coût évité** : Pas de pénalités de retard, stakeholders prévenus à temps
@@ -315,6 +337,7 @@ Remplissez ce tableau pour les **2 risques les plus critiques** :
 ### 💬 Débrief (collectif)
 
 **Questions à discuter** :
+
 1. Votre intuition était-elle alignée avec l'analyse IA ?
 2. Quel risque vous aviez complètement oublié ?
 3. Quelle action corrective auriez-vous prise ?
@@ -690,11 +713,13 @@ Style : Sous-titres clairs, paragraphes courts, facile à scanner
 
 ## 🎓 Synthèse : Le triptyque en action
 
-| Dimension | Problème classique | Solution IA | Gain mesurable |
-|-----------|-------------------|-------------|----------------|
-| **📐 QUALITÉ** | Specs floues → défauts → corrections coûteuses | Génération de critères testables | -60% défauts |
-| **💰 COÛTS** | Estimations à l'instinct → dépassements budgets | Estimation basée sur données historiques | ±20-30% précision |
-| **⏰ DÉLAIS** | Détection tardive des retards → actions impossibles | Analyse prédictive continue | +4 semaines d'anticipation |
+
+| Dimension      | Problème classique                                  | Solution IA                              | Gain mesurable             |
+| -------------- | --------------------------------------------------- | ---------------------------------------- | -------------------------- |
+| **📐 QUALITÉ** | Specs floues → défauts → corrections coûteuses      | Génération de critères testables         | -60% défauts               |
+| **💰 COÛTS**   | Estimations à l'instinct → dépassements budgets     | Estimation basée sur données historiques | ±20-30% précision          |
+| **⏰ DÉLAIS**   | Détection tardive des retards → actions impossibles | Analyse prédictive continue              | +4 semaines d'anticipation |
+
 
 ### 🔗 Les 3 dimensions sont liées !
 
@@ -719,6 +744,7 @@ Moins de retravail = DÉLAIS respectés
 5. **1 vidéo ou démo** → Appliquez l'exercice 5 (Gladia + contenus multi-canal)
 
 **Mesurez** :
+
 - Temps gagné
 - Qualité améliorée
 - Précision d'estimation
@@ -736,3 +762,4 @@ Moins de retravail = DÉLAIS respectés
 
 > [!TIP]
 > **La donnée est reine** : Plus vous alimentez l'IA avec des données historiques précises, plus ses prédictions seront fiables. Documentez vos projets !
+
