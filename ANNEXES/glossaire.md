@@ -80,6 +80,29 @@
 3. **Format** : Structure attendue du résultat
 4. **Contraintes** : Limitations, exigences spécifiques
 
+### Harness Engineering
+
+**Définition** : Le harness engineering est l'art de créer un environnement de travail pour les agents IA : règles, outils, périmètre, jeux de tests, documentation minimale, etc.
+
+Il permet d'orienter l'IA pour des résultats précis, pertinents et utiles — l'équivalent de « savoir conduire » l'agent.
+
+### Context Engineering
+
+**Définition** : Le contrat de contexte est un document qui définit le contexte dans lequel un ou plusieurs agents doivent travailler.
+
+C'est un livrable projet : référence entre parties prenantes (métier, archi, dev, QA).
+
+Il peut nourrir un AGENTS.md, mais ce n'est pas sa vocation première : certaines informations peuvent être hors périmètre agent (multi-repo, contraintes organisationnelles).
+Les 5 piliers du contrat de contexte
+
+    Objectif : clarifier l'objectif attendu Ex. : « Concevoir une architecture microservices pour une application e-commerce »
+    Contraintes : limitations et exigences Ex. : stack Python/FastAPI, cloud AWS, budget, skills imposés
+    Contexte : projet, existant, équipe Ex. : monolithe actuel, charge, taille d'équipe
+    Format : structure des livrables Ex. : diagramme C4, ADR, fichiers de config
+    Validation : critères de succès Ex. : SOLID, tests > 80 %, documentation
+
+
+
 ### Ingénierie de prompt (Prompt Engineering)
 
 **Définition** : Technique et art de créer des instructions efficaces pour obtenir les meilleurs résultats d'un modèle IA.
