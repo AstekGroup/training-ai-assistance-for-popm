@@ -125,11 +125,9 @@ Les IA génératives comme [ChatGPT](https://chatgpt.com), [Claude](https://clau
 **Processus en 3 étapes** :
 
 1. **Tokenisation** : Le texte est découpé en "tokens" (morceaux de mots)
-   - Exemple : "Product Owner" → ["Product", " Owner"] (2 tokens)
-   - Un token ≈ 4 caractères en français, ≈ 0.75 mots
-
+  - Exemple : "Product Owner" → ["Product", " Owner"] (2 tokens)
+  - Un token ≈ 4 caractères en français, ≈ 0.75 mots
 2. **Analyse du contexte** : Le modèle analyse tous les tokens précédents pour comprendre le contexte
-
 3. **Prédiction** : Le modèle calcule les probabilités pour chaque mot possible et choisit le plus probable
 
 **Exemple concret** :
@@ -158,17 +156,15 @@ Ce que fait l'IA :
 **Pourquoi cette limitation ?**
 
 1. **Architecture non adaptée** :
-   - Les LLM sont optimisés pour le langage, pas pour l'arithmétique
-   - Ils n'ont pas de "calculatrice interne"
-   - Chaque chiffre est traité comme un token de texte, pas comme un nombre
-
+  - Les LLM sont optimisés pour le langage, pas pour l'arithmétique
+  - Ils n'ont pas de "calculatrice interne"
+  - Chaque chiffre est traité comme un token de texte, pas comme un nombre
 2. **Apprentissage par patterns** :
-   - L'IA a vu "2 + 2 = 4" des milliers de fois → elle le "sait"
-   - Elle n'a jamais vu "8347 × 9281 = ?" → elle devine
-
+  - L'IA a vu "2 + 2 = 4" des milliers de fois → elle le "sait"
+  - Elle n'a jamais vu "8347 × 9281 = ?" → elle devine
 3. **Pas de vérification** :
-   - Un humain peut vérifier son calcul
-   - L'IA ne "sait" pas si sa réponse est mathématiquement correcte
+  - Un humain peut vérifier son calcul
+  - L'IA ne "sait" pas si sa réponse est mathématiquement correcte
 
 **Implications pratiques pour les PO/PM** :
 
@@ -220,17 +216,15 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Pourquoi cette limitation ?**
 
 1. **Pas de capteur temporel** :
-   - L'IA n'a pas accès à une horloge système
-   - Elle ne "vit" pas dans le temps réel
-   - Chaque réponse est indépendante temporellement
-
+  - L'IA n'a pas accès à une horloge système
+  - Elle ne "vit" pas dans le temps réel
+  - Chaque réponse est indépendante temporellement
 2. **Entraînement statique** :
-   - Les données d'entraînement sont figées à une date précise
-   - L'IA ne "sait" rien des événements postérieurs
-
+  - Les données d'entraînement sont figées à une date précise
+  - L'IA ne "sait" rien des événements postérieurs
 3. **Pas de mémoire du temps écoulé** :
-   - L'IA ne compte pas les secondes entre vos messages
-   - Elle ne peut pas mesurer la durée d'une conversation
+  - L'IA ne compte pas les secondes entre vos messages
+  - Elle ne peut pas mesurer la durée d'une conversation
 
 **Implications pratiques pour les PO/PM** :
 
@@ -370,20 +364,17 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Stratégie d'adoption progressive** :
 
 1. **Phase pilote** (1-2 mois)
-
-   - Sélection d'un outil IA pour un cas d'usage spécifique
-   - Formation d'un petit groupe de champions
-   - Mesure des résultats
+  - Sélection d'un outil IA pour un cas d'usage spécifique
+  - Formation d'un petit groupe de champions
+  - Mesure des résultats
 2. **Déploiement ciblé** (3-6 mois)
-
-   - Extension à d'autres cas d'usage
-   - Formation élargie
-   - Partage de bonnes pratiques
+  - Extension à d'autres cas d'usage
+  - Formation élargie
+  - Partage de bonnes pratiques
 3. **Intégration complète** (6-12 mois)
-
-   - Adoption généralisée
-   - Optimisation continue
-   - Culture IA intégrée
+  - Adoption généralisée
+  - Optimisation continue
+  - Culture IA intégrée
 
 **Facteurs de succès** :
 
@@ -471,21 +462,15 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 
 ---
 
-
-
 ---
-
-
-
-
 
 ## 9. Ressources complémentaires
 
 ### Articles et études
 
-- [McKinsey Global Institute. &#34;The State of AI&#34; (2025/2026)](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
-- [Lenny's Newsletter. &#34;How PMs are using AI&#34;](https://www.lennysnewsletter.com/)
-- [Silicon Valley Product Group. &#34;AI and Product Teams&#34;](https://www.svpg.com/)
+- [McKinsey Global Institute. "The State of AI" (2025/2026)](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
+- [Lenny's Newsletter. "How PMs are using AI"](https://www.lennysnewsletter.com/)
+- [Silicon Valley Product Group. "AI and Product Teams"](https://www.svpg.com/)
 
 ### Outils à explorer
 
@@ -522,8 +507,6 @@ Consultez le fichier `ANNEXES/glossaire.md` pour les définitions complètes des
 - **Module 2** : Qualité, coûts, délais, réunions et documentation assistés par IA
 - **Module 3** : Automatisation et structuration des projets avec l'IA
 - **Module 4** : Prise de décisions assistée par IA
-
-
 
 ---
 
