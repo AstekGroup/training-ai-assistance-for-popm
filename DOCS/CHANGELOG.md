@@ -9,7 +9,8 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ### Modifié
 - Fusion des cours `MODULE_2_Qualite-couts-delais.md` et `MODULE_5_Reunions-documentation.md` en `MODULE_2_Qualite-couts-delais-Reunions-documentation.md` (version 3.0.0) ; parcours cours à quatre fichiers dans `COURS/`.
-- Mise à jour des références : `README` (FR/EN), `cours-viewer.html`, syllabi, `AGENTS.md`, `MODULE_1` / `MODULE_4`, `ANNEXES/ressources-externes.md`, présentation HTML, en-têtes des exercices 5, note dans `DOCS/20251109-PROPOSITION_CONTENU_INITIAL.md`.
+- Mise à jour des références : `README` (FR/EN), `cours-viewer.html`, syllabi, `AGENTS.md`, `MODULE_1` / `MODULE_4`, `ANNEXES/ressources-externes.md`, présentation HTML, note dans `DOCS/20251109-PROPOSITION_CONTENU_INITIAL.md`.
+- Fusion des exercices `EXERCICES/EXERCICE_5_Reunions-Documentation.md` dans `EXERCICES/EXERCICE_2_Triptyque-Qualite-Couts-Delais.md` (exercices 4 et 5) ; suppression du fichier exercice 5 dans `EXERCICES/`.
 
 ## [Non versionné] - 2025-11-12
 

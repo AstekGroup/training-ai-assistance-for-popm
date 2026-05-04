@@ -129,7 +129,6 @@ PO PM-Assiste/
 │   ├── EXERCICE_2_Triptyque-Qualite-Couts-Delais.md
 │   ├── EXERCICE_3_Automatisation-Workflows.md
 │   ├── EXERCICE_4_Frameworks-Decision.md
-│   └── EXERCICE_5_Reunions-Documentation.md   # complément au module 2 (réunions & documentation)
 │
 ├── SUPPORTS/                       # Supports complémentaires
 │   ├── SUPPORT_Checklist-Adoption-IA.md

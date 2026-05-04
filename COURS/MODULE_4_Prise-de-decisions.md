@@ -204,7 +204,7 @@ Consultez le dossier `SUPPORTS/` pour :
 
 ### Prochaines étapes
 
-Vous avez terminé le parcours des **quatre modules de cours**. Poursuivez avec les **exercices** associés (dont le complément « réunions et documentation » du module 2) et les ressources du dossier `SUPPORTS/`.
+Vous avez terminé le parcours des **quatre modules de cours**. Poursuivez avec les **exercices** du dossier `EXERCICES/` (notamment `EXERCICE_2_Triptyque-Qualite-Couts-Delais.md`, qui couvre aussi le volet réunions et documentation) et les ressources du dossier `SUPPORTS/`.
 
 ---
 
