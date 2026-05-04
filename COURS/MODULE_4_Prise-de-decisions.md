@@ -25,6 +25,7 @@
 **La solution IA** : Un assistant qui pré-mâche l'analyse et structure la réflexion.
 
 **Ce que l'IA change** :
+
 - **Vitesse** : Analyse de données en secondes vs heures.
 - **Objectivité** : Réduction des biais émotionnels.
 - **Clarté** : Structuration automatique des arguments.
@@ -40,6 +41,7 @@ Plus besoin d'être expert SQL ou Excel. L'IA permet de "discuter" avec ses donn
 **Technique** : Copier/coller un jeu de données (CSV, Excel) et poser des questions.
 
 **Exemple de prompt** :
+
 ```
 Agis comme un Data Analyst Senior.
 Voici les données d'utilisation de notre feature "Export PDF" sur les 3 derniers mois :
@@ -56,6 +58,7 @@ Identifie :
 **Technique** : Analyser des centaines de verbatims utilisateurs en un clic.
 
 **Exemple de prompt** :
+
 ```
 Agis comme un User Researcher Senior. Analyse ces 50 retours qualitatifs :
 [COLLER COMMENTAIRES]
@@ -79,6 +82,7 @@ Ne nous dispersons pas. Voici les deux seuls outils dont vous avez besoin pour 8
 **L'apport de l'IA** : Estimer les valeurs (surtout Impact et Effort) pour vous donner une base de travail objective.
 
 **Prompt Template** :
+
 ```
 Tu es CPO (Chief Product Officer). Aide-moi à prioriser ces 3 features avec la méthode RICE.
 
@@ -103,6 +107,7 @@ Calcule le score final et propose un classement.
 Pour les grandes décisions (ex: Lancer un nouveau produit, changer de marché).
 
 **Prompt Template** :
+
 ```
 Génère une matrice SWOT pour la décision suivante : [DÉCISION]
 
@@ -125,6 +130,7 @@ Une bonne décision mal communiquée est une décision inutile.
 **Technique** : Transformer une décision complexe en un message clair pour les stakeholders.
 
 **Exemple de prompt** :
+
 ```
 J'ai décidé de [DÉCISION] pour les raisons suivantes : [RAISONS].
 Cependant, cela va impacter [ÉQUIPE/PROJET].
@@ -140,14 +146,14 @@ Ton : Professionnel mais empathique.
 
 ---
 
-
-
 ### Synthèse : Les 3 frameworks maîtrisés
 
-| Framework | Quand l'utiliser | Temps gagné | ROI |
-|-----------|------------------|-------------|-----|
-| **RICE** | Priorisation features | 90% (3h → 15min) | Immédiat |
-| **SWOT** | Décisions stratégiques | 95% (2j → 15min) | Élevé |
+
+| Framework | Quand l'utiliser       | Temps gagné      | ROI      |
+| --------- | ---------------------- | ---------------- | -------- |
+| **RICE**  | Priorisation features  | 90% (3h → 15min) | Immédiat |
+| **SWOT**  | Décisions stratégiques | 95% (2j → 15min) | Élevé    |
+
 
 **ROI total** : **~50 heures/an économisées** sur décisions stratégiques
 
@@ -157,16 +163,16 @@ Ton : Professionnel mais empathique.
 
 ### Articles et études
 
-- [Lenny's Newsletter. &#34;How PMs are using AI&#34;](https://www.lennysnewsletter.com/)
-- [Silicon Valley Product Group (SVPG). &#34;AI and Product Teams&#34;](https://www.svpg.com/)
-- [Harvard Business Review. &#34;AI-Assisted Decision Making: A Framework for Leaders&#34;](https://hbr.org/topic/subject/artificial-intelligence)
+- [Lenny's Newsletter. "How PMs are using AI"](https://www.lennysnewsletter.com/)
+- [Silicon Valley Product Group (SVPG). "AI and Product Teams"](https://www.svpg.com/)
+- [Harvard Business Review. "AI-Assisted Decision Making: A Framework for Leaders"](https://hbr.org/topic/subject/artificial-intelligence)
 
 ### Outils recommandés
 
-- **[Productboard AI](https://www.productboard.com) / [Dovetail AI](https://dovetail.com/ai/)** : Tri et catégorisation des feedbacks
+- **[Productboard AI](https://www.productboard.com) / [Dovetail AI**](https://dovetail.com/ai/) : Tri et catégorisation des feedbacks
 - **[Tableau](https://www.tableau.com/products/ai-ml)** : Analyse de données avec IA
-- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI](https://mistral.ai)** : Analyse qualitative et génération d'insights
-- **[Perplexity](https://www.perplexity.ai) / [Genspark](https://www.genspark.ai)** : Recherche et synthèse web
+- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI**](https://mistral.ai) : Analyse qualitative et génération d'insights
+- **[Perplexity](https://www.perplexity.ai) / [Genspark**](https://www.genspark.ai) : Recherche et synthèse web
 - **Decision-making frameworks** : Templates et outils
 
 ### Templates et frameworks
@@ -198,7 +204,7 @@ Consultez le dossier `SUPPORTS/` pour :
 
 ### Prochaines étapes
 
-- **Module 5** : Réunions et documentation assistées par l'IA
+Vous avez terminé le parcours des **quatre modules de cours**. Poursuivez avec les **exercices** associés (dont le complément « réunions et documentation » du module 2) et les ressources du dossier `SUPPORTS/`.
 
 ---
 

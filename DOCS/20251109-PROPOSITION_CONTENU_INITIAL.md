@@ -8,7 +8,9 @@
 
 ## Résumé de la proposition
 
-Cette proposition initiale comprend un contenu de formation complet pour les 5 modules de la formation "Outils IA pour Product Owners et Project Managers", ainsi que des supports complémentaires pratiques.
+Cette proposition initiale comprend un contenu de formation complet pour les **quatre modules de cours** de la formation "Outils IA pour Product Owners et Project Managers", ainsi que des supports complémentaires pratiques.
+
+> **Mise à jour 2026-05-04** : les contenus des anciens fichiers `MODULE_2_Qualite-couts-delais.md` et `MODULE_5_Reunions-documentation.md` ont été fusionnés dans `MODULE_2_Qualite-couts-delais-Reunions-documentation.md`.
 
 ### Contenu créé
 
@@ -21,14 +23,12 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
    - Impact organisationnel
    - Ingénierie de prompt de base
    - 3 exercices pratiques + quiz
-2. **MODULE_2_Qualite-couts-delais.md**
+2. **MODULE_2_Qualite-couts-delais-Reunions-documentation.md** (fusion des anciens modules 2 et 5)
 
-   - Amélioration qualité des livrables
-   - Optimisation estimations
-   - Prédiction délais
-   - Détection risques
-   - Business cases assistés
-   - 4 exercices pratiques + quiz
+   - Amélioration qualité des livrables, estimations, risques, business cases
+   - Réunions : transcription, synthèse, action items, comptes-rendus
+   - Documentation projet et optimisation du temps de réunion
+   - Exercices pratiques couvrant les deux volets + quiz
 3. **MODULE_3_Automatisation-structuration.md**
 
    - Cartographie processus automatisables
@@ -44,13 +44,6 @@ Cette proposition initiale comprend un contenu de formation complet pour les 5 m
    - Évaluation alternatives
    - Modélisation prédictive
    - Communication décisions
-   - 4 exercices pratiques + quiz
-5. **MODULE_5_Reunions-documentation.md**
-
-   - Transcription et synthèse réunions
-   - Extraction action items
-   - Génération documentation
-   - Comptes-rendus efficaces
    - 4 exercices pratiques + quiz
 
 #### Supports complémentaires (SUPPORTS/)

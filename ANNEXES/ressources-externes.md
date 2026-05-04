@@ -565,10 +565,10 @@
 - **Outils** : ChatGPT, Claude, Gemini, Perplexity
 - **Formations** : "Prompt Engineering for Business" (Coursera)
 
-### Module 2 : Qualité, coûts et délais
-- **Articles** : Gartner "AI-Powered Project Management", PMI "Impact of AI on Estimation"
-- **Outils** : Jira AI, Forecast, Tableau, Power BI
-- **Formations** : "Data-Driven Project Management" (Coursera)
+### Module 2 : Qualité, coûts, délais, réunions et documentation
+- **Articles** : Gartner "AI-Powered Project Management", PMI "Impact of AI on Estimation", HBR "How AI is Transforming Meetings", MIT Technology Review "AI-Powered Documentation"
+- **Outils** : Jira AI, Forecast, Tableau, Power BI, Otter.ai, Fireflies, Notion AI, Microsoft Teams / Copilot
+- **Formations** : "Data-Driven Project Management" (Coursera), "Effective Meeting Management" (Coursera), "Technical Writing with AI" (Udemy)
 
 ### Module 3 : Automatisation
 - **Articles** : HBR "Future of Work", Gartner "Workflow Automation Tools"
@@ -579,11 +579,6 @@
 - **Articles** : HBR "AI-Assisted Decision Making", MIT Sloan "How AI Can Improve Strategic Decision Making"
 - **Outils** : Tableau, Power BI, ChatGPT/Claude pour analyse
 - **Formations** : "Data-Driven Decision Making" (Coursera), "Strategic Decision Making" (Harvard)
-
-### Module 5 : Réunions et documentation
-- **Articles** : HBR "How AI is Transforming Meetings", MIT Technology Review "AI-Powered Documentation"
-- **Outils** : Otter.ai, Fireflies, Notion AI, Microsoft Teams
-- **Formations** : "Effective Meeting Management" (Coursera), "Technical Writing with AI" (Udemy)
 
 ---
 

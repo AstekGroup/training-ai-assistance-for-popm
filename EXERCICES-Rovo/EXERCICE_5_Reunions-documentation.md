@@ -1,4 +1,6 @@
-# EXERCICES PRATIQUES - MODULE 5 : Réunions & Documentation (Kiro)
+# EXERCICES PRATIQUES — MODULE 2 (suite) : Réunions & documentation avec Kiro
+
+**Rattachement** : complément au cours [`MODULE_2_Qualite-couts-delais-Reunions-documentation.md`](../COURS/MODULE_2_Qualite-couts-delais-Reunions-documentation.md) — documentation et contexte agentique (Kiro).
 
 **Durée estimée** : 60 minutes  
 **Outils** : Kiro (AWS Agentic IDE)  

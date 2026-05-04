@@ -1,4 +1,6 @@
-# Exercices Module 5 : Réunions et Documentation assistées par l'IA
+# Exercices complémentaires — Module 2 : Réunions et documentation assistées par l'IA
+
+**Rattachement** : ce fichier prolonge le cours [`MODULE_2_Qualite-couts-delais-Reunions-documentation.md`](../COURS/MODULE_2_Qualite-couts-delais-Reunions-documentation.md) (volet réunions et documentation).
 
 **Durée totale** : 40 minutes (2 x 20 minutes)  
 **Format** : Travail individuel avec débrief collectif  

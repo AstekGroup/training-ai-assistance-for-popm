@@ -30,10 +30,10 @@
 - Overview of AI tools for PO/PM
 - Basic prompt engineering principles
 
-### Module 2: AI-Assisted Quality, Cost, and Time
-- Improving user story and specification quality
-- Optimizing estimations and risk analysis
-- AI-assisted business cases
+### Module 2: AI-Assisted Quality, Cost, Time, Meetings, and Documentation
+- Improving user stories, specifications, and documentation quality
+- Estimation optimization, velocity, risk analysis, and AI-assisted business cases
+- Meeting transcription and synthesis, action items, project documentation, and reports
 
 ### Module 3: Automation and Structuring
 - Automation tools (Zapier, Make, Power Automate)
@@ -44,11 +44,6 @@
 - Data analysis and insight identification
 - Decision frameworks (RICE, SWOT)
 - Predictive modeling
-
-### Module 5: Meetings and Documentation
-- Automatic transcription and synthesis
-- Action item extraction
-- Documentation generation and maintenance
 
 ---
 

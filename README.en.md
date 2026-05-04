@@ -65,21 +65,21 @@ By the end of this training, participants will be able to:
 - Identification of relevant AI use cases
 - Mastery of basic prompt engineering techniques
 
-### Module 2: AI-Assisted Quality, Cost, and Timeline
+### Module 2: AI-Assisted Quality, Cost, Time, Meetings, and Documentation
 
 **Content**:
 
-- Improving user story and specification quality
-- Optimization of estimations with historical data analysis
-- Timeline prediction with predictive AI
-- Risk detection and prevention
-- AI-assisted business cases
+- Improving user stories, specifications, and documentation quality
+- Estimation optimization with historical data analysis
+- Predictive timelines, velocity, risks, and AI-assisted business cases
+- Meeting transcription and synthesis, action item extraction
+- Project documentation, reports, and meeting time optimization
 
 **Deliverables**:
 
 - High-quality user stories generated with AI
-- AI-assisted estimations
-- Complete risk analysis
+- AI-assisted estimations and risk analysis
+- AI-generated meeting report or documentation workflow
 
 ### Module 3: Automation and Project Structuring with AI
 
@@ -111,40 +111,22 @@ By the end of this training, participants will be able to:
 - Complete strategic decision analysis
 - AI-assisted business case
 
-### Module 5: AI-Assisted Meetings and Documentation
-
-**Content**:
-
-- Automatic meeting transcription and synthesis
-- AI-powered action item extraction
-- Documentation generation and maintenance
-- Effective and actionable reports
-- Meeting time optimization
-
-**Deliverables**:
-
-- AI-generated report
-- Complete project documentation
-
----
-
 ## 📁 Repository Structure
 
 ```
 PO PM-Assisted/
 ├── COURS/                          # Main educational content
 │   ├── MODULE_1_Acculturation.md
-│   ├── MODULE_2_Qualite-couts-delais.md
+│   ├── MODULE_2_Qualite-couts-delais-Reunions-documentation.md
 │   ├── MODULE_3_Automatisation-structuration.md
-│   ├── MODULE_4_Prise-de-decisions.md
-│   └── MODULE_5_Reunions-documentation.md
+│   └── MODULE_4_Prise-de-decisions.md
 │
 ├── EXERCICES/                      # Practical exercises
 │   ├── EXERCICE_1_Prompt-Engineering.md
 │   ├── EXERCICE_2_Triptyque-Qualite-Couts-Delais.md
 │   ├── EXERCICE_3_Automatisation-Workflows.md
 │   ├── EXERCICE_4_Frameworks-Decision.md
-│   └── EXERCICE_5_Reunions-Documentation.md
+│   └── EXERCICE_5_Reunions-Documentation.md   # supplement to module 2 (meetings & documentation)
 │
 ├── SUPPORTS/                       # Supplementary materials
 │   ├── SUPPORT_Checklist-Adoption-IA.md

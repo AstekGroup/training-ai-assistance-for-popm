@@ -519,10 +519,9 @@ Consultez le fichier `ANNEXES/glossaire.md` pour les définitions complètes des
 
 ### Prochaines étapes
 
-- **Module 2** : Qualité, coûts et délais assistés par IA
+- **Module 2** : Qualité, coûts, délais, réunions et documentation assistés par IA
 - **Module 3** : Automatisation et structuration des projets avec l'IA
 - **Module 4** : Prise de décisions assistée par IA
-- **Module 5** : Réunions et documentation assistées par l'IA
 
 
 

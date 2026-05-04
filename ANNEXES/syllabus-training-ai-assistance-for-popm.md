@@ -30,10 +30,10 @@
 - Panorama des outils IA pour PO/PM
 - Principes de base de l'ingénierie de prompt
 
-### Module 2 : Qualité, coûts et délais assistés par IA
-- Amélioration de la qualité des user stories et spécifications
-- Optimisation des estimations et analyse de risques
-- Business cases assistés par IA
+### Module 2 : Qualité, coûts, délais, réunions et documentation assistés par IA
+- Amélioration de la qualité des user stories, spécifications et documentation
+- Optimisation des estimations, vélocité, analyse de risques et business cases
+- Transcription et synthèse de réunions, action items, documentation projet et comptes-rendus
 
 ### Module 3 : Automatisation et structuration
 - Outils d'automatisation (Zapier, Make, Power Automate)
@@ -44,11 +44,6 @@
 - Analyse de données et identification d'insights
 - Frameworks de décision (RICE, SWOT)
 - Modélisation prédictive
-
-### Module 5 : Réunions et documentation
-- Transcription et synthèse automatique
-- Extraction d'action items
-- Génération et maintenance de documentation
 
 ---
 

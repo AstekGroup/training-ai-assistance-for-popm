@@ -42,10 +42,9 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
 ### Modules de formation
 
 - **Module 1** : Acculturation (concepts, outils, impacts organisationnels)
-- **Module 2** : Qualité, coûts et délais assistés par IA
+- **Module 2** : Qualité, coûts, délais, réunions et documentation assistés par IA
 - **Module 3** : Automatisation et structuration des projets avec l'IA
 - **Module 4** : Prise de décisions assistée par IA
-- **Module 5** : Réunions et documentation assistées par l'IA
 
 ### Organisation des fichiers
 

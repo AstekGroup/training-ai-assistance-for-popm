@@ -5,6 +5,12 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [Non versionné] - 2026-05-04
+
+### Modifié
+- Fusion des cours `MODULE_2_Qualite-couts-delais.md` et `MODULE_5_Reunions-documentation.md` en `MODULE_2_Qualite-couts-delais-Reunions-documentation.md` (version 3.0.0) ; parcours cours à quatre fichiers dans `COURS/`.
+- Mise à jour des références : `README` (FR/EN), `cours-viewer.html`, syllabi, `AGENTS.md`, `MODULE_1` / `MODULE_4`, `ANNEXES/ressources-externes.md`, présentation HTML, en-têtes des exercices 5, note dans `DOCS/20251109-PROPOSITION_CONTENU_INITIAL.md`.
+
 ## [Non versionné] - 2025-11-12
 
 ### Ajouté
