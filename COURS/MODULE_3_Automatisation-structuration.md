@@ -43,6 +43,7 @@ Une version de ChatGPT pré-configurée avec :
 - **Connaissance** (Documents uploadés : PDF, Excel, Specs).
 - **Actions** (Capacité à appeler des API externes - *Avancé*).
 
+
 ### 2.2 Cas d'usage pour PO/PM
 
 #### A. Le "Tech Spec Writer"
@@ -74,12 +75,12 @@ Connecter les outils entre eux pour que l'information circule sans copier-coller
 Il existe aujourd'hui 3 acteurs majeurs pour automatiser vos tâches, du plus simple au plus puissant :
 
 
-| Outil       | Description                                                                                                            |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian où l'IA est au cœur du flux. |
-| **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                        |
-| **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                       |
-| **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération où l'IA est au cœur du flux.                         |
+| Outil       | Description                                                                                                                                                                                                                                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian où l'IA est au cœur du flux.                                                                                                                                                                                                      |
+| **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                                                             |
+| **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
+| **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération où l'IA est au cœur du flux.                                                                                                                                                                                                                              |
 
 
 ---
