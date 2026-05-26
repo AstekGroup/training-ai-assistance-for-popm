@@ -145,7 +145,7 @@ Les 5 piliers du contrat de contexte
 ### Rovo (Atlassian)
 
 **Définition** : Agent IA d’Atlassian connecté aux données Jira et Confluence pour répondre en langage naturel et proposer des actions.
-**Contexte formation** : Utilisé dans la variante `EXERCICES-Rovo/` pour les sessions client Atlassian.
+**Contexte formation** : Outil Atlassian cité dans les modules (Jira, Confluence) ; les TP utilisent les exercices génériques du dossier `EXERCICES/`.
 
 ---
 

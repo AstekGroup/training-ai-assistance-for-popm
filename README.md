@@ -120,8 +120,6 @@
 | 3 — Automatisation | `COURS/MODULE_3_Automatisation-structuration.md` | `EXERCICES/EXERCICE_3_Automatisation-Workflows.md` |
 | 4 — Décisions et réunions | `COURS/MODULE_4_Prise-de-decisions.md` | `EXERCICES/EXERCICE_4_Frameworks-Decision.md` |
 
-Les exercices du dossier `EXERCICES-Rovo/` reprennent le même découpage pour des sessions client utilisant l’écosystème Atlassian Rovo (voir [EXERCICES-Rovo/README.md](EXERCICES-Rovo/README.md)).
-
 ---
 
 ## 📎 Annexes
@@ -139,7 +137,6 @@ Ressources complémentaires dans [`ANNEXES/`](ANNEXES/) :
 training-ai-assistance-for-popm/
 ├── COURS/                          # 4 modules (2 jours)
 ├── EXERCICES/                      # TP génériques (ChatGPT, Claude, etc.)
-├── EXERCICES-Rovo/                 # Variante client Atlassian Rovo
 ├── ANNEXES/                        # Glossaire, ressources, syllabus, supports/
 │   ├── README.md
 │   ├── glossaire.md

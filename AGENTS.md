@@ -43,7 +43,6 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
 training-ai-assistance-for-popm/
 ├── COURS/                    # 4 modules Markdown
 ├── EXERCICES/                # TP génériques (1 exercice / module)
-├── EXERCICES-Rovo/           # Variante client Atlassian Rovo
 ├── ANNEXES/                  # Glossaire, ressources externes, syllabus
 │   ├── README.md             # Index des annexes
 │   └── supports/             # Templates, checklists, fiches (SUPPORT_*.md)
