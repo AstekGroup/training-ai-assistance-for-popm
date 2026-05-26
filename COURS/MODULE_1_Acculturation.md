@@ -1,8 +1,8 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
-**Version** : 2.0.0
-**Date de dernière mise à jour** : 2026-03-26
-**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
+**Version** : 2.0.1
+**Date de dernière mise à jour** : 2026-05-26
+**Auteur** : Bruno Celle [bruno.celle@astek.net](mailto:bruno.celle@astek.net)
 
 ---
 
@@ -107,6 +107,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - **Contexte limité** : Attention aux limites de tokens (ex: [ChatGPT](https://chat.openai.com) ~128k tokens)
 - **Hallucinations** : Peuvent générer des informations incorrectes
 - **Biais** : Reflètent les biais présents dans les données d'entraînement
+- **Césure** : Surveiller un risque de "perte" lorsque l'échange est long
 
 **Bonnes pratiques** :
 
@@ -138,6 +139,37 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 → L'IA choisit : "user story"
 ```
 
+#### 2.4.2 Concrétisions : promping de base
+##### A) Méthode ACTF
+	La méthode **ACTF** est une version simple pour écrire de meilleurs prompts.
+	
+	**A - Action**  
+	Dire clairement ce que l’IA doit faire.  
+	Exemple : « Rédige un email de relance commerciale. »
+	
+	**C - Contexte**  
+	Donner les informations utiles pour comprendre la situation.  
+	Exemple : « Le client n’a pas répondu depuis 10 jours après une proposition envoyée. »
+	
+	**T - Ton / Tâche**  
+	Préciser le style, le niveau de détail ou les étapes attendues.  
+	Exemple : « Ton professionnel, court, avec une formulation polie et directe. »
+	
+	**F- Format**  
+	Indiquer la forme de la réponse attendue.  
+	Exemple : « Réponds avec un objet d’email puis le corps du message. »
+	
+	Exemple complet :
+	
+	```
+	Agis comme un assistant commercial.Rédige un email de relance pour un client qui n’a pas répondu depuis 10 jours après l’envoi d’une proposition.Le ton doit être professionnel, cordial et concis.Présente la réponse avec un objet d’email puis le corps du message.
+	```
+	
+	En résumé : **ACTF = ce que l’IA doit faire + le contexte + la manière de le faire + le format attendu.**
+	----------------------- ✄ TP 1 ✄ -----------------------
+#### B évolution
+méthode ASPeCCTf
+Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
 #### 2.4.2 Pourquoi les IA sont mauvaises en calculs ?
 
 **Raison fondamentale** : Les LLM ne calculent pas, ils **prédisent ce qui ressemble à un calcul**.
@@ -169,8 +201,8 @@ Ce que fait l'IA :
 **Implications pratiques pour les PO/PM** :
 
 - ❌ Ne jamais faire confiance aux calculs directs (budgets, vélocité, ROI)
-- ✅ Utiliser l'IA pour structurer les formules, puis calculer avec Excel/Google Sheets
-- ✅ Demander à l'IA d'expliquer la méthode de calcul, pas de faire le calcul
+- ✅ Utiliser l'IA pour structurer les formules, puis calculer avec Excel/Google Sheets ou autre outils
+- ✅ Guider les IA, préalablement, demander à l'IA d'expliquer la méthode de calcul, pas de faire le calcul
 
 **Exemple d'usage correct** :
 
@@ -276,6 +308,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - Analyse de retours utilisateurs
 - **Avantages** : Polyvalent, facile d'utilisation
 - **Limites** : Nécessite vérification, coûts selon usage
+- **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
 
 #### Génération d'Images et d'UI ([Google Nano Banana](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
 
@@ -388,7 +421,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Confidentialité des données** :
 
 - Vérifier les politiques de confidentialité des outils
-- Éviter de partager des données sensibles (clients, stratégie)
+- **NE JAMAIS partager des données sensibles** (clients, stratégie)
 - Utiliser des versions entreprise avec garanties de sécurité
 
 **Biais et équité** :
