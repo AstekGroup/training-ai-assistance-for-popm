@@ -1,7 +1,7 @@
 # Glossaire - Terminologie IA pour PO/PM
 
-**Version** : 1.0.0
-**Date de dernière mise à jour** : 2025-11-12
+**Version** : 2.0.0
+**Date de dernière mise à jour** : 2026-05-19
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -127,6 +127,25 @@ Les 5 piliers du contrat de contexte
 **Définition** : Type de recherche qui comprend le sens et le contexte des requêtes, pas seulement les mots-clés exacts.
 **Avantage** : Permet de trouver des informations pertinentes même si les termes exacts ne sont pas présents dans le document.
 **Exemple** : "Quelles sont les décisions d'architecture prises pour le module paiement ?" trouve les ADRs pertinents même sans le terme exact.
+
+---
+
+## Outils et écosystèmes (2026)
+
+### Atlassian Intelligence
+
+**Définition** : Capacités IA intégrées à Jira, Confluence et à l’agent **Rovo** pour la recherche, la synthèse et l’automatisation dans les outils de gestion de projet.
+**Cas d'usage PO/PM** : Rédaction de tickets, synthèse de pages Confluence, recherche transverse sur le backlog.
+
+### Microsoft Copilot
+
+**Définition** : Assistant IA intégré à Microsoft 365 (Teams, Word, Excel, PowerPoint, Loop) et aux services Microsoft cloud.
+**Cas d'usage PO/PM** : Comptes-rendus de réunion, synthèse de documents projet, brouillons de présentation, analyse de tableaux dans Excel.
+
+### Rovo (Atlassian)
+
+**Définition** : Agent IA d’Atlassian connecté aux données Jira et Confluence pour répondre en langage naturel et proposer des actions.
+**Contexte formation** : Utilisé dans la variante `EXERCICES-Rovo/` pour les sessions client Atlassian.
 
 ---
 

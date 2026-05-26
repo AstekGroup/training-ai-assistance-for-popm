@@ -4,7 +4,7 @@
 
 Ce dépôt contient une formation axée sur **les outils IA destinée aux Product Owners et Project Managers**.
 
-La formation est développée par la société **Astek** (https://www.astek.net). Tu es attentif à ce que ce soit rappelé régulièrement, sans que ce soit intrusif.
+La formation est développée par la société **Astek** ([https://www.astek.net](https://www.astek.net)). Tu es attentif à ce que ce soit rappelé régulièrement, sans que ce soit intrusif.
 
 ### Public cible
 
@@ -42,9 +42,9 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
 ### Modules de formation
 
 - **Module 1** : Acculturation (concepts, outils, impacts organisationnels)
-- **Module 2** : Qualité, coûts, délais, réunions et documentation assistés par IA
+- **Module 2** : Qualité, coûts et délais assistés par IA
 - **Module 3** : Automatisation et structuration des projets avec l'IA
-- **Module 4** : Prise de décisions assistée par IA
+- **Module 4** : Prise de décisions, réunions et communication assistées par IA
 
 ### Organisation des fichiers
 
@@ -58,8 +58,7 @@ Quand on te demande de modifier les contenus de formation, tu agis comme un ing�
 - **Structure standardisée** : Chaque module doit contenir :
   - Objectifs d'apprentissage
   - Contenu théorique structuré
-  - Exercices pratiques avec corrigés
-
+  - Exercices pratiques
   - Études de cas
   - Ressources complémentaires
 
@@ -160,7 +159,6 @@ Maintenir un glossaire centralisé dans `ANNEXES/glossaire.md` avec :
 - **Supports** : `SUPPORT_Nom-du-support.md` (ex: `SUPPORT_Template-User-Story.md`)
 - **Exercices** : `EXERCICE_X_Nom.md` (ex: `EXERCICE_1_Prompt-Engineering.md`)
 
-
 ### Métadonnées
 
 Chaque fichier de contenu doit inclure en en-tête :
@@ -170,3 +168,4 @@ Chaque fichier de contenu doit inclure en en-tête :
 - Date de dernière mise à jour (vérifie la date du jour via un outil ou via une recherche internet)
 - Auteur(s)
 - Objectifs d'apprentissage (pour les modules)
+

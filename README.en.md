@@ -10,7 +10,7 @@
 | **👥 Audience**       | Product Owners, Project Managers, Product Project Leads |
 | **💪 Prerequisites**  | No specific technical prerequisites                   |
 | **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                   |
-| **🔄 Update** | November 25, 2025                                          |
+| **🔄 Update** | May 19, 2026                                               |
 
 ---
 
@@ -29,22 +29,19 @@ By the end of this training, participants will be able to:
 
 ## 🛠️ Tools Covered
 
-- 💬 ChatGPT: <https://chat.openai.com>
-- 🤖 Claude: <https://claude.ai>
-- 💎 Gemini: <https://gemini.google.com>
-- 🐙 GitHub Copilot: <https://github.com/features/copilot>
-- ✨ Cursor: <https://cursor.sh>
-- 📝 Notion AI: <https://notion.so/product/ai>
-- 🔍 Perplexity: <https://perplexity.ai>
-- 🔗 Zapier: <https://zapier.com>
-- 🔄 Make: <https://make.com>
-- ⚡ Power Automate: <https://powerautomate.microsoft.com>
-- 🎯 Jira: <https://jira.atlassian.com>
-- 📊 Monday.com: <https://monday.com>
-- 🗣️ Otter.ai: <https://otter.ai>
-- 🔥 Fireflies: <https://fireflies.ai>
-- 📈 Tableau: <https://tableau.com>
-- 📊 Power BI: <https://powerbi.microsoft.com>
+**Conversational assistants**: [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Perplexity](https://perplexity.ai)
+
+**Productivity and collaboration**: [Microsoft Copilot](https://www.microsoft.com/microsoft-copilot) (M365), [Notion AI](https://www.notion.so/product/ai)
+
+**Project and product management**: [Atlassian Intelligence](https://www.atlassian.com/intelligence) (Jira, Confluence), [Monday.com](https://monday.com), [Miro AI](https://miro.com/ai)
+
+**Automation**: [Zapier](https://zapier.com), [Make](https://www.make.com), [Power Automate](https://powerautomate.microsoft.com)
+
+**Meetings and documentation**: [Otter.ai](https://otter.ai), [Fireflies](https://fireflies.ai), [Microsoft Teams](https://www.microsoft.com/microsoft-teams) (Copilot transcription)
+
+**Analytics and reporting**: [Power BI](https://powerbi.microsoft.com), [Tableau](https://www.tableau.com)
+
+**Optional (light technical context)**: [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.com)
 
 ---
 
@@ -65,21 +62,20 @@ By the end of this training, participants will be able to:
 - Identification of relevant AI use cases
 - Mastery of basic prompt engineering techniques
 
-### Module 2: AI-Assisted Quality, Cost, Time, Meetings, and Documentation
+### Module 2: AI-Assisted Quality, Cost, and Time
 
 **Content**:
 
 - Improving user stories, specifications, and documentation quality
 - Estimation optimization with historical data analysis
 - Predictive timelines, velocity, risks, and AI-assisted business cases
-- Meeting transcription and synthesis, action item extraction
-- Project documentation, reports, and meeting time optimization
+- AI-assisted project documentation
 
 **Deliverables**:
 
 - High-quality user stories generated with AI
 - AI-assisted estimations and risk analysis
-- AI-generated meeting report or documentation workflow
+- Structured project documentation with AI assistance
 
 ### Module 3: Automation and Project Structuring with AI
 
@@ -96,20 +92,35 @@ By the end of this training, participants will be able to:
 - Functional automated workflow
 - Documented and optimized process
 
-### Module 4: AI-Assisted Decision Making
+### Module 4: AI-Assisted Decisions, Meetings, and Communication
 
 **Content**:
 
 - Data analysis and identification of insights
-- AI-assisted decision frameworks (RICE, SWOT, multi-criteria)
-- Comparative evaluation of alternatives
-- Predictive modeling to anticipate consequences
+- AI-assisted decision frameworks (RICE, SWOT)
+- Meeting transcription and synthesis, action item extraction
+- Effective meeting reports and time optimization
 - Communication of complex decisions
 
 **Deliverables**:
 
-- Complete strategic decision analysis
-- AI-assisted business case
+- Complete strategic decision analysis (RICE / SWOT)
+- Meeting report or transcription-to-action-items workflow
+
+---
+
+## 🔗 Module ↔ Exercise Mapping
+
+| Module | Course file | Associated exercise |
+| :--- | :--- | :--- |
+| 1 — Awareness | `COURS/MODULE_1_Acculturation.md` | `EXERCICES/EXERCICE_1_Prompt-Engineering.md` |
+| 2 — Quality, cost, time | `COURS/MODULE_2_Qualite-couts-delais.md` | `EXERCICES/EXERCICE_2_Triptyque-Qualite-Couts-Delais.md` |
+| 3 — Automation | `COURS/MODULE_3_Automatisation-structuration.md` | `EXERCICES/EXERCICE_3_Automatisation-Workflows.md` |
+| 4 — Decisions and meetings | `COURS/MODULE_4_Prise-de-decisions.md` | `EXERCICES/EXERCICE_4_Frameworks-Decision.md` |
+
+The `EXERCICES-Rovo/` folder mirrors this structure for client sessions using the Atlassian Rovo ecosystem (see [EXERCICES-Rovo/README.md](EXERCICES-Rovo/README.md)).
+
+---
 
 ## 📁 Repository Structure
 
@@ -117,7 +128,7 @@ By the end of this training, participants will be able to:
 PO PM-Assisted/
 ├── COURS/                          # Main educational content
 │   ├── MODULE_1_Acculturation.md
-│   ├── MODULE_2_Qualite-couts-delais-Reunions-documentation.md
+│   ├── MODULE_2_Qualite-couts-delais.md
 │   ├── MODULE_3_Automatisation-structuration.md
 │   └── MODULE_4_Prise-de-decisions.md
 │
