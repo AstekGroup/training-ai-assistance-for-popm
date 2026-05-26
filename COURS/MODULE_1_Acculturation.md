@@ -80,7 +80,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 #### 2.1.3 IA prédictive
 
 - **Définition** : Prédit des événements futurs basés sur des données historiques
-- **Exemples d'outils** : [Forecast](https://www.forecast.app), [Jira Advanced Roadmaps](https://www.atlassian.com/software/jira/features/advanced-roadmaps) avec IA
+- **Exemples d'outils** : [Forecast](https://www.forecast.app), [Jira Plans (intégrée dans Jira Software Cloud Premium/Enterprise)](https://www.atlassian.com/software/jira/features/advanced-roadmaps) avec IA
 - **Cas d'usage PO/PM** :
   - Estimation de délais de livraison
   - Prédiction de risques projet
