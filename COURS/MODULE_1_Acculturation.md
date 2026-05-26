@@ -61,7 +61,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 - **Définition** : Génère du contenu nouveau (texte, images, code, interfaces) à partir de données d'entraînement
 - **Exemples d'outils texte** : [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Mistral AI](https://mistral.ai)
-- **Exemples d'outils image et UI** : [Midjourney](https://www.midjourney.com), [DALL-E](https://openai.com/dall-e-3), [Google Nano Banana](https://deepmind.google/technologies/gemini/) (images haute qualité), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev) (UI et maquettes)
+- **Exemples d'outils image et UI** : [Midjourney](https://www.midjourney.com), [DALL-E](https://openai.com/dall-e-3), [Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/) (images haute qualité), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev) (UI et maquettes)
 - **Cas d'usage PO/PM** :
   - Rédaction de user stories et spécifications
   - Génération de documentation projet
@@ -311,11 +311,11 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 - **Limites** : Nécessite vérification, coûts selon usage
 - **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
 
-#### Génération d'Images et d'UI ([Google Nano Banana](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
+#### Génération d'Images et d'UI ([Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
 
 - **Fonctionnalités** : Création d'images haute qualité, wireframes, maquettes UI
 - **Cas d'usage** :
-  - Google Nano Banana : Génération et retouche poussée d'images réalistes
+  - Google Imagen 3(ex Nano Banana) : Génération et retouche poussée d'images réalistes
   - Galileo AI & v0.dev : Prototype d'interfaces basé sur des instructions textuelles
   - Midjourney : Visuels d'ambiance et concept art
 - **Avantages** : Permet au PO de matérialiser instantanément un besoin fonctionnel en UI.
@@ -524,7 +524,7 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 ### Outils à explorer
 
 - **[ChatGPT](https://chatgpt.com)**, **[Claude](https://claude.ai)**, **[Mistral AI](https://mistral.ai)** : Génération de texte
-- **[Google Nano Banana (Gemini Image)](https://deepmind.google/technologies/gemini/)**, **[Galileo AI](https://www.usegalileo.ai)** : Génération d'images et maquettes UI
+- **[Google Imagen 3(ex Nano Banana) (Gemini Image)](https://deepmind.google/technologies/gemini/)**, **[Galileo AI](https://www.usegalileo.ai)** : Génération d'images et maquettes UI
 - **[Perplexity](https://www.perplexity.ai)**, **[Genspark](https://www.genspark.ai)** : Recherche et synthèse web
 - **[Otter.ai](https://otter.ai)** : Transcription réunions
 - **[Notion AI](https://www.notion.so/product/ai)**, **[Glean](https://www.glean.com)** : Knowledge Management
