@@ -184,8 +184,14 @@
 #### Make (ex-Integromat)
 - **Site** : [https://www.make.com](https://www.make.com)
 - **Description** : Automatisation de workflows visuels avancés
-- **Cas d'usage** : Automatisations complexes avec logique conditionnelle
+- **Cas d'usage** : Automatisations WYSIWYG complexes avec logique conditionnelle
 - **Prix** : Version gratuite limitée + abonnements payants
+
+#### N8N
+- **Site** : [https://n8n.io/](https://n8n.io/)
+- **Description** : Automatisation de workflows visuels avancés
+- **Cas d'usage** : Automatisations WYSIWYG complexes avec logique conditionnelle
+- **Prix** : Libre, Version hostée gratuite et complète
 
 #### Microsoft Power Automate
 - **Site** : [https://powerautomate.microsoft.com](https://powerautomate.microsoft.com)
