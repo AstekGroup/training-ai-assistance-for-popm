@@ -1,8 +1,8 @@
 # Module 3 : Automatisation et structuration des projets avec l'IA
 
-**Version** : 2.0.0
-**Date de dernière mise à jour** : 2026-03-26
-**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
+**Version** : 2.0.1
+**Date de dernière mise à jour** : 2026-05-26
+**Auteur** : Bruno Celle [bruno.celle@astek.net](mailto:bruno.celle@astek.net)
 
 ---
 
@@ -66,7 +66,7 @@ Une version de ChatGPT pré-configurée avec :
 
 ---
 
-## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make & GumLoop)
+## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make, GumLoop & N8N)
 
 Connecter les outils entre eux pour que l'information circule sans copier-coller.
 
@@ -81,6 +81,7 @@ Il existe aujourd'hui 3 acteurs majeurs pour automatiser vos tâches, du plus si
 | **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                                                             |
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
 | **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération où l'IA est au cœur du flux.                                                                                                                                                                                                                              |
+| **N8N**     | **plateforme d’automatisation low-code** permettant de connecter des outils, APIs et services pour créer des workflows métier sans développer une application complète.  <br>Un levier rapide pour prototyper, automatiser des processus, orchestrer des données et réduire les tâches manuelles entre équipes et systèmes. |
 
 
 ---
