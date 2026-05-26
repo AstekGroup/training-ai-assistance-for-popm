@@ -104,10 +104,12 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 **Caractéristiques importantes** :
 
-- **Contexte limité** : Attention aux limites de tokens (ex: [ChatGPT](https://chat.openai.com) ~128k tokens)
-- **Hallucinations** : Peuvent générer des informations incorrectes
-- **Biais** : Reflètent les biais présents dans les données d'entraînement
-- **Césure** : Surveiller un risque de "perte" lorsque l'échange est long
+- **Fenêtre de contexte** : Représente la quantité de texte que le modèle peut traiter en une seule fois. Attention aux limites selon les modèles (ex: ~128k tokens pour GPT-4o).
+  > [!TIP]
+  > Des modèles comme **Gemini (1.5 / 2.0)** proposent des fenêtres de contexte géantes allant de **1 à 2 millions de tokens**. C'est un atout majeur pour un PO/PM, car cela permet de charger un backlog entier, un cahier des charges de 800 pages ou l'intégralité du code d'un projet pour en faire l'analyse ou la documentation d'un seul coup.
+- **Hallucinations** : Les modèles peuvent générer des informations incorrectes de manière très convaincante.
+- **Biais** : Ils reflètent les biais présents dans les données d'entraînement.
+- **Césure / Perte d'attention** : Risque de "perte" d'informations au milieu de très longs contextes (*lost in the middle*).
 
 **Bonnes pratiques** :
 
