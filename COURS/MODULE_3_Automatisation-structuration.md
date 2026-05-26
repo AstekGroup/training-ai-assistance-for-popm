@@ -40,6 +40,7 @@ Pourquoi réécrire le même contexte à chaque fois ? Créez des spécialistes.
 Une version de ChatGPT pré-configurée avec :
 
 - **Instructions spécifiques** (Persona, Ton, Format).
+	  ASPeCCTf :Action, Steps, Persona,(Examples), Context, Constraints, Template, (Finally)
 - **Connaissance** (Documents uploadés : PDF, Excel, Specs).
 - **Actions** (Capacité à appeler des API externes - *Avancé*).
 
