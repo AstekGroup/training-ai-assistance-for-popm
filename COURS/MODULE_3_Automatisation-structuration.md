@@ -11,7 +11,7 @@
 À l'issue de ce module, les participants seront capables de :
 
 1. **Créer des templates de prompts réutilisables** pour standardiser la production de contenu.
-2. **Concevoir des workflows automatisés** (Zapier, GumLoop) pour connecter les outils.
+2. **Concevoir des workflows automatisés** (Zapier, GumLoop, N8N) pour connecter les outils.
 3. **Industrialiser l'analyse de la User Research** pour traiter des volumes massifs de feedback.
 
 ---
@@ -79,7 +79,7 @@ Il existe aujourd'hui 3 acteurs majeurs pour automatiser vos tâches, du plus si
 
 | Outil       | Description                                                                                                                                                                                                                                                                                                                 |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian où l'IA est au cœur du flux.                                                                                                                                                                                                      |
+| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian (Jira, Confluence...) où l'IA est au cœur du flux.                                                                                                                                                                                |
 | **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                                                             |
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
 | **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération où l'IA est au cœur du flux.                                                                                                                                                                                                                              |

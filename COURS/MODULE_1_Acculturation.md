@@ -167,9 +167,10 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 	
 	En résumé : **ACTF = ce que l’IA doit faire + le contexte + la manière de le faire + le format attendu.**
 	----------------------- ✄ TP 1 ✄ -----------------------
-#### B évolution
+#### B Perspective d'évolution
 méthode ASPeCCTf
 Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
+
 #### 2.4.2 Pourquoi les IA sont mauvaises en calculs ?
 
 **Raison fondamentale** : Les LLM ne calculent pas, ils **prédisent ce qui ressemble à un calcul**.

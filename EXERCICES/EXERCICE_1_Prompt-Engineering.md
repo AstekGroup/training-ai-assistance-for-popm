@@ -87,8 +87,7 @@ Format INVEST avec :
 ## 🔄 Exercice 2 : Maîtriser l'itération pour affiner un résultat
 
 **Durée** : 20 minutes  
-**Objectif** : Comprendre que le premier résultat n'est jamais le bon et apprendre à itérer
-
+**Objectif** : Comprendre que le premier résultat n'est jamais le bon et apprendre à itérer **mais pas trop** ; apprendre également à **jeter** pour mieux recommencer.
 ### Le scénario
 
 L'IA vous a généré cette user story, mais **elle est incomplète** :

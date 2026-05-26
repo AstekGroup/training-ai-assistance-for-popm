@@ -51,7 +51,7 @@
 - 💬 ChatGPT, 🤖 Claude, 💎 Gemini
 - 🐙 GitHub Copilot, ✨ Cursor
 - 📝 Notion AI, 🔍 Perplexity
-- 🔗 Zapier, 🔄 Make
+- 🔗 Zapier, 🔄 Make, 🔄 N8N
 - 🗣️ Otter.ai, 🔥 Fireflies
 - 📊 Power BI, 📈 Tableau
 

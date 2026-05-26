@@ -6,6 +6,57 @@
 - Compte Zapier gratuit (à créer avant la session)
 - Compte Google (Gmail + Google Forms)
 - Accès à [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
+pour avancés :
+- **Installer une instance locale de N8N**
+- lier le MCP N8N de Claude
+
+	prérequis:
+	- Claude Desktop installé (en local)
+	- N8N installé en local  (accès via `http://localhost:5678`)
+	- Node.js installé (vérifie : `node -v`)
+	### Étape 1 — Activer le MCP dans N8N
+
+	1. Ouvre `http://localhost:5678`
+	2. Va dans **Settings > API**
+	3. Active l'option **Enable API** si ce n'est pas fait
+	4. Génère une **API Key** → copie-la précieusement
+	5. Va dans **Settings > MCP** (ou cherche "MCP" dans les settings)
+	6. Active **Enable MCP Server**
+	7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
+	
+	### Étape 2 — Configurer Claude Desktop
+	
+	Fichier à éditer :
+	
+	- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
+	- **Linux** : `~/.config/Claude/claude_desktop_config.json`
+	- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
+	
+	json
+	
+	```json
+	{
+	  "mcpServers": {
+	    "n8n-local": {
+	      "command": "npx",
+	      "args": [
+	        "mcp-remote",
+	        "http://localhost:5678/mcp"
+	      ],
+	      "env": {
+	        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_ICI"
+	      }
+	    }
+	  }
+	}
+	```
+	
+	### Étape 3 — Redémarrer Claude Desktop
+	
+	Soit reboot, soit gestionnaire de tâche, tuer claude & relancer.
+	
+	### Vérification
+	Icône **marteau** visible en bas du chat = MCP actif.
 
 ---
 
@@ -350,3 +401,22 @@ Créez votre propre fichier `Prompts_Réutilisables.md` avec :
 - Prompt Email Stakeholders
 - Prompt User Stories
 - Prompt Synthèse de Réunion
+
+
+## Exemples de prompts utilisables dans Claude Desktop
+
+```
+"Crée un workflow N8N qui envoie un email chaque matin à 7h avec la météo du jour"
+
+"Liste tous mes workflows N8N actifs"
+
+"Modifie le workflow 'MonWorkflow' pour ajouter un nœud Slack après le nœud HTTP"
+
+"Crée un workflow qui surveille le github du projet et me notifie sur teams en cas de succès de build"
+
+"Montre-moi la structure du workflow ID 42"
+```
+
+## Références
+
+- Docs officielles N8N MCP : [https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/](https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/)
