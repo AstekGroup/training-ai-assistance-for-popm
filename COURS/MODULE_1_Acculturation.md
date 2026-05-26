@@ -339,11 +339,12 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.3 Outils d'automatisation de processus
 
-#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat) avec IA
+#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat) avec IA / [N8N](https://n8n.io/))
 
 - **Fonctionnalités** : Automatisation de workflows
 - **Cas d'usage** : Automatisation de reporting, synchronisation de données
 
+![[res/Make_Or_N8N.png]]
 #### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
 
 - **Fonctionnalités** : Automatisation Microsoft 365

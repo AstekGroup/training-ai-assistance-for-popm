@@ -28,6 +28,7 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
   - *Gain* : Fluidité des processus, moins d'erreurs.
 3. **Niveau Système (Product Intelligence)** : Analyse auto de feedback, génération de roadmap dynamique.
   - *Gain* : Capacité de scale, insights stratégiques.
+![[res/Gunloop_vs_make.png]]
 
 ---
 
