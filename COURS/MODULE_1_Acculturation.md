@@ -283,12 +283,12 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Pour les calculs** :
 
 - **[Wolfram Alpha](https://www.wolframalpha.com)** : Moteur de calcul computationnel
-- **Plugins ChatGPT** : Code Interpreter, Wolfram
+- **Fonctionnalités natives & Custom GPTs** : Utilisation d'Advanced Data Analysis (ex-Code Interpreter) et de GPTs spécialisés
 - **Intégrations** : Connecter l'IA à des calculatrices via API
 
 **Pour la gestion du temps** :
 
-- **Outils avec accès temps réel** : Certaines IA peuvent maintenant accéder à l'heure via plugins
+- **Outils avec accès temps réel** : La plupart des modèles modernes ont désormais un accès web natif et l'heure système intégrée
 - **Intégrations calendrier** : [Zapier](https://zapier.com), [Make](https://www.make.com) pour connecter IA et calendriers
 - **Assistants spécialisés** : [Motion](https://www.usemotion.com), [Reclaim](https://reclaim.ai) pour la planification temporelle
 
