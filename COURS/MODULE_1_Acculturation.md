@@ -1,6 +1,6 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
-**Version** : 2.0.1
+**Version** : 2.0.2
 **Date de dernière mise à jour** : 2026-05-26
 **Auteur** : Bruno Celle [bruno.celle@astek.net](mailto:bruno.celle@astek.net)
 
@@ -340,10 +340,18 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.3 Outils d'automatisation de processus
 
-#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat) avec IA / [N8N](https://n8n.io/))
+#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat)
+- **Fonctionnalités** : Automatisation de workflows (Zapier) ou programmation visuelle de scénarios complexes (Make).
+- **Cas d'usage** : Synchronisation simple d'outils, transferts de données, alertes linéaires.
+- **Limites** : Coûts importants à l'usage, hébergement cloud propriétaire.
 
-- **Fonctionnalités** : Automatisation de workflows
-- **Cas d'usage** : Automatisation de reporting, synchronisation de données
+#### [N8N](https://n8n.io/) - Le low-code souverain et orienté IA 🚀
+- **Fonctionnalités** : Plateforme d'automatisation low-code et open-source permettant de connecter des APIs et d'intégrer nativement des agents IA.
+- **Cas d'usage** : Routage intelligent de tickets, création d'assistants connectés aux bases de connaissances (RAG), automatisation de processus métiers confidentiels.
+- **Avantages majeurs pour le PO/PM** :
+  - **Souveraineté et sécurité** : Peut être auto-hébergé (on-premise ou cloud souverain), garantissant la conformité RGPD et protégeant les données d'entreprise sensibles (essentiel par rapport aux contraintes du point 4.3).
+  - **Écosystème "Advanced AI"** : Intègre nativement des nœuds pour créer des Agents IA, connecter des LLMs, gérer la mémoire des conversations et interroger des bases vectorielles.
+  - **Coût** : Version communautaire gratuite et tarification Cloud très compétitive par rapport à Zapier/Make.
 
 ![[res/Make_Or_N8N.png]]
 #### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
@@ -373,7 +381,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 #### [Monday.com](https://monday.com) / [Asana](https://asana.com) avec IA
 
 - **Fonctionnalités** : Suggestions de priorités, prédictions
-- **Cas d'usage** : Gestion de backlog, optimisation de roadmap
+- **Cas d'usage** : Backlog management, roadmaps dynamiques
 
 ---
 
