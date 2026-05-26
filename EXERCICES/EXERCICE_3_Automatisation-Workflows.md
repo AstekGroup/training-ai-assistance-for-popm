@@ -4,18 +4,69 @@
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Compte Zapier gratuit (à créer avant la session)
+- ou compte N8N Cloud (évaluation gratuite)
 - Compte Google (Gmail + Google Forms)
 - Accès à [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
+- Pour avancés :
+  - **Installer une instance locale de N8N**
+  - lier le MCP N8N de Claude
+
+	prérequis :
+	- Claude Desktop installé (en local)
+	- N8N installé en local (accès via `http://localhost:5678`)
+	- Node.js installé (vérifie : `node -v`)
+	### Étape 1 — Activer le MCP dans N8N
+
+	1. Ouvre `http://localhost:5678`
+	2. Va dans **Settings > API**
+	3. Active l'option **Enable API** si ce n'est pas fait
+	4. Génère une **API Key** → copie-la précieusement
+	5. Va dans **Settings > MCP** (ou cherche "MCP" dans les settings)
+	6. Active **Enable MCP Server**
+	7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
+	
+	### Étape 2 — Configurer Claude Desktop
+	
+	Fichier à éditer :
+	
+	- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
+	- **Linux** : `~/.config/Claude/claude_desktop_config.json`
+	- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
+	
+	```json
+	{
+	  "mcpServers": {
+	    "n8n-local": {
+	      "command": "npx",
+	      "args": [
+	        "mcp-remote",
+	        "http://localhost:5678/mcp"
+	      ],
+	      "env": {
+	        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_ICI"
+	      }
+	    }
+	  }
+	}
+	```
+	
+	### Étape 3 — Redémarrer Claude Desktop
+	
+	Soit reboot, soit gestionnaire de tâche, tuer claude & relancer.
+	
+	### Vérification
+	Icône **marteau** visible en bas du chat = MCP actif.
 
 ---
 
 ## 🎯 Objectif pédagogique
 
-Comprendre et expérimenter **2 niveaux d'automatisation** pour libérer du temps sur les tâches répétitives :
+Comprendre et expérimenter **3 niveaux d'automatisation** pour libérer du temps sur les tâches répétitives :
 - **Niveau 1** : Automatisation "soft" avec prompts réutilisables
-- **Niveau 2** : Automatisation "technique" avec workflows Zapier
+- **Niveau 2** : Automatisation "technique" avec workflows Zapier (No-Code simple)
+- **Niveau 3** : Automatisation "IA-native" avec workflows N8N + LLM (Low-Code orienté souveraineté)
 
-**Principe** : Commencer simple, puis progresser vers des automatisations plus avancées
+**Principe** : Commencer simple, puis progresser vers des automatisations plus avancées.
 
 ---
 
@@ -190,7 +241,7 @@ Plutôt que de cliquer partout tout de suite, nous allons **dessiner** la logiqu
 
 #### Étape 1 : Le Formulaire (L'entrée)
 Créez un Google Form rapide avec :
-1. Titre
+1. Titre de l'idée
 2. Description
 3. Email du demandeur
 
@@ -218,24 +269,128 @@ Choisissez l'un des deux outils et tentez de créer le lien **Formulaire -> Emai
 
 ---
 
-### Étape 4 : Mesurer l'impact
+### Étape 3 : Mesurer l'impact
 
 | Critère | Avant (Chaos) | Après (Système) |
 |---------|---------------|-----------------|
 | **Centralisation** | ❌ Dispersé | ✅ Unique |
 | **Traçabilité** | ❌ Faible | ✅ Totale |
-| **Temps de tri** | 10 min/demande | 0 min (IA) |
+| **Temps de tri** | 10 min/demande | 0 min (Automatique) |
 
 **ROI** : Pour 20 demandes/mois = **40h/an économisées** (et 0 oubli).
 
 ---
 
-## 🎓 Synthèse : Les 2 niveaux d'automatisation que vous maîtrisez maintenant
+## ⚙️ Exercice 3 : Automatisation AVANCÉE - Tri intelligent et routage de Feedback avec N8N
+
+**Durée** : 45 minutes  
+**Niveau** : ⭐⭐⭐ Avancé (mais accessible sans code)  
+**Objectif** : Créer un agent de triage automatisé de retours clients avec N8N et un LLM.
+
+### Le problème
+
+Votre équipe produit reçoit des dizaines de retours utilisateurs et bugs par jour via un formulaire.
+**Processus actuel (manuel)** :
+1. Lire chaque retour un par un.
+2. Déterminer si c'est un Bug, une Feature Request ou une simple Question.
+3. Évaluer la criticité / urgence (ex: blocage complet vs suggestion esthétique).
+4. Résumer et documenter dans un tableau Jira ou Notion.
+5. Alerter l'équipe de dev par Slack/Email si le bug est bloquant.
+
+**⏱️ Temps nécessaire : 1h30 par jour**
+**😰 Problèmes** : Fatigue mentale, lenteur de traitement des urgences critiques, manque d'uniformité dans la catégorisation.
+
+---
+
+### ✅ Mission : Créer votre "Trieur Intelligent" sur N8N
+
+Vous allez concevoir le workflow suivant :
+`Webhook (Réception du feedback)` -> `AI Agent / LLM (Analyse)` -> `Router / If (Aiguillage)` -> `Actions de sortie (Gmail / Sheet)`
+
+```mermaid
+graph TD
+    A[Webhook : Réception du feedback] --> B[AI Agent : Analyse & Structuration]
+    B --> C{Urgence ?}
+    C -->|Critique| D[Envoi Email Urgent via Gmail]
+    C -->|Normal / Basse| E[Ajout au Google Sheet de suivi]
+```
+
+#### Étape 1 : Accès à N8N (5 min)
+
+1. Connectez-vous à votre instance locale de N8N (`http://localhost:5678`) ou créez un compte d'évaluation gratuit sur [n8n.io Cloud](https://n8n.io) (prêt en 2 minutes).
+2. Créez un nouveau workflow vide.
+
+#### Étape 2 : Le Déclencheur (Webhook) (5 min)
+
+1. Ajoutez un nœud **Webhook** (dans la catégorie *Trigger*).
+2. Configurez-le :
+   - *HTTP Method* : `POST`
+   - *Path* : `feedback-triage`
+   - *Response Mode* : `When Last Node Finishes`
+3. Copiez l'URL de test du Webhook (Test URL).
+
+#### Étape 3 : Le Cerveau IA (15 min)
+
+1. Connectez le Webhook à un nœud **Advanced AI > AI Agent** ou **Basic LLM Chain**.
+2. Configurez le nœud d'IA :
+   - **Model** : Ajoutez un nœud de modèle (ex: OpenAI Chat Model ou Anthropic Chat Model) et configurez la clé d'API ou utilisez un modèle de test pré-configuré.
+   - **Prompt** : Utilisez la méthode **ACTF** apprise au Module 1 :
+     ```
+     Tu es un Product Owner expert en triage de retours utilisateurs.
+     Analyse le feedback utilisateur reçu et extrait les informations suivantes sous format JSON :
+     {
+       "type": "Bug" ou "Feature Request" ou "Question",
+       "urgence": "Critique" (si l'application est inutilisable ou bug bloquant) ou "Normal" (dysfonctionnement mineur) ou "Basse" (suggestion d'amélioration),
+       "theme": "Thème principal (ex: Paiement, Connexion, Performance, UI)",
+       "resume": "Un résumé clair en français de 10 mots maximum du problème pour un développeur",
+       "action_immediate": true (si urgence Critique) ou false (sinon)
+     }
+
+     FEEDBACK À ANALYSER :
+     {{ $json.body.feedback }}
+     ```
+
+#### Étape 4 : Le Routage (Router) (5 min)
+
+1. Ajoutez un nœud **IF** ou **Switch** après le nœud IA.
+2. Configurez la condition :
+   - Si `action_immediate` est égal à `true` (Urgent).
+   - Sinon (Normal).
+
+#### Étape 5 : Les Actions de sortie (10 min)
+
+1. **Branche VRAIE (Urgent)** : Ajoutez un nœud **Gmail** ou **Slack** pour envoyer une alerte immédiate avec le résumé généré par l'IA.
+2. **Branche FAUSSE (Normal)** : Ajoutez un nœud **Google Sheets** (ou Notion) pour insérer une nouvelle ligne dans votre backlog d'idées avec les tags (type, thème, résumé) générés automatiquement par l'IA.
+
+#### Étape 6 : Test pratique (5 min)
+
+1. Cliquez sur **Listen for test event** dans N8N.
+2. Envoyez une requête de test au Webhook (avec un outil comme Postman ou un simple curl) contenant un feedback :
+   *Test 1 (Normal)* : `{"feedback": "Ce serait super d'avoir un mode sombre sur l'application de facturation."}`
+   *Test 2 (Critique)* : `{"feedback": "La page de paiement tourne en boucle et renvoie une erreur 500 au moment de valider la carte, impossible de commander !"}`
+3. Observez le comportement du workflow en temps réel : classification automatique, aiguillage et déclenchement des bonnes actions.
+
+---
+
+### Étape 7 : Mesurer l'impact
+
+| Critère | Avant (Manuel) | Après (N8N + IA) |
+|---------|---------------|------------------|
+| **Vitesse de réaction (bug critique)** | Quelques heures | Immédiat (< 5 secondes) ⚡ |
+| **Temps de saisie & taggage** | 2-3 min par ticket | 0 min |
+| **Erreurs de classement** | Variables selon fatigue | Cohérentes et standardisées |
+
+**ROI estimé** : Pour un PO gérant 200 retours par mois, économie de **8 heures de tri par mois**, tout en garantissant un temps de réaction instantané pour les pannes critiques.
+
+---
+
+## 🎓 Synthèse : Les 3 niveaux d'automatisation que vous maîtrisez maintenant
 
 | Niveau | Technique | Exemple | Temps setup | Gain temps | ROI | Quand utiliser |
 |--------|-----------|---------|-------------|------------|-----|----------------|
 | **⭐ Simple** | Prompt template | Release Notes | 10 min | 27 min/semaine | Immédiat | Génération de contenu répétitif |
 | **⭐⭐ Intermédiaire** | Workflow Zapier | Form → Email | 30 min | 3,3h/mois | 1,5 jour | Collecte, notification, traçabilité |
+| **⭐⭐⭐ Avancé** | Workflow N8N + LLM | Tri & Routage Feedback | 40 min | 8h/mois | 3 jours | Triage intelligent, automatisation IA complexes sécurisées |
 
 ---
 
@@ -245,8 +400,9 @@ Choisissez l'un des deux outils et tentez de créer le lien **Formulaire -> Emai
 
 ✅ **1 prompt template réutilisable** pour vos Release Notes  
 ✅ **1 workflow Zapier fonctionnel** de collecte et notification  
+✅ **1 workflow N8N d'agent de tri intelligent** fonctionnel  
 ✅ **Calcul de ROI** pour chaque automatisation  
-✅ **Compétence** : Identifier et automatiser des tâches répétitives
+✅ **Compétence** : Identifier, designer et automatiser des tâches répétitives avec ou sans IA
 
 ---
 
@@ -254,11 +410,12 @@ Choisissez l'un des deux outils et tentez de créer le lien **Formulaire -> Emai
 
 ### Questions à discuter en groupe :
 
-1. **Quelle automatisation vous a le plus impressionné ?** (Exercice 1 ou 2)
+1. **Quelle automatisation vous a le plus impressionné ?** (Exercice 1, 2 ou 3)
 
 2. **Quel gain de temps avez-vous calculé ?**
    - Exercice 1 : ___ heures/an
    - Exercice 2 : ___ heures/an
+   - Exercice 3 : ___ heures/an
    - **Total : ___ heures/an économisées** 🚀
 
 3. **Quelle tâche de VOTRE quotidien allez-vous automatiser en premier ?**
@@ -268,7 +425,7 @@ Choisissez l'un des deux outils et tentez de créer le lien **Formulaire -> Emai
    - Autre : ___________
 
 4. **Difficultés rencontrées ?**
-   - Problèmes techniques avec Zapier ?
+   - Problèmes techniques avec Zapier ou N8N ?
    - Prompt qui ne donne pas le bon résultat ?
    - Ajustements nécessaires ?
 
@@ -296,12 +453,13 @@ Listez 3 tâches répétitives de votre semaine :
 ### Étape 2 : Choisir votre approche
 
 - [ ] **Approche 1** : Créer un prompt template (si génération de contenu)
-- [ ] **Approche 2** : Créer un workflow Zapier (si collecte/notification)
-- [ ] **Approche 3** : Combiner les deux !
+- [ ] **Approche 2** : Créer un workflow Zapier (si collecte/notification simple)
+- [ ] **Approche 3** : Créer un workflow N8N avec IA native (si tri, analyse ou RAG nécessaire)
+- [ ] **Approche 4** : Combiner plusieurs approches !
 
 ### Étape 3 : Mettre en place
 
-- [ ] Setup de l'automatisation (prompt ou Zap)
+- [ ] Setup de l'automatisation (prompt, Zap ou N8N)
 - [ ] Test avec données réelles
 - [ ] Ajustements si nécessaire
 - [ ] Activation et mise en production
@@ -323,22 +481,25 @@ Listez 3 tâches répétitives de votre semaine :
 > **Gardez l'humain dans la boucle** : L'automatisation aide, mais ne remplace pas votre jugement. Vérifiez toujours les résultats générés par l'IA.
 
 > [!NOTE]
+> **N8N Cloud** : L'essai gratuit permet de concevoir et tester des workflows directement dans votre navigateur en quelques minutes, sans aucune installation locale.
 > **Plan gratuit Zapier** : 100 tâches/mois = largement suffisant pour commencer. Surveillez votre consommation pour ne pas dépasser.
 
 > [!IMPORTANT]
-> **Documentez vos workflows** : Notez comment fonctionne votre Zap et votre prompt template. Vous (ou vos collègues) vous remercierez dans 6 mois !
+> **Documentez vos workflows** : Notez comment fonctionne votre workflow N8N et vos prompts. Vous (ou vos collègues) vous remercierez dans 6 mois !
 
 ---
 
 ## 🔗 Ressources complémentaires
 
-### Templates Zapier prêts à l'emploi
+### Templates N8N et Zapier prêts à l'emploi
 
+- [N8N Workflow Templates - AI](https://n8n.io/workflows/templates/?category=AI)
 - [Zapier Templates - Project Management](https://zapier.com/apps/categories/project-management)
 - [Zapier Templates - Productivity](https://zapier.com/apps/categories/productivity)
 
 ### Tutoriels vidéo
 
+- [N8N Quickstart Guide](https://docs.n8n.io/getting-started/quickstart/)
 - [Zapier 101: Getting Started](https://zapier.com/learn/getting-started-guide/)
 - [Google Forms + Zapier Tutorial](https://zapier.com/apps/google-forms/integrations)
 
@@ -349,4 +510,23 @@ Créez votre propre fichier `Prompts_Réutilisables.md` avec :
 - Prompt Rapport de Sprint
 - Prompt Email Stakeholders
 - Prompt User Stories
+- Prompt Triage de Feedback (fait aujourd'hui pour N8N ✅)
 - Prompt Synthèse de Réunion
+
+## Exemples de prompts utilisables dans Claude Desktop avec le MCP N8N
+
+```
+"Crée un workflow N8N qui envoie un email chaque matin à 7h avec la météo du jour"
+
+"Liste tous mes workflows N8N actifs"
+
+"Modifie le workflow 'MonWorkflow' pour ajouter un nœud Slack après le nœud HTTP"
+
+"Crée un workflow qui surveille le github du projet et me notifie sur teams en cas de succès de build"
+
+"Montre-moi la structure du workflow ID 42"
+```
+
+## Références
+
+- Docs officielles N8N MCP : [https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/](https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/)

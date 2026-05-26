@@ -1,8 +1,8 @@
 # Module 1 : Acculturation à l'IA pour PO/PM
 
-**Version** : 2.0.0
-**Date de dernière mise à jour** : 2026-03-26
-**Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
+**Version** : 2.0.2
+**Date de dernière mise à jour** : 2026-05-26
+**Auteur** : Bruno Celle [bruno.celle@astek.net](mailto:bruno.celle@astek.net)
 
 ---
 
@@ -107,6 +107,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - **Contexte limité** : Attention aux limites de tokens (ex: [ChatGPT](https://chat.openai.com) ~128k tokens)
 - **Hallucinations** : Peuvent générer des informations incorrectes
 - **Biais** : Reflètent les biais présents dans les données d'entraînement
+- **Césure** : Surveiller un risque de "perte" lorsque l'échange est long
 
 **Bonnes pratiques** :
 
@@ -137,6 +138,38 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 → L'IA calcule : "user story" (85%), "documentation" (10%), "présentation" (3%)...
 → L'IA choisit : "user story"
 ```
+
+#### 2.4.2 Concrétisions : promping de base
+##### A) Méthode ACTF
+	La méthode **ACTF** est une version simple pour écrire de meilleurs prompts.
+	
+	**A - Action**  
+	Dire clairement ce que l’IA doit faire.  
+	Exemple : « Rédige un email de relance commerciale. »
+	
+	**C - Contexte**  
+	Donner les informations utiles pour comprendre la situation.  
+	Exemple : « Le client n’a pas répondu depuis 10 jours après une proposition envoyée. »
+	
+	**T - Ton / Tâche**  
+	Préciser le style, le niveau de détail ou les étapes attendues.  
+	Exemple : « Ton professionnel, court, avec une formulation polie et directe. »
+	
+	**F- Format**  
+	Indiquer la forme de la réponse attendue.  
+	Exemple : « Réponds avec un objet d’email puis le corps du message. »
+	
+	Exemple complet :
+	
+	```
+	Agis comme un assistant commercial.Rédige un email de relance pour un client qui n’a pas répondu depuis 10 jours après l’envoi d’une proposition.Le ton doit être professionnel, cordial et concis.Présente la réponse avec un objet d’email puis le corps du message.
+	```
+	
+	En résumé : **ACTF = ce que l’IA doit faire + le contexte + la manière de le faire + le format attendu.**
+	----------------------- ✄ TP 1 ✄ -----------------------
+#### B Perspective d'évolution
+méthode ASPeCCTf
+Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
 
 #### 2.4.2 Pourquoi les IA sont mauvaises en calculs ?
 
@@ -169,8 +202,8 @@ Ce que fait l'IA :
 **Implications pratiques pour les PO/PM** :
 
 - ❌ Ne jamais faire confiance aux calculs directs (budgets, vélocité, ROI)
-- ✅ Utiliser l'IA pour structurer les formules, puis calculer avec Excel/Google Sheets
-- ✅ Demander à l'IA d'expliquer la méthode de calcul, pas de faire le calcul
+- ✅ Utiliser l'IA pour structurer les formules, puis calculer avec Excel/Google Sheets ou autre outils
+- ✅ Guider les IA, préalablement, demander à l'IA d'expliquer la méthode de calcul, pas de faire le calcul
 
 **Exemple d'usage correct** :
 
@@ -276,6 +309,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - Analyse de retours utilisateurs
 - **Avantages** : Polyvalent, facile d'utilisation
 - **Limites** : Nécessite vérification, coûts selon usage
+- **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
 
 #### Génération d'Images et d'UI ([Google Nano Banana](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
 
@@ -306,11 +340,20 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.3 Outils d'automatisation de processus
 
-#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat) avec IA
+#### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat)
+- **Fonctionnalités** : Automatisation de workflows (Zapier) ou programmation visuelle de scénarios complexes (Make).
+- **Cas d'usage** : Synchronisation simple d'outils, transferts de données, alertes linéaires.
+- **Limites** : Coûts importants à l'usage, hébergement cloud propriétaire.
 
-- **Fonctionnalités** : Automatisation de workflows
-- **Cas d'usage** : Automatisation de reporting, synchronisation de données
+#### [N8N](https://n8n.io/) - Le low-code souverain et orienté IA 🚀
+- **Fonctionnalités** : Plateforme d'automatisation low-code et open-source permettant de connecter des APIs et d'intégrer nativement des agents IA.
+- **Cas d'usage** : Routage intelligent de tickets, création d'assistants connectés aux bases de connaissances (RAG), automatisation de processus métiers confidentiels.
+- **Avantages majeurs pour le PO/PM** :
+  - **Souveraineté et sécurité** : Peut être auto-hébergé (on-premise ou cloud souverain), garantissant la conformité RGPD et protégeant les données d'entreprise sensibles (essentiel par rapport aux contraintes du point 4.3).
+  - **Écosystème "Advanced AI"** : Intègre nativement des nœuds pour créer des Agents IA, connecter des LLMs, gérer la mémoire des conversations et interroger des bases vectorielles.
+  - **Coût** : Version communautaire gratuite et tarification Cloud très compétitive par rapport à Zapier/Make.
 
+![[res/Make_Or_N8N.png]]
 #### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
 
 - **Fonctionnalités** : Automatisation Microsoft 365
@@ -340,7 +383,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 #### [Monday.com](https://monday.com) / [Asana](https://asana.com) avec IA
 
 - **Fonctionnalités** : Suggestions de priorités, prédictions
-- **Cas d'usage** : Gestion de backlog, optimisation de roadmap
+- **Cas d'usage** : Backlog management, roadmaps dynamiques
 
 ---
 
@@ -390,7 +433,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Confidentialité des données** :
 
 - Vérifier les politiques de confidentialité des outils
-- Éviter de partager des données sensibles (clients, stratégie)
+- **NE JAMAIS partager des données sensibles** (clients, stratégie)
 - Utiliser des versions entreprise avec garanties de sécurité
 
 **Biais et équité** :
