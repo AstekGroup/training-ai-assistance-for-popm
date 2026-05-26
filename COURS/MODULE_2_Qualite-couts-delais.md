@@ -50,7 +50,7 @@ Le triangle de fer (Scope, Time, Cost) reste un pilier du management de projet. 
 
 1. **Collecte du besoin** : Récupérer les besoins métier bruts
 2. **Génération initiale** : Utiliser l'IA pour structurer en user stories
-3. **Vérification INVEST** : Demander à l'IA de vérifier les critères INVEST
+3. **Vérification INVEST** : Demander à l'IA de vérifier les critères INVEST (indépendant, négociable, valuable, estimable, small, testable)
 4. **Affinement** : Itérer avec l'IA pour améliorer la clarté
 
 **Exemple de prompt** :
@@ -610,7 +610,7 @@ Fournis un rapport de complétude avec recommandations.
 - [GDL T&C. "La gestion de projet à l'ère de l'IA" (FR)](https://www.gdltc.fr/2025/09/09/la-gestion-de-projet-a-lere-de-lia/) (2025)
 - [MIT Technology Review. "AI and the future of work"](https://www.technologyreview.com/topic/artificial-intelligence/)
 
-Voir aussi le détail dans [`ANNEXES/ressources-externes.md`](../ANNEXES/ressources-externes.md).
+Voir aussi le détail dans `[ANNEXES/ressources-externes.md](../ANNEXES/ressources-externes.md)`.
 
 ### Outils recommandés
 
@@ -623,14 +623,14 @@ Voir aussi le détail dans [`ANNEXES/ressources-externes.md`](../ANNEXES/ressour
 
 ### Templates
 
-Consultez le dossier `SUPPORTS/` pour :
+Consultez [`ANNEXES/supports/`](../ANNEXES/supports/) (voir aussi [`ANNEXES/README.md`](../ANNEXES/README.md)) :
 
-- Template de user story avec vérification INVEST
-- Template d'estimation assistée
-- Template de business case
-- Template d'analyse de risques
-- Template de documentation projet
-- Checklist de qualité documentation
+- [Template de user story avec vérification INVEST](../ANNEXES/supports/SUPPORT_Template-User-Story.md)
+- [Template d'estimation assistée](../ANNEXES/supports/SUPPORT_Template-Estimation-Assistee.md)
+- [Template de business case](../ANNEXES/supports/SUPPORT_Template-Business-Case.md)
+- [Template d'analyse de risques](../ANNEXES/supports/SUPPORT_Template-Analyse-Risques.md)
+- [Template de documentation projet](../ANNEXES/supports/SUPPORT_Template-Documentation-Projet.md)
+- [Checklist de qualité documentation](../ANNEXES/supports/SUPPORT_Checklist-Qualite-Documentation.md)
 
 ### Formations complémentaires
 

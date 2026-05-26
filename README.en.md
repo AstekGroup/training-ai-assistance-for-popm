@@ -122,36 +122,33 @@ The `EXERCICES-Rovo/` folder mirrors this structure for client sessions using th
 
 ---
 
+## 📎 Annexes
+
+Supplementary resources in [`ANNEXES/`](ANNEXES/):
+
+- **Reference** : [glossary](ANNEXES/glossaire.md), [external resources](ANNEXES/ressources-externes.md), [syllabus](ANNEXES/syllabus-training-ai-assistance-for-popm.en.md)
+- **Operational supports** : [templates, checklists, and worksheets](ANNEXES/supports/) — index in [ANNEXES/README.md](ANNEXES/README.md)
+
+---
+
 ## 📁 Repository Structure
 
 ```
-PO PM-Assisted/
-├── COURS/                          # Main educational content
-│   ├── MODULE_1_Acculturation.md
-│   ├── MODULE_2_Qualite-couts-delais.md
-│   ├── MODULE_3_Automatisation-structuration.md
-│   └── MODULE_4_Prise-de-decisions.md
-│
+training-ai-assistance-for-popm/
+├── COURS/                          # Main educational content (4 modules)
 ├── EXERCICES/                      # Practical exercises
-│   ├── EXERCICE_1_Prompt-Engineering.md
-│   ├── EXERCICE_2_Triptyque-Qualite-Couts-Delais.md
-│   ├── EXERCICE_3_Automatisation-Workflows.md
-│   ├── EXERCICE_4_Frameworks-Decision.md
-│
-├── SUPPORTS/                       # Supplementary materials
-│   ├── SUPPORT_Checklist-Adoption-IA.md
-│   ├── SUPPORT_Fiche-Pratique-Prompt-Engineering.md
-│   └── SUPPORT_Template-User-Story.md
-│
-├── ANNEXES/                        # Additional resources
+├── EXERCICES-Rovo/                 # Atlassian Rovo variant
+├── ANNEXES/                        # Glossary, resources, syllabus, supports/
+│   ├── README.md
 │   ├── glossaire.md
-│   ├── references.md
-│   └── ressources-externes.md
-│
-├── AGENTS.md                       # Instructions for AI agents
-├── CHANGELOG.md                    # Modification history
-├── README.md                       # Main README (French)
-└── README.en.md                    # This file (English)
+│   ├── ressources-externes.md
+│   ├── syllabus-training-ai-assistance-for-popm.md (+ .en.md)
+│   └── supports/                   # SUPPORT_*.md templates and checklists
+├── cours-viewer.html
+├── AGENTS.md
+├── CHANGELOG.md
+├── README.md
+└── README.en.md
 ```
 
 ---

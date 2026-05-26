@@ -162,8 +162,8 @@
 ## Ressources complémentaires
 
 - Guide de sélection d'outils IA (voir `ANNEXES/`)
-- Bibliothèque de prompts réutilisables (voir `SUPPORTS/`)
-- Templates de workflows (voir `SUPPORTS/`)
+- Bibliothèque de prompts réutilisables (voir `ANNEXES/supports/`)
+- Templates de workflows (voir `ANNEXES/supports/`)
 - Études de cas (voir modules de cours)
 
 ---

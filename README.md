@@ -124,6 +124,15 @@ Les exercices du dossier `EXERCICES-Rovo/` reprennent le même découpage pour d
 
 ---
 
+## 📎 Annexes
+
+Ressources complémentaires dans [`ANNEXES/`](ANNEXES/) :
+
+- **Référence** : [glossaire](ANNEXES/glossaire.md), [ressources externes](ANNEXES/ressources-externes.md), [syllabus](ANNEXES/syllabus-training-ai-assistance-for-popm.md)
+- **Supports** : [templates, checklists et fiches](ANNEXES/supports/) (user stories, estimation, RICE, comptes-rendus, etc.) — index dans [ANNEXES/README.md](ANNEXES/README.md)
+
+---
+
 ## 📁 Structure du dépôt
 
 ```
@@ -131,8 +140,13 @@ training-ai-assistance-for-popm/
 ├── COURS/                          # 4 modules (2 jours)
 ├── EXERCICES/                      # TP génériques (ChatGPT, Claude, etc.)
 ├── EXERCICES-Rovo/                 # Variante client Atlassian Rovo
-├── SUPPORTS/
-├── ANNEXES/
+├── ANNEXES/                        # Glossaire, ressources, syllabus, supports/
+│   ├── README.md
+│   ├── glossaire.md
+│   ├── ressources-externes.md
+│   ├── syllabus-training-ai-assistance-for-popm.md (+ .en.md)
+│   └── supports/                   # Templates, checklists, fiches
+├── .agent/skills/pdf-generator/    # Export Markdown → PDF (charte Astek)
 ├── cours-viewer.html               # Navigation modules (généré)
 ├── AGENTS.md
 ├── CHANGELOG.md

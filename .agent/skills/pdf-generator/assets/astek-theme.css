@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('./bigshoulders/BigShouldersDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('./bigshoulders/BigShouldersDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --astek-green: #009C49;
+    --astek-dark: #151515;
+    --astek-gray: #444444;
+    --astek-light: #f4f4f4;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: var(--astek-dark);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: var(--astek-green);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 2px solid var(--astek-green);
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid var(--astek-light);
+    padding-bottom: 0.1em;
+    page-break-before: always;
+    break-before: page;
+}
+
+a {
+    color: var(--astek-green);
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+th {
+    background-color: var(--astek-green);
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+blockquote {
+    border-left: 5px solid var(--astek-green);
+    padding: 10px 20px;
+    margin: 1.5em 0;
+    background-color: #f0fdf4;
+    font-style: italic;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 2em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Specific styling for the PDF print */
+@media print {
+    body {
+        margin: 0;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+}

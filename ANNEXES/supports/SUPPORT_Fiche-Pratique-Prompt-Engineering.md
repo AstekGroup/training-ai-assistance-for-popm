@@ -32,7 +32,7 @@ Tu es un Product Owner expérimenté travaillant dans une scale-up tech françai
 Tu as 10 ans d'expérience dans la gestion de produits digitaux B2B.
 ```
 
-**Pourquoi** : L'IA adapte son langage et ses recommandations au contexte
+**Pourquoi** : L'IA adapte son langage au contexte (⚠ elle adapte uniquement son langage, pas ses compétences. Au contraire, restreindre l'IA à un rôle a tendance à réduire ses compétences ⚠)ß
 
 ### 2. Tâche claire
 
@@ -378,16 +378,8 @@ Crée une bibliothèque de prompts qui fonctionnent bien pour tes cas d'usage r�
 
 ### ✅ Adapte selon l'outil
 
-Différents outils IA (ChatGPT, Claude, etc.) peuvent nécessiter des ajustements de prompt. Teste et adapte.
+Différents outils IA (ChatGPT, Claude, etc.) peuvent nécessiter des ajustements de prompt. Teste et adapte.ß
 
 ---
 
-## Ressources complémentaires
-
-- Module 1 du cours : Acculturation à l'IA (section Ingénierie de prompt)
-- Bibliothèque de prompts réutilisables (voir `SUPPORTS/`)
-- Outils de test de prompts : PromptPerfect, PromptBase
-
----
-
-**Note** : Cette fiche pratique est développée par Astek (https://www.astek.net). N'hésitez pas à l'adapter à vos besoins spécifiques.
+**Note** : Cette fiche pratique est développée par Astek ([https://www.astek.net](https://www.astek.net)). N'hésitez pas à l'adapter à vos besoins spécifiques.

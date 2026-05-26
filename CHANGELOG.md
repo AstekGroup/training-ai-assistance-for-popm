@@ -4,8 +4,14 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 
 ## [Unreleased]
 
+### Ajouté
+
+- Skill agent `pdf-generator` (`.agent/skills/pdf-generator/`) repris de `training-kit` pour exporter modules, syllabus et supports en PDF Astek.
+
 ### Modifié
 
+- `AGENTS.md` : structure du dépôt à jour, documentation du skill PDF, chemins `ANNEXES/supports/`.
+- Déplacement des supports pédagogiques : `SUPPORTS/` → `ANNEXES/supports/` ; index global dans `ANNEXES/README.md` ; liens mis à jour dans les modules et la documentation du dépôt.
 - Mise à jour des ressources externes (modules 2 et 4, annexe `ANNEXES/ressources-externes.md`) : liens 404 corrigés (HBR réunions, Jira/Rovo, Dovetail), entrées FR (CNIL, PMI France, Le Monde Informatique, FUN-MOOC), alignement des listes courtes sur l'annexe, révision mai 2026.
 - Ressources et statistiques : études 2024 remplacées ou complétées par des sources 2025–2026 (McKinsey State of AI 2025, Gartner trends 2026, Capgemini 2025, PMI hub IA, article FR GDL T&C 2025).
 - Réorganisation pédagogique : transcription, synthèse de réunions et comptes-rendus déplacés du module 2 vers le module 4 (cours et exercices `EXERCICES/`).

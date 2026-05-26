@@ -511,14 +511,14 @@ Ton : Professionnel mais empathique.
 - [McKinsey. "The state of AI in 2025"](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) (2025)
 - [CNIL. "Intelligence artificielle — guides et recommandations" (FR)](https://www.cnil.fr/fr/intelligence-artificielle)
 
-Voir aussi le détail dans [`ANNEXES/ressources-externes.md`](../ANNEXES/ressources-externes.md).
+Voir aussi le détail dans `[ANNEXES/ressources-externes.md](../ANNEXES/ressources-externes.md)`.
 
 ### Outils recommandés
 
 - **[Tableau](https://www.tableau.com/products/ai-ml)** : Analyse de données avec IA
-- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI](https://mistral.ai)** : Analyse qualitative et génération d'insights
-- **[Perplexity](https://www.perplexity.ai) / [Elicit](https://elicit.com)** : Recherche et synthèse web
-- **[Productboard](https://www.productboard.com) / [Dovetail](https://dovetail.com)** : Tri et catégorisation des feedbacks
+- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI**](https://mistral.ai) : Analyse qualitative et génération d'insights
+- **[Perplexity](https://www.perplexity.ai) / [Elicit**](https://elicit.com) : Recherche et synthèse web
+- **[Productboard](https://www.productboard.com) / [Dovetail**](https://dovetail.com) : Tri et catégorisation des feedbacks
 - **[Otter.ai](https://otter.ai)** : Transcription et synthèse de réunions
 - **[Fireflies.ai](https://fireflies.ai)** : Enregistrement et transcription
 - **[Microsoft Teams Copilot](https://www.microsoft.com/microsoft-teams)** / **[Zoom AI Companion](https://www.zoom.com/en/ai-assistant/)** : Transcription et facilitation intégrées
@@ -534,14 +534,14 @@ Voir aussi le détail dans [`ANNEXES/ressources-externes.md`](../ANNEXES/ressour
 
 ### Templates et frameworks
 
-Consultez le dossier `SUPPORTS/` pour :
+Consultez [`ANNEXES/supports/`](../ANNEXES/supports/) (voir aussi [`ANNEXES/README.md`](../ANNEXES/README.md)) :
 
-- Template de matrice de priorisation
-- Template d'analyse de scénarios
-- Template de communication de décision
-- Checklist de prise de décision assistée
-- Template de compte-rendu de réunion
-- Prompts réutilisables pour synthèse de réunion
+- [Template de matrice de priorisation (RICE)](../ANNEXES/supports/SUPPORT_Template-Matrice-Priorisation-RICE.md)
+- [Template d'analyse de scénarios](../ANNEXES/supports/SUPPORT_Template-Analyse-Scenarios.md)
+- [Template de communication de décision](../ANNEXES/supports/SUPPORT_Template-Communication-Decision.md)
+- [Checklist de prise de décision assistée](../ANNEXES/supports/SUPPORT_Checklist-Prise-Decision-Assistee.md)
+- [Template de compte-rendu de réunion](../ANNEXES/supports/SUPPORT_Template-Compte-Rendu-Reunion.md)
+- [Prompts réutilisables pour synthèse de réunion](../ANNEXES/supports/SUPPORT_Prompts-Synthese-Reunion.md)
 
 ---
 
@@ -556,10 +556,6 @@ Consultez le dossier `SUPPORTS/` pour :
 5. Des comptes-rendus standardisés et adaptés au public accélèrent l'alignement des parties prenantes
 6. La communication claire (décisions et réunions) est essentielle pour l'acceptation des arbitrages
 7. L'humain reste essentiel pour validation et jugement final
-
-### Prochaines étapes
-
-Vous avez terminé le parcours des **quatre modules de cours**. Poursuivez avec les **exercices** du dossier `EXERCICES/` (`EXERCICE_4_Frameworks-Decision.md` : frameworks RICE/SWOT, transcription, comptes-rendus) et les ressources du dossier `SUPPORTS/`.
 
 ---
 
