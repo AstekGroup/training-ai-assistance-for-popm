@@ -139,7 +139,7 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 → L'IA choisit : "user story"
 ```
 
-#### 2.4.2 Concrétisions : promping de base
+#### 2.4.2 Concrétisations : prompting de base
 ##### A) Méthode ACTF
 	La méthode **ACTF** est une version simple pour écrire de meilleurs prompts.
 	
@@ -167,11 +167,11 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 	
 	En résumé : **ACTF = ce que l’IA doit faire + le contexte + la manière de le faire + le format attendu.**
 	----------------------- ✄ TP 1 (ACTF) ✄ -----------------------
-#### B Perspective d'évolution
+##### B) Perspective d'évolution
 méthode ASPeCCTf
 Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
 
-#### 2.4.2 Pourquoi les IA sont mauvaises en calculs ?
+#### 2.4.3 Pourquoi les IA sont limitées en calcul ?
 
 **Raison fondamentale** : Les LLM ne calculent pas, ils **prédisent ce qui ressemble à un calcul**.
 
@@ -215,7 +215,7 @@ Ce que fait l'IA :
          puis crée un tableau Excel avec les formules appropriées"
 ```
 
-#### 2.4.3 Pourquoi les IA ne savent pas mesurer le temps ?
+#### 2.4.4 Pourquoi les IA ne savent pas mesurer le temps ?
 
 **Raison fondamentale** : Les LLM n'ont **pas de notion du temps présent** ni d'horloge interne.
 
@@ -278,7 +278,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
          Aide-moi à planifier les 16 jours restants."
 ```
 
-#### 2.4.4 Solutions et outils complémentaires
+#### 2.4.5 Solutions et outils complémentaires
 
 **Pour les calculs** :
 
@@ -513,7 +513,7 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 
 ---
 
-## 9. Ressources complémentaires
+## 6. Ressources complémentaires
 
 ### Articles et études
 
@@ -541,7 +541,7 @@ Consultez le fichier `ANNEXES/glossaire.md` pour les définitions complètes des
 
 ---
 
-## 10. Conclusion et prochaines étapes
+## 7. Conclusion et prochaines étapes
 
 ### Points clés à retenir
 
