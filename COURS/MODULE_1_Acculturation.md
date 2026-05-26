@@ -361,6 +361,8 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.4 Outils d'assistance aux réunions
 
+*Approfondissement au module 4 (transcription, comptes-rendus, action items).*
+
 #### [Otter.ai](https://otter.ai) / [Fireflies](https://fireflies.ai) / [Zoom IQ](https://zoom.us/ai)
 
 - **Fonctionnalités** : Transcription, synthèse, extraction d'action items
@@ -547,9 +549,9 @@ Consultez le fichier `ANNEXES/glossaire.md` pour les définitions complètes des
 
 ### Prochaines étapes
 
-- **Module 2** : Qualité, coûts, délais, réunions et documentation assistés par IA
+- **Module 2** : Qualité, coûts et délais assistés par IA
 - **Module 3** : Automatisation et structuration des projets avec l'IA
-- **Module 4** : Prise de décisions assistée par IA
+- **Module 4** : Prise de décisions, réunions et communication assistées par IA (transcription, comptes-rendus)
 
 ---
 

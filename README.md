@@ -4,13 +4,15 @@
 
 ---
 
-| ℹ️ Informations         | Détails                                                  |
-| :------------------------ | :-------------------------------------------------------- |
-| **📅 Durée**       | 2 jours                                                   |
-| **👥 Public**       | Product Owners, Project Managers, Chefs de projet produit |
-| **💪 Pré-requis**  | Aucun pré-requis technique spécifique                   |
-| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                   |
-| **🔄 Mise à jour** | 25 novembre 2025                                          |
+
+| ℹ️ Informations    | Détails                                                                   |
+| ------------------ | ------------------------------------------------------------------------- |
+| **📅 Durée**       | 2 jours                                                                   |
+| **👥 Public**      | Product Owners, Project Managers, Chefs de projet produit                 |
+| **💪 Pré-requis**  | Aucun pré-requis technique spécifique                                     |
+| **👤 Contact**     | Philippe Pary ([philippe.pary@astek.net](mailto:philippe.pary@astek.net)) |
+| **🔄 Mise à jour** | 26 mai 2026                                                               |
+
 
 ---
 
@@ -18,9 +20,9 @@
 
 À l'issue de cette formation, les participants seront capables de :
 
-1. ✅ Comprendre les concepts fondamentaux de l'IA et leur application au métier de PO/PM
+1. ✅ Appliquer les concepts fondamentaux de l'IA  au métier de PO/PM
 2. ✅ Utiliser l'IA pour améliorer la qualité des livrables (user stories, spécifications, documentation)
-3. ✅ Optimiser l'estimation des coûts et délais grâce à l'analyse de données historiques
+3. ✅ Estimer les coûts et délais grâce à l'analyse de données historiques
 4. ✅ Automatiser les processus répétitifs pour gagner du temps
 5. ✅ Prendre des décisions éclairées assistées par l'IA
 6. ✅ Optimiser les réunions et la documentation avec des outils IA
@@ -29,25 +31,21 @@
 
 ## 🛠️ Outils couverts
 
-- 💬 ChatGPT : <https://chat.openai.com>
-- 🤖 Claude : <https://claude.ai>
-- 💎 Gemini : <https://gemini.google.com>
-- 🐙 GitHub Copilot : <https://github.com/features/copilot>
-- ✨ Cursor : <https://cursor.sh>
-- 📝 Notion AI : <https://notion.so/product/ai>
-- 🔍 Perplexity : <https://perplexity.ai>
-- 🔗 Zapier : <https://zapier.com>
-- 🔄 Make : <https://make.com>
-- ⚡ Power Automate : <https://powerautomate.microsoft.com>
-- 🎯 Jira : <https://jira.atlassian.com>
-- 📊 Monday.com : <https://monday.com>
-- 🗣️ Otter.ai : <https://otter.ai>
-- 🔥 Fireflies : <https://fireflies.ai>
-- 📈 Tableau : <https://tableau.com>
-- 📊 Power BI : <https://powerbi.microsoft.com>
+**Assistants conversationnels** : [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Perplexity](https://perplexity.ai)
+
+**Suite bureautique et collaboration** : [Microsoft Copilot](https://www.microsoft.com/microsoft-copilot) (M365), [Notion AI](https://www.notion.so/product/ai)
+
+**Gestion de projet et produit** : [Atlassian Intelligence](https://www.atlassian.com/intelligence) (Jira, Confluence), [Monday.com](https://monday.com), [Miro AI](https://miro.com/ai)
+
+**Automatisation** : [Zapier](https://zapier.com), [Make](https://www.make.com), [Power Automate](https://powerautomate.microsoft.com)
+
+**Réunions et documentation** : [Otter.ai](https://otter.ai), [Fireflies](https://fireflies.ai), [Microsoft Teams](https://www.microsoft.com/microsoft-teams) (transcription Copilot)
+
+**Analyse et reporting** : [Power BI](https://powerbi.microsoft.com), [Tableau](https://www.tableau.com)
+
+**Optionnel (contexte technique léger)** : [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.com)
 
 ---
-
 
 ## 📚 Structure de la formation
 
@@ -65,7 +63,7 @@
 - Identification de cas d'usage IA pertinents
 - Maîtrise des techniques de prompt engineering de base
 
-### Module 2 : Qualité, coûts, délais, réunions et documentation assistés par l'IA
+### Module 2 : Qualité, coûts et délais assistés par l'IA
 
 **Contenu** :
 
@@ -73,14 +71,13 @@
 - Optimisation des estimations avec analyse de données historiques
 - Prédiction de délais avec IA prédictive, vélocité et risques
 - Business cases assistés par IA
-- Transcription et synthèse de réunions, extraction d'action items
-- Documentation projet, comptes-rendus et optimisation du temps de réunion
+- Documentation projet assistée par IA
 
 **Livrables** :
 
 - User stories de qualité générées avec IA
 - Estimations assistées par IA et analyse de risques
-- Compte-rendu ou flux documentation issu des outils IA
+- Documentation projet structurée avec assistance IA
 
 ### Module 3 : Automatisation et structuration des projets avec l'IA
 
@@ -97,52 +94,60 @@
 - Workflow automatisé fonctionnel
 - Processus documenté et optimisé
 
-### Module 4 : Prise de décisions assistée par IA
+### Module 4 : Prise de décisions, réunions et communication assistées par IA
 
 **Contenu** :
 
 - Analyse de données et identification d'insights
-- Frameworks de décision assistés par IA (RICE, SWOT, multi-critères)
-- Évaluation comparative d'alternatives
-- Modélisation prédictive pour anticiper les conséquences
+- Frameworks de décision assistés par IA (RICE, SWOT)
+- Transcription et synthèse de réunions, extraction d'action items
+- Comptes-rendus efficaces et optimisation du temps de réunion
 - Communication de décisions complexes
 
 **Livrables** :
 
-- Analyse de décision stratégique complète
-- Business case assisté par IA
+- Analyse de décision stratégique complète (RICE / SWOT)
+- Compte-rendu de réunion ou flux transcription → action items
+
+---
+
+## 🔗 Correspondance module ↔ exercice
+
+| Module | Fichier cours | Exercice associé |
+| :--- | :--- | :--- |
+| 1 — Acculturation | `COURS/MODULE_1_Acculturation.md` | `EXERCICES/EXERCICE_1_Prompt-Engineering.md` |
+| 2 — Qualité, coûts, délais | `COURS/MODULE_2_Qualite-couts-delais.md` | `EXERCICES/EXERCICE_2_Triptyque-Qualite-Couts-Delais.md` |
+| 3 — Automatisation | `COURS/MODULE_3_Automatisation-structuration.md` | `EXERCICES/EXERCICE_3_Automatisation-Workflows.md` |
+| 4 — Décisions et réunions | `COURS/MODULE_4_Prise-de-decisions.md` | `EXERCICES/EXERCICE_4_Frameworks-Decision.md` |
+
+---
+
+## 📎 Annexes
+
+Ressources complémentaires dans [`ANNEXES/`](ANNEXES/) :
+
+- **Référence** : [glossaire](ANNEXES/glossaire.md), [ressources externes](ANNEXES/ressources-externes.md), [syllabus](ANNEXES/syllabus-training-ai-assistance-for-popm.md)
+- **Supports** : [templates, checklists et fiches](ANNEXES/supports/) (user stories, estimation, RICE, comptes-rendus, etc.) — index dans [ANNEXES/README.md](ANNEXES/README.md)
 
 ---
 
 ## 📁 Structure du dépôt
 
 ```
-PO PM-Assiste/
-├── COURS/                          # Contenu pédagogique principal
-│   ├── MODULE_1_Acculturation.md
-│   ├── MODULE_2_Qualite-couts-delais-Reunions-documentation.md
-│   ├── MODULE_3_Automatisation-structuration.md
-│   └── MODULE_4_Prise-de-decisions.md
-│
-├── EXERCICES/                      # Exercices pratiques
-│   ├── EXERCICE_1_Prompt-Engineering.md
-│   ├── EXERCICE_2_Triptyque-Qualite-Couts-Delais.md
-│   ├── EXERCICE_3_Automatisation-Workflows.md
-│   ├── EXERCICE_4_Frameworks-Decision.md
-│
-├── SUPPORTS/                       # Supports complémentaires
-│   ├── SUPPORT_Checklist-Adoption-IA.md
-│   ├── SUPPORT_Fiche-Pratique-Prompt-Engineering.md
-│   └── SUPPORT_Template-User-Story.md
-│
-├── ANNEXES/                        # Ressources additionnelles
+training-ai-assistance-for-popm/
+├── COURS/                          # 4 modules (2 jours)
+├── EXERCICES/                      # TP génériques (ChatGPT, Claude, etc.)
+├── ANNEXES/                        # Glossaire, ressources, syllabus, supports/
+│   ├── README.md
 │   ├── glossaire.md
-│   ├── references.md
-│   └── ressources-externes.md
-│
-├── AGENTS.md                       # Instructions pour les agents IA
-├── CHANGELOG.md                    # Historique des modifications
-└── README.md                       # Ce fichier
+│   ├── ressources-externes.md
+│   ├── syllabus-training-ai-assistance-for-popm.md (+ .en.md)
+│   └── supports/                   # Templates, checklists, fiches
+├── .agent/skills/pdf-generator/    # Export Markdown → PDF (charte Astek)
+├── cours-viewer.html               # Navigation modules (généré)
+├── AGENTS.md
+├── CHANGELOG.md
+└── README.md
 ```
 
 ---

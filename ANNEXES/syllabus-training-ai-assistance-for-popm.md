@@ -10,7 +10,7 @@
 | **👥 Public** | Product Owners, Project Managers, Chefs de projet produit |
 | **💪 Pré-requis** | Aucun pré-requis technique spécifique |
 | **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Mise à jour** | 25 novembre 2025 |
+| **🔄 Mise à jour** | 26 mai 2026 |
 
 ---
 
@@ -30,30 +30,30 @@
 - Panorama des outils IA pour PO/PM
 - Principes de base de l'ingénierie de prompt
 
-### Module 2 : Qualité, coûts, délais, réunions et documentation assistés par IA
+### Module 2 : Qualité, coûts et délais assistés par IA
 - Amélioration de la qualité des user stories, spécifications et documentation
 - Optimisation des estimations, vélocité, analyse de risques et business cases
-- Transcription et synthèse de réunions, action items, documentation projet et comptes-rendus
+- Documentation projet assistée par IA
 
 ### Module 3 : Automatisation et structuration
 - Outils d'automatisation (Zapier, Make, Power Automate)
 - Conception de workflows automatisés
 - Automatisation de reporting
 
-### Module 4 : Prise de décisions assistée par IA
+### Module 4 : Prise de décisions, réunions et communication assistées par IA
 - Analyse de données et identification d'insights
 - Frameworks de décision (RICE, SWOT)
-- Modélisation prédictive
+- Transcription et synthèse de réunions, action items, comptes-rendus
 
 ---
 
 ## 🛠️ Outils couverts
-- 💬 ChatGPT, 🤖 Claude, 💎 Gemini
-- 🐙 GitHub Copilot, ✨ Cursor
-- 📝 Notion AI, 🔍 Perplexity
-- 🔗 Zapier, 🔄 Make
-- 🗣️ Otter.ai, 🔥 Fireflies
-- 📊 Power BI, 📈 Tableau
+- Assistants : ChatGPT, Claude, Gemini, Perplexity
+- Collaboration : Microsoft Copilot (M365), Notion AI, Atlassian Intelligence, Miro AI, Monday.com
+- Automatisation : Zapier, Make, Power Automate
+- Réunions : Otter.ai, Fireflies, Teams (transcription Copilot)
+- Analyse : Power BI, Tableau
+- Optionnel : GitHub Copilot, Cursor
 
 ---
 

@@ -10,7 +10,7 @@
 | **👥 Audience** | Product Owners, Project Managers, Product Project Managers |
 | **💪 Prerequisites** | No specific technical prerequisites |
 | **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Last Updated** | November 25, 2025 |
+| **🔄 Last Updated** | May 26, 2026 |
 
 ---
 
@@ -30,30 +30,30 @@
 - Overview of AI tools for PO/PM
 - Basic prompt engineering principles
 
-### Module 2: AI-Assisted Quality, Cost, Time, Meetings, and Documentation
+### Module 2: AI-Assisted Quality, Cost, and Time
 - Improving user stories, specifications, and documentation quality
 - Estimation optimization, velocity, risk analysis, and AI-assisted business cases
-- Meeting transcription and synthesis, action items, project documentation, and reports
+- AI-assisted project documentation
 
 ### Module 3: Automation and Structuring
 - Automation tools (Zapier, Make, Power Automate)
 - Automated workflow design
 - Reporting automation
 
-### Module 4: AI-Assisted Decision Making
+### Module 4: AI-Assisted Decisions, Meetings, and Communication
 - Data analysis and insight identification
 - Decision frameworks (RICE, SWOT)
-- Predictive modeling
+- Meeting transcription and synthesis, action items, and reports
 
 ---
 
 ## 🛠️ Tools Covered
-- 💬 ChatGPT, 🤖 Claude, 💎 Gemini
-- 🐙 GitHub Copilot, ✨ Cursor
-- 📝 Notion AI, 🔍 Perplexity
-- 🔗 Zapier, 🔄 Make, 🔄 N8N
-- 🗣️ Otter.ai, 🔥 Fireflies
-- 📊 Power BI, 📈 Tableau
+- Assistants: ChatGPT, Claude, Gemini, Perplexity
+- Collaboration: Microsoft Copilot (M365), Notion AI, Atlassian Intelligence, Miro AI, Monday.com
+- Automation: Zapier, Make, Power Automate
+- Meetings: Otter.ai, Fireflies, Teams (Copilot transcription)
+- Analytics: Power BI, Tableau
+- Optional: GitHub Copilot, Cursor
 
 ---
 

@@ -1,6 +1,6 @@
 # Ressources Externes - Formation IA pour PO/PM
 
-**Dernière mise à jour** : 2025-11-12  
+**Dernière mise à jour** : 2026-05-26  
 **Auteur** : Philippe Pary [philippe.pary@astek.net](mailto:philippe.pary@astek.net)
 
 ---
@@ -23,62 +23,83 @@
 ### Études et rapports stratégiques
 
 #### McKinsey & Company
-- **[The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)** (2023)
+- **[The economic potential of generative AI: The next productivity frontier](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)** (2023, chiffres toujours cités en 2025–2026)
   - Analyse approfondie du potentiel économique de l'IA générative
   - Impact sur la productivité et les différents secteurs
   - Métriques et projections
 
-- **[The state of AI in 2024](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2024)** (2024)
-  - État des lieux de l'adoption de l'IA en entreprise
-  - Tendances et évolutions
-  - Cas d'usage et retours d'expérience
+- **[The state of AI in 2025: Agents, innovation, and transformation](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)** (2025)
+  - Enquête mondiale McKinsey (édition novembre 2025)
+  - Adoption, agents IA et passage des pilotes au déploiement à l'échelle
 
-- **[The Future of Decision Making: Human-AI Collaboration](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-future-of-decision-making)** (2024)
-  - Collaboration humain-IA dans la prise de décision
-  - Best practices et recommandations
+- **[The state of AI: How organizations are rewiring to capture value](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value)** (2025)
+  - Réorganisation des processus et gouvernance pour capter la valeur de la Gen AI
+
+- **[When can AI make good decisions? The rise of AI corporate citizens](https://www.mckinsey.com/capabilities/operations/our-insights/when-can-ai-make-good-decisions-the-rise-of-ai-corporate-citizens)** (2025)
+  - Cadre risque / complexité pour automatiser ou garder l'humain dans la boucle
+  - Pertinent pour la prise de décision produit et opérationnelle
+
+- **[The change agent: Goals, decisions, and implications for CEOs in the agentic age](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-change-agent-goals-decisions-and-implications-for-ceos-in-the-agentic-age)** (2025–2026)
+  - Décisions stratégiques et transformation à l'ère des agents IA
 
 #### Gartner
-- **[Gartner Top 10 Strategic Technology Trends for 2024](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)** (2024)
-  - Tendances technologiques stratégiques incluant l'IA
-  - Impact sur le management de projet
+- **[Gartner Top 10 Strategic Technology Trends for 2026](https://www.gartner.com/en/articles/top-technology-trends-2026)** (2026)
+  - Tendances technologiques stratégiques (IA native, agents, cybersécurité préventive)
+  - Impact sur le management de projet et l'architecture SI
 
-- **[AI-Powered Project Management: Improving Quality and Predictability](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2024)** (2024)
-  - Amélioration de la qualité et de la prédictibilité avec l'IA
-
-- **[Workflow Automation Tools: A Buyer's Guide](https://www.gartner.com/en/documents/workflow-automation-tools-buyer-guide)** (2024)
-  - Guide d'achat pour outils d'automatisation de workflows
+- **[Gartner — Generative AI](https://www.gartner.com/en/topics/generative-ai)** (hub thématique)
+  - Synthèses publiques sur l'IA générative en entreprise
+  - Compléter par recherches payantes Gartner si disponibles en interne
 
 #### Harvard Business Review
-- **[How Product Managers Can Use AI to Build Better Products](https://hbr.org)** (2024)
-  - Application de l'IA au Product Management
-  - Cas d'usage et stratégies
+- **[Stop the Meeting Madness](https://hbr.org/2017/07/stop-the-meeting-madness)** (2017)
+  - Charge mentale et temps passé en réunion (~23 h/semaine pour les cadres)
+  - Leviers pour réduire la surcharge de réunions
 
-- **[The Future of Work: Automation and AI in Project Management](https://hbr.org/topic/subject/the-future-of-work)** (2024)
-  - Automatisation et IA dans le management de projet
-  - Transformation des rôles
-
-- **[How AI is Transforming Meetings](https://hbr.org/topic/subject/artificial-intelligence)** (2023)
-  - Impact de l'IA sur les réunions
-  - Outils et pratiques
-
-- **[The Case for Fewer Meetings](https://hbr.org/2023/03/the-case-for-fewer-meetings)** (2023)
-  - Optimisation du temps de réunion
-  - Statistiques et recommandations
-
-#### MIT Sloan Review
-- **[How AI Can Improve Strategic Decision Making](https://mitsloan.mit.edu/ideas-made-to-matter/how-ai-can-improve-strategic-decision-making)** (2023)
-  - Amélioration de la prise de décision stratégique avec l'IA
-  - Frameworks et méthodologies
+#### MIT Sloan Management Review
+- **[The Surprising Impact of Meeting-Free Days](https://sloanreview.mit.edu/article/the-surprising-impact-of-meeting-free-days/)** (2022)
+  - Impact des journées sans réunion sur productivité et bien-être
+  - Complément utile au volet réunions du module 4
 
 #### PMI (Project Management Institute)
-- **[The Impact of AI on Project Estimation Accuracy](https://www.pmi.org/learning/library/ai-impact-project-estimation-accuracy-13620)** (2023)
-  - Impact de l'IA sur la précision des estimations
-  - Données et études de cas
+- **[Artificial Intelligence in Project Management (hub)](https://www.pmi.org/learning/ai-in-project-management)** (2025–2026)
+  - Hub PMI : estimation, planification, CPMAI™, formations et guides
+  - Remplace les articles ponctuels 2023 pour une veille à jour
+
+- **[Shaping the Future of Project Management With AI](https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/shaping-the-future-of-project-management-with-ai.pdf)** (2025)
+  - Thought leadership PMI sur Gen AI, estimation temps/coûts et montée en compétences
 
 #### MIT Technology Review
-- **[The Future of Work: AI-Powered Documentation](https://www.technologyreview.com/topic/artificial-intelligence/)** (2024)
-  - Documentation assistée par IA
-  - Tendances et outils
+- **[Artificial intelligence — veille](https://www.technologyreview.com/topic/artificial-intelligence/)** (veille 2025–2026)
+  - Documentation assistée par IA, outils et tendances
+
+#### Capgemini Research Institute
+- **[Harnessing the value of AI: Unlocking scalable advantage](https://www.capgemini.com/insights/research-library/generative-ai-in-organizations-2025/)** (2025)
+  - 3e édition annuelle : adoption Gen AI, agents, gouvernance et ROI
+  - Publications en anglais ; communiqué de presse et synthèses disponibles
+
+### Ressources en français
+
+#### CNIL
+- **[Intelligence artificielle — guides et recommandations](https://www.cnil.fr/fr/intelligence-artificielle)** (2025–2026)
+  - Cadre légal, données personnelles et usages IA en entreprise
+  - Indispensable pour PO/PM traitant des données équipes et clients
+
+#### PMI France
+- **[PMI France — formations et événements](https://www.pmi-france.org)** (2025–2026)
+  - Communauté et formations continues en management de projet
+  - Sessions et veille en français
+
+#### Presse et médias spécialisés (FR)
+- **[GDL T&C — La gestion de projet à l'ère de l'IA](https://www.gdltc.fr/2025/09/09/la-gestion-de-projet-a-lere-de-lia/)** (2025)
+  - Planification dynamique, monitoring et rôle du chef de projet avec l'IA
+
+- **[Le Monde Informatique — L'IA générative transforme la gestion de projet](https://www.lemondeinformatique.fr/actualites/lire-l-ia-generative-transforme-la-gestion-de-projet-91745.html)** (2024, complément)
+  - Retour d'expérience et cas d'usage IA pour le pilotage projet
+
+#### FUN-MOOC / MOOC francophones
+- **[FUN-MOOC — parcours « intelligence artificielle »](https://www.fun-mooc.fr/fr/cours/?search=intelligence+artificielle)** (catalogue)
+  - Formations universitaires gratuites en français sur l'IA et ses applications
 
 ---
 
@@ -143,7 +164,7 @@
 - **Intégrations** : Zoom, Teams, Google Meet, nombreux autres
 
 #### Zoom IQ
-- **Site** : [https://zoom.us/ai](https://zoom.us/ai)
+- **Site** : [https://www.zoom.com/en/ai-assistant/](https://www.zoom.com/en/ai-assistant/)
 - **Description** : Fonctionnalités IA intégrées à Zoom
 - **Cas d'usage** : Transcription, résumés, suggestions
 - **Prix** : Inclus dans certains plans Zoom
@@ -201,12 +222,13 @@
 
 ### Outils de gestion de projet avec IA
 
-#### Jira avec AI Features
-- **Site** : [https://www.atlassian.com/software/jira](https://www.atlassian.com/software/jira)
-- **Description** : Gestion de projet avec fonctionnalités IA intégrées
+#### Jira et Atlassian Rovo (IA)
+- **Site Jira** : [https://www.atlassian.com/software/jira](https://www.atlassian.com/software/jira)
+- **Atlassian Rovo** : [https://www.atlassian.com/software/rovo](https://www.atlassian.com/software/rovo)
+- **Description** : Gestion de projet avec assistants IA (Rovo) pour recherche, synthèse et automatisation
 - **Cas d'usage** : Estimation automatique, détection de risques, planification
 - **Prix** : Plans payants selon nombre d'utilisateurs
-- **Documentation IA** : [https://www.atlassian.com/software/jira/features/ai](https://www.atlassian.com/software/jira/features/ai)
+- **Documentation IA** : via [Atlassian Rovo](https://www.atlassian.com/software/rovo) et [Jira](https://www.atlassian.com/software/jira)
 
 #### Monday.com avec IA
 - **Site** : [https://monday.com](https://monday.com)
@@ -299,7 +321,7 @@
 - **Prix** : Plans payants
 
 #### Cursor
-- **Site** : [https://cursor.sh](https://cursor.sh)
+- **Site** : [https://cursor.com](https://cursor.com)
 - **Description** : Éditeur de code avec IA intégrée
 - **Cas d'usage** : Édition de code assistée, compréhension de code
 - **Prix** : Version gratuite + plans payants
@@ -321,10 +343,9 @@
 #### Coursera
 - **Site** : [https://www.coursera.org](https://www.coursera.org)
 - **Cours recommandés** :
-  - "Prompt Engineering for Business"
-  - "Data-Driven Decision Making"
-  - "AI for Product Managers"
-  - "Strategic Decision Making"
+  - [Work Smarter, Not Harder: Time Management for Personal & Professional Productivity](https://www.coursera.org/learn/work-smarter-not-harder) (réunions et productivité)
+  - [Google Prompting Essentials](https://www.coursera.org/learn/google-prompting-essentials) (prompting métier)
+  - Rechercher « project management data » sur le catalogue pour la gestion de projet data-driven
 - **Langue** : Principalement anglais, certains cours en français
 - **Prix** : Gratuit (audit) + payant (certificat)
 
@@ -347,8 +368,8 @@
 #### Harvard Business School Online
 - **Site** : [https://online.hbs.edu](https://online.hbs.edu)
 - **Cours recommandés** :
-  - "Strategic Decision Making"
-  - "Data-Driven Decision Making"
+  - [Strategic Decision Making](https://online.hbs.edu/courses/strategic-decision-making/)
+  - Rechercher « Data-Driven Decision Making » sur [online.hbs.edu](https://online.hbs.edu)
 - **Langue** : Anglais
 - **Prix** : Payant
 
@@ -445,9 +466,9 @@
 
 ### Blogs et sites de veille
 
-#### Harvard Business Review - AI Section
-- **Site** : [https://hbr.org/topic/subject/artificial-intelligence](https://hbr.org/topic/subject/artificial-intelligence)
-- **Description** : Articles sur l'IA en entreprise
+#### Harvard Business Review
+- **Articles recommandés** : [Stop the Meeting Madness](https://hbr.org/2017/07/stop-the-meeting-madness) (réunions) ; compléter par les études McKinsey sur la décision assistée par IA (section [Articles et études](#articles-et-études))
+- **Description** : Articles management et productivité (privilégier les URL d'article, pas les pages « topic »)
 - **Langue** : Anglais
 
 #### MIT Sloan Management Review
@@ -571,20 +592,20 @@
 - **Outils** : ChatGPT, Claude, Gemini, Perplexity
 - **Formations** : "Prompt Engineering for Business" (Coursera)
 
-### Module 2 : Qualité, coûts, délais, réunions et documentation
-- **Articles** : Gartner "AI-Powered Project Management", PMI "Impact of AI on Estimation", HBR "How AI is Transforming Meetings", MIT Technology Review "AI-Powered Documentation"
-- **Outils** : Jira AI, Forecast, Tableau, Power BI, Otter.ai, Fireflies, Notion AI, Microsoft Teams / Copilot
-- **Formations** : "Data-Driven Project Management" (Coursera), "Effective Meeting Management" (Coursera), "Technical Writing with AI" (Udemy)
+### Module 2 : Qualité, coûts et délais
+- **Articles** : McKinsey "The state of AI in 2025", Capgemini "Harnessing the value of AI" (2025), PMI hub IA, CNIL (FR), GDL T&C / Le Monde Informatique (FR)
+- **Outils** : Jira / Atlassian Rovo, Forecast, Tableau, Power BI, Notion AI
+- **Formations** : Coursera (gestion de projet / productivité), Udemy (rédaction technique), FUN-MOOC (FR), PMI France (FR)
 
 ### Module 3 : Automatisation
 - **Articles** : HBR "Future of Work", Gartner "Workflow Automation Tools"
 - **Outils** : Zapier, Make, Power Automate, Jira Automation
 - **Formations** : "Workflow Automation for Business" (Udemy), "Zapier Mastery" (Coursera)
 
-### Module 4 : Prise de décisions
-- **Articles** : HBR "AI-Assisted Decision Making", MIT Sloan "How AI Can Improve Strategic Decision Making"
-- **Outils** : Tableau, Power BI, ChatGPT/Claude pour analyse
-- **Formations** : "Data-Driven Decision Making" (Coursera), "Strategic Decision Making" (Harvard)
+### Module 4 : Prise de décisions, réunions et communication
+- **Articles** : McKinsey "When can AI make good decisions?" (2025), "The change agent" (2025–2026), HBR "Stop the Meeting Madness", MIT Sloan "Meeting-Free Days", CNIL (FR)
+- **Outils** : Tableau, Power BI, ChatGPT/Claude/Mistral, Perplexity, Otter.ai, Fireflies, Teams Copilot, Loop, Gladia.io
+- **Formations** : Coursera "Work Smarter, Not Harder", Harvard HBS Online (décision stratégique), FUN-MOOC / PMI France (FR)
 
 ---
 
@@ -615,12 +636,13 @@
 - Privilégier les versions entreprise pour les données confidentielles.
 
 ### Langue
-- La plupart des ressources sont en anglais. Des ressources en français sont indiquées quand disponibles.
-- Les outils principaux (ChatGPT, Claude, etc.) supportent généralement le français.
+- Les ressources **en français** sont regroupées dans la section dédiée (CNIL, PMI France, presse FR, FUN-MOOC).
+- Les cabinets (McKinsey, Capgemini, Gartner) publient surtout en anglais ; privilégier les hubs publics et rapports FR quand disponibles.
+- Les outils principaux (ChatGPT, Claude, Mistral, etc.) supportent le français.
 
 ---
 
 **Note** : Cette liste est développée par [Astek](https://www.astek.net) et sera régulièrement mise à jour pour refléter l'évolution des outils et ressources IA.
 
-**Dernière mise à jour** : 2025-11-12
+**Dernière mise à jour** : 2026-05-26
 
