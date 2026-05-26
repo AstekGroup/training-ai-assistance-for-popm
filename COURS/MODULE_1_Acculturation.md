@@ -29,7 +29,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - **Optimiser les décisions** grâce à l'analyse de données et la prédiction
 - **Réduire les coûts** par l'automatisation de processus métier
 
-**Exemple concret** : Une [étude menée par McKinsey en 2023](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) montre que les PM utilisant des outils IA gagnent en moyenne 6 heures par semaine sur les tâches administratives, leur permettant de se concentrer sur la valeur métier.
+**Exemple concret** : L'étude [McKinsey — The state of AI in 2025](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) montre que près de 9 organisations sur 10 utilisent désormais régulièrement l'IA dans leurs activités. Cette adoption s'accompagne d'une industrialisation croissante : l'étude [Capgemini Research Institute (2025)](https://www.capgemini.com/insights/research-library/generative-ai-in-organizations-2025/) révèle que 30 % des entreprises ont finalisé des déploiements de GenAI à l'échelle (contre seulement 6 % en 2023), avec un taux de satisfaction proche de 80 % sur les gains d'efficacité opérationnelle.
 
 ### 1.2 Défis et opportunités
 
