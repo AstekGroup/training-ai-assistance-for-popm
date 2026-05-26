@@ -166,7 +166,7 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 	```
 	
 	En résumé : **ACTF = ce que l’IA doit faire + le contexte + la manière de le faire + le format attendu.**
-	----------------------- ✄ TP 1 ✄ -----------------------
+	----------------------- ✄ TP 1 (ACTF) ✄ -----------------------
 #### B Perspective d'évolution
 méthode ASPeCCTf
 Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
@@ -482,6 +482,8 @@ Bon : "Tu es un Product Owner Senior expert en méthodologie Agile. Rédige une 
 Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 ```
 
+----------------------- ✄ TP 2 (Few-Shot) ✄ -----------------------
+
 #### Technique 3 : Chaînage de pensée (Chain-of-Thought)
 
 ```
@@ -497,6 +499,8 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 - Commencer large, puis préciser
 - Demander des clarifications si nécessaire
 - Itérer sur les résultats
+
+----------------------- ✄ TP 3 (Itération) ✄ -----------------------
 
 ### 5.3 Erreurs courantes à éviter
 

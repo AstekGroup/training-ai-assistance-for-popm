@@ -66,6 +66,8 @@ Une version de ChatGPT pré-configurée avec :
 - **Knowledge** : Interviews utilisateurs, Personas PDF, Résultats de sondages.
 - **Instruction** : "Je suis PO. Comment notre persona 'Marie la comptable' réagirait à cette nouvelle feature ?"
 
+----------------------- ✄ TP 1 (Release Notes) ✄ -----------------------
+
 ---
 
 ## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make, GumLoop & N8N)
@@ -84,6 +86,8 @@ Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
 | **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                                                                |
 | **N8N**     | **L'automatisation souveraine avec IA native**. Permet de concevoir visuellement des agents IA complexes (avec mémoire, RAG et outils) et de les connecter à vos applications métiers. Idéal pour des flux sécurisés (RGPD) et extensibles grâce à son modèle low-code et open-source.                                     |
+
+----------------------- ✄ TP 2 (Zapier / Gumloop) ✄ -----------------------
 
 ---
 
@@ -126,6 +130,8 @@ Une fois les données dans la base, utilisez l'IA pour demander :
 *"Quels sont les 5 problèmes les plus fréquents sur le module Paiement le mois dernier ?"*
 
 *(Note: Pour les documentations techniques complexes générées automatiquement, des outils comme [Kiro Code2Doc](https://kiro.dev) facilitent l'industrialisation).*
+
+----------------------- ✄ TP 3 (N8N & Feedback) ✄ -----------------------
 
 ---
 

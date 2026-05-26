@@ -110,6 +110,8 @@ Pour chaque feature, estime :
 Calcule le score final et propose un classement.
 ```
 
+----------------------- ✄ TP 1 (RICE) ✄ -----------------------
+
 ### 3.2 Analyse SWOT Stratégique
 
 Pour les grandes décisions (ex: Lancer un nouveau produit, changer de marché).
@@ -126,6 +128,8 @@ Contexte :
 Pour chaque quadrant (Forces, Faiblesses, Opportunités, Menaces), donne 3 points clés très spécifiques.
 Conclus avec une recommandation : GO ou NO-GO ?
 ```
+
+----------------------- ✄ TP 2 (SWOT) ✄ -----------------------
 
 ---
 
