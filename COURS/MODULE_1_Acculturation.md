@@ -353,7 +353,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - **Écosystème "Advanced AI"** : Intègre nativement des nœuds pour créer des Agents IA, connecter des LLMs, gérer la mémoire des conversations et interroger des bases vectorielles.
   - **Coût** : Version communautaire gratuite et tarification Cloud très compétitive par rapport à Zapier/Make.
 
-![[res/Make_Or_N8N.png]]
+![Make Or N8N](../res/Make_Or_N8N.png)
 #### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
 
 - **Fonctionnalités** : Automatisation Microsoft 365
