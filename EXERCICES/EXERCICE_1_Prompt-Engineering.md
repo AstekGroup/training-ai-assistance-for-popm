@@ -84,87 +84,7 @@ Format INVEST avec :
 
 ---
 
-## 🔄 Exercice 2 : Maîtriser l'itération pour affiner un résultat
-
-**Durée** : 20 minutes  
-**Objectif** : Comprendre que le premier résultat n'est jamais le bon et apprendre à itérer **mais pas trop** ; apprendre également à **jeter** pour mieux recommencer.
-### Le scénario
-
-L'IA vous a généré cette user story, mais **elle est incomplète** :
-
-```markdown
-En tant qu'utilisateur de l'application,
-Je veux recevoir une notification avant l'échéance d'une tâche,
-Afin de ne pas oublier de la compléter.
-
-Critères d'acceptation :
-- Une notification est envoyée
-- L'utilisateur peut voir la tâche
-- La notification apparaît au bon moment
-```
-
-### 🚨 Problème identifié
-
-Les critères d'acceptation sont **trop vagues et non testables** par l'équipe QA !
-
-### ✅ À vous de jouer - Rédiger 3 prompts d'itération
-
-#### **Itération 1** : Rendre les critères testables
-
-```
-Réécrire les 3 critères d'acceptation en format Gherkin (Given/When/Then)
-pour qu'ils soient testables par l'équipe QA.
-```
-
-**Attendu** :
-- Critères précis avec états initiaux, actions et résultats attendus
-- Format : `Given [contexte], When [action], Then [résultat]`
-
----
-
-#### **Itération 2** : Ajouter des contraintes techniques
-
-```
-Ajoute 3 notes techniques pour l'équipe de développement :
-1. Quel canal de notification ? (push mobile, email, in-app)
-2. Quel timing de déclenchement ?
-3. Quelles options de customisation pour l'utilisateur ?
-```
-
-**Attendu** :
-- Section "Notes techniques" ajoutée
-- Précisions pour guider les développeurs
-
----
-
-#### **Itération 3** : Définir les métriques de succès
-
-```
-Ajoute une section "Métriques de succès" avec 3 KPIs mesurables
-pour valider que la fonctionnalité apporte de la valeur aux utilisateurs.
-```
-
-**Attendu** :
-- 3 indicateurs chiffrés (ex: taux d'ouverture, réduction des tâches en retard)
-- Méthode de mesure pour chaque KPI
-
----
-
-### 🧪 Testez vos itérations
-
-1. Partez de la user story incomplète fournie
-2. Appliquez vos 3 prompts d'itération successivement
-3. Observez comment le résultat s'améliore à chaque étape
-
-### 💬 Débrief (5 min)
-
-- Combien d'itérations réelles avez-vous faites au total ?
-- À quel moment avez-vous jugé le résultat "production-ready" ?
-- Quelle itération a apporté le plus de valeur ?
-
----
-
-## 📚 Exercice 3 : Standardiser avec le "Few-Shot Learning"
+## 📚 Exercice 2 : Standardiser avec le "Few-Shot Learning"
 
 **Durée** : 20 minutes  
 **Objectif** : Utiliser des exemples concrets pour imposer un format et garantir la cohérence
@@ -253,13 +173,93 @@ Exemples :
 
 ---
 
+## 🔄 Exercice 3 : Maîtriser l'itération pour affiner un résultat
+
+**Durée** : 20 minutes  
+**Objectif** : Comprendre que le premier résultat n'est jamais le bon et apprendre à itérer **mais pas trop** ; apprendre également à **jeter** pour mieux recommencer.
+### Le scénario
+
+L'IA vous a généré cette user story, mais **elle est incomplète** :
+
+```markdown
+En tant qu'utilisateur de l'application,
+Je veux recevoir une notification avant l'échéance d'une tâche,
+Afin de ne pas oublier de la compléter.
+
+Critères d'acceptation :
+- Une notification est envoyée
+- L'utilisateur peut voir la tâche
+- La notification apparaît au bon moment
+```
+
+### 🚨 Problème identifié
+
+Les critères d'acceptation sont **trop vagues et non testables** par l'équipe QA !
+
+### ✅ À vous de jouer - Rédiger 3 prompts d'itération
+
+#### **Itération 1** : Rendre les critères testables
+
+```
+Réécrire les 3 critères d'acceptation en format Gherkin (Given/When/Then)
+pour qu'ils soient testables par l'équipe QA.
+```
+
+**Attendu** :
+- Critères précis avec états initiaux, actions et résultats attendus
+- Format : `Given [contexte], When [action], Then [résultat]`
+
+---
+
+#### **Itération 2** : Ajouter des contraintes techniques
+
+```
+Ajoute 3 notes techniques pour l'équipe de développement :
+1. Quel canal de notification ? (push mobile, email, in-app)
+2. Quel timing de déclenchement ?
+3. Quelles options de customisation pour l'utilisateur ?
+```
+
+**Attendu** :
+- Section "Notes techniques" ajoutée
+- Précisions pour guider les développeurs
+
+---
+
+#### **Itération 3** : Définir les métriques de succès
+
+```
+Ajoute une section "Métriques de succès" avec 3 KPIs mesurables
+pour valider que la fonctionnalité apporte de la valeur aux utilisateurs.
+```
+
+**Attendu** :
+- 3 indicateurs chiffrés (ex: taux d'ouverture, réduction des tâches en retard)
+- Methode de mesure pour chaque KPI
+
+---
+
+### 🧪 Testez vos itérations
+
+1. Partez de la user story incomplète fournie
+2. Appliquez vos 3 prompts d'itération successivement
+3. Observez comment le résultat s'améliore à chaque étape
+
+### 💬 Débrief (5 min)
+
+- Combien d'itérations réelles avez-vous faites au total ?
+- À quel moment avez-vous jugé le résultat "production-ready" ?
+- Quelle itération a apporté le plus de valeur ?
+
+---
+
 ## 🎓 Points clés à retenir
 
 | Exercice | Technique apprise | Quand l'utiliser |
 |----------|-------------------|-----------------|
 | **1. Structure ACTF** | Acteur + Contexte + Tâche + Format | Pour tout nouveau prompt, toujours commencer par structurer |
-| **2. Itération** | Affiner progressivement par prompts successifs | Quand le premier résultat est insuffisant (c'est normal !) |
-| **3. Few-Shot** | Fournir des exemples concrets | Pour imposer un format précis et garantir la cohérence |
+| **2. Few-Shot** | Fournir des exemples concrets | Pour imposer un format précis et garantir la cohérence |
+| **3. Itération** | Affiner progressivement par prompts successifs | Quand le premier résultat est insuffisant (c'est normal !) |
 
 ---
 
@@ -269,13 +269,13 @@ Exemples :
    - Documentez 3 prompts réutilisables pour vos tâches récurrentes
    - Utilisez la méthode ACTF systématiquement
 
-2. **Pratiquer l'itération**
-   - Testez les 3 exercices sur vos vrais user stories
-   - Notez les prompts d'itération qui fonctionnent le mieux
-
-3. **Constituer votre banque d'exemples**
+2. **Constituer votre banque d'exemples**
    - Rassemblez 2-3 exemples de vos meilleurs documents (user stories, comptes-rendus, etc.)
    - Préparez-les pour du Few-Shot Learning
+
+3. **Pratiquer l'itération**
+   - Testez les 3 exercices sur vos vrais user stories
+   - Notez les prompts d'itération qui fonctionnent le mieux
 
 ---
 
