@@ -509,6 +509,16 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 3. **Pas d'itération** : Accepter le premier résultat sans affinement
 4. **Ignorer les limites** : Demander des choses impossibles ou hors contexte
 
+### 5.4 Annexe : L'avènement des modèles de raisonnement (Reasoning Models)
+
+> [!IMPORTANT]
+> **Conseil pour le PO/PM : Quand utiliser les modèles de raisonnement ?**
+> 
+> En 2025/2026, l'émergence des modèles axés sur la réflexion approfondie (ex. **OpenAI o1, o3-mini, o3** ou **DeepSeek-R1**) a redéfini les usages de l'IA générative :
+> 
+> - **Modèles classiques (GPT-4o, Claude 3.5 Sonnet, Gemini 2.0 Flash)** : À privilégier pour la rédaction fluide, les tâches créatives, le brainstorming de fonctionnalités ou la formulation initiale de user stories. Ils sont rapides, interactifs et très efficaces pour l'idéation.
+> - **Modèles de raisonnement (o1, o3, DeepSeek-R1)** : À privilégier pour les tâches complexes exigeant une logique rigoureuse, telles que la conception de modèles de données, la spécification d'algorithmes complexes, l'analyse fine de dépendances dans un backlog ou la résolution de bugs techniques complexes. Ces modèles passent du temps à "réfléchir" (Chain-of-Thought interne) avant de répondre, ce qui réduit considérablement les erreurs de logique et les hallucinations sur ces cas complexes.
+
 ---
 
 ---
