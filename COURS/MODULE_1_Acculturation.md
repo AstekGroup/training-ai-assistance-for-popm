@@ -171,7 +171,7 @@ Prompt : "En tant que Product Owner, je dois rédiger une..."
 	----------------------- ✄ TP 1 (ACTF) ✄ -----------------------
 ##### B) Perspective d'évolution
 méthode ASPeCCTf
-Action,Steps,Persona,(Examples),Context,Constraints,Template,(Finally).
+Action, Steps, Persona, (Examples), Context, Constraints, Template, (Finally).
 
 #### 2.4.3 Pourquoi les IA sont limitées en calcul ?
 
@@ -291,7 +291,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 **Pour la gestion du temps** :
 
 - **Outils avec accès temps réel** : La plupart des modèles modernes ont désormais un accès web natif et l'heure système intégrée
-- **Intégrations calendrier** : [Zapier](https://zapier.com), [Make](https://www.make.com) pour connecter IA et calendriers
+- **Intégrations calendrier** : [Zapier](https://zapier.com), [Make](https://www.make.com) ,[N8N](https://n8n.io/)pour connecter IA et calendriers
 - **Assistants spécialisés** : [Motion](https://www.usemotion.com), [Reclaim](https://reclaim.ai) pour la planification temporelle
 
 **Règle d'or** : Utilisez l'IA pour ce qu'elle fait bien (langage, structure, créativité) et des outils spécialisés pour le reste (calculs, temps, données en temps réel).
