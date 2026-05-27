@@ -18,10 +18,6 @@
 6. Extraire les action items et décisions importantes des réunions avec l'IA
 7. Créer des comptes-rendus efficaces et actionnables
 8. Optimiser le temps passé en réunion grâce à l'IA
-9. Utiliser des outils IA pour transcrire et synthétiser les réunions automatiquement
-10. Extraire les action items et décisions importantes des réunions avec l'IA
-11. Créer des comptes-rendus efficaces et actionnables
-12. Optimiser le temps passé en réunion grâce à l'IA
 
 ---
 
