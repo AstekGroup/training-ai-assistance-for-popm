@@ -10,12 +10,13 @@
 
 À l'issue de ce module, les participants seront capables de :
 
-1. Utiliser l'IA pour améliorer la qualité des livrables (user stories, spécifications, documentation)
-2. Optimiser l'estimation des coûts et délais grâce à l'analyse de données historiques
-3. Détecter et prévenir les risques projet avec des outils IA prédictifs
-4. Mesurer et améliorer la vélocité d'équipe à l'aide de l'IA analytique
-5. Construire des business cases assistés par IA pour justifier les investissements
-6. Générer et maintenir une documentation projet de qualité avec assistance IA
+1. Introduction générale : qualité coûts délais
+2. Utiliser l'IA pour améliorer la qualité des livrables (user stories, spécifications, documentation)
+3. Optimiser l'estimation des coûts et délais grâce à l'analyse de données historiques
+4. Détecter et prévenir les risques projet avec des outils IA prédictifs
+5. Mesurer et améliorer la vélocité d'équipe à l'aide de l'IA analytique
+6. Construire des business cases assistés par IA pour justifier les investissements
+7. Générer et maintenir une documentation projet de qualité avec assistance IA
 
 ---
 
