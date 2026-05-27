@@ -736,29 +736,6 @@ Style : Sous-titres clairs, paragraphes courts, facile à scanner
 ✅ **1 flux transcription → action items** (Teams + IA)  
 ✅ **Compétence** : Structurer vos décisions avec des frameworks éprouvés  
 
-
-
----
-
-## 💬 Débrief collectif (10 min)
-
-### Questions à discuter en groupe :
-
-1. **Quel framework vous a le plus convaincu ?** (RICE ou SWOT)
-
-2. **Avez-vous été surpris par les résultats de l'IA ?**
-   - Le classement RICE était-il attendu ?
-   - La recommandation SWOT vous a-t-elle fait changer d'avis ?
-
-3. **Quelle décision ou quelle réunion en cours pourrait bénéficier de ces pratiques ?**
-   - Priorisation backlog → RICE
-   - Choix techno/stratégique → SWOT
-   - Compte-rendu récurrent → transcription + CR
-
-4. **Difficultés rencontrées ?**
-   - Prompts qui ne donnent pas de bons résultats ?
-   - Manque de données pour nourrir l'analyse ?
-
 ---
 
 ## 📌 Rappels importants
