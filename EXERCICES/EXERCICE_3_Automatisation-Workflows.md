@@ -6,56 +6,60 @@
 - Compte Zapier gratuit (à créer avant la session)
 - ou compte N8N Cloud (évaluation gratuite)
 - Compte Google (Gmail + Google Forms)
-- Accès à [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
-- Pour avancés :
-  - **Installer une instance locale de N8N**
-  - lier le MCP N8N de Claude
+- Accès à [ChatGPT](https://chatgpt.com) ou [Claude](https://claude.ai)
+- **Pour les apprenants avancés (optionnel)** :
+  - Installation locale de N8N
+  - Liaison avec le serveur MCP de Claude Desktop
 
-	prérequis :
-	- Claude Desktop installé (en local)
-	- N8N installé en local (accès via `http://localhost:5678`)
-	- Node.js installé (vérifie : `node -v`)
-	### Étape 1 — Activer le MCP dans N8N
+---
 
-	1. Ouvre `http://localhost:5678`
-	2. Va dans **Settings > API**
-	3. Active l'option **Enable API** si ce n'est pas fait
-	4. Génère une **API Key** → copie-la précieusement
-	5. Va dans **Settings > MCP** (ou cherche "MCP" dans les settings)
-	6. Active **Enable MCP Server**
-	7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
-	
-	### Étape 2 — Configurer Claude Desktop
-	
-	Fichier à éditer :
-	
-	- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
-	- **Linux** : `~/.config/Claude/claude_desktop_config.json`
-	- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
-	
-	```json
-	{
-	  "mcpServers": {
-	    "n8n-local": {
-	      "command": "npx",
-	      "args": [
-	        "mcp-remote",
-	        "http://localhost:5678/mcp"
-	      ],
-	      "env": {
-	        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_ICI"
-	      }
-	    }
-	  }
-	}
-	```
-	
-	### Étape 3 — Redémarrer Claude Desktop
-	
-	Soit reboot, soit gestionnaire de tâche, tuer claude & relancer.
-	
-	### Vérification
-	Icône **marteau** visible en bas du chat = MCP actif.
+## ⚙️ Configuration Avancée : Liaison MCP Claude Desktop & N8N Local
+
+Cette section s'adresse aux apprenants souhaitant utiliser Claude Desktop pour piloter directement leur N8N local grâce au protocole MCP.
+
+### Prérequis
+- Claude Desktop installé (en local)
+- N8N installé en local (accès via `http://localhost:5678`)
+- Node.js installé (vérification : `node -v`)
+
+### Étape 1 — Activer le MCP dans N8N
+1. Ouvre `http://localhost:5678`
+2. Va dans **Settings > API**
+3. Active l'option **Enable API** si ce n'est pas fait
+4. Génère une **API Key** $\rightarrow$ copie-la précieusement
+5. Va dans **Settings > MCP** (ou cherche "MCP" dans les paramètres)
+6. Active **Enable MCP Server**
+7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
+
+### Étape 2 — Configurer Claude Desktop
+Éditer le fichier de configuration `claude_desktop_config.json` selon votre système d'exploitation :
+- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
+- **Linux** : `~/.config/Claude/claude_desktop_config.json`
+- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+Contenu à ajouter dans la clé `mcpServers` :
+```json
+{
+  "mcpServers": {
+    "n8n-local": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:5678/mcp"
+      ],
+      "env": {
+        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_ICI"
+      }
+    }
+  }
+}
+```
+
+### Étape 3 — Redémarrer Claude Desktop
+Tuer le processus Claude Desktop (via le gestionnaire de tâches ou la barre des tâches) et le relancer.
+
+### Vérification
+Une icône **marteau** (ou puzzle selon les versions) doit être visible en bas de la zone de saisie dans Claude Desktop, indiquant que le serveur MCP N8N est bien connecté et actif.
 
 ---
 
@@ -221,7 +225,7 @@ D'autres contenus à automatiser avec la même approche :
 
 ---
 
-## ⚙️ Exercice 2 : Design de Workflow (Zapier ou GumLoop)
+## ⚙️ Exercice 2 : Design de Workflow (Zapier ou Gumloop)
 
 **Durée** : 30 minutes  
 **Niveau** : ⭐⭐ Intermédiaire  
@@ -254,9 +258,9 @@ C'est ici que vous choisissez votre arme.
 2. **Action** : "Send Email" (Pour vous notifier)
 3. **Action** : "Create Card in Trello/Jira"
 
-**Option B : La voie Moderne (GumLoop) 🚀**
+**Option B : La voie Moderne (Gumloop) 🚀**
 *Idéal pour traiter intelligemment le texte.*
-1. Allez sur [GumLoop.com](https://www.gumloop.com)
+1. Allez sur [gumloop.com](https://www.gumloop.com)
 2. Créez un flow :
    - **Input** : Le texte de la demande
    - **AI Block** : "Catégorise cette demande (Bug/Feature) et résume-la en 1 phrase."
