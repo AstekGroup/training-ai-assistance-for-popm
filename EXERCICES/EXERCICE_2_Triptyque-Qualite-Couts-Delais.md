@@ -101,19 +101,6 @@ Créez un tableau comparatif :
 | **Complétude**     | 30% couvert    | 100% couvert           | +70%                 |
 | **Risque défauts** | Élevé          | Faible                 | -60% défauts estimés |
 
-
----
-
-### 💬 Débrief (collectif)
-
-**Questions à discuter** :
-
-1. Combien d'ambiguïtés avez-vous identifié ? (comparez avec vos voisins)
-2. Quel critère d'acceptation était le plus difficile à rendre testable ?
-3. **Estimation** : Combien de bugs en moins grâce à la spec améliorée ?
-
-**💡 Leçon clé** : Une spec de meilleure QUALITÉ = moins de défauts = moins de coûts de correction
-
 ---
 
 ## 💰 Exercice 2 : COÛTS - Estimer avec précision grâce aux données
@@ -331,42 +318,6 @@ Remplissez ce tableau pour les **2 risques les plus critiques** :
 - ✅ **Gain de temps** : 4 semaines d'avance pour agir
 - ✅ **Actions possibles** : Réduire scope, ajouter ressources, négocier délai
 - ✅ **Coût évité** : Pas de pénalités de retard, stakeholders prévenus à temps
-
----
-
-### 💬 Débrief (collectif)
-
-**Questions à discuter** :
-
-1. Votre intuition était-elle alignée avec l'analyse IA ?
-2. Quel risque vous aviez complètement oublié ?
-3. Quelle action corrective auriez-vous prise ?
-4. **Estimation** : Combien de semaines de retard évitées grâce à la détection précoce ?
-
-**💡 Leçon clé** : Détecter les risques de DÉLAIS tôt = possibilité d'agir avant la catastrophe
-
----
-
-## 🎓 Synthèse : Le triptyque en action
-
-
-| Dimension      | Problème classique                                  | Solution IA                              | Gain mesurable             |
-| -------------- | --------------------------------------------------- | ---------------------------------------- | -------------------------- |
-| **📐 QUALITÉ** | Specs floues → défauts → corrections coûteuses      | Génération de critères testables         | -60% défauts               |
-| **💰 COÛTS**   | Estimations à l'instinct → dépassements budgets     | Estimation basée sur données historiques | ±20-30% précision          |
-| **⏰ DÉLAIS**   | Détection tardive des retards → actions impossibles | Analyse prédictive continue              | +4 semaines d'anticipation |
-
-
-### 🔗 Les 3 dimensions sont liées !
-
-```
-Meilleure QUALITÉ (specs claires)
-         ↓
-Moins de défauts = Moins de COÛTS de correction
-         ↓
-Moins de retravail = DÉLAIS respectés
-```
-
 ---
 
 ## 🚀 À appliquer cette semaine
