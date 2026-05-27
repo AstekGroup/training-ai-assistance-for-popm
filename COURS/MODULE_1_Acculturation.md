@@ -16,8 +16,11 @@
 4. Distinguer les différents types d'IA (générative, analytique, prédictive) et leurs cas d'usage
 5. Appliquer les principes de base de l'ingénierie de prompt pour obtenir des résultats pertinents
 
----
 
+![Doutes et opportunités](../res/1doubt.jpg)
+*Figure 1.1 : Appréhender les défis et surmonter les doutes face à l'IA*
+
+---
 ## 1. Introduction : Pourquoi l'IA pour les PO/PM ?
 
 ### 1.1 Contexte et enjeux
@@ -46,6 +49,8 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - Meilleure prise de décision basée sur les données
 - Innovation dans les processus métier
 - Compétitivité accrue
+![Révolution du Prompting](../res/5revo.jpg)
+*Figure 1.2 : La révolution du Prompt Engineering*
 
 ---
 
@@ -54,6 +59,9 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 ### 2.1 Qu'est-ce que l'intelligence artificielle ?
 
 **Définition** : L'intelligence artificielle (IA) est la capacité d'une machine à reproduire des fonctions cognitives humaines telles que l'apprentissage, le raisonnement et la résolution de problèmes.
+
+![Concepts fondamentaux de l'IA](../res/2IA.jpg)
+*Figure 1.3 : Comprendre les bases et concepts de l'Intelligence Artificielle*
 
 **Types d'IA pertinents pour les PO/PM** :
 
@@ -313,6 +321,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 - **Limites** : Nécessite vérification, coûts selon usage
 - **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
 
+
 #### Génération d'Images et d'UI ([Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
 
 - **Fonctionnalités** : Création d'images haute qualité, wireframes, maquettes UI
@@ -342,6 +351,9 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.3 Outils d'automatisation de processus
 
+![Écosystème Astek](../res/3Astek_tools.jpg)
+*Figure 1.4 : Panorama des outils actuels (sans IA) chez Astek*
+
 #### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat)
 - **Fonctionnalités** : Automatisation de workflows (Zapier) ou programmation visuelle de scénarios complexes (Make).
 - **Cas d'usage** : Synchronisation simple d'outils, transferts de données, alertes linéaires.
@@ -355,7 +367,10 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - **Écosystème "Advanced AI"** : Intègre nativement des nœuds pour créer des Agents IA, connecter des LLMs, gérer la mémoire des conversations et interroger des bases vectorielles.
   - **Coût** : Version communautaire gratuite et tarification Cloud très compétitive par rapport à Zapier/Make.
 
-![Make Or N8N](../res/Make_Or_N8N.png)
+![Make Or N8N](../res/Make_Or_N8N.jpg)
+*Figure 1.5 :Choix Make ou N8N ?*
+
+
 #### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
 
 - **Fonctionnalités** : Automatisation Microsoft 365
@@ -405,6 +420,10 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 - Curateur de contenu IA généré
 - Formateur des équipes sur les outils IA
 - Gardien de la qualité et de l'éthique
+
+![Shadow IT et Sécurité](../res/4shadow.jpg)
+*Figure 1.6 : Le risque du Shadow IT et de la confidentialité des données*
+
 
 ### 4.2 Gestion du changement
 
@@ -520,8 +539,6 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 > 
 > - **Modèles classiques (GPT-4o, Claude 3.5 Sonnet, Gemini 2.0 Flash)** : À privilégier pour la rédaction fluide, les tâches créatives, le brainstorming de fonctionnalités ou la formulation initiale de user stories. Ils sont rapides, interactifs et très efficaces pour l'idéation.
 > - **Modèles de raisonnement (o1, o3, DeepSeek-R1)** : À privilégier pour les tâches complexes exigeant une logique rigoureuse, telles que la conception de modèles de données, la spécification d'algorithmes complexes, l'analyse fine de dépendances dans un backlog ou la résolution de bugs techniques complexes. Ces modèles passent du temps à "réfléchir" (Chain-of-Thought interne) avant de répondre, ce qui réduit considérablement les erreurs de logique et les hallucinations sur ces cas complexes.
-
----
 
 ---
 

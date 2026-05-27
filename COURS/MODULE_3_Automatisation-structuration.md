@@ -28,7 +28,10 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
   - *Gain* : Fluidité des processus, moins d'erreurs.
 3. **Niveau Système (Product Intelligence)** : Analyse auto de feedback, génération de roadmap dynamique.
   - *Gain* : Capacité de scale, insights stratégiques.
-![Gumloop vs Make](../res/Gumloop_vs_make.png)
+
+![Timeline Agentique](../res/AgenticTimeLine.jpg)
+*Figure 3.1 : La trajectoire d'adoption des agents IA au sein des équipes produit*
+
 
 ---
 
@@ -79,13 +82,20 @@ Connecter les outils entre eux pour que l'information circule sans copier-coller
 Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du plus simple au plus puissant :
 
 
-| Outil       | Description                                                                                                                                                                                                                                                                                                                 |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian (Jira, Confluence...) où l'IA est au cœur du flux.                                                                                                                                                                                |
-| **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                                                             |
-| **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
-| **Gumloop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                                                                |
-| **N8N**     | **L'automatisation souveraine avec IA native**. Permet de concevoir visuellement des agents IA complexes (avec mémoire, RAG et outils) et de les connecter à vos applications métiers. Idéal pour des flux sécurisés (RGPD) et extensibles grâce à son modèle low-code et open-source.                                     |
+| Outil       | Description                                                                                                                                                                                                                                                                            |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian (Jira, Confluence...) où l'IA est au cœur du flux.                                                                                                                                           |
+| **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                        |
+| **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                       |
+| **Gumloop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                             |
+| **N8N**     | **L'automatisation souveraine avec IA native**. Permet de concevoir visuellement des agents IA complexes (avec mémoire, RAG et outils) et de les connecter à vos applications métiers. Idéal pour des flux sécurisés (RGPD) et extensibles grâce à son modèle low-code et open-source. |
+
+
+![Gumloop vs Make](../res/Gumloop_vs_make.jpg)
+*Figure 3.2 : Comparatif d'outils d'automatisation (Gumloop vs Make)*
+
+![Paysage iPaaS](../res/IPAAS.jpg)
+*Figure 3.3 : Positionnement des plateformes d'intégration iPaaS*
 
 ----------------------- ✄ TP 2 (Zapier / Gumloop) ✄ -----------------------
 
@@ -102,6 +112,9 @@ Contrairement aux outils d'automatisation traditionnels (Zapier/Make) qui traite
 
 Cette approche visuelle permet à un PO ou PM de concevoir de véritables prototypes d'agents IA fonctionnels en moins d'une heure, sans écrire une ligne de code, tout en gardant le contrôle sur la logique métier.
 
+![Automatisation vs Agents](../res/automateVsAgents.jpg)
+*Figure 3.4 : Transition de l'automatisation classique vers les agents d'IA autonomes*
+
 ### 3.3 Le protocole MCP (Model Context Protocol) et N8N
 
 **Qu'est-ce que le MCP ?**
@@ -112,6 +125,9 @@ N8N intègre nativement un serveur MCP. Cela signifie que vous pouvez connecter 
 - L'IA peut lire, modifier ou exécuter vos workflows N8N.
 - L'IA peut déclencher des automatisations complexes à votre demande, directement depuis la fenêtre de discussion.
 - Cela transforme votre assistant de simple générateur de texte en un copilote d'action, capable d'agir directement sur vos outils de gestion de projet (Jira, Notion, Slack).
+
+![Workflow N8N](../res/n8n.jpg)
+*Figure 3.5 : Architecture et interactions des workflows N8N*
 
 ---
 
