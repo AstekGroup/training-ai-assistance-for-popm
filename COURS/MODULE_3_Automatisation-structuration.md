@@ -10,8 +10,8 @@
 
 À l'issue de ce module, les participants seront capables de :
 
-1. **Créer des templates de prompts réutilisables** pour standardiser la production de contenu.
-2. **Concevoir des workflows automatisés** (Zapier, Make, N8N, GumLoop) pour connecter les outils.
+1. **Créer templates de prompts réutilisables** pour standardiser la production de contenu.
+2. **Concevoir des workflows automatisés** (Zapier, Make, N8N, Gumloop) pour connecter les outils.
 3. **Industrialiser l'analyse de la User Research** pour traiter des volumes massifs de feedback.
 
 ---
@@ -28,7 +28,7 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
   - *Gain* : Fluidité des processus, moins d'erreurs.
 3. **Niveau Système (Product Intelligence)** : Analyse auto de feedback, génération de roadmap dynamique.
   - *Gain* : Capacité de scale, insights stratégiques.
-![Gunloop vs Make](../res/Gunloop_vs_make.png)
+![Gumloop vs Make](../res/Gumloop_vs_make.png)
 
 ---
 
@@ -70,7 +70,7 @@ Une version de ChatGPT pré-configurée avec :
 
 ---
 
-## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make, GumLoop & N8N)
+## 3. Niveau 2 : Automatisation de Workflows (Rovo, Zapier, Make, Gumloop & N8N)
 
 Connecter les outils entre eux pour que l'information circule sans copier-coller.
 
@@ -84,7 +84,7 @@ Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du
 | **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian (Jira, Confluence...) où l'IA est au cœur du flux.                                                                                                                                                                                |
 | **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                                                             |
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                                                            |
-| **GumLoop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                                                                |
+| **Gumloop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                                                                |
 | **N8N**     | **L'automatisation souveraine avec IA native**. Permet de concevoir visuellement des agents IA complexes (avec mémoire, RAG et outils) et de les connecter à vos applications métiers. Idéal pour des flux sécurisés (RGPD) et extensibles grâce à son modèle low-code et open-source.                                     |
 
 ----------------------- ✄ TP 2 (Zapier / Gumloop) ✄ -----------------------
@@ -101,6 +101,17 @@ Contrairement aux outils d'automatisation traditionnels (Zapier/Make) qui traite
 4. **Nœuds "Vector Store" (Base vectorielle)** : Permettent de faire du RAG (Retrieval-Augmented Generation) en connectant l'agent à une base de connaissances (PDF, Confluence, Notion) pour qu'il réponde à partir d'informations internes et fiables.
 
 Cette approche visuelle permet à un PO ou PM de concevoir de véritables prototypes d'agents IA fonctionnels en moins d'une heure, sans écrire une ligne de code, tout en gardant le contrôle sur la logique métier.
+
+### 3.3 Le protocole MCP (Model Context Protocol) et N8N
+
+**Qu'est-ce que le MCP ?**
+Le **Model Context Protocol (MCP)** est un standard ouvert permettant aux modèles d'IA (comme Claude Desktop) de se connecter de manière sécurisée et uniforme à des sources de données locales ou distantes, et à des outils externes.
+
+**Quel rapport avec N8N ?**
+N8N intègre nativement un serveur MCP. Cela signifie que vous pouvez connecter votre assistant IA (par exemple Claude Desktop installé en local) directement à votre instance N8N :
+- L'IA peut lire, modifier ou exécuter vos workflows N8N.
+- L'IA peut déclencher des automatisations complexes à votre demande, directement depuis la fenêtre de discussion.
+- Cela transforme votre assistant de simple générateur de texte en un copilote d'action, capable d'agir directement sur vos outils de gestion de projet (Jira, Notion, Slack).
 
 ---
 
