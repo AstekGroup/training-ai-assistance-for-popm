@@ -698,46 +698,6 @@ Style : Sous-titres clairs, paragraphes courts, facile à scanner
 
 ---
 
-#### **Étape 6 : Mesurer l'impact** (facultatif)
-
-
-| Critère                 | Méthode manuelle     | Avec Gladia + IA    | Gain    |
-| ----------------------- | -------------------- | ------------------- | ------- |
-| **Transcription vidéo** | 2h (écoute + frappe) | 3 min (automatique) | **98%** |
-| **Sous-titres SRT**     | 1h (timing manuel)   | 5 min               | **92%** |
-| **Post LinkedIn**       | 30 min (rédaction)   | 3 min               | **90%** |
-| **Post Viva Engage**    | 20 min               | 2 min               | **90%** |
-| **Article blog**        | 2h (rédaction)       | 5 min               | **96%** |
-| **TOTAL**               | **5h 50min**         | **18 min**          | **95%** |
-
-
-**💡 Leçon clé** : Une vidéo de 15 min génère **4 contenus différents** en moins de 20 minutes !
-
----
-
----
-
-## 🎓 Synthèse : Frameworks et réunions
-
-| Framework | Quand l'utiliser | Ce qu'il apporte | Temps gagné |
-|-----------|------------------|------------------|-------------|
-| **🎯 RICE** | Priorisation de features/initiatives | Classement objectif data-driven | 90% (3h → 15min) |
-| **🔍 SWOT** | Décisions stratégiques complexes | Analyse 360° (forces/faiblesses/opportunités/menaces) | 95% (2j → 15min) |
-| **📹 Réunions** | Transcription et CR | Action items traçables, contenus multi-canal | ~90% temps CR |
-
----
-
-## 📋 Vos livrables de la session
-
-À la fin de cette session, vous repartez avec :
-
-✅ **1 tableau RICE** pour 6 features avec scores et classement  
-✅ **1 analyse SWOT complète** avec recommandation et alternatives  
-✅ **1 flux transcription → action items** (Teams + IA)  
-✅ **Compétence** : Structurer vos décisions avec des frameworks éprouvés  
-
----
-
 ## 📌 Rappels importants
 
 > [!IMPORTANT]
