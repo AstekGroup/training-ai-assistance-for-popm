@@ -33,6 +33,10 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
 *Figure 3.1 : La trajectoire d'adoption des agents IA au sein des équipes produit*
 
 
+![Automatisation vs Agents](../res/automateVsAgents.jpg)
+*Figure 3.4 : Transition de l'automatisation classique vers les agents d'IA autonomes*
+
+
 ---
 
 ## 2. Niveau 1 : Prompts Réutilisables et Assistants (Custom GPTs)
@@ -81,10 +85,9 @@ Connecter les outils entre eux pour que l'information circule sans copier-coller
 
 Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du plus simple au plus puissant :
 
-
-| Outil       | Description                                                                                                                                                                                                                                                                            |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Rovo**    | **"L'automatisation par l'IA"**. Une solution nouvelle génération pour la suite Atlassian (Jira, Confluence...) où l'IA est au cœur du flux.                                                                                                                                           |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Outil       | Description                                                                                                                                                                                                                                                                            |
 | **Zapier**  | **"Si ceci, alors cela"**. Très linéaire et facile d'accès. Idéal pour débuter.                                                                                                                                                                                                        |
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                       |
 | **Gumloop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                             |
@@ -93,6 +96,28 @@ Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du
 
 ![Gumloop vs Make](../res/Gumloop_vs_make.jpg)
 *Figure 3.2 : Comparatif d'outils d'automatisation (Gumloop vs Make)*
+
+
+
+
+![N8N vs Make vs Zapier](../res/vs_Make_zappier_N8N.jpg)
+*Figure 3.2bis : Comparatif N8N, Make, Zapier*
+
+
+![Exemple  Zapier](../res/1-zappier_sample.jpg)
+*Figure 3.x : look Zapier*
+ 
+![Exemple  Make](../res/2-make_sample.jpg)
+*Figure 3.x : look Make*
+ 
+ 
+![Exemple  N8N](../res/3-n8n_sample.jpg)
+*Figure 3.x : look N8N*
+
+ 
+![Exemple  PowerAutomate](../res/4-powerAutomate_sample.jpg)
+*Figure 3.x : look PowerAutomate*
+
 
 ![Paysage iPaaS](../res/IPAAS.jpg)
 *Figure 3.3 : Positionnement des plateformes d'intégration iPaaS*
@@ -111,9 +136,6 @@ Contrairement aux outils d'automatisation traditionnels (Zapier/Make) qui traite
 4. **Nœuds "Vector Store" (Base vectorielle)** : Permettent de faire du RAG (Retrieval-Augmented Generation) en connectant l'agent à une base de connaissances (PDF, Confluence, Notion) pour qu'il réponde à partir d'informations internes et fiables.
 
 Cette approche visuelle permet à un PO ou PM de concevoir de véritables prototypes d'agents IA fonctionnels en moins d'une heure, sans écrire une ligne de code, tout en gardant le contrôle sur la logique métier.
-
-![Automatisation vs Agents](../res/automateVsAgents.jpg)
-*Figure 3.4 : Transition de l'automatisation classique vers les agents d'IA autonomes*
 
 ### 3.3 Le protocole MCP (Model Context Protocol) et N8N
 
