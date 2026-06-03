@@ -4,62 +4,12 @@
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Compte Zapier gratuit (à créer avant la session)
-- ou compte N8N Cloud (évaluation gratuite)
-- Compte Google (Gmail + Google Forms)
-- Accès à [ChatGPT](https://chatgpt.com) ou [Claude](https://claude.ai)
+- Accès à [ChatGPT](https://chatgpt.com) ou [Claude](https://claude.ai) ou Copilot
 - **Pour les apprenants avancés (optionnel)** :
+  - N8N local (ou compte Cloud d'évaluation gratuite)
   - Installation locale de N8N
   - Liaison avec le serveur MCP de Claude Desktop
 
----
-
-## ⚙️ Configuration Avancée : Liaison MCP Claude Desktop & N8N Local
-
-Cette section s'adresse aux apprenants souhaitant utiliser Claude Desktop pour piloter directement leur N8N local grâce au protocole MCP.
-
-### Prérequis
-- Claude Desktop installé (en local)
-- N8N installé en local (accès via `http://localhost:5678`)
-- Node.js installé (vérification : `node -v`)
-
-### Étape 1 — Activer le MCP dans N8N
-1. Ouvre `http://localhost:5678`
-2. Va dans **Settings > API**
-3. Active l'option **Enable API** si ce n'est pas fait
-4. Génère une **API Key** $\rightarrow$ copie-la précieusement
-5. Va dans **Settings > MCP** (ou cherche "MCP" dans les paramètres)
-6. Active **Enable MCP Server**
-7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
-
-### Étape 2 — Configurer Claude Desktop
-Éditer le fichier de configuration `claude_desktop_config.json` selon votre système d'exploitation :
-- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
-- **Linux** : `~/.config/Claude/claude_desktop_config.json`
-- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
-
-Contenu à ajouter dans la clé `mcpServers` :
-```json
-{
-  "mcpServers": {
-    "n8n-local": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "http://localhost:5678/mcp"
-      ],
-      "env": {
-        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_ICI"
-      }
-    }
-  }
-}
-```
-
-### Étape 3 — Redémarrer Claude Desktop
-Tuer le processus Claude Desktop (via le gestionnaire de tâches ou la barre des tâches) et le relancer.
-
-### Vérification
-Une icône **marteau** (ou puzzle selon les versions) doit être visible en bas de la zone de saisie dans Claude Desktop, indiquant que le serveur MCP N8N est bien connecté et actif.
 
 ---
 
@@ -76,25 +26,26 @@ Comprendre et expérimenter **3 niveaux d'automatisation** pour libérer du temp
 
 ## 📝 Exercice 1 : Automatisation SIMPLE - Template de contenu réutilisable
 
-**Objectif** : Créer un prompt template pour automatiser la génération de Release Notes
+**Durée** : 20 minutes  
+**Objectif** : Créer un prompt template pour automatiser la génération de Release Notes.
 
 ### Le problème
 
-Chaque vendredi, vous devez rédiger les **Release Notes** de la semaine pour informer vos utilisateurs et stakeholders des nouveautés.
+Chaque vendredi, vous devez rédiger les **Release Notes** de la semaine pour informer vos utilisateurs et parties prenantes (stakeholders) des nouveautés.
 
 **Processus actuel (manuel)** :
-1. Récupérer la liste des tickets complétés dans Jira/GitHub
-2. Les catégoriser manuellement (Features / Améliorations / Bugs)
-3. Rédiger des descriptions claires et orientées utilisateur
-4. Structurer avec emojis et formatage
+1. Récupérer la liste des tickets complétés dans Jira ou GitHub.
+2. Les catégoriser manuellement (Features / Améliorations / Bugs).
+3. Rédiger des descriptions claires et orientées utilisateur.
+4. Structurer avec des emojis et du formatage.
 5. Relire et corriger
 6. Publier
 
-**⏱️ Temps nécessaire : 30 minutes**
+**⏱️ Temps nécessaire** : 30 minutes.  
 
 **😰 Problèmes** :
 - Chronophage et répétitif
-- Risque d'oubli de tickets
+- Risque d'oubli (de tickets)
 - Formulation variable selon la fatigue
 - Pas de standardisation
 
@@ -106,7 +57,7 @@ Chaque vendredi, vous devez rédiger les **Release Notes** de la semaine pour in
 
 Voici les tickets complétés cette semaine :
 
-```
+```text
 PROJ-245 : Ajout du mode sombre pour réduire fatigue oculaire
 PROJ-251 : Export des rapports en format PDF avec branding personnalisé  
 PROJ-189 : Temps de chargement du dashboard réduit de 40%
@@ -125,7 +76,7 @@ PROJ-267 : Intégration Slack pour notifications temps réel
 
 #### **Étape 2** : Construire votre prompt template (10 min)
 
-Créez un prompt ChatGPT qui transforme **automatiquement** vos données brutes en Release Notes formatées :
+Créez un prompt réutilisable (en utilisant la structure **ACTF** vue en cours) qui transforme automatiquement vos données brutes en Release Notes prêtes à être publiées :
 
 ```
 Tu es un Product Owner qui rédige des Release Notes pour les utilisateurs.
@@ -158,7 +109,7 @@ Version : [A REMPLIR]
 Date : [A REMPLIR]
 ```
 
-**💡 Astuce** : Sauvegardez ce prompt dans un fichier "Prompts_Réutilisables.md" pour le réutiliser chaque semaine !
+**💡 Astuce** : Sauvegardez ce prompt dans un fichier "Prompts_Réutilisables.md" pour pouvoir le réutiliser chaque semaine !
 
 ---
 
@@ -227,9 +178,9 @@ D'autres contenus à automatiser avec la même approche :
 
 ## ⚙️ Exercice 2 : Design de Workflow (Zapier ou Gumloop)
 
-**Durée** : 30 minutes  
+**Durée** : 25 minutes  
 **Niveau** : ⭐⭐ Intermédiaire  
-**Objectif** : Concevoir la logique d'un workflow automatisé (sans se perdre dans la technique)
+**Objectif** : Concevoir la logique d'un workflow automatisé (sans se perdre dans la technique !)
 
 ### Le problème
 
@@ -301,7 +252,7 @@ Votre équipe produit reçoit des dizaines de retours utilisateurs et bugs par j
 4. Résumer et documenter dans un tableau Jira ou Notion.
 5. Alerter l'équipe de dev par Slack/Email si le bug est bloquant.
 
-**⏱️ Temps nécessaire : 1h30 par jour**
+**⏱️ Temps nécessaire** : 1h30 par jour.  
 **😰 Problèmes** : Fatigue mentale, lenteur de traitement des urgences critiques, manque d'uniformité dans la catégorisation.
 
 ---
@@ -309,14 +260,14 @@ Votre équipe produit reçoit des dizaines de retours utilisateurs et bugs par j
 ### ✅ Mission : Créer votre "Trieur Intelligent" sur N8N
 
 Vous allez concevoir le workflow suivant :
-`Webhook (Réception du feedback)` -> `AI Agent / LLM (Analyse)` -> `Router / If (Aiguillage)` -> `Actions de sortie (Gmail / Sheet)`
+`Webhook (Réception du feedback)` -> `AI Agent / LLM (Analyse)` -> `Router / If (Aiguillage)` -> `Actions de sortie (Teams / Tableau de suivi, ou Slack / Gmail / Google Sheets)`
 
 ```mermaid
 graph TD
     A[Webhook : Réception du feedback] --> B[AI Agent : Analyse & Structuration]
     B --> C{Urgence ?}
-    C -->|Critique| D[Envoi Email Urgent via Gmail]
-    C -->|Normal / Basse| E[Ajout au Google Sheet de suivi]
+    C -->|Critique| D[Envoi Message Teams Urgent]
+    C -->|Normal / Basse| E[Ajout au Tableau de suivi]
 ```
 
 #### Étape 1 : Accès à N8N (5 min)
@@ -363,8 +314,8 @@ graph TD
 
 #### Étape 5 : Les Actions de sortie (10 min)
 
-1. **Branche VRAIE (Urgent)** : Ajoutez un nœud **Gmail** ou **Slack** pour envoyer une alerte immédiate avec le résumé généré par l'IA.
-2. **Branche FAUSSE (Normal)** : Ajoutez un nœud **Google Sheets** (ou Notion) pour insérer une nouvelle ligne dans votre backlog d'idées avec les tags (type, thème, résumé) générés automatiquement par l'IA.
+1. **Branche VRAIE (Urgent)** : Ajoutez un nœud **Gmail**, **Slack** ou **Microsoft Teams** pour envoyer une alerte immédiate avec le résumé généré par l'IA.
+2. **Branche FAUSSE (Normal)** : Ajoutez un nœud **Google Sheets** (ou Notion / Jira) pour insérer une nouvelle ligne dans votre tableau de suivi (backlog d'idées) avec les tags (type, thème, résumé) générés automatiquement par l'IA.
 
 #### Étape 6 : Test pratique (5 min)
 
@@ -531,6 +482,55 @@ Créez votre propre fichier `Prompts_Réutilisables.md` avec :
 "Montre-moi la structure du workflow ID 42"
 ```
 
+## ⚙️ Annexe : Configuration : Liaison MCP Claude Desktop & N8N Local
+
+Cette section s'adresse aux apprenants souhaitant utiliser Claude Desktop pour piloter directement leur N8N local grâce au protocole MCP.
+
+### Prérequis
+- Claude Desktop installé (en local)
+- N8N installé en local (accès via `http://localhost:5678`)
+- Node.js installé (vérification : `node -v`)
+
+### Étape 1 — Activer le MCP dans N8N
+1. Ouvre `http://localhost:5678`
+2. Va dans **Settings > API**
+3. Active l'option **Enable API** si ce n'est pas fait
+4. Génère une **API Key** $\rightarrow$ copie-la précieusement
+5. Va dans **Settings > MCP** (ou cherche "MCP" dans les paramètres)
+6. Active **Enable MCP Server**
+7. Note l'URL MCP affichée (ex: `http://localhost:5678/mcp`)
+
+### Étape 2 — Configurer Claude Desktop
+Éditer le fichier de configuration `claude_desktop_config.json` selon votre système d'exploitation :
+- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
+- **Linux** : `~/.config/Claude/claude_desktop_config.json`
+- **macOS** : `~/Library/Application Support/Claude/claude_desktop_config.json`
+
+Contenu à ajouter dans la clé `mcpServers` :
+```json
+{
+  "mcpServers": {
+    "n8n-local": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:5678/mcp"
+      ],
+      "env": {
+        "MCP_REMOTE_AUTH_HEADER": "X-N8N-API-KEY: TA_CLE_API_N8N"
+      }
+    }
+  }
+}
+```
+
+### Étape 3 — Redémarrer Claude Desktop
+Tuer le processus Claude Desktop (via le gestionnaire de tâches ou la barre des tâches) et le relancer.
+
+### Vérification
+Une icône **marteau** (ou puzzle selon les versions) doit être visible en bas de la zone de saisie dans Claude Desktop, indiquant que le serveur MCP N8N est bien connecté et actif.
+
 ## Références
 
 - Docs officielles N8N MCP : [https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/](https://docs.n8n.io/advanced-ai/mcp/accessing-n8n-mcp-server/)
+

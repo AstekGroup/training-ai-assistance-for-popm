@@ -2,13 +2,13 @@
 
 **Durée totale** : 1 heure (3 × 20 minutes)  
 **Format** : Travail individuel avec débrief collectif  
-**Outils nécessaires** : Accès à [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
+**Outils nécessaires** : Accès à [Claude](https://claude.ai) ou Copilot
 
 ---
 
 ## 🎯 Exercice 1 : Structurer un prompt avec la méthode ACTF
 
-**Durée** : 20 minutes  
+**Durée** : 10 minutes  
 **Objectif** : Apprendre à transformer un prompt vague en prompt structuré et efficace
 
 ### Le scénario
@@ -73,7 +73,7 @@ Format INVEST avec :
 ### 🧪 Testez votre prompt
 
 1. Assemblez vos 4 composantes (A + C + T + F)
-2. Copiez votre prompt dans ChatGPT ou Claude
+2. Copiez votre prompt dans Claude ou Copilot
 3. Notez la qualité du résultat (1 à 5 ⭐)
 
 ### 💬 Débrief (5 min)
@@ -86,7 +86,7 @@ Format INVEST avec :
 
 ## 📚 Exercice 2 : Standardiser avec le "Few-Shot Learning"
 
-**Durée** : 20 minutes  
+**Durée** : 10 minutes  
 **Objectif** : Utiliser des exemples concrets pour imposer un format et garantir la cohérence
 
 ### Le scénario
