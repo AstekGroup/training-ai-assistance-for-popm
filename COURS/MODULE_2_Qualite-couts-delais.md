@@ -494,7 +494,7 @@ Format : Professionnel, adapté à un comité de direction
 - Documentation de code
 - Procédures techniques
 
-**Outils** : [GitHub Copilot](https://github.com/features/copilot), [ChatGPT](https://chatgpt.com), [Kiro Code2Doc](https://kiro.dev), outils de documentation avec IA
+**Outils** : [GitHub Copilot](https://github.com/features/copilot), [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé), [ChatGPT](https://chatgpt.com), [Kiro Code2Doc](https://kiro.dev), outils de documentation avec IA
 
 **Processus** :
 
@@ -620,7 +620,7 @@ Voir aussi le détail dans `[ANNEXES/ressources-externes.md](../ANNEXES/ressourc
 - **Monday.com** : [Planification avec IA](https://monday.com/product/ai)
 - **Tableau / Power BI** : [Analyse de données avec IA](https://www.tableau.com/products/ai-ml)
 - **[Notion AI](https://www.notion.so/product/ai)** / **[Glean](https://www.glean.com)** : knowledge management et recherche
-- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI**](https://mistral.ai) : génération et synthèse de contenu
+- **[Vibe de Mistral](https://chat.mistral.ai)** (recommandé et préconisé) / **[Claude](https://claude.ai)** / **[ChatGPT](https://chatgpt.com)** : génération et synthèse de contenu
 
 ### Templates
 

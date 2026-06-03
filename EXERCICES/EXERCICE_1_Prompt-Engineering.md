@@ -2,7 +2,7 @@
 
 **Durée totale** : 1 heure (3 × 20 minutes)  
 **Format** : Travail individuel avec débrief collectif  
-**Outils nécessaires** : Accès à [Claude](https://claude.ai) ou Copilot
+**Outils nécessaires** : Accès à [Claude](https://claude.ai), Copilot ou [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé)
 
 ---
 
@@ -73,7 +73,7 @@ Format INVEST avec :
 ### 🧪 Testez votre prompt
 
 1. Assemblez vos 4 composantes (A + C + T + F)
-2. Copiez votre prompt dans Claude ou Copilot
+2. Copiez votre prompt dans Claude, Copilot ou Vibe de Mistral (recommandé)
 3. Notez la qualité du résultat (1 à 5 ⭐)
 
 ### 💬 Débrief (5 min)

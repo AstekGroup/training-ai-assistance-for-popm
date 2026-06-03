@@ -43,9 +43,9 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
 
 Pourquoi réécrire le même contexte à chaque fois ? Créez des spécialistes.
 
-### 2.1 Qu'est-ce qu'un Custom GPT ?
+### 2.1 Qu'est-ce qu'un Custom GPT / Mistral Agent ?
 
-Une version de ChatGPT pré-configurée avec :
+Une version de ChatGPT ou de Vibe de Mistral (notre préconisation par rapport à ChatGPT) pré-configurée avec :
 
 - **Instructions spécifiques** (Persona, Ton, Format).
 	  ASPeCCTf :Action, Steps, Persona,(Examples), Context, Constraints, Template, (Finally)

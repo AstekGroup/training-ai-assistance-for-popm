@@ -2,7 +2,7 @@
 
 **Durée totale** : 1 h (3 × 20 min)  
 **Format** : Travail individuel avec débrief collectif  
-**Outils nécessaires** : [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai)
+**Outils nécessaires** : [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé et préconisé par rapport à ChatGPT), [Claude](https://claude.ai) ou [ChatGPT](https://chat.openai.com)
 
 ---
 

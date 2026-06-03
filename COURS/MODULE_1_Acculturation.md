@@ -68,7 +68,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 #### 2.1.1 IA générative
 
 - **Définition** : Génère du contenu nouveau (texte, images, code, interfaces) à partir de données d'entraînement
-- **Exemples d'outils texte** : [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Mistral AI](https://mistral.ai)
+- **Exemples d'outils texte** : [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé), [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com)
 - **Exemples d'outils image et UI** : [Midjourney](https://www.midjourney.com), [DALL-E](https://openai.com/dall-e-3), [Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/) (images haute qualité), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev) (UI et maquettes)
 - **Cas d'usage PO/PM** :
   - Rédaction de user stories et spécifications
@@ -129,7 +129,7 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 #### 2.4.1 Le principe de base : prédiction de mots
 
-Les IA génératives comme [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com) ou [Mistral AI](https://mistral.ai) fonctionnent sur un principe fondamental : **la prédiction du mot suivant le plus probable**.
+Les IA génératives comme [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé), [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai) ou [Gemini](https://gemini.google.com) fonctionnent sur un principe fondamental : **la prédiction du mot suivant le plus probable**.
 
 **Analogie simple** : Imaginez que vous lisez "Il fait beau, je vais sortir mon..." - votre cerveau anticipe naturellement "parapluie" (s'il pleut) ou "chapeau" (s'il fait soleil). Les LLM font exactement cela, mais à une échelle massive.
 
@@ -310,14 +310,15 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.1 Outils de génération de contenu
 
-#### [ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Gemini](https://gemini.google.com) / [Mistral AI](https://mistral.ai)
+#### [Vibe de Mistral](https://chat.mistral.ai) (préconisé) / [Claude](https://claude.ai) / [Gemini](https://gemini.google.com) / [ChatGPT](https://chatgpt.com)
 
 - **Fonctionnalités** : Génération de texte, analyse, synthèse
 - **Cas d'usage** :
   - Rédaction de user stories
   - Création de documentation
   - Analyse de retours utilisateurs
-- **Avantages** : Polyvalent, facile d'utilisation
+- **Préconisation** : Nous préconisons et recommandons l'utilisation de **Vibe de Mistral** (anciennement appelé *Le Chat*) par rapport à ChatGPT (notamment pour des raisons de souveraineté européenne et de confidentialité des données).
+- **Avantages** : Polyvalent, facile d'utilisation, performant, européen
 - **Limites** : Nécessite vérification, coûts selon usage
 - **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
 
@@ -552,7 +553,7 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 
 ### Outils à explorer
 
-- **[ChatGPT](https://chatgpt.com)**, **[Claude](https://claude.ai)**, **[Mistral AI](https://mistral.ai)** : Génération de texte
+- **[Vibe de Mistral](https://chat.mistral.ai)** (recommandé), **[Claude](https://claude.ai)**, **[ChatGPT](https://chatgpt.com)** : Génération de texte
 - **[Google Imagen 3(ex Nano Banana) (Gemini Image)](https://deepmind.google/technologies/gemini/)**, **[Galileo AI](https://www.usegalileo.ai)** : Génération d'images et maquettes UI
 - **[Perplexity](https://www.perplexity.ai)**, **[Genspark](https://www.genspark.ai)** : Recherche et synthèse web
 - **[Otter.ai](https://otter.ai)** : Transcription réunions

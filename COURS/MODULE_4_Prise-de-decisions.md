@@ -332,7 +332,7 @@ Durée totale : [durée souhaitée]
 
 **Technique** : Générer des slides ou documents de présentation
 
-**Outils** : [ChatGPT](https://chatgpt.com) avec plugins, [Gamma](https://gamma.app), [Beautiful.ai](https://www.beautiful.ai), [Canva Docs/Presentations avec IA](https://www.canva.com)
+**Outils** : [Vibe de Mistral](https://chat.mistral.ai) (recommandé), [ChatGPT](https://chatgpt.com) avec plugins, [Gamma](https://gamma.app), [Beautiful.ai](https://www.beautiful.ai), [Canva Docs/Presentations avec IA](https://www.canva.com)
 
 **Cas d'usage** :
 
@@ -516,7 +516,7 @@ Voir aussi le détail dans `[ANNEXES/ressources-externes.md](../ANNEXES/ressourc
 ### Outils recommandés
 
 - **[Tableau](https://www.tableau.com/products/ai-ml)** : Analyse de données avec IA
-- **[ChatGPT](https://chatgpt.com) / [Claude](https://claude.ai) / [Mistral AI**](https://mistral.ai) : Analyse qualitative et génération d'insights
+- **[Vibe de Mistral](https://chat.mistral.ai)** (recommandé et préconisé) / **[Claude](https://claude.ai)** / **[ChatGPT](https://chatgpt.com)** : Analyse qualitative et génération d'insights
 - **[Perplexity](https://www.perplexity.ai) / [Elicit**](https://elicit.com) : Recherche et synthèse web
 - **[Productboard](https://www.productboard.com) / [Dovetail**](https://dovetail.com) : Tri et catégorisation des feedbacks
 - **[Otter.ai](https://otter.ai)** : Transcription et synthèse de réunions

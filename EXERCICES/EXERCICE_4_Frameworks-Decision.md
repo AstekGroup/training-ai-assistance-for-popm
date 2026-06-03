@@ -2,7 +2,7 @@
 
 **Durée totale** : 1 h 45 (2 × 20 min frameworks + 2 × 20 min réunions ; exercice Gladia ~25 min)
 **Format** : Travail individuel avec débrief collectif  
-**Outils nécessaires** : [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai) ; pour les exercices 3 et 4 : Microsoft Teams (compte professionnel), [Gladia.io](https://gladia.io), [Microsoft Loop](https://loop.microsoft.com)
+**Outils nécessaires** : [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé et préconisé par rapport à ChatGPT), [ChatGPT](https://chat.openai.com) ou [Claude](https://claude.ai) ; pour les exercices 3 et 4 : Microsoft Teams (compte professionnel), [Gladia.io](https://gladia.io), [Microsoft Loop](https://loop.microsoft.com)
 
 ---
 
@@ -417,7 +417,7 @@ Après chaque réunion, vous passez **30-45 minutes** à :
 
 ---
 
-#### **Étape 2 : Extraire les action items avec ChatGPT** (8 min)
+#### **Étape 2 : Extraire les action items avec Vibe de Mistral (ou ChatGPT)** (8 min)
 
 **Copier la transcription** et utiliser ce prompt :
 
@@ -460,7 +460,7 @@ Si aucune action n'est identifiée, indique "Aucun action item détecté".
 1. **Ouvrir Microsoft Loop** (loop.microsoft.com ou depuis Teams)
   - Créer un nouveau composant "Liste de tâches"
   - Titre : "Action Items - [Nom de la réunion] - [Date]"
-2. **Copier les action items depuis ChatGPT**
+2. **Copier les action items depuis Vibe de Mistral (ou ChatGPT)**
   - Transformer chaque ligne du tableau en tâche Loop
   - Assigner les responsables (@mentionner les personnes)
   - Ajouter les échéances
@@ -500,7 +500,7 @@ Action Items - Sprint Planning - 19/11/2025
 | **Traçabilité**        | ⚠️ Moyenne               | ✅ Élevée (transcription + actions) | 100%    |
 
 
-**💡 Leçon clé** : Teams transcription + ChatGPT + Loop = **workflow de réunion quasi-automatisé** sans outil externe
+**💡 Leçon clé** : Teams transcription + Vibe / ChatGPT + Loop = **workflow de réunion quasi-automatisé** sans outil externe (Vibe étant préconisé par rapport à ChatGPT)
 
 ---
 
@@ -522,7 +522,7 @@ Vous avez enregistré une **conférence ou démo produit** de 10-15 minutes. Vou
 
 ---
 
-### ✅ Mission : Automatiser avec Gladia.io + ChatGPT
+### ✅ Mission : Automatiser avec Gladia.io + Vibe de Mistral (ou ChatGPT)
 
 #### **Étape 1 : Upload vidéo sur Gladia.io** (5 min)
 

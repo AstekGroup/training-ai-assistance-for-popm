@@ -4,7 +4,7 @@
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Compte Zapier gratuit (à créer avant la session)
-- Accès à [ChatGPT](https://chatgpt.com) ou [Claude](https://claude.ai) ou Copilot
+- Accès à [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé et préconisé par rapport à ChatGPT), [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai) ou Copilot
 - **Pour les apprenants avancés (optionnel)** :
   - N8N local (ou compte Cloud d'évaluation gratuite)
   - Installation locale de N8N
