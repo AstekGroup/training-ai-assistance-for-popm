@@ -1,6 +1,6 @@
 # Exercices Module 3 : Automatiser vos tâches répétitives avec l'IA
 
-**Durée totale** : 2 heures (2 exercices + débrief)  
+**Durée totale** : 2 heures (3 exercices + débrief)  
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : 
 - Compte Zapier gratuit (à créer avant la session)

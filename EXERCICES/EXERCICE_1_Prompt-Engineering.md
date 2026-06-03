@@ -1,6 +1,6 @@
 # Exercices Module 1 : Découverte du Prompt Engineering pour PO/PM
 
-**Durée totale** : 1 heure (3 × 20 minutes)  
+**Durée totale** : 1 heure (10 + 10 + 20 minutes + débriefs)  
 **Format** : Travail individuel avec débrief collectif  
 **Outils nécessaires** : Accès à [Claude](https://claude.ai), Copilot ou [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé)
 

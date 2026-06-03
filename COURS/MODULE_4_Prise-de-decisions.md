@@ -299,6 +299,8 @@ Format : Tableau ou liste structurée
 - Action items → Composants [Microsoft Loop](https://loop.microsoft.com) partagés pour suivi collaboratif
 - Rappels automatiques avant échéance
 
+----------------------- ✄ TP 3 (Teams & Loop) ✄ -----------------------
+
 ---
 
 ### 4.3 Optimisation du temps de réunion
@@ -476,6 +478,8 @@ Longueur : 1-2 pages maximum
 - Rappels avant échéance
 - Suivi de complétion
 - Escalade si retard
+
+----------------------- ✄ TP 4 (Transcription Gladia) ✄ -----------------------
 
 ---
 

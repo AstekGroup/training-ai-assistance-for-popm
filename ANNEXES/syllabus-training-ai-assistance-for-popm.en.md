@@ -48,7 +48,7 @@
 ---
 
 ## 🛠️ Tools Covered
-- Assistants: ChatGPT, Claude, Gemini, Perplexity
+- Assistants: Vibe de Mistral (recommended), ChatGPT, Claude, Gemini, Perplexity
 - Collaboration: Microsoft Copilot (M365), Notion AI, Atlassian Intelligence, Miro AI, Monday.com
 - Automation: Zapier, Make, Power Automate
 - Meetings: Otter.ai, Fireflies, Teams (Copilot transcription)

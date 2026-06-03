@@ -31,7 +31,7 @@
 
 ## 🛠️ Outils couverts
 
-**Assistants conversationnels** : [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Perplexity](https://perplexity.ai)
+**Assistants conversationnels** : [Vibe de Mistral](https://chat.mistral.ai) (recommandé), [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Perplexity](https://perplexity.ai)
 
 **Suite bureautique et collaboration** : [Microsoft Copilot](https://www.microsoft.com/microsoft-copilot) (M365), [Notion AI](https://www.notion.so/product/ai)
 

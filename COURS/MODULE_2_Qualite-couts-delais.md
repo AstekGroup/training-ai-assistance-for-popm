@@ -147,6 +147,8 @@ Spécification :
 - Validation des conventions de nommage
 - Contrôle de la structure des documents
 
+----------------------- ✄ TP 1 (Qualité des spécifications) ✄ -----------------------
+
 ---
 
 ## 3. Optimisation des estimations de coûts et délais
@@ -241,6 +243,8 @@ Justifie ton estimation en expliquant :
 - Réduction des coûts de main-d'œuvre
 - Optimisation de l'utilisation des compétences
 - Réduction des temps d'attente
+
+----------------------- ✄ TP 2 (Estimations & Coûts) ✄ -----------------------
 
 ---
 
@@ -402,6 +406,8 @@ Génère un plan de contingence détaillé incluant :
 4. Responsables et délais
 5. Coûts estimés
 ```
+
+----------------------- ✄ TP 3 (Délais & Risques) ✄ -----------------------
 
 ---
 
