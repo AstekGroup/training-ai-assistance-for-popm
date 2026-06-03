@@ -347,3 +347,6 @@ Remplissez ce tableau pour les **2 risques les plus critiques** :
 
 > [!TIP]
 > **La donnée est reine** : Plus vous alimentez l'IA avec des données historiques précises, plus ses prédictions seront fiables. Documentez vos projets !
+
+> [!CAUTION]
+> **Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé.

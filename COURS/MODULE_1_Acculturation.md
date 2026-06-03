@@ -310,17 +310,20 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.1 Outils de génération de contenu
 
-#### [Vibe de Mistral](https://chat.mistral.ai) (préconisé) / [Claude](https://claude.ai) / [Gemini](https://gemini.google.com) / [ChatGPT](https://chatgpt.com)
+#### [Vibe de Mistral](https://chat.mistral.ai) / [Claude d'Anthropic](https://claude.ai) / [Gemini de Google](https://gemini.google.com) / [Copilot de Microsoft](https://copilot.microsoft.com) / [ChatGPT d'OpenAI](https://chatgpt.com)
 
-- **Fonctionnalités** : Génération de texte, analyse, synthèse
+- **Fonctionnalités** : Génération de texte, analyse, synthèse, assistance au code.
 - **Cas d'usage** :
   - Rédaction de user stories
   - Création de documentation
   - Analyse de retours utilisateurs
-- **Préconisation** : Nous préconisons et recommandons l'utilisation de **Vibe de Mistral** (anciennement appelé *Le Chat*) par rapport à ChatGPT (notamment pour des raisons de souveraineté européenne et de confidentialité des données).
-- **Avantages** : Polyvalent, facile d'utilisation, performant, européen
-- **Limites** : Nécessite vérification, coûts selon usage
-- **Attention :** données envoyées sur des serveurs, pas traitées en local, ne pas partager de *données confidentielles* ou  *Secrets*
+- **Préconisations et recommandations** :
+  - **Vibe de Mistral** (anciennement *Le Chat*) : Notre outil préconisé par rapport à ChatGPT pour la génération et la synthèse de contenu (souveraineté européenne et conformité RGPD).
+  - **Anthropic Claude** : Préconisé pour les développements complexes et le codage en raison de sa fiabilité (vs les hallucinations de ChatGPT) et de la qualité de son alignement.
+  - **Microsoft Copilot** : Disponible au sein de l'environnement d'entreprise Astek et utilisable à défaut pour sécuriser vos tâches courantes.
+- **Sécurité et Gouvernance (Règle d'or)** :
+  - **⚠️ Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet sur lequel vous travaillez.
+  - **Attention** : Les données sont envoyées sur des serveurs, pas traitées en local. Ne partagez jamais de *données confidentielles*, de code propriétaire ou de *secrets*.
 
 
 #### Génération d'Images et d'UI ([Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
@@ -452,11 +455,12 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 4.3 Considérations éthiques et de confidentialité
 
-**Confidentialité des données** :
+**Confidentialité et Gouvernance des données** :
 
-- Vérifier les politiques de confidentialité des outils
-- **NE JAMAIS partager des données sensibles** (clients, stratégie)
-- Utiliser des versions entreprise avec garanties de sécurité
+- **NE JAMAIS utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé.**
+- Modifier les politiques de confidentialité des outils.
+- **NE JAMAIS partager des données sensibles** (clients, stratégie, code source propriétaire) avec des IA publiques.
+- Utiliser des versions entreprise avec garanties de sécurité.
 
 **Biais et équité** :
 

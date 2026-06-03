@@ -712,6 +712,9 @@ Style : Sous-titres clairs, paragraphes courts, facile à scanner
 > [!NOTE]
 > **Documentez vos décisions** : Sauvegardez les analyses RICE/SWOT pour justifier vos choix et apprendre de vos décisions passées.
 
+> [!CAUTION]
+> **Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé.
+
 ---
 
 ## 🔗 Ressources complémentaires

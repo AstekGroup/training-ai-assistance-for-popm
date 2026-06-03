@@ -442,6 +442,9 @@ Listez 3 tâches répétitives de votre semaine :
 > [!IMPORTANT]
 > **Documentez vos workflows** : Notez comment fonctionne votre workflow N8N et vos prompts. Vous (ou vos collègues) vous remercierez dans 6 mois !
 
+> [!CAUTION]
+> **Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé.
+
 ---
 
 ## 🔗 Ressources complémentaires

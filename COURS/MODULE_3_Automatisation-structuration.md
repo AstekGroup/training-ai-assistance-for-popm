@@ -184,4 +184,7 @@ Une fois les données dans la base, utilisez l'IA pour demander :
 
 ---
 
+> [!CAUTION]
+> **Rappel Gouvernance Astek** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet sur lequel vous travaillez.
+
 **Note** : Ce contenu est développé par [Astek](https://www.astek.net) et sera régulièrement mis à jour pour refléter l'évolution des outils et pratiques IA.

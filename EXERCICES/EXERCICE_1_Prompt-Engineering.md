@@ -287,5 +287,5 @@ pour valider que la fonctionnalité apporte de la valeur aux utilisateurs.
 > [!TIP]
 > **Le secret** : Itérer, itérer, itérer ! Les meilleurs résultats viennent après 2-3 itérations minimum.
 
-> [!NOTE]
-> **Confidentialité** : Ne partagez jamais de données sensibles (clients, stratégie) avec les IA publiques. Utilisez des versions entreprise si nécessaire.
+> [!CAUTION]
+> **Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé. Ne partagez jamais de données sensibles (clients, stratégie, code) avec les IA publiques.

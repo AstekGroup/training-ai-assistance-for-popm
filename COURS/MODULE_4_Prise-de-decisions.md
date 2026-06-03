@@ -556,6 +556,7 @@ Consultez [`ANNEXES/supports/`](../ANNEXES/supports/) (voir aussi [`ANNEXES/READ
 5. Des comptes-rendus standardisés et adaptés au public accélèrent l'alignement des parties prenantes
 6. La communication claire (décisions et réunions) est essentielle pour l'acceptation des arbitrages
 7. L'humain reste essentiel pour validation et jugement final
+8. **Sécurité et Gouvernance** : N'utilisez jamais d'outils d'IA sans l'accord écrit et explicite des responsables du projet sur lequel vous travaillez.
 
 ---
 

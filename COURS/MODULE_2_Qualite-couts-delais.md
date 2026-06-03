@@ -652,6 +652,7 @@ Consultez [`ANNEXES/supports/`](../ANNEXES/supports/) (voir aussi [`ANNEXES/READ
 4. La documentation projet assistée par IA gagne en complétude, en maintenance et en retrouvabilité.
 5. Les business cases et présentations générés avec l'IA restent sous la responsabilité humaine de validation.
 6. Une adoption progressive et mesurée maximise le ROI des usages IA pour le PO/PM.
+7. **Sécurité et Gouvernance** : N'utilisez jamais d'outils d'IA sans l'accord écrit et explicite des responsables du projet sur lequel vous travaillez.
 
 ---
 
