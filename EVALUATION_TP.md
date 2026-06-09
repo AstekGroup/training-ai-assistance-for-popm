@@ -35,7 +35,8 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 | Société / Équipe         |        |
 | Date d'évaluation        |        |
 | Formateur                |        |
-| Outil d'automatisation choisi (M3) | Zapier [ ] / Gumloop [ ] / N8N [ ] |
+| Outils IA utilisés (M1, M2, M4)  |   M365 Copilot [ ] / ChatGPT [ ] / Claude [ ] / Gemini [ ] / autre [ ] |
+| Outil d'automatisation choisi (M3, M4) | Power Automate [ ] / Zapier [ ] / Gumloop [ ] / N8N [ ] |
 
 ---
 
