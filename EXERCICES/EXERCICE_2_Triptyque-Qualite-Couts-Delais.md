@@ -1,352 +1,217 @@
-# Exercices Module 2 : Maîtriser le triptyque Qualité / Coûts / Délais avec l'IA
+# Exercices Module 2 : Maîtriser le triptyque Qualité / Coûts / Délais avec l'IA (Cas d'étude TaskFlow)
 
 **Durée totale** : 1 h (3 × 20 min)  
 **Format** : Travail individuel avec débrief collectif  
-**Outils nécessaires** : [Vibe de Mistral](https://chat.mistral.ai) (anciennement Le Chat - recommandé et préconisé par rapport à ChatGPT), [Claude](https://claude.ai) ou [ChatGPT](https://chat.openai.com)
+**Outils nécessaires** : [Vibe de Mistral](https://chat.mistral.ai) (recommandé et préconisé par rapport à ChatGPT), [Claude](https://claude.ai) ou [ChatGPT](https://chat.openai.com)
 
 ---
 
 ## 🎯 Objectif pédagogique
 
-Comprendre concrètement comment l'IA peut agir sur **chacune des 3 dimensions d'un projet** :
+Comprendre concrètement comment l'IA peut vous aider à piloter et équilibrer les **trois dimensions clés de vos projets** sur la base des données réelles du projet **TaskFlow** :
 
-- **Qualité** → Améliorer les spécifications pour réduire les défauts
-- **Coûts** → Estimer avec précision pour éviter les dépassements
-- **Délais** → Détecter les risques pour livrer à temps
-
-**Principe** : 1 exercice = 1 dimension du triangle (Qualité, Coûts, Délais).
+- **Qualité** → Analyser les bugs et dettes techniques complexes du backlog pour en tirer des critères d'acceptation testables et éviter les régressions.
+- **Coûts** → Analyser l'historique d'estimations des sprints passés pour calibrer l'effort des futures fonctionnalités et évaluer l'impact budgétaire.
+- **Délais** → Évaluer la vélocité historique réelle de l'équipe pour projeter la faisabilité d'un sprint et alerter en amont les parties prenantes.
 
 ---
 
-## 📐 Exercice 1 : QUALITÉ - Transformer une spec floue en spec testable
+## 📐 Exercice 1 : QUALITÉ - Transformer un bug de performance flou en spécification testable
 
 **Durée** : 20 minutes  
-**Objectif** : Mesurer l'impact de l'IA sur la qualité des livrables
+**Objectif** : Utiliser l'IA pour décortiquer une anomalie technique du backlog, lever les ambiguïtés et générer des critères de validation de non-régression.
 
 ### Le problème
 
-Vous recevez cette spécification d'un stakeholder :
+Dans le cadre de l'intégration Slack de TaskFlow, vous recevez ce rapport d'anomalie de l'équipe QA (`BUG-564` du backlog) :
 
-```
-L'utilisateur doit pouvoir se connecter facilement à l'application.
-Si le mot de passe est incorrect, on affiche un message d'erreur.
-Il faut que ce soit sécurisé et rapide.
+```text
+Le serveur freeze lors de la création d'une tâche quand Slack est connecté. Ça rame grave pendant 2 à 3 secondes lors de la sauvegarde. Il faut rendre l'envoi asynchrone et s'assurer que ça ne bloque pas l'enregistrement en base de données. Si Slack est en panne, la tâche doit quand même être créée.
 ```
 
 **🚨 Problèmes identifiés** :
+- Expressions trop subjectives ("ça rame grave", "freeze").
+- Pas de critères d'acceptation ni de seuil de performance clair.
+- Pas de définition des cas d'erreur réseau Slack.
 
-- Trop vague ("facilement", "rapide" = non mesurable)
-- Critères d'acceptation absents
-- Scénarios d'erreur incomplets
-- Exigences de sécurité floues
+### ✅ Mission : Spécifier la résolution de l'anomalie avec l'IA
 
-### ✅ Mission : Améliorer la qualité avec l'IA
-
-#### **Étape 1** : Identifier les ambiguïtés (5 min)
+#### **Étape 1** : Analyse d'impact et questions de clarification (5 min)
 
 Utilisez ce prompt :
 
+```text
+Tu es un expert QA et Business Analyst sur le projet TaskFlow. Analyse ce rapport d'anomalie brut et identifie les ambiguïtés et les informations manquantes nécessaires pour les développeurs :
+
+Rapport d'anomalie :
+"Le serveur freeze lors de la création d'une tâche quand Slack est connecté. Ça rame grave pendant 2 à 3 secondes lors de la sauvegarde. Il faut rendre l'envoi asynchrone et s'assurer que ça ne bloque pas l'enregistrement en base de données. Si Slack est en panne, la tâche doit quand même être créée."
+
+Pour chaque point flou, propose une question de clarification précise à poser au PO ou à l'architecte technique.
 ```
-Tu es un expert QA. Analyse cette spécification et liste toutes les ambiguïtés,
-informations manquantes et risques de mauvaise interprétation :
 
-[Insérer la spec ci-dessus]
-
-Pour chaque problème identifié, pose une question précise au PO.
-```
-
-**Attendu** :
-
-- Liste des ambiguïtés (ex: "Qu'est-ce que 'facilement' ?")
-- Questions clarifiantes
-- Risques de mauvaise implémentation
+**Attendu** : Une liste structurée des questions (ex: Quel est le temps de réponse acceptable maximum ? Que fait-on de la notification si Slack est injoignable : abandon ou file d'attente ?).
 
 ---
 
-#### **Étape 2** : Générer des critères d'acceptation TESTABLES (10 min)
+#### **Étape 2** : Générer des critères d'acceptation Gherkin testables (10 min)
 
-```
-À partir de cette spécification floue : [spec]
+Soumettez ce prompt dans la même discussion :
 
-Génère 7 critères d'acceptation détaillés en format Gherkin (Given/When/Then)
-couvrant :
-1. Scénario nominal (connexion réussie)
-2. Scénario échec (mot de passe invalide)
-3. Scénario échec (compte bloqué après 3 tentatives)
-4. Scénario sécurité (timeout de session)
-5. Scénario UX (temps de réponse < 2s)
-6. Scénario accessibilité (lecteur d'écran)
-7. Scénario technique (chiffrement des données)
+```text
+À partir de l'anomalie précédente et en fixant des seuils raisonnables (temps de réponse < 150ms pour la création de tâche en base de données, envoi Slack asynchrone en tâche de fond), génère 5 critères d'acceptation en format Gherkin (Given/When/Then).
 
-Chaque critère DOIT être mesurable et testable par l'équipe QA.
+Couvre les cas suivants :
+1. Cas nominal : Création de tâche avec envoi Slack réussi (mesure du temps de réponse client).
+2. Cas de résilience : Slack est hors-ligne (l'API Slack renvoie une erreur 500 ou timeout) -> la tâche TaskFlow doit quand même être créée avec succès.
+3. Cas de charge : Créations simultanées de tâches par plusieurs utilisateurs.
+4. Cas de sécurité : Signature du webhook Slack valide.
 ```
 
-**Attendu** :
-
-- Critères précis et testables
-- Format : `Given [état initial], When [action], Then [résultat attendu]`
-- Métriques chiffrées quand applicable
+**Attendu** : 5 scénarios Gherkin précis et mesurables pour les développeurs et la QA.
 
 ---
 
-#### **Étape 3** : Comparer avant/après (5 min)
+#### **Étape 3** : Comparer le gain en qualité (5 min)
 
-Créez un tableau comparatif :
-
-
-| Critère            | Spec initiale  | Spec améliorée         | Gain qualité         |
-| ------------------ | -------------- | ---------------------- | -------------------- |
-| **Clarté**         | ⭐ (très floue) | ⭐⭐⭐⭐⭐                  | Mesurable            |
-| **Testabilité**    | ❌ Non testable | ✅ 7 critères testables | +700%                |
-| **Complétude**     | 30% couvert    | 100% couvert           | +70%                 |
-| **Risque défauts** | Élevé          | Faible                 | -60% défauts estimés |
+Complétez mentalement ou sur vos notes le tableau comparatif :
+* La spécification initiale permettait-elle de coder et de tester sans erreur ?
+* Quel est le gain estimé en évitant des allers-retours de dev (redéveloppement) ?
 
 ---
 
-## 💰 Exercice 2 : COÛTS - Estimer avec précision grâce aux données
+## 💰 Exercice 2 : COÛTS - Estimer l'effort grâce à l'analyse de données historiques
 
 **Durée** : 20 minutes  
-**Objectif** : Comprendre comment l'IA réduit les erreurs d'estimation et les dépassements de budget
+**Objectif** : Utiliser l'IA pour analyser les statistiques réelles des sprints passés de TaskFlow afin d'estimer et de budgétiser une nouvelle fonctionnalité.
 
 ### Le scénario
 
-Votre équipe doit développer une **fonctionnalité de paiement multi-devises**. Le sponsor demande une estimation.
+L'équipe TaskFlow s'apprête à développer la **Feature F - Gestion de ressources (Resources)**. Cinq tickets sont prévus pour le prochain sprint, mais certains n'ont pas encore été estimés par l'équipe :
 
-**Données historiques de votre équipe** :
+1. `US-635` (Visualiser le plan de charge - Gantt) : Estimé par l'équipe à **40h**
+2. `US-636` (Assigner un collaborateur avec taux spécifique) : **Non estimé** (User Story moyenne)
+3. `US-637` (Détecter et afficher les sur-allocations) : Estimé par l'équipe à **32h**
+4. `BUG-638` (Mauvaise gestion des jours fériés dans la capacité) : **Non estimé** (Bug fonctionnel complexe)
+5. `BUG-644` (Lenteur extrême du Gantt si > 50 ressources) : **Non estimé** (Bug de performance critique)
 
+### Données historiques de l'équipe (Sprints 1 à 6)
 
-| Projet passé                  | Complexité estimée | Temps estimé | Temps réel   | Écart |
-| ----------------------------- | ------------------ | ------------ | ------------ | ----- |
-| Projet A - Paiement CB simple | Moyenne            | 3 semaines   | 5 semaines   | +67%  |
-| Projet B - Intégration Stripe | Moyenne            | 4 semaines   | 4,5 semaines | +12%  |
-| Projet C - Wallet interne     | Élevée             | 8 semaines   | 12 semaines  | +50%  |
-| Projet D - Export factures    | Faible             | 1 semaine    | 1,5 semaine  | +50%  |
+Voici le bilan réel des sprints passés de l'équipe (5 développeurs à 600 € / jour de TJM) :
 
+* **Sprint 1** : 6 tickets fermés. Estimé : 124h | Réalisé : 106h (-14%)
+* **Sprint 2** : 9 tickets fermés. Estimé : 200h | Réalisé : 250h (+25%)
+* **Sprint 3** : 13 tickets fermés. Estimé : 192h | Réalisé : 227h (+18%)
+* **Sprint 4** : 7 tickets fermés. Estimé : 204h | Réalisé : 176h (-14%)
+* **Sprint 5** : 17 tickets fermés. Estimé : 304h | Réalisé : 328h (+8%)
+* **Sprint 6** : 32 tickets fermés. Estimé : 580h | Réalisé : 645h (+11%)
 
-### ✅ Mission : Estimer le nouveau projet avec l'IA
-
-#### **Étape 1** : Estimation "à l'instinct" (2 min)
-
-**Sans utiliser l'IA**, estimez combien de semaines nécessaires pour le paiement multi-devises.
-
-Votre estimation instinctive : **_____ semaines**
+**Déviation d'estimation par Type de ticket (Historique global Sprints 1-6)** :
+* **Spikes (Recherches)** : Estimé : 200h | Réalisé : 202h (+1%)
+* **User Stories (Développements)** : Estimé : 744h | Réalisé : 880h (+18,3% de dérive)
+* **Dette Technique** : Estimé : 100h | Réalisé : 92h (-8%)
+* **Bugs** : Estimé : 560h | Réalisé : 558h (0% de dérive)
 
 ---
 
-#### **Étape 2** : Estimation assistée par IA (10 min)
+### ✅ Mission : Estimer et budgétiser la nouvelle Feature avec l'IA
 
 Utilisez ce prompt :
 
-```
-Tu es un expert en estimation de projets IT.
+```text
+Tu es un expert en estimation de projets IT pour l'application TaskFlow.
+Voici l'historique d'estimation et de temps réel de notre équipe de 5 développeurs (TJM moyen : 600 € / jour, 7h de travail par jour) :
+- Sprints 1 à 6 : Total estimé = 1604h | Réalisé = 1732h.
+- Dérive par type de ticket : User Stories (+18,3% de temps réel par rapport à l'estimé), Bugs (0% de dérive), Spikes (+1% de dérive), Dette technique (-8% de dérive).
 
-Voici l'historique de notre équipe :
-[Copier le tableau ci-dessus]
-
-Nouveau projet à estimer : Développement d'une fonctionnalité de paiement multi-devises
-comprenant :
-- Support de 15 devises (EUR, USD, GBP, JPY, etc.)
-- Conversion en temps réel via API externe
-- Gestion des commissions par devise
-- Affichage des prix dans la devise de l'utilisateur
-- Historique des transactions en multi-devises
+Nous devons estimer la Feature "Gestion de ressources" pour le Sprint 7 comprenant :
+1. US-635 (Visualiser le plan de charge - Gantt) : Estimé à 40h.
+2. US-636 (Assigner un collaborateur avec taux spécifique) : Non estimé. À évaluer (considère que c'est une User Story de complexité moyenne, comparable aux autres US du backlog).
+3. US-637 (Détecter et afficher les sur-allocations) : Estimé à 32h.
+4. BUG-638 (Mauvaise gestion des jours fériés dans la capacité) : Non estimé. À évaluer (considère que c'est un bug fonctionnel complexe).
+5. BUG-644 (Lenteur extrême du Gantt si > 50 ressources) : Non estimé. À évaluer (considère que c'est un bug de performance, similaire au BUG-564 qui avait nécessité 34h de développement).
 
 Étape par étape :
-1. Analyse les patterns dans les données historiques (écarts récurrents ?)
-2. Identifie le projet passé le plus similaire
-3. Ajuste l'estimation en fonction des différences
-4. Fournis 3 estimations : optimiste, réaliste, pessimiste
-5. Calcule le niveau de confiance (en %)
-6. Liste les risques qui pourraient impacter l'estimation
+1. Estime en heures les 3 tickets non chiffrés (US-636, BUG-638, BUG-644) en te basant sur les éléments de contexte fournis.
+2. Calcule l'effort total brut estimé pour cette Feature (somme des 5 tickets).
+3. Applique les coefficients de dérive historiques par type (User Story vs Bug) pour obtenir une estimation de temps réel "réaliste".
+4. Calcule le budget prévisionnel (en euros) en mode "Brut" vs "Réaliste" (sur la base d'une journée de 7h à 600€ par développeur).
+5. Fournis un niveau de confiance (en %) pour cette estimation et justifie-le.
 ```
 
 **Attendu** :
-
-- Analyse des patterns d'écart (ex: "L'équipe sous-estime de 40% en moyenne")
-- 3 scénarios chiffrés
-- Niveau de confiance
-- Facteurs de risque
+- Estimations cohérentes des tickets non chiffrés.
+- Calcul de la dérive budgétaire historique.
+- Budget global estimé réaliste en euros (évitant des mauvaises surprises au sponsor).
 
 ---
 
-#### **Étape 3** : Calculer l'impact coût (5 min)
-
-Complétez ce tableau :
-
-
-| Méthode           | Estimation   | Si équipe = 3 dev à 600€/jour | Budget projet |
-| ----------------- | ------------ | ----------------------------- | ------------- |
-| **Instinct**      | ___ semaines | ___ jours × 3 × 600€          | **___€**      |
-| **IA (réaliste)** | ___ semaines | ___ jours × 3 × 600€          | **___€**      |
-| **Écart**         | ___ semaines |                               | **± ___€**    |
-
-
-**Risque de dépassement** :
-
-- Avec estimation instinct : ___%
-- Avec estimation IA : ___%
-
----
-
-#### **Étape 4** : Identifier les économies (3 min)
-
-**Si l'estimation IA est plus réaliste**, calculez :
-
-```
-Économies évitées = |Estimation instinct - Estimation IA réaliste| × Coût jour × Équipe
-
-Exemple : |4 semaines - 6 semaines| × 5 jours × 3 dev × 600€ = 18 000€ économisés
-(en évitant un dépassement budgétaire non provisionné)
-```
-
----
-
-### 💬 Débrief (collectif)
-
-**Questions à discuter** :
-
-1. Quelle était l'écart entre votre estimation instinct et celle de l'IA ?
-2. Quel pattern l'IA a-t-elle identifié dans vos données historiques ?
-3. **Estimation** : Combien d'euros économisés sur 10 projets/an avec cette méthode ?
-
-**💡 Leçon clé** : Une estimation basée sur DONNÉES réelles = moins de dépassements de COÛTS
-
----
-
-## ⏰ Exercice 3 : DÉLAIS - Détecter les risques de retard avant qu'il soit trop tard
+## ⏰ Exercice 3 : DÉLAIS - Détecter les risques de retard dans la livraison d'un Sprint
 
 **Durée** : 20 minutes  
-**Objectif** : Utiliser l'IA pour anticiper les retards et prendre des actions correctives à temps
+**Objectif** : Utiliser l'IA comme outil d'analyse prédictive pour anticiper les retards sur le Sprint 7 de TaskFlow et proposer un plan d'action d'arbitrage.
 
 ### Le scénario
 
-Vous êtes au **Sprint 3 d'un projet de 6 sprints** (livraison prévue dans 6 semaines).
+Vous démarrez le **Sprint 7** (durée : 2 semaines, soit 10 jours ouvrés).
+L'équipe est composée de **5 développeurs** à temps plein (capacité théorique nominale : 5 devs × 10 jours × 7h/jour = 350h de capacité brute).
 
-**Situation actuelle** :
-
-```
-Sprint 1 : 21 points complétés / 25 points planifiés (84%)
-Sprint 2 : 18 points complétés / 25 points planifiés (72%)
-Sprint 3 : En cours - 15 points complétés à J+8 / 25 points planifiés
-
-Backlog restant : 115 points
-Équipe : 5 développeurs
-Objectif : Livrer 100% des fonctionnalités critiques (100 points) dans 6 semaines
-```
-
-**📊 Données complémentaires** :
-
-- 3 stories bloquées en attente de validation client (8 points)
-- 1 développeur senior en congés Sprint 5 (2 semaines)
-- 12 bugs découverts en Sprint 2 (non estimés initialement)
-
-### ✅ Mission : Détecter les risques de retard avec l'IA
-
-#### **Étape 1** : Votre intuition (2 min)
-
-**Sans IA**, répondez :
-
-- Allez-vous livrer à temps ? **OUI / NON**
-- Probabilité de livraison complète : **___%**
-- Votre plus grande inquiétude : **_________________**
+**Situation actuelle de la planification du Sprint 7** :
+- Le Sprint 7 contient **27 tickets ouverts** (tous estimés ou réévalués lors de l'exercice précédent), représentant une charge de travail estimée "réaliste" totale de **280 heures**.
+- **Contraintes & Risques signalés** :
+  1. Le développeur senior de l'équipe (Sarah) a posé 5 jours de congés en deuxième semaine du sprint (perte de 35h de capacité).
+  2. 3 tickets du sprint précédent (Sprint 6), représentant 24h d'effort estimé, sont bloqués en attente de la validation client (QA) et risquent de glisser sur ce sprint si le client demande des ajustements.
+  3. L'équipe a dû planifier un correctif urgent non estimé (BUG-567 : crash avec plus de 1000 canaux Slack) qui vient d'apparaître en production.
 
 ---
 
-#### **Étape 2** : Analyse prédictive par IA (12 min)
+### ✅ Mission : Prédire l'atterrissage du Sprint et mitiger les risques avec l'IA
 
 Utilisez ce prompt :
 
-```
-Tu es un expert en gestion de projet Agile.
+```text
+Tu es Scrum Master / Project Manager sur le projet TaskFlow.
+Voici le contexte du Sprint 7 (durée 10 jours) :
+- Équipe : 5 développeurs (capacité théorique standard : 350h).
+- Contenu planifié : 27 tickets ouverts représentant 280h d'effort estimé.
+- Perte de capacité : 1 développeur senior absent 5 jours (-35h de capacité).
+- Encours bloqué : 3 tickets (24h) en attente QA client pouvant nécessiter du rework sur ce sprint.
+- Imprévu : 1 bug critique de production (BUG-567) à traiter d'urgence (effort estimé à 16h).
 
-Contexte du projet :
-[Copier les données ci-dessus]
-
-Mission :
-1. Calcule la vélocité moyenne et la tendance (amélioration/dégradation ?)
-2. Projette le nombre de points réalisables dans les 3 sprints restants
-3. Identifie les 5 risques majeurs qui menacent les délais
-4. Pour chaque risque :
-   - Probabilité d'occurrence (Faible/Moyenne/Élevée)
-   - Impact sur les délais (en semaines)
-   - Signal d'alerte à surveiller
-   - Action corrective recommandée
-5. Fournis 3 scénarios de livraison :
-   - Optimiste (tout se passe bien)
-   - Réaliste (tendance actuelle continue)
-   - Pessimiste (risques se réalisent)
+Fais une analyse prédictive d'atterrissage du sprint :
+1. Calcule la capacité réelle disponible de l'équipe pour ce sprint en prenant en compte l'absence et une marge de sécurité de 10% pour les réunions et imprévus.
+2. Compare cette capacité réelle à la charge totale (charge planifiée + bug de prod urgent + rework potentiel des tickets bloqués).
+3. Détermine s'il y a un risque de retard et de combien d'heures l'équipe est surchargée.
+4. Identifie les 3 risques majeurs pesant sur la date de livraison finale du sprint.
+5. Propose une stratégie d'arbitrage (quels types de tickets repousser au Sprint 8 en priorité, en te basant sur la valeur et la priorité pour le produit).
 ```
 
 **Attendu** :
-
-- Calcul de vélocité (moyenne, tendance)
-- Projection réaliste des points livrables
-- 5 risques détaillés
-- 3 scénarios avec dates de livraison
+- Diagnostic de surcharge chiffré (ex: Capacité réelle ~280h vs Charge totale ~320h).
+- Plan de délestage intelligent (déplacer des US de faible priorité ou des tâches de refonte non bloquantes vers le Sprint 8).
+- Communication proactive à envoyer aux parties prenantes (stakeholders) pour les informer d'un arbitrage de scope avant la fin du sprint.
 
 ---
 
-#### **Étape 3** : Créer un plan d'action (5 min)
+## 🎓 Synthèse pédagogique
 
-Remplissez ce tableau pour les **2 risques les plus critiques** :
-
-
-| Risque                           | Impact délais | Action corrective                                 | Responsable | Délai    | Coût |
-| -------------------------------- | ------------- | ------------------------------------------------- | ----------- | -------- | ---- |
-| **Exemple** : Vélocité en baisse | +2 semaines   | Réduire le scope de 15% (15 points non-critiques) | PO          | Immédiat | 0€   |
-| **Risque 1** :                   |               |                                                   |             |          |      |
-| **Risque 2** :                   |               |                                                   |             |          |      |
-
-
-**Décision finale** :
-
-- Maintenir le scope et négocier un délai supplémentaire
-- Réduire le scope pour tenir le délai
-- Ajouter des ressources (coût : ___€)
-- Autre : __________
-
----
-
-#### **Étape 4** : Mesurer l'impact de la détection précoce (1 min)
-
-**Sans IA** : Quand auriez-vous détecté le risque ?
-
-- ❌ Sprint 5 (trop tard, retard inévitable)
-
-**Avec IA** : Détection au Sprint 3
-
-- ✅ **Gain de temps** : 4 semaines d'avance pour agir
-- ✅ **Actions possibles** : Réduire scope, ajouter ressources, négocier délai
-- ✅ **Coût évité** : Pas de pénalités de retard, stakeholders prévenus à temps
----
-
-## 🚀 À appliquer cette semaine
-
-**Challenge** : Identifiez dans vos projets actuels :
-
-1. **1 spec floue** → Appliquez l'exercice 1 (génération de critères testables)
-2. **1 estimation à faire** → Appliquez l'exercice 2 (exploration de données historiques)
-3. **1 indicateur de risque** → Appliquez l'exercice 3 (analyse prédictive)
-
-**Mesurez** :
-
-- Temps gagné
-- Qualité améliorée
-- Précision d'estimation
-- Risques détectés à l'avance
+| Exercice | Dimension du Triptyque | Rôle de l'IA | Valeur ajoutée PO/PM |
+| :--- | :--- | :--- | :--- |
+| **1. Spécification QA** | **Qualité** | Analyse d'ambiguïté & Génération Gherkin | Zéro bug de spécification, QA alignée |
+| **2. Estimation historique** | **Coûts** | Modélisation des dérives passées | Budgets réalistes basés sur les faits |
+| **3. Analyse prédictive** | **Délais** | Calcul d'atterrissage capacitaire | Pilotage proactif du scope et des risques |
 
 ---
 
 ## 📌 Rappels importants
 
 > [!IMPORTANT]
-> **Le triptyque n'est pas négociable** : Qualité + Coûts + Délais doivent TOUS être maîtrisés. L'IA ne vous dispense pas de décisions stratégiques, elle vous donne les données pour décider.
+> **Le triptyque n'est pas négociable** : Si la qualité baisse, les coûts de maintenance explosent et les délais s'allongent. L'IA apporte la rigueur de la donnée pour défendre vos estimations et vos arbitrages auprès du management.
 
 > [!WARNING]
-> **L'IA n'est pas magique** : Elle analyse des patterns, mais ne connaît pas votre contexte spécifique. Validez toujours ses recommandations avec votre expertise métier.
+> **Ajustement de capacité** : Ne planifiez jamais un sprint à 100% de la capacité brute théorique. L'historique de TaskFlow prouve que les imprévus (bugs de production, rework QA) consomment en moyenne 15 à 20% du temps de l'équipe.
 
 > [!TIP]
 > **La donnée est reine** : Plus vous alimentez l'IA avec des données historiques précises, plus ses prédictions seront fiables. Documentez vos projets !
 
 > [!CAUTION]
-> **Accord Projet** : Il ne faut jamais utiliser d'outils IA sans accord explicite et écrit des responsables du projet travaillé.
+> **Gouvernance et Sécurité (Accord Projet)** : L'utilisation de données de backlog et d'historiques d'équipe avec des IA génératives doit respecter les règles de confidentialité de votre entreprise. Ne chargez jamais de données contenant des noms réels de clients ou de collaborateurs sans accord écrit.
