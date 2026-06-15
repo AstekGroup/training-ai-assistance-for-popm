@@ -33,10 +33,6 @@ Ne plus voir l'IA comme un gadget, mais comme le système d'exploitation de votr
 *Figure 3.1 : La trajectoire d'adoption des agents IA au sein des équipes produit*
 
 
-![Automatisation vs Agents](../res/automateVsAgents.jpg)
-*Figure 3.4 : Transition de l'automatisation classique vers les agents d'IA autonomes*
-
-
 ---
 
 ## 2. Niveau 1 : Prompts Réutilisables et Assistants (Custom GPTs)
@@ -92,64 +88,28 @@ Il existe aujourd'hui plusieurs acteurs majeurs pour automatiser vos tâches, du
 | **Make**    | **"Programmation visuelle"**. Permet des scénarios complexes avec des boucles et des conditions.                                                                                                                                                                                       |
 | **Gumloop** | **"L'automatisation par l'IA"**. Une solution nouvelle génération orientée vers le traitement des données et des tâches complexes par LLM.                                                                                                                                             |
 | **N8N**     | **L'automatisation souveraine avec IA native**. Permet de concevoir visuellement des agents IA complexes (avec mémoire, RAG et outils) et de les connecter à vos applications métiers. Idéal pour des flux sécurisés (RGPD) et extensibles grâce à son modèle low-code et open-source. |
-
-
-![Gumloop vs Make](../res/Gumloop_vs_make.jpg)
-*Figure 3.2 : Comparatif d'outils d'automatisation (Gumloop vs Make)*
-
-
-
-
-![N8N vs Make vs Zapier](../res/vs_Make_zappier_N8N.jpg)
-*Figure 3.2bis : Comparatif N8N, Make, Zapier*
-
-
-![Exemple  Zapier](../res/1-zappier_sample.jpg)
-*Figure 3.x : look Zapier*
- 
-![Exemple  Make](../res/2-make_sample.jpg)
-*Figure 3.x : look Make*
- 
- 
-![Exemple  N8N](../res/3-n8n_sample.jpg)
-*Figure 3.x : look N8N*
-
- 
-![Exemple  PowerAutomate](../res/4-powerAutomate_sample.jpg)
-*Figure 3.x : look PowerAutomate*
-
-
-![Paysage iPaaS](../res/IPAAS.jpg)
-*Figure 3.3 : Positionnement des plateformes d'intégration iPaaS*
+| **Power Automate** | **L'automatisation Microsoft**. Idéal pour les environnements Microsoft 365. |
 
 ----------------------- ✄ TP 2 (Zapier / Gumloop) ✄ -----------------------
 
 ---
 
-### 3.2 N8N et l'écosystème "Advanced AI"
 
-Contrairement aux outils d'automatisation traditionnels (Zapier/Make) qui traitent l'IA comme un simple connecteur d'API ("envoyer le prompt à OpenAI et attendre la réponse"), N8N propose une architecture IA native basée sur des nœuds spécialisés (sous-ensemble inspiré de LangChain) :
-
-1. **Nœud "AI Agent"** : Le chef d'orchestre. Vous lui donnez des instructions de rôle (System Prompt) et vous lui associez des **outils** (Tools) et de la **mémoire** (Memory). L'agent décide lui-même quelles actions effectuer et dans quel ordre pour atteindre son objectif.
-2. **Nœuds "Tools" (Outils)** : Permettent à l'agent IA d'interagir avec le monde extérieur (lire/écrire dans Jira, envoyer un email, appeler un webhook, exécuter du code Javascript, etc.).
-3. **Nœuds "Memory" (Mémoire)** : Donnent à l'agent une persistance de contexte (par exemple, retenir le fil d'une discussion avec un utilisateur sur plusieurs messages).
-4. **Nœuds "Vector Store" (Base vectorielle)** : Permettent de faire du RAG (Retrieval-Augmented Generation) en connectant l'agent à une base de connaissances (PDF, Confluence, Notion) pour qu'il réponde à partir d'informations internes et fiables.
-
-Cette approche visuelle permet à un PO ou PM de concevoir de véritables prototypes d'agents IA fonctionnels en moins d'une heure, sans écrire une ligne de code, tout en gardant le contrôle sur la logique métier.
-
-### 3.3 Le protocole MCP (Model Context Protocol) et N8N
+### 3.2 Le protocole MCP (Model Context Protocol)
 
 **Qu'est-ce que le MCP ?**
-Le **Model Context Protocol (MCP)** est un standard ouvert permettant aux modèles d'IA (comme Claude Desktop) de se connecter de manière sécurisée et uniforme à des sources de données locales ou distantes, et à des outils externes.
+Le **Model Context Protocol (MCP)** est un standard ouvert permettant aux modèles d'IA de se connecter de manière sécurisée et uniforme à des sources de données locales ou distantes, et à des outils externes.
 
-**Quel rapport avec N8N ?**
-N8N intègre nativement un serveur MCP. Cela signifie que vous pouvez connecter votre assistant IA (par exemple Claude Desktop installé en local) directement à votre instance N8N :
-- L'IA peut lire, modifier ou exécuter vos workflows N8N.
-- L'IA peut déclencher des automatisations complexes à votre demande, directement depuis la fenêtre de discussion.
-- Cela transforme votre assistant de simple générateur de texte en un copilote d'action, capable d'agir directement sur vos outils de gestion de projet (Jira, Notion, Slack).
+Il est utilisé dans le monde du développement logiciel, mais il peut aussi être utilisé dans le monde du Product Management.
 
-![Workflow N8N](../res/n8n.jpg)
-*Figure 3.5 : Architecture et interactions des workflows N8N*
+Il permet :
+- l'accès à des données (comme une API)
+- l'accès à des outils (calculateur d'itinéraire par exemple)
+- l'accès à des prompts pré-définis
+
+Bien utilisé, MCP facilite l'accès aux données et les opérations métiers usuelles (via les outils). 
+
+Les prompts pré-définis permettent de mutualiser et harmoniser les meilleurs pratiques sur les tâches récurrentes. Par exemple la rédaction de Users Stories.
 
 ---
 

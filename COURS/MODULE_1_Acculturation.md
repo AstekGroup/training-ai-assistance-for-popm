@@ -16,10 +16,6 @@
 4. Distinguer les différents types d'IA (générative, analytique, prédictive) et leurs cas d'usage
 5. Appliquer les principes de base de l'ingénierie de prompt pour obtenir des résultats pertinents
 
-
-![Doutes et opportunités](../res/1doubt.jpg)
-*Figure 1.1 : Appréhender les défis et surmonter les doutes face à l'IA*
-
 ---
 ## 1. Introduction : Pourquoi l'IA pour les PO/PM ?
 
@@ -49,8 +45,6 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 - Meilleure prise de décision basée sur les données
 - Innovation dans les processus métier
 - Compétitivité accrue
-![Révolution du Prompting](../res/5revo.jpg)
-*Figure 1.2 : La révolution du Prompt Engineering*
 
 ---
 
@@ -59,9 +53,6 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 ### 2.1 Qu'est-ce que l'intelligence artificielle ?
 
 **Définition** : L'intelligence artificielle (IA) est la capacité d'une machine à reproduire des fonctions cognitives humaines telles que l'apprentissage, le raisonnement et la résolution de problèmes.
-
-![Concepts fondamentaux de l'IA](../res/2IA.jpg)
-*Figure 1.3 : Comprendre les bases et concepts de l'Intelligence Artificielle*
 
 **Types d'IA pertinents pour les PO/PM** :
 
@@ -112,9 +103,9 @@ L'intelligence artificielle transforme la manière dont les Product Owners et Pr
 
 **Caractéristiques importantes** :
 
-- **Fenêtre de contexte** : Représente la quantité de texte que le modèle peut traiter en une seule fois. Attention aux limites selon les modèles (ex: ~128k tokens pour GPT-4o).
+- **Fenêtre de contexte** : Représente la quantité de texte que le modèle peut traiter en une seule fois. Attention aux limites selon les modèles (ex: ~128k tokens pour ChatGPT).
   > [!TIP]
-  > Des modèles comme **Gemini (1.5 / 2.0)** proposent des fenêtres de contexte géantes allant de **1 à 2 millions de tokens**. C'est un atout majeur pour un PO/PM, car cela permet de charger un backlog entier, un cahier des charges de 800 pages ou l'intégralité du code d'un projet pour en faire l'analyse ou la documentation d'un seul coup.
+  > Des modèles comme **Gemini** proposent des fenêtres de contexte géantes allant de **1 millions de tokens**. C'est un atout majeur pour un PO/PM, car cela permet de charger un backlog entier, un cahier des charges de 800 pages ou l'intégralité du code d'un projet pour en faire l'analyse ou la documentation d'un seul coup.
 - **Hallucinations** : Les modèles peuvent générer des informations incorrectes de manière très convaincante.
 - **Biais** : Ils reflètent les biais présents dans les données d'entraînement.
 - **Césure / Perte d'attention** : Risque de "perte" d'informations au milieu de très longs contextes (*lost in the middle*).
@@ -326,18 +317,18 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - **Attention** : Les données sont envoyées sur des serveurs, pas traitées en local. Ne partagez jamais de *données confidentielles*, de code propriétaire ou de *secrets*.
 
 
-#### Génération d'Images et d'UI ([Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [v0.dev](https://v0.dev))
+#### Génération d'Images et d'UI ([Google Imagen 3(ex Nano Banana)](https://deepmind.google/technologies/gemini/), [Midjourney](https://www.midjourney.com), [Galileo AI](https://www.usegalileo.ai), [MagicPath](https://www.magicpath.ai/), [v0.dev](https://v0.dev))
 
 - **Fonctionnalités** : Création d'images haute qualité, wireframes, maquettes UI
 - **Cas d'usage** :
   - Google Imagen 3(ex Nano Banana) : Génération et retouche poussée d'images réalistes
-  - Galileo AI & v0.dev : Prototype d'interfaces basé sur des instructions textuelles
+  - Galileo AI, MagicPath & v0.dev : Prototype d'interfaces basé sur des instructions textuelles
   - Midjourney : Visuels d'ambiance et concept art
 - **Avantages** : Permet au PO de matérialiser instantanément un besoin fonctionnel en UI.
 
 #### [Google Antigravity](https://antigravity.google), [GitHub Copilot](https://github.com/features/copilot) / [Cursor](https://cursor.com)
 
-- **Fonctionnalités** : Assistance au code et à la documentation (ex: [Kiro](https://kiro.dev) pour le Code2Doc)
+- **Fonctionnalités** : Assistance au code et à la documentation
 - **Cas d'usage** : Compréhension de code technique pour PO
 - **Note** : Utile pour comprendre le contexte technique sans coder
 
@@ -355,14 +346,11 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 
 ### 3.3 Outils d'automatisation de processus
 
-![Écosystème Astek](../res/3Astek_tools.jpg)
-*Figure 1.4 : Panorama des outils actuels (sans IA) chez Astek*
 
 #### [Zapier](https://zapier.com) / [Make](https://www.make.com) (ex-Integromat)
 - **Fonctionnalités** : Automatisation de workflows (Zapier) ou programmation visuelle de scénarios complexes (Make).
 - **Cas d'usage** : Synchronisation simple d'outils, transferts de données, alertes linéaires.
 - **Limites** : Coûts importants à l'usage, hébergement cloud propriétaire.
-
 #### [N8N](https://n8n.io/) - Le low-code souverain et orienté IA 🚀
 - **Fonctionnalités** : Plateforme d'automatisation low-code et open-source permettant de connecter des APIs et d'intégrer nativement des agents IA.
 - **Cas d'usage** : Routage intelligent de tickets, création d'assistants connectés aux bases de connaissances (RAG), automatisation de processus métiers confidentiels.
@@ -370,15 +358,10 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
   - **Souveraineté et sécurité** : Peut être auto-hébergé (on-premise ou cloud souverain), garantissant la conformité RGPD et protégeant les données d'entreprise sensibles (essentiel par rapport aux contraintes du point 4.3).
   - **Écosystème "Advanced AI"** : Intègre nativement des nœuds pour créer des Agents IA, connecter des LLMs, gérer la mémoire des conversations et interroger des bases vectorielles.
   - **Coût** : Version communautaire gratuite et tarification Cloud très compétitive par rapport à Zapier/Make.
-
-![Make Or N8N](../res/Make_Or_N8N.jpg)
-*Figure 1.5 :Choix Make ou N8N ?*
-
-
-#### [Microsoft Power Automate](https://powerautomate.microsoft.com) avec IA Builder
-
+#### [Microsoft Power Automate](https://powerautomate.microsoft.com) 
 - **Fonctionnalités** : Automatisation Microsoft 365
 - **Cas d'usage** : Workflows SharePoint, Teams, Outlook
+- **Limites** : prise en main plus complexe que Zapier et Make
 
 ### 3.4 Outils d'assistance aux réunions
 
@@ -424,10 +407,7 @@ IA : "Je ne peux pas savoir..." ✗ (pas d'horloge interne)
 - Curateur de contenu IA généré
 - Formateur des équipes sur les outils IA
 - Gardien de la qualité et de l'éthique
-
-![Shadow IT et Sécurité](../res/4shadow.jpg)
-*Figure 1.6 : Le risque du Shadow IT et de la confidentialité des données*
-
+- Veiller aux usages ShadowAI (risques cybersécurité, juridiques, maîtrise du projet)
 
 ### 4.2 Gestion du changement
 
@@ -534,16 +514,6 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 2. **Manque de contexte** : Ne pas préciser le domaine, le public, les contraintes
 3. **Pas d'itération** : Accepter le premier résultat sans affinement
 4. **Ignorer les limites** : Demander des choses impossibles ou hors contexte
-
-### 5.4 Annexe : L'avènement des modèles de raisonnement (Reasoning Models)
-
-> [!IMPORTANT]
-> **Conseil pour le PO/PM : Quand utiliser les modèles de raisonnement ?**
-> 
-> En 2025/2026, l'émergence des modèles axés sur la réflexion approfondie (ex. **OpenAI o1, o3-mini, o3** ou **DeepSeek-R1**) a redéfini les usages de l'IA générative :
-> 
-> - **Modèles classiques (GPT-4o, Claude 3.5 Sonnet, Gemini 2.0 Flash)** : À privilégier pour la rédaction fluide, les tâches créatives, le brainstorming de fonctionnalités ou la formulation initiale de user stories. Ils sont rapides, interactifs et très efficaces pour l'idéation.
-> - **Modèles de raisonnement (o1, o3, DeepSeek-R1)** : À privilégier pour les tâches complexes exigeant une logique rigoureuse, telles que la conception de modèles de données, la spécification d'algorithmes complexes, l'analyse fine de dépendances dans un backlog ou la résolution de bugs techniques complexes. Ces modèles passent du temps à "réfléchir" (Chain-of-Thought interne) avant de répondre, ce qui réduit considérablement les erreurs de logique et les hallucinations sur ces cas complexes.
 
 ---
 
