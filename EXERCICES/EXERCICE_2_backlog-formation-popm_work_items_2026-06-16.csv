@@ -1,11 +1,11 @@
 ID,IID,Title,Description,Type,URL,State,Confidential,Locked,Milestone,Labels,Author,Author Username,Assignee,Assignee Username,Created At (UTC),Updated At (UTC),Closed At (UTC),Due Date,Start Date,Parent ID,Parent IID,Parent Title,Time Estimate,Time Spent,Weight
-191122492,1,Spike : Analyse des modèles du marché et conception du schéma de données,"### 🔍 Objectif d'étude & recherche
+192573093,531,Spike : Analyse des modèles du marché et conception du schéma de données,"### 🔍 Objectif d'étude & recherche
 Analyser comment Asana, Monday et Notion structurent leurs templates de projets afin de concevoir un schéma PostgreSQL flexible et hautement performant.
 
 ### 📦 Livrables attendus
 - Modèle Conceptuel des Données (MCD) validé par Max
-- POC en Node.js de sérialisation JSON",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/1,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:40,2026-05-27 13:25:41,2026-05-27 13:25:41,,,,,,,,
-191122495,2,US : Créer un projet à partir d'un template vierge,"### 👤 Rôle utilisateur
+- POC en Node.js de sérialisation JSON",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/531,Closed,No,No,Sprint 1,"Feature::C - Templates, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:29:53,2026-06-15 12:29:55,2026-06-15 12:29:55,,,,,,12h,8h,
+192573097,532,US : Créer un projet à partir d'un template vierge,"### 👤 Rôle utilisateur
 **En tant que** gestionnaire de projet
 **Je souhaite** créer un projet entièrement vide avec des paramètres par défaut
 **Afin de** partir d'une feuille blanche sans tâches prédéfinies
@@ -19,8 +19,8 @@ Analyser comment Asana, Monday et Notion structurent leurs templates de projets 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/2,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:42,2026-05-27 13:25:43,2026-05-27 13:25:42,,,,,,,,
-191122499,3,Mise en place des tables PostgreSQL pour les templates et tâches génériques,"### 🛡️ Problématique technique (Dette accumulée)
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/532,Closed,No,No,Sprint 1,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:29:56,2026-06-15 12:29:58,2026-06-15 12:29:58,,,,,,32h,32h,
+192573102,533,Mise en place des tables PostgreSQL pour les templates et tâches génériques,"### 🛡️ Problématique technique (Dette accumulée)
 La base de données n'a pas de structure pour stocker les métadonnées et la liste ordonnée des tâches d'un modèle.
 
 ### 💡 Solution proposée
@@ -28,8 +28,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 
 ### ⚡ Impact attendu
 - Temps d'insertion de template < 50ms
-- Support des relations parent-enfant pour les sous-tâches",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/3,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:43,2026-05-27 13:25:44,2026-05-27 13:25:44,,,,,,,,
-191122500,4,US : Créer un projet à partir du template prédéfini 'Développement Scrum',"### 👤 Rôle utilisateur
+- Support des relations parent-enfant pour les sous-tâches",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/533,Closed,No,No,Sprint 1,"Feature::C - Templates, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:29:58,2026-06-15 12:30:00,2026-06-15 12:30:00,,,,,,,,
+192573107,534,US : Créer un projet à partir du template prédéfini 'Développement Scrum',"### 👤 Rôle utilisateur
 **En tant que** Scrum Master
 **Je souhaite** créer un projet préconfiguré avec les rituels Scrum (Backlog, Sprint Planning, Daily, Review, Rétro)
 **Afin de** lancer immédiatement des sprints sans tout configurer manuellement
@@ -42,8 +42,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/4,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:45,2026-05-27 13:25:46,2026-05-27 13:25:45,,,,,,,,
-191122502,5,US : Créer un projet à partir du template prédéfini 'Lancement Marketing',"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/534,Closed,No,No,Sprint 1,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:30:00,2026-06-15 12:30:03,2026-06-15 12:30:03,,,,,,24h,34h,
+192573113,535,US : Créer un projet à partir du template prédéfini 'Lancement Marketing',"### 👤 Rôle utilisateur
 **En tant que** chef de projet marketing
 **Je souhaite** créer un projet contenant des tâches d'études de marché, création d'assets visuels et plans médias
 **Afin de** structurer la campagne selon les meilleures pratiques du secteur
@@ -56,8 +56,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/5,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:47,2026-05-27 13:25:48,2026-05-27 13:25:47,,,,,,,,
-191122507,6,US : Créer un projet à partir du template prédéfini 'Recrutement RH',"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/535,Closed,No,No,Sprint 1,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:30:04,2026-06-15 12:30:07,2026-06-15 12:30:07,,,,,,32h,32h,
+192573122,536,US : Créer un projet à partir du template prédéfini 'Recrutement RH',"### 👤 Rôle utilisateur
 **En tant que** responsable RH
 **Je souhaite** créer un tableau de suivi des candidats avec les étapes de recrutement (Sourcing, Entretien, Offre, Onboarding)
 **Afin de** avoir un pipeline visuel standardisé pour chaque recrutement
@@ -70,8 +70,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/6,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:48,2026-05-27 13:25:49,2026-05-27 13:25:49,,,,,,,,
-191122508,7,US : Sauvegarder un projet existant en tant que template réutilisable,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/536,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:09,2026-06-15 12:30:11,2026-06-15 12:30:11,,,,,,40h,40h,
+192573129,537,US : Sauvegarder un projet existant en tant que template réutilisable,"### 👤 Rôle utilisateur
 **En tant que** administrateur de projet
 **Je souhaite** cliquer sur un bouton pour cloner la structure complète de mon projet actif (colonnes, tâches types, rôles) comme un nouveau modèle
 **Afin de** répliquer facilement nos processus internes réussis sur de futurs projets
@@ -85,8 +85,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/7,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:50,2026-05-27 13:25:51,2026-05-27 13:25:50,,,,,,,,
-191122511,8,US : Partager un template de projet personnalisé au sein de l'organisation,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/537,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:12,2026-06-15 12:30:14,2026-06-15 12:30:14,,,,,,,8h,
+192573137,538,US : Partager un template de projet personnalisé au sein de l'organisation,"### 👤 Rôle utilisateur
 **En tant que** administrateur
 **Je souhaite** rendre un template créé par moi visible et utilisable par tous les membres de mon entreprise
 **Afin de** diffuser les bonnes pratiques au sein de toutes les équipes
@@ -99,8 +99,8 @@ Création des tables `project_templates` et `template_tasks` avec indexation sur
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/8,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:51,2026-05-27 13:25:52,2026-05-27 13:25:52,,,,,,,,
-191122514,9,Bug : Les rôles et permissions ne sont pas dupliqués lors de la création depuis un template,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/538,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:15,2026-06-15 12:30:17,2026-06-15 12:30:17,,,,,,16h,,
+192573142,539,Bug : Les rôles et permissions ne sont pas dupliqués lors de la création depuis un template,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -116,8 +116,8 @@ Tout le monde est membre simple du projet créé, personne n'a les permissions d
 
 ### 💻 Environnement
 - Safari mobile (iPad iOS 16)
-- Chrome desktop macOS",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/9,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:53,2026-05-27 13:25:53,2026-05-27 13:25:53,,,,,,,,
-191122516,10,US : Bibliothèque de 10 templates standards pour toutes les équipes,"### 👤 Rôle utilisateur
+- Chrome desktop macOS",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/539,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:18,2026-06-15 12:30:20,2026-06-15 12:30:20,,,,,,40h,40h,
+192573147,540,US : Bibliothèque de 10 templates standards pour toutes les équipes,"### 👤 Rôle utilisateur
 **En tant que** nouvel utilisateur de TaskFlow
 **Je souhaite** accéder à un catalogue de 10 templates préinstallés couvrant l'Agile, le cycle en V, la création de contenu et la vente
 **Afin de** réduire le taux d'abandon du produit lors de la première heure d'utilisation (onboarding)
@@ -130,8 +130,8 @@ Tout le monde est membre simple du projet créé, personne n'a les permissions d
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/10,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:54,2026-05-27 13:25:55,2026-05-27 13:25:55,,,,,,,,
-191122518,11,"US : Éditer les détails d'un template sauvegardé (nom, description, tâches par défaut)","### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/540,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:21,2026-06-15 12:30:23,2026-06-15 12:30:23,,,,,,24h,34h,
+192573152,541,"US : Éditer les détails d'un template sauvegardé (nom, description, tâches par défaut)","### 👤 Rôle utilisateur
 **En tant que** créateur du template
 **Je souhaite** modifier le contenu du template sauvegardé sans affecter les projets déjà créés à partir de celui-ci
 **Afin de** faire évoluer nos modèles de travail au fil du temps
@@ -144,8 +144,8 @@ Tout le monde est membre simple du projet créé, personne n'a les permissions d
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/11,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:55,2026-05-27 13:25:56,2026-05-27 13:25:56,,,,,,,,
-191122520,12,Bug : Les dépendances entre tâches sont perdues lors de l'application d'un template,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/541,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:24,2026-06-15 12:30:26,2026-06-15 12:30:26,,,,,,,16h,
+192573157,542,Bug : Les dépendances entre tâches sont perdues lors de l'application d'un template,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -161,8 +161,8 @@ Toutes les tâches sont créées comme indépendantes, les liens parent-enfant e
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/12,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:57,2026-05-27 13:25:57,2026-05-27 13:25:57,,,,,,,,
-191122521,13,US : Appliquer un template à un projet existant déjà créé,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/542,Closed,No,No,Sprint 2,"Feature::C - Templates, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:30:26,2026-06-15 12:30:29,2026-06-15 12:30:29,,,,,,40h,40h,
+192573162,543,US : Appliquer un template à un projet existant déjà créé,"### 👤 Rôle utilisateur
 **En tant que** gestionnaire de projet
 **Je souhaite** injecter un ensemble de tâches préconfigurées d'un template au milieu d'un projet déjà existant
 **Afin de** ajouter une phase (ex: phase d'audit) au milieu d'un projet sans repartir de zéro
@@ -175,8 +175,8 @@ Toutes les tâches sont créées comme indépendantes, les liens parent-enfant e
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/13,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:58,2026-05-27 13:25:59,2026-05-27 13:25:59,,,,,,,,
-191122523,14,Bug : Crash lors de la création d'un projet si le titre contient plus de 100 caractères,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/543,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:30,2026-06-15 12:30:32,2026-06-15 12:30:32,,,,,,12h,,
+192573170,544,Bug : Crash lors de la création d'un projet si le titre contient plus de 100 caractères,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -192,8 +192,8 @@ Erreur 500 PostgreSQL du fait d'une contrainte `VARCHAR(100)` non gérée par le
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/14,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:25:59,2026-05-27 13:26:00,2026-05-27 13:26:00,,,,,,,,
-191122524,15,US : Bibliothèque étendue (20+ templates métiers classés par catégorie),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/544,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:33,2026-06-15 12:30:35,2026-06-15 12:30:35,,,,,,16h,16h,
+192573177,545,US : Bibliothèque étendue (20+ templates métiers classés par catégorie),"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** découvrir 20+ templates de projets professionnels complets pour divers secteurs d'activités
 **Afin de** répondre à tous nos cas d'usage métiers sans configuration
@@ -206,8 +206,8 @@ Erreur 500 PostgreSQL du fait d'une contrainte `VARCHAR(100)` non gérée par le
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/15,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:01,2026-05-27 13:26:02,2026-05-27 13:26:01,,,,,,,,
-191122528,16,US : Définir des dates relatives pour les tâches du template,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/545,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:35,2026-06-15 12:30:38,2026-06-15 12:30:38,,,,,,,40h,
+192573185,546,US : Définir des dates relatives pour les tâches du template,"### 👤 Rôle utilisateur
 **En tant que** créateur de template
 **Je souhaite** définir les dates d'échéance des tâches en nombre de jours après la création du projet (ex: J+5, J+10)
 **Afin de** ne pas avoir à ajuster manuellement toutes les dates à chaque création de projet
@@ -220,8 +220,8 @@ Erreur 500 PostgreSQL du fait d'une contrainte `VARCHAR(100)` non gérée par le
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/16,Closed,No,No,,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:02,2026-05-27 13:26:03,2026-05-27 13:26:03,,,,,,,,
-191122529,17,Bug : Mauvais décalage des dates de tâches si le projet commence un jour férié,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/546,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:38,2026-06-15 12:30:41,2026-06-15 12:30:41,,,,,,24h,34h,
+192573193,547,Bug : Mauvais décalage des dates de tâches si le projet commence un jour férié,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -236,8 +236,8 @@ Le calcul simpliste `date + X` assigne des échéances des week-ends ou jours f�
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/17,Closed,No,No,,"Feature::C - Templates, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:04,2026-05-27 13:26:05,2026-05-27 13:26:05,,,,,,,,
-191122531,18,US : Exporter un template personnalisé au format JSON,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/547,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:42,2026-06-15 12:30:44,2026-06-15 12:30:44,,,,,,16h,16h,
+192573199,548,US : Exporter un template personnalisé au format JSON,"### 👤 Rôle utilisateur
 **En tant que** administrateur technique
 **Je souhaite** télécharger mon template sous forme de fichier JSON structuré sur mon ordinateur
 **Afin de** sauvegarder physiquement mes processus ou les transférer vers une autre instance TaskFlow
@@ -250,8 +250,8 @@ Le calcul simpliste `date + X` assigne des échéances des week-ends ou jours f�
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/18,Closed,No,No,,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:06,2026-05-27 13:26:06,2026-05-27 13:26:06,,,,,,,,
-191122532,19,US : Importer un template personnalisé depuis un fichier JSON,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/548,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:44,2026-06-15 12:30:47,2026-06-15 12:30:47,,,,,,12h,,
+192573210,549,US : Importer un template personnalisé depuis un fichier JSON,"### 👤 Rôle utilisateur
 **En tant que** administrateur technique
 **Je souhaite** uploader un fichier JSON pour recréer instantanément un template dans notre bibliothèque d'organisation
 **Afin de** gagner du temps en important des processus externes
@@ -264,8 +264,8 @@ Le calcul simpliste `date + X` assigne des échéances des week-ends ou jours f�
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/19,Closed,No,No,,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:07,2026-05-27 13:26:08,2026-05-27 13:26:08,,,,,,,,
-191122536,20,US : Rendre un template public et accessible à l'ensemble des utilisateurs de TaskFlow (Premium),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/549,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:47,2026-06-15 12:30:49,2026-06-15 12:30:49,,,,,,,3h,
+192573232,550,US : Rendre un template public et accessible à l'ensemble des utilisateurs de TaskFlow (Premium),"### 👤 Rôle utilisateur
 **En tant que** partenaire certifié
 **Je souhaite** soumettre mon template à l'équipe TaskFlow pour qu'il soit intégré au catalogue public universel
 **Afin de** gagner en visibilité en partageant nos méthodologies avec le monde entier
@@ -278,14 +278,14 @@ Le calcul simpliste `date + X` assigne des échéances des week-ends ou jours f�
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/20,Closed,No,No,,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:09,2026-05-27 13:26:10,2026-05-27 13:26:10,,,,,,,,
-191122538,21,Spike : Analyse technique de l'API Slack et Webhooks,"### 🔍 Objectif d'étude & recherche
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/550,Closed,No,No,Sprint 3,"Feature::C - Templates, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:50,2026-06-15 12:30:52,2026-06-15 12:30:52,,,,,,8h,8h,
+192573246,551,Spike : Analyse technique de l'API Slack et Webhooks,"### 🔍 Objectif d'étude & recherche
 Étudier les protocoles d'autorisation Slack (OAuth 2.0), le format Block Kit pour les messages riches et les contraintes de Rate Limiting de l'API Slack.
 
 ### 📦 Livrables attendus
 - POC fonctionnel d'envoi de message Block Kit sur un canal Slack test
-- Rapport de faisabilité sur la volumétrie",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/21,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:11,2026-05-27 13:26:12,2026-05-27 13:26:11,,,,,,,,
-191122542,22,Configuration du serveur TaskFlow pour recevoir les payloads Slack,"### 🛡️ Problématique technique (Dette accumulée)
+- Rapport de faisabilité sur la volumétrie",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/551,Closed,No,No,Sprint 3,"Feature::A - Slack, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:53,2026-06-15 12:30:55,2026-06-15 12:30:55,,,,,,24h,24h,
+192573265,552,Configuration du serveur TaskFlow pour recevoir les payloads Slack,"### 🛡️ Problématique technique (Dette accumulée)
 Le serveur Node.js n'a pas de route d'API dédiée et sécurisée pour valider et décoder les requêtes entrantes de Slack.
 
 ### 💡 Solution proposée
@@ -293,8 +293,8 @@ Développement d'un middleware Express de signature de payload Slack (`x-slack-s
 
 ### ⚡ Impact attendu
 - Sécurité assurée (aucun spoofing de webhook possible)
-- Validation en < 5ms",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/22,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:12,2026-05-27 13:26:13,2026-05-27 13:26:13,,,,,,,,
-191122545,23,US : Recevoir une notification Slack lors de la création d'une tâche,"### 👤 Rôle utilisateur
+- Validation en < 5ms",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/552,Closed,No,No,Sprint 3,"Feature::A - Slack, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:56,2026-06-15 12:30:58,2026-06-15 12:30:58,,,,,,24h,34h,
+192573283,553,US : Recevoir une notification Slack lors de la création d'une tâche,"### 👤 Rôle utilisateur
 **En tant que** membre d'équipe
 **Je souhaite** recevoir un message sur notre canal Slack connecté dès qu'une tâche est créée dans TaskFlow
 **Afin de** être informé en temps réel des nouveaux travaux sans ouvrir l'application
@@ -307,8 +307,8 @@ Développement d'un middleware Express de signature de payload Slack (`x-slack-s
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/23,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:14,2026-05-27 13:26:14,2026-05-27 13:26:14,,,,,,,,
-191122546,24,US : Recevoir une notification Slack lors du changement de statut d'une tâche,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/553,Closed,No,No,Sprint 3,"Feature::A - Slack, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:30:59,2026-06-15 12:31:00,2026-06-15 12:31:00,,,,,,,,
+192573288,554,US : Recevoir une notification Slack lors du changement de statut d'une tâche,"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** recevoir une alerte Slack quand une tâche passe de 'In Progress' à 'QA' ou de 'QA' à 'Done'
 **Afin de** suivre l'avancement de la livraison en temps réel et valider immédiatement les fonctionnalités
@@ -321,8 +321,8 @@ Développement d'un middleware Express de signature de payload Slack (`x-slack-s
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/24,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:15,2026-05-27 13:26:16,2026-05-27 13:26:16,,,,,,,,
-191122547,25,US : Paramétrer l'intégration Slack depuis l'interface utilisateur,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/554,Closed,No,No,Sprint 4,"Feature::A - Slack, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:00,2026-06-15 12:31:03,2026-06-15 12:31:03,,,,,,40h,40h,
+192573292,555,US : Paramétrer l'intégration Slack depuis l'interface utilisateur,"### 👤 Rôle utilisateur
 **En tant que** administrateur de projet
 **Je souhaite** cliquer sur un bouton 'Connecter Slack' dans les paramètres de mon projet, m'authentifier et choisir le canal de destination
 **Afin de** configurer l'intégration de manière autonome sans faire appel à un développeur
@@ -335,8 +335,8 @@ Développement d'un middleware Express de signature de payload Slack (`x-slack-s
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/25,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:17,2026-05-27 13:26:18,2026-05-27 13:26:17,,,,,,,,
-191122549,26,Bug : Duplication des notifications Slack lors de l'édition rapide d'une tâche,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/555,Closed,No,No,Sprint 4,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:03,2026-06-15 12:31:06,2026-06-15 12:31:06,,,,,,12h,8h,
+192573304,556,Bug : Duplication des notifications Slack lors de l'édition rapide d'une tâche,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -353,8 +353,8 @@ Si un utilisateur modifie le titre puis la description en moins de 5 secondes, 2
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/26,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:18,2026-05-27 13:26:19,2026-05-27 13:26:19,,,,,,,,
-191122550,27,US : Formater le message Slack avec les détails de la tâche (Rich Text),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/556,Closed,No,No,Sprint 4,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:06,2026-06-15 12:31:08,2026-06-15 12:31:08,,,,,,32h,32h,
+192573310,557,US : Formater le message Slack avec les détails de la tâche (Rich Text),"### 👤 Rôle utilisateur
 **En tant que** utilisateur Slack
 **Je souhaite** voir une notification joliment mise en forme avec un code couleur selon la priorité de la tâche et des boutons d'action
 **Afin de** comprendre la sévérité d'un bug ou d'une tâche d'un simple coup d'œil
@@ -367,8 +367,8 @@ Si un utilisateur modifie le titre puis la description en moins de 5 secondes, 2
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/27,Closed,No,No,,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:20,2026-05-27 13:26:20,2026-05-27 13:26:20,,,,,,,,
-191122551,28,US : Permettre de désactiver temporairement les notifications Slack,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/557,Closed,No,No,Sprint 5,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:09,2026-06-15 12:31:11,2026-06-15 12:31:11,,,,,,,12h,
+192573321,558,US : Permettre de désactiver temporairement les notifications Slack,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** activer un mode 'Ne pas déranger' ou désactiver globalement l'intégration Slack dans mes paramètres personnels
 **Afin de** ne pas être submergé d'alertes en dehors de mes heures de travail ou pendant mes congés
@@ -381,8 +381,8 @@ Si un utilisateur modifie le titre puis la description en moins de 5 secondes, 2
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/28,Closed,No,No,,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:21,2026-05-27 13:26:22,2026-05-27 13:26:22,,,,,,,,
-191122553,29,Bug : Erreur 500 lors de la déconnexion de l'intégration Slack,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/558,Closed,No,No,Sprint 5,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:12,2026-06-15 12:31:14,2026-06-15 12:31:14,,,,,,4h,,
+192573328,559,Bug : Erreur 500 lors de la déconnexion de l'intégration Slack,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -398,8 +398,8 @@ L'interface affiche une erreur 500 persistante car les tables de jointure conser
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/29,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:23,2026-05-27 13:26:23,2026-05-27 13:26:23,,,,,,,,
-191122555,30,US : Notifications Slack lors de l'assignation d'une tâche à un collaborateur,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/559,Closed,No,No,Sprint 5,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:15,2026-06-15 12:31:17,2026-06-15 12:31:17,,,,,,32h,32h,
+192573333,560,US : Notifications Slack lors de l'assignation d'une tâche à un collaborateur,"### 👤 Rôle utilisateur
 **En tant que** développeur
 **Je souhaite** recevoir une notification Slack directe (DM) ou une mention quand une tâche m'est assignée
 **Afin de** savoir immédiatement que je dois commencer à travailler sur un nouveau sujet
@@ -412,8 +412,8 @@ L'interface affiche une erreur 500 persistante car les tables de jointure conser
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/30,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:24,2026-05-27 13:26:25,2026-05-27 13:26:25,,,,,,,,
-191122559,31,US : Envoyer un digest hebdomadaire des tâches en retard sur Slack,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/560,Closed,No,No,Sprint 5,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:18,2026-06-15 12:31:20,2026-06-15 12:31:20,,,,,,24h,24h,
+192573341,561,US : Envoyer un digest hebdomadaire des tâches en retard sur Slack,"### 👤 Rôle utilisateur
 **En tant que** manager d'équipe
 **Je souhaite** recevoir chaque lundi matin à 9h00 un résumé visuel de toutes les tâches en retard de notre projet sur Slack
 **Afin de** lancer des actions correctives rapidement lors du standup hebdomadaire
@@ -426,8 +426,8 @@ L'interface affiche une erreur 500 persistante car les tables de jointure conser
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/31,Closed,No,No,,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:26,2026-05-27 13:26:27,2026-05-27 13:26:26,,,,,,,,
-191122560,32,Bug : Liens cassés dans la notification Slack si le titre contient des caractères spéciaux,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/561,Closed,No,No,Sprint 6,"Feature::A - Slack, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:31:20,2026-06-15 12:31:23,2026-06-15 12:31:23,,,,,,,3h,
+192573345,562,Bug : Liens cassés dans la notification Slack si le titre contient des caractères spéciaux,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -443,8 +443,8 @@ Si la tâche s'intitule 'Refactoring & Nettoyage', le lien Slack s'arrête à '&
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/32,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:27,2026-05-27 13:26:28,2026-05-27 13:26:28,,,,,,,,
-191122564,33,US : Intégration Slack multi-canal (notifier différents canaux selon le projet),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/562,Closed,No,No,Sprint 6,"Feature::A - Slack, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:31:23,2026-06-15 12:31:26,2026-06-15 12:31:26,,,,,,16h,16h,
+192573350,563,US : Intégration Slack multi-canal (notifier différents canaux selon le projet),"### 👤 Rôle utilisateur
 **En tant que** directeur technique
 **Je souhaite** configurer des règles d'envoi pour que les bugs aillent dans #tech-alerts et les stories RH dans #rh-notifications
 **Afin de** ne pas polluer un canal unique et cibler les bonnes personnes
@@ -457,8 +457,8 @@ Si la tâche s'intitule 'Refactoring & Nettoyage', le lien Slack s'arrête à '&
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/33,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:29,2026-05-27 13:26:30,2026-05-27 13:26:29,,,,,,,,
-191122567,34,Bug : Lenteur de l'application lors de l'envoi de notifs Slack (appel bloquant),"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/563,Closed,No,No,Sprint 6,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:31:26,2026-06-15 12:31:28,2026-06-15 12:31:28,,,,,,24h,,
+192573354,564,Bug : Lenteur de l'application lors de l'envoi de notifs Slack (appel bloquant),"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -473,8 +473,8 @@ L'interface freeze pendant 2 à 3 secondes lors de la sauvegarde car le backend 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/34,Closed,No,No,,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:30,2026-05-27 13:26:31,2026-05-27 13:26:31,,,,,,,,
-191122568,35,US : Permettre d'interagir avec la tâche directement depuis Slack (bouton Terminer),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/564,Closed,No,No,Sprint 6,"Feature::A - Slack, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:31:29,2026-06-15 12:31:42,2026-06-15 12:31:42,,,,,,24h,34h,
+192573377,565,US : Permettre d'interagir avec la tâche directement depuis Slack (bouton Terminer),"### 👤 Rôle utilisateur
 **En tant que** utilisateur Slack
 **Je souhaite** cliquer sur un bouton 'Terminer la tâche' ou 'Changer d'assigné' directement sous le message Slack
 **Afin de** mettre à jour le projet sans quitter mon application de communication principale
@@ -487,8 +487,8 @@ L'interface freeze pendant 2 à 3 secondes lors de la sauvegarde car le backend 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/35,Closed,No,No,,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:32,2026-05-27 13:26:32,2026-05-27 13:26:32,,,,,,,,
-191122571,36,US : Personnalisation avancée des templates de messages Slack par le PO/PM,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/565,Closed,No,No,Sprint 6,"Feature::A - Slack, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:31:43,2026-06-15 12:31:45,2026-06-15 12:31:45,,,,,,,16h,
+192573383,566,US : Personnalisation avancée des templates de messages Slack par le PO/PM,"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** définir nous-mêmes les informations affichées dans les messages Slack via un mini-éditeur de templates
 **Afin de** ajuster le niveau de détail des notifications pour nos équipes
@@ -501,8 +501,8 @@ L'interface freeze pendant 2 à 3 secondes lors de la sauvegarde car le backend 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/36,Open,No,No,Sprint 7,"Feature::A - Slack, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:33,2026-05-27 13:26:33,,,,,,,,,
-191122573,37,Bug : Crash lors de la connexion Slack sur les workspaces contenant plus de 1000 canaux,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/566,Open,No,No,Sprint 7,"Feature::A - Slack, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:31:46,2026-06-15 12:31:46,,,,,,,,,
+192573386,567,Bug : Crash lors de la connexion Slack sur les workspaces contenant plus de 1000 canaux,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -518,20 +518,20 @@ L'application plante avec un dépassement de mémoire (Out of Memory) car elle t
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/37,Open,No,No,Sprint 7,"Feature::A - Slack, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:34,2026-05-27 13:26:34,,,,,,,,,
-191122574,38,Spike : Choix de la technologie de cache client,"### 🔍 Objectif d'étude & recherche
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/567,Open,No,No,Sprint 7,"Feature::A - Slack, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:31:47,2026-06-15 12:31:47,,,,,,,,,
+192573390,568,Spike : Choix de la technologie de cache client,"### 🔍 Objectif d'étude & recherche
 Évaluer IndexedDB, WebSQL et LocalStorage en termes de capacité de stockage, support navigateur sur mobile (Safari iOS, Chrome Android) et facilité d'intégration avec React.
 
 ### 📦 Livrables attendus
 - POC comparatif de stockage de 5000 tâches complexes
-- Recommandation officielle : Utilisation de IndexedDB via la bibliothèque Dexie.js",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/38,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:35,2026-05-27 13:26:36,2026-05-27 13:26:36,,,,,,,,
-191122576,39,Spike : Choix de l'architecture de synchronisation,"### 🔍 Objectif d'étude & recherche
+- Recommandation officielle : Utilisation de IndexedDB via la bibliothèque Dexie.js",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/568,Closed,No,No,Sprint 4,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:48,2026-06-15 12:31:51,2026-06-15 12:31:51,,,,,,32h,32h,
+192573395,569,Spike : Choix de l'architecture de synchronisation,"### 🔍 Objectif d'étude & recherche
 Analyser les approches Optimistic UI (affichage instantané et synchro asynchrone en arrière-plan) et Pessimistic Sync (attente réseau obligatoire) pour définir notre stratégie.
 
 ### 📦 Livrables attendus
 - Diagrammes de séquence UML décrivant les cas d'erreur de réseau
-- Choix : Optimistic UI avec file d'attente d'actions",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/39,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:36,2026-05-27 13:26:38,2026-05-27 13:26:37,,,,,,,,
-191122577,40,Configuration initiale du Service Worker pour la mise en cache des assets statiques,"### 🛡️ Problématique technique (Dette accumulée)
+- Choix : Optimistic UI avec file d'attente d'actions",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/569,Closed,No,No,Sprint 4,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:52,2026-06-15 12:31:54,2026-06-15 12:31:54,,,,,,40h,40h,
+192573399,570,Configuration initiale du Service Worker pour la mise en cache des assets statiques,"### 🛡️ Problématique technique (Dette accumulée)
 L'application web TaskFlow ne peut pas du tout se charger sans connexion internet (erreur 'Pas de connexion' du navigateur).
 
 ### 💡 Solution proposée
@@ -539,8 +539,8 @@ Déploiement d'un Service Worker basé sur Workbox pour intercepter les requête
 
 ### ⚡ Impact attendu
 - L'application se charge en < 200ms même sans réseau
-- Taux de rétention réseau de 100% sur les assets",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/40,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:38,2026-05-27 13:26:39,2026-05-27 13:26:39,,,,,,,,
-191122579,41,US : Consulter la liste des tâches actives en mode hors-ligne,"### 👤 Rôle utilisateur
+- Taux de rétention réseau de 100% sur les assets",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/570,Closed,No,No,Sprint 4,"Feature::B - Offline, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:31:55,2026-06-15 12:31:56,2026-06-15 12:31:56,,,,,,24h,,
+192573401,571,US : Consulter la liste des tâches actives en mode hors-ligne,"### 👤 Rôle utilisateur
 **En tant que** utilisateur nomade
 **Je souhaite** consulter la liste de toutes mes tâches en cours lorsque je perds ma connexion internet
 **Afin de** continuer à voir mon travail de la journée dans le train ou l'avion
@@ -553,8 +553,8 @@ Déploiement d'un Service Worker basé sur Workbox pour intercepter les requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/41,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:40,2026-05-27 13:26:41,2026-05-27 13:26:40,,,,,,,,
-191122580,42,US : Afficher un indicateur visuel (bannière) lorsque la connexion est perdue,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/571,Closed,No,No,Sprint 5,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:57,2026-06-15 12:31:59,2026-06-15 12:31:59,,,,,,,32h,
+192573407,572,US : Afficher un indicateur visuel (bannière) lorsque la connexion est perdue,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** voir une bannière jaune discrète en haut de l'écran m'indiquant 'Mode hors-ligne actif - Les modifications seront synchronisées'
 **Afin de** être rassuré sur le fait que mon travail est bien sauvegardé localement
@@ -567,8 +567,8 @@ Déploiement d'un Service Worker basé sur Workbox pour intercepter les requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/42,Closed,No,No,,"Feature::B - Offline, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:42,2026-05-27 13:26:43,2026-05-27 13:26:43,,,,,,,,
-191122584,43,US : Créer une tâche locale en mode hors-ligne,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/572,Closed,No,No,Sprint 5,"Feature::B - Offline, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:31:59,2026-06-15 12:32:02,2026-06-15 12:32:02,,,,,,24h,24h,
+192573413,573,US : Créer une tâche locale en mode hors-ligne,"### 👤 Rôle utilisateur
 **En tant que** collaborateur déconnecté
 **Je souhaite** cliquer sur 'Créer une tâche', remplir les champs et la sauvegarder en mode hors-ligne
 **Afin de** noter mes idées immédiatement sans attendre d'avoir du réseau
@@ -581,8 +581,8 @@ Déploiement d'un Service Worker basé sur Workbox pour intercepter les requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/43,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:44,2026-05-27 13:26:44,2026-05-27 13:26:44,,,,,,,,
-191122586,44,US : Modifier une tâche locale en mode hors-ligne,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/573,Closed,No,No,Sprint 5,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:32:02,2026-06-15 12:32:04,2026-06-15 12:32:04,,,,,,24h,20h,
+192573419,574,US : Modifier une tâche locale en mode hors-ligne,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** modifier le titre, la description ou changer le statut d'une tâche existante alors que je suis hors-ligne
 **Afin de** avancer sur mon travail et mettre à jour mon tableau de tâches en direct
@@ -595,8 +595,8 @@ Déploiement d'un Service Worker basé sur Workbox pour intercepter les requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/44,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:45,2026-05-27 13:26:46,2026-05-27 13:26:46,,,,,,,,
-191122588,45,Bug : Perte du Service Worker après rafraîchissement forcé (Ctrl+F5),"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/574,Closed,No,No,Sprint 5,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:32:05,2026-06-15 12:32:06,2026-06-15 12:32:06,,,,,,,,
+192573424,575,Bug : Perte du Service Worker après rafraîchissement forcé (Ctrl+F5),"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -613,8 +613,8 @@ Le navigateur contourne le Service Worker lors d'un Ctrl+F5 et affiche l'écran 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/45,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:46,2026-05-27 13:26:47,2026-05-27 13:26:47,,,,,,,,
-191122589,46,US : Mettre en cache les pièces jointes légères pour consultation hors-ligne,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/575,Closed,No,No,Sprint 5,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:32:07,2026-06-15 12:32:09,2026-06-15 12:32:09,,,,,,40h,40h,
+192573431,576,US : Mettre en cache les pièces jointes légères pour consultation hors-ligne,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** télécharger et stocker automatiquement en arrière-plan les fichiers joints de moins de 2 Mo associés à mes tâches
 **Afin de** consulter un document ou une image importante sans connexion
@@ -627,8 +627,8 @@ Le navigateur contourne le Service Worker lors d'un Ctrl+F5 et affiche l'écran 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/46,Closed,No,No,,"Feature::B - Offline, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:48,2026-05-27 13:26:49,2026-05-27 13:26:48,,,,,,,,
-191122590,47,Bug : Conflit de version local / distant lors de la première synchronisation,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/576,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:10,2026-06-15 12:32:13,2026-06-15 12:32:13,,,,,,4h,6h,
+192573440,577,Bug : Conflit de version local / distant lors de la première synchronisation,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -644,8 +644,8 @@ Le client hors-ligne écrase sauvagement toutes les modifications apportées par
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/47,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:49,2026-05-27 13:26:50,2026-05-27 13:26:50,,,,,,,,
-191122592,48,US : File d'attente des requêtes de modification (Sync Queue) persistée,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/577,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:14,2026-06-15 12:32:16,2026-06-15 12:32:16,,,,,,32h,32h,
+192573445,578,US : File d'attente des requêtes de modification (Sync Queue) persistée,"### 👤 Rôle utilisateur
 **En tant que** développeur
 **Je souhaite** sauvegarder l'ensemble des requêtes HTTP en attente (créations, modifications, suppressions) dans une table IndexedDB dédiée
 **Afin de** ne perdre aucune modification même si le navigateur est fermé ou crashe avant le retour de la connexion
@@ -658,8 +658,8 @@ Le client hors-ligne écrase sauvagement toutes les modifications apportées par
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/48,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:51,2026-05-27 13:26:51,2026-05-27 13:26:51,,,,,,,,
-191122593,49,Bug : Les tâches créées hors-ligne n'ont pas d'ID valide lors de la réévaluation locale,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/578,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:17,2026-06-15 12:32:19,2026-06-15 12:32:19,,,,,,,40h,
+192573452,579,Bug : Les tâches créées hors-ligne n'ont pas d'ID valide lors de la réévaluation locale,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -675,8 +675,8 @@ L'identifiant temporaire est interprété comme un entier par le frontend, provo
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/49,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:52,2026-05-27 13:26:53,2026-05-27 13:26:53,,,,,,,,
-191122595,50,US : Synchronisation automatique en arrière-plan à la détection du retour réseau,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/579,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:19,2026-06-15 12:32:21,2026-06-15 12:32:21,,,,,,24h,,
+192573455,580,US : Synchronisation automatique en arrière-plan à la détection du retour réseau,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** ne rien faire et laisser l'application synchroniser toutes mes modifications locales dès que le réseau est rétabli
 **Afin de** avoir une expérience fluide et magique sans boutons de synchronisation manuels
@@ -689,8 +689,8 @@ L'identifiant temporaire est interprété comme un entier par le frontend, provo
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/50,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:54,2026-05-27 13:26:54,2026-05-27 13:26:54,,,,,,,,
-191122599,51,Bug : Duplication de tâches si l'utilisateur clique deux fois sur le bouton synchroniser,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/580,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:22,2026-06-15 12:32:26,2026-06-15 12:32:25,,,,,,32h,32h,
+192573461,581,Bug : Duplication de tâches si l'utilisateur clique deux fois sur le bouton synchroniser,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -706,14 +706,14 @@ Si la connexion est lente, l'utilisateur double-clique sur le bouton de retour e
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/51,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:55,2026-05-27 13:26:56,2026-05-27 13:26:56,,,,,,,,
-191122602,52,Spike : Gestion des conflits complexes (double modification),"### 🔍 Objectif d'étude & recherche
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/581,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:26,2026-06-15 12:32:28,2026-06-15 12:32:28,,,,,,40h,40h,
+192573468,582,Spike : Gestion des conflits complexes (double modification),"### 🔍 Objectif d'étude & recherche
 Étudier les algorithmes de synchronisation de données concurrentes comme les CRDTs (Conflict-free Replicated Data Types) et OT (Operational Transformation) pour la fusion intelligente de champs.
 
 ### 📦 Livrables attendus
 - POC de fusion textuelle de descriptions en JS
-- Recommandation d'implémentation simplifiée pour le MVP (fusion par champs et alertes utilisateurs)",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/52,Closed,No,No,,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:56,2026-05-27 13:26:57,2026-05-27 13:26:57,,,,,,,,
-191122603,53,US : Gestion des conflits de synchronisation - Règle de base (Le dernier qui écrit gagne),"### 👤 Rôle utilisateur
+- Recommandation d'implémentation simplifiée pour le MVP (fusion par champs et alertes utilisateurs)",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/582,Closed,No,No,Sprint 6,"Feature::B - Offline, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:32:28,2026-06-15 12:32:31,2026-06-15 12:32:31,,,,,,,34h,
+192573472,583,US : Gestion des conflits de synchronisation - Règle de base (Le dernier qui écrit gagne),"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** résoudre les conflits de synchronisation simples en appliquant la date de modification la plus récente (Last Write Wins)
 **Afin de** livrer rapidement un système de résolution de conflits robuste pour le MVP
@@ -726,8 +726,8 @@ Si la connexion est lente, l'utilisateur double-clique sur le bouton de retour e
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/53,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:26:58,2026-05-27 13:26:58,,,,,,,,,
-191122607,54,US : Interface de résolution de conflits (Fusion manuelle des modifications),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/583,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:32,2026-06-15 12:32:33,,,,,,,32h,,
+192573479,584,US : Interface de résolution de conflits (Fusion manuelle des modifications),"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** voir un écran pop-up comparatif me montrant les modifications distantes et mes modifications locales en conflit, et me permettant de choisir quoi garder
 **Afin de** ne jamais perdre mes idées ou celles de mes collègues de manière arbitraire
@@ -740,8 +740,8 @@ Si la connexion est lente, l'utilisateur double-clique sur le bouton de retour e
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/54,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:00,2026-05-27 13:27:00,,,,,,,,,
-191122610,55,Bug : Crash de la base IndexedDB si l'espace disque du navigateur est saturé,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/584,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:35,2026-06-15 12:32:36,,,,,,,,,
+192573480,585,Bug : Crash de la base IndexedDB si l'espace disque du navigateur est saturé,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -756,8 +756,8 @@ L'application plante brutalement sur un écran noir (Uncaught Exception) lorsque
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/55,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:02,2026-05-27 13:27:02,,,,,,,,,
-191122613,56,US : Vider le cache hors-ligne manuellement depuis les paramètres utilisateur,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/585,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:36,2026-06-15 12:32:37,,,,,,,,,
+192573487,586,US : Vider le cache hors-ligne manuellement depuis les paramètres utilisateur,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** cliquer sur un bouton 'Vider les données locales de stockage' pour purger IndexedDB et forcer une resynchronisation complète
 **Afin de** résoudre moi-même d'éventuels bugs de désynchronisation de cache sans désinstaller le navigateur
@@ -770,8 +770,8 @@ L'application plante brutalement sur un écran noir (Uncaught Exception) lorsque
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/56,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:04,2026-05-27 13:27:04,,,,,,,,,
-191122614,57,US : Mode hors-ligne pour la création de projets complets,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/586,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:32:40,2026-06-15 12:32:42,,,,,,,8h,,
+192573491,587,US : Mode hors-ligne pour la création de projets complets,"### 👤 Rôle utilisateur
 **En tant que** chef de projet déconnecté
 **Je souhaite** créer un projet complet, définir ses colonnes Kanban et y ajouter des tâches initiales en mode hors-ligne
 **Afin de** préparer mes lancements de projets depuis le train ou l'avion sans aucune barrière réseau
@@ -784,8 +784,8 @@ L'application plante brutalement sur un écran noir (Uncaught Exception) lorsque
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/57,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:05,2026-05-27 13:27:05,,,,,,,,,
-191122616,58,Bug : Les filtres de recherche ne fonctionnent pas du tout en mode hors-ligne,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/587,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:32:42,2026-06-15 12:32:43,,,,,,,,,
+192573494,588,Bug : Les filtres de recherche ne fonctionnent pas du tout en mode hors-ligne,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -800,8 +800,8 @@ Le champ de recherche est bloqué ou renvoie une erreur 'Connexion impossible' c
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/58,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:06,2026-05-27 13:27:06,,,,,,,,,
-191122617,59,Bug : Fuite de mémoire lors de l'ouverture répétée de tâches hors-ligne,"### 🚨 Description de l'anomalie
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/588,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:44,2026-06-15 12:32:44,,,,,,,,,
+192573495,589,Bug : Fuite de mémoire lors de l'ouverture répétée de tâches hors-ligne,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -817,8 +817,8 @@ Chaque ouverture de tâche hors-ligne charge des données IndexedDB en mémoire 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/59,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:07,2026-05-27 13:27:07,,,,,,,,,
-191122619,60,US : Stockage hors-ligne sécurisé des données sensibles (chiffrement IndexedDB),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/589,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:45,2026-06-15 12:32:45,,,,,,,,,
+192573498,590,US : Stockage hors-ligne sécurisé des données sensibles (chiffrement IndexedDB),"### 👤 Rôle utilisateur
 **En tant que** responsable sécurité (CISO)
 **Je souhaite** m'assurer que toutes les données du projet stockées localement dans IndexedDB sont chiffrées avec une clé unique
 **Afin de** protéger la propriété intellectuelle de notre entreprise si l'ordinateur portable d'un collaborateur est volé
@@ -831,8 +831,8 @@ Chaque ouverture de tâche hors-ligne charge des données IndexedDB en mémoire 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/60,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:08,2026-05-27 13:27:08,,,,,,,,,
-191122621,61,US : Synchronisation manuelle par geste (Pull-to-refresh) sur mobile/tablette,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/590,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:32:46,2026-06-15 12:32:47,,,,,,,24h,,
+192573500,591,US : Synchronisation manuelle par geste (Pull-to-refresh) sur mobile/tablette,"### 👤 Rôle utilisateur
 **En tant que** utilisateur mobile
 **Je souhaite** faire glisser l'écran vers le bas pour forcer la vérification et la synchronisation des tâches
 **Afin de** déclencher la mise à jour des données quand je sais que je viens de retrouver une bonne connexion
@@ -845,8 +845,8 @@ Chaque ouverture de tâche hors-ligne charge des données IndexedDB en mémoire 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/61,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:09,2026-05-27 13:27:09,,,,,,,,,
-191122622,62,Bug : Le badge hors-ligne reste affiché même après reconnexion réussie (Safari uniquement),"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/591,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:32:47,2026-06-15 12:32:48,,,,,,,,,
+192573503,592,Bug : Le badge hors-ligne reste affiché même après reconnexion réussie (Safari uniquement),"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -863,14 +863,14 @@ Sur Safari (macOS et iOS), l'événement `online` n'est pas intercepté correcte
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/62,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:10,2026-05-27 13:27:10,,,,,,,,,
-191122623,63,Spike : Outils de visualisation de données et graphiques,"### 🔍 Objectif d'étude & recherche
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/592,Open,No,No,Sprint 7,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:32:48,2026-06-15 12:32:49,,,,,,,,,
+192573505,593,Spike : Outils de visualisation de données et graphiques,"### 🔍 Objectif d'étude & recherche
 Comparer Chart.js, Recharts (React-friendly) et D3.js pour l'intégration de graphiques interactifs de vélocité, d'allocation de ressources et de burn-down chart.
 
 ### 📦 Livrables attendus
 - POC de graphiques interactifs avec support du Dark Mode
-- Choix : Recharts pour sa réactivité et sa structure de composants React déclaratifs",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/63,Closed,No,No,,"Feature::D - Dashboard, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:11,2026-05-27 13:27:12,2026-05-27 13:27:12,,,,,,,,
-191122626,64,US : Layout principal du Dashboard exécutif (grille responsive),"### 👤 Rôle utilisateur
+- Choix : Recharts pour sa réactivité et sa structure de composants React déclaratifs",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/593,Closed,No,No,Sprint 4,"Feature::D - Dashboard, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-28 14:32:50,2026-06-15 12:32:58,2026-06-15 12:32:58,,,,,,24h,24h,
+192573517,594,US : Layout principal du Dashboard exécutif (grille responsive),"### 👤 Rôle utilisateur
 **En tant que** dirigeant de PME
 **Je souhaite** accéder à un écran 'Dashboard exécutif' structuré en grille avec des indicateurs clés (tâches, temps, budgets)
 **Afin de** avoir une vue d'ensemble instantanée de la santé de nos projets
@@ -883,8 +883,8 @@ Comparer Chart.js, Recharts (React-friendly) et D3.js pour l'intégration de gra
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/64,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:13,2026-05-27 13:27:14,2026-05-27 13:27:14,,,,,,,,
-191122629,65,US : Afficher le KPI 'Nombre de tâches en cours et terminées' sous forme de graphique,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/594,Closed,No,No,Sprint 5,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:32:58,2026-06-15 12:33:01,2026-06-15 12:33:01,,,,,,24h,,
+192573524,595,US : Afficher le KPI 'Nombre de tâches en cours et terminées' sous forme de graphique,"### 👤 Rôle utilisateur
 **En tant que** manager
 **Je souhaite** visualiser la répartition de nos tâches par statut (A faire, En cours, En QA, Terminé) sous forme d'un graphique à barres
 **Afin de** identifier d'éventuels goulets d'étranglement dans notre flux de travail
@@ -897,8 +897,8 @@ Comparer Chart.js, Recharts (React-friendly) et D3.js pour l'intégration de gra
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/65,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:15,2026-05-27 13:27:16,2026-05-27 13:27:16,,,,,,,,
-191122630,66,US : Afficher le KPI 'Vitesse de l'équipe' pour les projets Scrum,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/595,Closed,No,No,Sprint 5,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:01,2026-06-15 12:33:04,2026-06-15 12:33:04,,,,,,32h,32h,
+192573532,596,US : Afficher le KPI 'Vitesse de l'équipe' pour les projets Scrum,"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** consulter le graphique de vélocité sprint par sprint (points planifiés vs points réellement terminés)
 **Afin de** prévoir la date de fin de nos fonctionnalités de manière réaliste lors du sprint planning
@@ -911,8 +911,8 @@ Comparer Chart.js, Recharts (React-friendly) et D3.js pour l'intégration de gra
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/66,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:17,2026-05-27 13:27:17,2026-05-27 13:27:17,,,,,,,,
-191122633,67,US : Afficher le KPI 'Allocation du temps' sous forme de camembert,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/596,Closed,No,No,Sprint 5,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:05,2026-06-15 12:33:07,2026-06-15 12:33:07,,,,,,,40h,
+192573537,597,US : Afficher le KPI 'Allocation du temps' sous forme de camembert,"### 👤 Rôle utilisateur
 **En tant que** dirigeant
 **Je souhaite** voir la répartition de nos efforts par type d'activité (Développement, Maintenance, Bugs, Management)
 **Afin de** m'assurer que l'équipe passe bien 80% de son temps sur de la valeur et non sur de la correction de bugs
@@ -925,8 +925,8 @@ Comparer Chart.js, Recharts (React-friendly) et D3.js pour l'intégration de gra
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/67,Closed,No,No,,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:18,2026-05-27 13:27:20,2026-05-27 13:27:19,,,,,,,,
-191122635,68,Bug : Le layout du dashboard s'effondre sur les résolutions intermédiaires (tablettes),"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/597,Closed,No,No,Sprint 5,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:07,2026-06-15 12:33:10,2026-06-15 12:33:10,,,,,,12h,8h,
+192573546,598,Bug : Le layout du dashboard s'effondre sur les résolutions intermédiaires (tablettes),"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -942,8 +942,8 @@ Les widgets se chevauchent ou dépassent de l'écran sur les résolutions d'iPad
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/68,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:20,2026-05-27 13:27:21,2026-05-27 13:27:21,,,,,,,,
-191122639,69,US : Filtrer le dashboard par projet ou par membre de l'équipe,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/598,Closed,No,No,Sprint 5,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:11,2026-06-15 12:33:13,2026-06-15 12:33:13,,,,,,32h,32h,
+192573552,599,US : Filtrer le dashboard par projet ou par membre de l'équipe,"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** filtrer tous les graphiques du dashboard exécutif pour un projet spécifique ou un collaborateur en un clic
 **Afin de** isoler les performances d'une équipe ou d'un sujet précis
@@ -956,8 +956,8 @@ Les widgets se chevauchent ou dépassent de l'écran sur les résolutions d'iPad
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/69,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:22,2026-05-27 13:27:24,2026-05-27 13:27:24,,,,,,,,
-191122641,70,"US : Filtrer le dashboard par période temporelle (Semaine, Mois, Trimestre)","### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/599,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:14,2026-06-15 12:33:16,2026-06-15 12:33:16,,,,,,40h,,
+192573555,600,"US : Filtrer le dashboard par période temporelle (Semaine, Mois, Trimestre)","### 👤 Rôle utilisateur
 **En tant que** directeur
 **Je souhaite** sélectionner une plage de dates personnalisée pour analyser les données de performance de notre trimestre
 **Afin de** faire des bilans trimestriels pour le comité de direction
@@ -970,8 +970,8 @@ Les widgets se chevauchent ou dépassent de l'écran sur les résolutions d'iPad
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/70,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:25,2026-05-27 13:27:26,2026-05-27 13:27:26,,,,,,,,
-191122642,71,Bug : Les graphiques ne se rafraîchissent pas lors du changement de filtre,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/600,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:16,2026-06-15 12:33:18,2026-06-15 12:33:18,,,,,,,34h,
+192573560,601,Bug : Les graphiques ne se rafraîchissent pas lors du changement de filtre,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -987,8 +987,8 @@ Les données de l'API sont bien récupérées en tâche de fond mais l'état Rea
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/71,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:27,2026-05-27 13:27:27,2026-05-27 13:27:27,,,,,,,,
-191122645,72,US : Afficher un graphique de Burn-up et Burn-down pour le sprint actif,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/601,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:19,2026-06-15 12:33:23,2026-06-15 12:33:23,,,,,,32h,32h,
+192573577,602,US : Afficher un graphique de Burn-up et Burn-down pour le sprint actif,"### 👤 Rôle utilisateur
 **En tant que** Scrum Master
 **Je souhaite** consulter la courbe de tendance idéale (ligne droite de brûlage des points) face à notre courbe réelle de progression
 **Afin de** anticiper si l'équipe va réussir à tenir ses engagements avant la fin du sprint
@@ -1001,8 +1001,8 @@ Les données de l'API sont bien récupérées en tâche de fond mais l'état Rea
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/72,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:28,2026-05-27 13:27:29,2026-05-27 13:27:29,,,,,,,,
-191122646,73,US : Afficher les tâches en retard directement sur le dashboard,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/602,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:24,2026-06-15 12:33:27,2026-06-15 12:33:27,,,,,,40h,40h,
+192573583,603,US : Afficher les tâches en retard directement sur le dashboard,"### 👤 Rôle utilisateur
 **En tant que** manager
 **Je souhaite** voir une liste condensée des 5 tâches les plus en retard avec le nombre de jours de dépassement et le responsable
 **Afin de** relancer les bonnes personnes en un coup d'œil sans chercher dans tout le backlog
@@ -1015,8 +1015,8 @@ Les données de l'API sont bien récupérées en tâche de fond mais l'état Rea
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/73,Closed,No,No,,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:30,2026-05-27 13:27:31,2026-05-27 13:27:30,,,,,,,,
-191122649,74,Bug : Problème de performance lors du calcul de la vélocité sur plus de 10 projets,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/603,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:27,2026-06-15 12:33:30,2026-06-15 12:33:30,,,,,,12h,8h,
+192573588,604,Bug : Problème de performance lors du calcul de la vélocité sur plus de 10 projets,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1031,8 +1031,8 @@ L'API backend met plus de 8 secondes à répondre car elle effectue des requête
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/74,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:31,2026-05-27 13:27:34,2026-05-27 13:27:34,,,,,,,,
-191122653,75,US : Exporter le dashboard exécutif au format PDF pour les réunions,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/604,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:30,2026-06-15 12:33:33,2026-06-15 12:33:33,,,,,,,,
+192573592,605,US : Exporter le dashboard exécutif au format PDF pour les réunions,"### 👤 Rôle utilisateur
 **En tant que** dirigeant de PME
 **Je souhaite** cliquer sur un bouton 'Télécharger en PDF' pour générer un rapport imprimable propre contenant tous nos graphiques
 **Afin de** l'imprimer ou l'envoyer comme pièce jointe pour préparer nos comités stratégiques
@@ -1045,8 +1045,8 @@ L'API backend met plus de 8 secondes à répondre car elle effectue des requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/75,Closed,No,No,,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:35,2026-05-27 13:27:35,2026-05-27 13:27:35,,,,,,,,
-191122656,76,US : Envoyer un rapport PDF du dashboard par email de manière hebdomadaire,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/605,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::Medium, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:34,2026-06-15 12:33:36,2026-06-15 12:33:36,,,,,,24h,24h,
+192573599,606,US : Envoyer un rapport PDF du dashboard par email de manière hebdomadaire,"### 👤 Rôle utilisateur
 **En tant que** dirigeant
 **Je souhaite** s'abonner à un envoi automatique par email chaque vendredi à 17h00 contenant le PDF du dashboard de performance
 **Afin de** prendre connaissance des résultats de la semaine durant le week-end sans me connecter à la plateforme
@@ -1059,8 +1059,8 @@ L'API backend met plus de 8 secondes à répondre car elle effectue des requête
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/76,Closed,No,No,,"Feature::D - Dashboard, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:36,2026-05-27 13:27:37,2026-05-27 13:27:37,,,,,,,,
-191122658,77,Bug : Les graphiques sont coupés en deux lors de l'export PDF sur Safari,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/606,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:37,2026-06-15 12:33:39,2026-06-15 12:33:39,,,,,,4h,6h,
+192573608,607,Bug : Les graphiques sont coupés en deux lors de l'export PDF sur Safari,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1077,8 +1077,8 @@ Sur le navigateur Safari, l'export PDF coupe sauvagement le graphique de véloci
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/77,Closed,No,No,,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:37,2026-05-27 13:27:42,2026-05-27 13:27:39,,,,,,,,
-191122663,78,US : Personnaliser l'ordre et la disposition des widgets sur le dashboard,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/607,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:40,2026-06-15 12:33:45,2026-06-15 12:33:45,,,,,,32h,32h,
+192573622,608,US : Personnaliser l'ordre et la disposition des widgets sur le dashboard,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** glisser et déposer les différents graphiques du dashboard pour réorganiser leur disposition selon mes préférences
 **Afin de** mettre en valeur les indicateurs qui comptent le plus pour mon rôle spécifique
@@ -1091,8 +1091,8 @@ Sur le navigateur Safari, l'export PDF coupe sauvagement le graphique de véloci
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/78,Closed,No,No,,"Feature::D - Dashboard, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:43,2026-05-27 13:27:43,2026-05-27 13:27:43,,,,,,,,
-191122664,79,US : Widget d'analyse prédictive de date de fin de projet,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/608,Closed,No,No,Sprint 6,"Feature::D - Dashboard, Priority::Low, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:33:45,2026-06-15 12:33:47,2026-06-15 12:33:47,,,,,,,12h,
+192573627,609,US : Widget d'analyse prédictive de date de fin de projet,"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** voir une estimation de la date d'achèvement de mon projet calculée intelligemment par l'application en fonction de notre rythme actuel
 **Afin de** alerter mes clients très en amont en cas de dérive de planning
@@ -1105,8 +1105,8 @@ Sur le navigateur Safari, l'export PDF coupe sauvagement le graphique de véloci
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/79,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:44,2026-05-27 13:27:44,,,,,,,,,
-191122667,80,US : Widget de suivi budgétaire du projet (Coûts réels vs Budget alloué),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/609,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:33:47,2026-06-15 12:33:48,,,,,,,12h,,
+192573630,610,US : Widget de suivi budgétaire du projet (Coûts réels vs Budget alloué),"### 👤 Rôle utilisateur
 **En tant que** dirigeant de PME
 **Je souhaite** saisir un budget financier pour mon projet et voir l'évolution des coûts réels cumulés (basés sur le coût horaire des ressources)
 **Afin de** contrôler notre rentabilité financière en temps réel
@@ -1119,8 +1119,8 @@ Sur le navigateur Safari, l'export PDF coupe sauvagement le graphique de véloci
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/80,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:46,2026-05-27 13:27:46,,,,,,,,,
-191122669,81,Bug : Erreur 500 lors du chargement du dashboard si un projet n'a aucune tâche créée,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/610,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:33:49,2026-06-15 12:33:49,,,,,,,,,
+192573633,611,Bug : Erreur 500 lors du chargement du dashboard si un projet n'a aucune tâche créée,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1135,8 +1135,8 @@ L'API backend crashe avec une division par zéro (`NaN` / `ZeroDivisionError`) l
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/81,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:46,2026-05-27 13:27:46,,,,,,,,,
-191122671,82,US : Exporter les données brutes des graphiques au format CSV / Excel,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/611,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:33:50,2026-06-15 12:33:50,,,,,,,,,
+192573635,612,US : Exporter les données brutes des graphiques au format CSV / Excel,"### 👤 Rôle utilisateur
 **En tant que** Data Analyst
 **Je souhaite** télécharger un fichier CSV contenant toutes les valeurs chiffrées des graphiques pour les retravailler dans Excel
 **Afin de** effectuer des analyses financières ou de performance poussées et personnalisées
@@ -1149,8 +1149,8 @@ L'API backend crashe avec une division par zéro (`NaN` / `ZeroDivisionError`) l
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/82,Open,No,No,Sprint 8,"Feature::D - Dashboard, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:47,2026-05-27 13:27:47,,,,,,,,,
-191122672,83,Bug : Fuite de mémoire lors du changement rapide de filtres dans le dashboard,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/612,Open,No,No,Sprint 8,"Feature::D - Dashboard, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:33:51,2026-06-15 12:33:52,,,,,,,12h,,
+192573639,613,Bug : Fuite de mémoire lors du changement rapide de filtres dans le dashboard,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1166,8 +1166,8 @@ Chaque rendu de graphique Recharts lors d'un filtrage laisse des écouteurs d'é
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/83,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:48,2026-05-27 13:27:48,,,,,,,,,
-191122673,84,US : Widget de flux cumulé (Cumulative Flow Diagram) pour les projets Kanban,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/613,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:33:52,2026-06-15 12:33:53,,,,,,,,,
+192573641,614,US : Widget de flux cumulé (Cumulative Flow Diagram) pour les projets Kanban,"### 👤 Rôle utilisateur
 **En tant que** coach agile
 **Je souhaite** consulter un graphique de flux cumulé affichant l'empilement des tâches dans chaque colonne Kanban au fil du temps
 **Afin de** analyser la stabilité de notre flux de travail et détecter les goulets d'étranglement structurels
@@ -1180,20 +1180,20 @@ Chaque rendu de graphique Recharts lors d'un filtrage laisse des écouteurs d'é
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/84,Open,No,No,Sprint 8,"Feature::D - Dashboard, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:49,2026-05-27 13:27:49,,,,,,,,,
-191122677,85,Spike : Analyse des API Jira Cloud REST et protocole OAuth 2.0,"### 🔍 Objectif d'étude & recherche
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/614,Open,No,No,Sprint 8,"Feature::D - Dashboard, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:33:54,2026-06-15 12:33:54,,,,,,,,,
+192573646,615,Spike : Analyse des API Jira Cloud REST et protocole OAuth 2.0,"### 🔍 Objectif d'étude & recherche
 Étudier la documentation technique d'Atlassian Jira REST API v3, comprendre le cycle d'autorisation par jetons OAuth 2.0 (3-legged OAuth) et les limitations de requêtes par minute (Rate Limits).
 
 ### 📦 Livrables attendus
 - POC d'authentification et récupération de la liste des projets Jira
-- Rapport de cadrage sur la sécurité des tokens clients",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/85,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:50,2026-05-27 13:27:51,2026-05-27 13:27:51,,,,,,,,
-191122678,86,Spike : Analyse de la synchronisation bidirectionnelle et gestion des conflits d'état,"### 🔍 Objectif d'étude & recherche
+- Rapport de cadrage sur la sécurité des tokens clients",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/615,Closed,No,No,Sprint 5,"Feature::E - Jira, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:55,2026-06-15 12:33:58,2026-06-15 12:33:58,,,,,,24h,,
+192573648,616,Spike : Analyse de la synchronisation bidirectionnelle et gestion des conflits d'état,"### 🔍 Objectif d'étude & recherche
 Concevoir un modèle d'échange de données robuste évitant les boucles infinies de Webhooks (TaskFlow notifie Jira, qui re-notifie TaskFlow, etc.) et définissant la priorité des sources de données.
 
 ### 📦 Livrables attendus
 - Diagrammes de flux de données de synchronisation
-- Règle technique : Ajout d'un tag de provenance `origin:taskflow` dans les métadonnées de requête",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/86,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:51,2026-05-27 13:27:53,2026-05-27 13:27:52,,,,,,,,
-191122680,87,US : Connecter un compte Jira Cloud à l'application TaskFlow (OAuth2 Flow),"### 👤 Rôle utilisateur
+- Règle technique : Ajout d'un tag de provenance `origin:taskflow` dans les métadonnées de requête",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/616,Closed,No,No,Sprint 5,"Feature::E - Jira, Priority::High, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:33:58,2026-06-15 12:34:00,2026-06-15 12:34:00,,,,,,32h,32h,
+192573649,617,US : Connecter un compte Jira Cloud à l'application TaskFlow (OAuth2 Flow),"### 👤 Rôle utilisateur
 **En tant que** administrateur de compte
 **Je souhaite** aller dans les paramètres de mon organisation, cliquer sur 'Connecter Jira', m'authentifier chez Atlassian et autoriser TaskFlow
 **Afin de** lier nos deux plateformes sans partager de mots de passe ou de clés API d'utilisateurs
@@ -1206,8 +1206,8 @@ Concevoir un modèle d'échange de données robuste évitant les boucles infinie
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/87,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:53,2026-05-27 13:27:54,2026-05-27 13:27:54,,,,,,,,
-191122685,88,US : Associer un projet TaskFlow à un projet Jira,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/617,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:01,2026-06-15 12:34:04,2026-06-15 12:34:04,,,,,,40h,40h,
+192573651,618,US : Associer un projet TaskFlow à un projet Jira,"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** sélectionner un projet Jira dans une liste déroulante pour le lier à mon projet TaskFlow actif
 **Afin de** limiter le périmètre de synchronisation des tâches à ces deux projets uniquement
@@ -1220,8 +1220,8 @@ Concevoir un modèle d'échange de données robuste évitant les boucles infinie
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/88,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:55,2026-05-27 13:27:56,2026-05-27 13:27:55,,,,,,,,
-191122688,89,US : Synchroniser la création d'une tâche de TaskFlow vers Jira,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/618,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:04,2026-06-15 12:34:06,2026-06-15 12:34:06,,,,,,,34h,
+192573654,619,US : Synchroniser la création d'une tâche de TaskFlow vers Jira,"### 👤 Rôle utilisateur
 **En tant que** développeur sur TaskFlow
 **Je souhaite** créer une tâche sur TaskFlow et voir un ticket équivalent créé automatiquement sur Jira avec les mêmes détails
 **Afin de** éviter la double saisie fastidieuse des tâches dans deux outils différents
@@ -1234,8 +1234,8 @@ Concevoir un modèle d'échange de données robuste évitant les boucles infinie
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/89,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:56,2026-05-27 13:27:57,2026-05-27 13:27:57,,,,,,,,
-191122690,90,US : Synchroniser la création d'une tâche de Jira vers TaskFlow,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/619,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:06,2026-06-15 12:34:08,2026-06-15 12:34:08,,,,,,32h,32h,
+192573658,620,US : Synchroniser la création d'une tâche de Jira vers TaskFlow,"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** créer un ticket sur Jira et voir une tâche correspondante apparaître instantanément dans notre backlog TaskFlow
 **Afin de** travailler sur TaskFlow tout en capturant les tickets créés par nos clients ou stakeholders sur Jira
@@ -1248,8 +1248,8 @@ Concevoir un modèle d'échange de données robuste évitant les boucles infinie
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/90,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:57,2026-05-27 13:27:58,2026-05-27 13:27:58,,,,,,,,
-191122692,91,Bug : Duplication de tâches lors de la première importation en masse depuis Jira,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/620,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:09,2026-06-15 12:34:11,2026-06-15 12:34:11,,,,,,40h,,
+192573661,621,Bug : Duplication de tâches lors de la première importation en masse depuis Jira,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1265,8 +1265,8 @@ L'outil d'importation boucle deux fois sur la même page de résultats de l'API 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/91,Closed,No,No,,"Feature::E - Jira, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:27:59,2026-05-27 13:27:59,2026-05-27 13:27:59,,,,,,,,
-191122695,92,Bug : Les accents et caractères spéciaux sont corrompus lors de la synchro Jira,"### 🚨 Description de l'anomalie
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/621,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:11,2026-06-15 12:34:13,2026-06-15 12:34:13,,,,,,24h,20h,
+192573664,622,Bug : Les accents et caractères spéciaux sont corrompus lors de la synchro Jira,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1281,8 +1281,8 @@ Les caractères accentués français (é, à, è, ç, ï) sont remplacés par de
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/92,Closed,No,No,,"Feature::E - Jira, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:00,2026-05-27 13:28:01,2026-05-27 13:28:01,,,,,,,,
-191122697,93,US : Synchronisation des statuts de tâches (Bidirectionnel),"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/622,Closed,No,No,Sprint 6,"Feature::E - Jira, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:14,2026-06-15 12:34:15,2026-06-15 12:34:15,,,,,,,16h,
+192573671,623,US : Synchronisation des statuts de tâches (Bidirectionnel),"### 👤 Rôle utilisateur
 **En tant que** membre de l'équipe hybride
 **Je souhaite** déplacer une tâche vers 'Terminé' dans TaskFlow et voir le ticket Jira passer automatiquement à 'Done' (et vice-versa)
 **Afin de** garder nos tableaux d'avancement parfaitement alignés sans action manuelle
@@ -1295,8 +1295,8 @@ Les caractères accentués français (é, à, è, ç, ï) sont remplacés par de
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/93,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:01,2026-05-27 13:28:01,,,,,,,,,
-191122701,94,US : Synchronisation des assignations de membres d'équipe (mapping des emails),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/623,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:16,2026-06-15 12:34:17,,,,,,,40h,,
+192573676,624,US : Synchronisation des assignations de membres d'équipe (mapping des emails),"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** assigner une tâche à Alex sur TaskFlow et voir le ticket Jira assigné automatiquement au compte d'Alex sur Jira
 **Afin de** savoir précisément qui travaille sur quoi dans les deux outils
@@ -1309,8 +1309,8 @@ Les caractères accentués français (é, à, è, ç, ï) sont remplacés par de
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/94,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:02,2026-05-27 13:28:02,,,,,,,,,
-191122703,95,US : Synchronisation des commentaires et discussions en temps réel,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/624,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:18,2026-06-15 12:34:18,,,,,,,,,
+192573677,625,US : Synchronisation des commentaires et discussions en temps réel,"### 👤 Rôle utilisateur
 **En tant que** développeur
 **Je souhaite** écrire un commentaire sur une tâche TaskFlow et le voir apparaître instantanément sous forme de commentaire Jira (et réciproquement)
 **Afin de** discuter des détails techniques avec mes collègues qui préfèrent utiliser Jira sans quitter TaskFlow
@@ -1323,8 +1323,8 @@ Les caractères accentués français (é, à, è, ç, ï) sont remplacés par de
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/95,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:03,2026-05-27 13:28:03,,,,,,,,,
-191122706,96,Bug : Boucle infinie de synchronisation suite aux webhooks concurrents,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/625,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:19,2026-06-15 12:34:21,,,,,,,16h,,
+192573678,626,Bug : Boucle infinie de synchronisation suite aux webhooks concurrents,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1340,8 +1340,8 @@ Un cercle vicieux se produit : TaskFlow met à jour une tâche et appelle l'API 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/96,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:04,2026-05-27 13:28:04,,,,,,,,,
-191122710,97,US : Panneau de configuration avancée du mapping des champs Jira / TaskFlow,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/626,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:21,2026-06-15 12:34:21,,,,,,,,,
+192573681,627,US : Panneau de configuration avancée du mapping des champs Jira / TaskFlow,"### 👤 Rôle utilisateur
 **En tant que** administrateur
 **Je souhaite** sélectionner manuellement quels champs de TaskFlow (priorité, étiquettes, dates) doivent se synchroniser avec quels champs personnalisés Jira (Custom Fields)
 **Afin de** adapter l'intégration aux structures Jira d'entreprises complexes et rigides
@@ -1354,8 +1354,8 @@ Un cercle vicieux se produit : TaskFlow met à jour une tâche et appelle l'API 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/97,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:08,2026-05-27 13:28:08,,,,,,,,,
-191122713,98,US : Synchroniser les pièces jointes entre Jira et TaskFlow,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/627,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:24,2026-06-15 12:34:24,,,,,,,,,
+192573683,628,US : Synchroniser les pièces jointes entre Jira et TaskFlow,"### 👤 Rôle utilisateur
 **En tant que** utilisateur
 **Je souhaite** uploader une pièce jointe (PDF, image, document) sur TaskFlow et la voir disponible au téléchargement sur Jira
 **Afin de** partager des captures d'écran de bugs ou des spécifications produits sans effort additionnel
@@ -1368,8 +1368,8 @@ Un cercle vicieux se produit : TaskFlow met à jour une tâche et appelle l'API 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/98,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:09,2026-05-27 13:28:09,,,,,,,,,
-191122715,99,US : Synchronisation des estimations de temps et points d'effort (Story Points),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/628,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:25,2026-06-15 12:34:26,,,,,,,8h,,
+192573684,629,US : Synchronisation des estimations de temps et points d'effort (Story Points),"### 👤 Rôle utilisateur
 **En tant que** Product Owner
 **Je souhaite** synchroniser les estimations saisies en Story Points dans mon backlog TaskFlow avec le champ standard 'Story Points' de Jira
 **Afin de** avoir des indicateurs de vélocité cohérents dans nos rapports agiles sur les deux outils
@@ -1382,8 +1382,8 @@ Un cercle vicieux se produit : TaskFlow met à jour une tâche et appelle l'API 
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/99,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:10,2026-05-27 13:28:10,,,,,,,,,
-191122716,100,Bug : Crash lors de la déconnexion de l'intégration Jira si des tâches sont en attente,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/629,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:26,2026-06-15 12:34:26,,,,,,,,,
+192573685,630,Bug : Crash lors de la déconnexion de l'intégration Jira si des tâches sont en attente,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1400,8 +1400,8 @@ Le serveur Node.js plante avec une erreur non gérée (`UnhandledPromiseRejectio
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/100,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:11,2026-05-27 13:28:11,,,,,,,,,
-191122717,101,US : Logs d'audit détaillés des erreurs de synchronisation pour l'administrateur,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/630,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:27,2026-06-15 12:34:27,,,,,,,,,
+192573686,631,US : Logs d'audit détaillés des erreurs de synchronisation pour l'administrateur,"### 👤 Rôle utilisateur
 **En tant que** administrateur technique
 **Je souhaite** consulter une page 'Logs de synchronisation Jira' listant toutes les tentatives infructueuses avec le code d'erreur HTTP et la tâche concernée
 **Afin de** diagnostiquer et résoudre rapidement des problèmes d'autorisation ou de format de données
@@ -1414,8 +1414,8 @@ Le serveur Node.js plante avec une erreur non gérée (`UnhandledPromiseRejectio
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/101,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:12,2026-05-27 13:28:12,,,,,,,,,
-191122719,102,US : Gestion de la synchronisation avec des instances Jira On-Premise,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/631,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:28,2026-06-15 12:34:29,,,,,,,8h,,
+192573687,632,US : Gestion de la synchronisation avec des instances Jira On-Premise,"### 👤 Rôle utilisateur
 **En tant que** responsable sécurité d'un client grand compte
 **Je souhaite** configurer l'intégration de TaskFlow avec notre serveur Jira local hébergé derrière notre pare-feu d'entreprise
 **Afin de** utiliser l'intégration tout en respectant nos politiques de sécurité réseau strictes
@@ -1428,14 +1428,14 @@ Le serveur Node.js plante avec une erreur non gérée (`UnhandledPromiseRejectio
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/102,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:13,2026-05-27 13:28:13,,,,,,,,,
-191122721,103,"Spike : Modélisation des concepts de capacité, charge et allocation","### 🔍 Objectif d'étude & recherche
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/632,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:30,2026-06-15 12:34:30,,,,,,,,,
+192573689,633,"Spike : Modélisation des concepts de capacité, charge et allocation","### 🔍 Objectif d'étude & recherche
 Concevoir un schéma de base de données PostgreSQL élégant et flexible pour représenter le temps de travail disponible, les absences, le taux d'allocation des collaborateurs sur diverses tâches et projets.
 
 ### 📦 Livrables attendus
 - Modèle MCD révisé par Max
-- Scripts d'initialisation SQL avec contraintes de non-chevauchement des dates d'allocation",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/103,Closed,No,No,,"Feature::F - Resources, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:15,2026-05-27 13:28:20,2026-05-27 13:28:15,,,,,,,,
-191122726,104,US : Définir la capacité de travail hebdomadaire pour chaque collaborateur,"### 👤 Rôle utilisateur
+- Scripts d'initialisation SQL avec contraintes de non-chevauchement des dates d'allocation",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/633,Closed,No,No,Sprint 6,"Feature::F - Resources, Priority::Medium, Type::Spike",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:30,2026-06-15 12:34:33,2026-06-15 12:34:33,,,,,,12h,8h,
+192573692,634,US : Définir la capacité de travail hebdomadaire pour chaque collaborateur,"### 👤 Rôle utilisateur
 **En tant que** manager
 **Je souhaite** saisir la capacité de travail par défaut d'un membre de l'équipe (ex: 35 heures/semaine ou 100% ETP)
 **Afin de** calculer précisément la charge de travail globale supportable par mon équipe
@@ -1448,8 +1448,8 @@ Concevoir un schéma de base de données PostgreSQL élégant et flexible pour r
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/104,Closed,No,No,,"Feature::F - Resources, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:21,2026-05-27 13:28:21,2026-05-27 13:28:21,,,,,,,,
-191122728,105,US : Visualiser le plan de charge global des membres de l'équipe (Gantt),"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/634,Closed,No,No,Sprint 6,"Feature::F - Resources, Priority::High, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:34:34,2026-06-15 12:34:36,2026-06-15 12:34:36,,,,,,32h,32h,
+192573693,635,US : Visualiser le plan de charge global des membres de l'équipe (Gantt),"### 👤 Rôle utilisateur
 **En tant que** directeur de projet
 **Je souhaite** consulter une vue Gantt / Planning consolidée affichant chaque collaborateur sur une ligne et ses tâches assignées sous forme de barres horizontales temporelles
 **Afin de** équilibrer la charge de travail et distribuer efficacement les tâches
@@ -1462,8 +1462,8 @@ Concevoir un schéma de base de données PostgreSQL élégant et flexible pour r
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/105,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:22,2026-05-27 13:28:22,,,,,,,,,
-191122730,106,US : Assigner un collaborateur à une tâche avec un taux d'allocation spécifique,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/635,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:36,2026-06-15 12:34:37,,,,,,,40h,,
+192573694,636,US : Assigner un collaborateur à une tâche avec un taux d'allocation spécifique,"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** indiquer qu'un développeur travaillera à 50% de son temps sur la tâche X du 1er au 15 du mois
 **Afin de** gérer des affectations parallèles sur plusieurs projets en même temps
@@ -1476,8 +1476,8 @@ Concevoir un schéma de base de données PostgreSQL élégant et flexible pour r
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/106,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:23,2026-05-27 13:28:23,,,,,,,,,
-191122731,107,US : Détecter et afficher visuellement les sur-allocations,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/636,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:38,2026-06-15 12:34:38,,,,,,,,,
+192573696,637,US : Détecter et afficher visuellement les sur-allocations,"### 👤 Rôle utilisateur
 **En tant que** manager
 **Je souhaite** voir une barre rouge clignotante ou un indicateur de surcharge sur le planning Gantt dès qu'un collaborateur est assigné à plus de 100% de sa capacité sur une journée
 **Afin de** prévenir l'épuisement professionnel (burnout) de mes collaborateurs et anticiper les retards
@@ -1490,8 +1490,8 @@ Concevoir un schéma de base de données PostgreSQL élégant et flexible pour r
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/107,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:24,2026-05-27 13:28:24,,,,,,,,,
-191122732,108,Bug : Mauvaise gestion des jours fériés et des congés dans le calcul de la capacité,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/637,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:39,2026-06-15 12:34:40,,,,,,,32h,,
+192573697,638,Bug : Mauvaise gestion des jours fériés et des congés dans le calcul de la capacité,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1507,8 +1507,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/108,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:25,2026-05-27 13:28:25,,,,,,,,,
-191122734,109,US : Module de gestion des demandes de congés et absences au sein de TaskFlow,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/638,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:40,2026-06-15 12:34:41,,,,,,,,,
+192573698,639,US : Module de gestion des demandes de congés et absences au sein de TaskFlow,"### 👤 Rôle utilisateur
 **En tant que** collaborateur
 **Je souhaite** déclarer mes dates de congés payés, RTT ou absences maladie directement dans mon profil TaskFlow
 **Afin de** informer automatiquement mes chefs de projet sans passer par un autre outil RH externe
@@ -1521,8 +1521,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/109,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:26,2026-05-27 13:28:26,,,,,,,,,
-191122736,110,US : Saisie des temps réels passés par tâche (Timesheets) par les collaborateurs,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/639,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:41,2026-06-15 12:34:42,,,,,,,,,
+192573699,640,US : Saisie des temps réels passés par tâche (Timesheets) par les collaborateurs,"### 👤 Rôle utilisateur
 **En tant que** développeur
 **Je souhaite** saisir le nombre d'heures réelles passées chaque jour sur mes différentes tâches via une feuille de temps (timesheet)
 **Afin de** mesurer l'effort réel fourni par rapport aux estimations initiales
@@ -1535,8 +1535,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/110,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:27,2026-05-27 13:28:27,,,,,,,,,
-191122739,111,US : Comparatif heures planifiées vs heures réelles sur le dashboard,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/640,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:42,2026-06-15 12:34:43,,,,,,,16h,,
+192573701,641,US : Comparatif heures planifiées vs heures réelles sur le dashboard,"### 👤 Rôle utilisateur
 **En tant que** dirigeant de PME
 **Je souhaite** consulter un rapport financier comparant le coût des heures estimées/planifiées et le coût des heures réelles saisies
 **Afin de** analyser nos dérives budgétaires et ajuster nos tarifs pour les futurs contrats clients
@@ -1549,8 +1549,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/111,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:29,2026-05-27 13:28:29,,,,,,,,,
-191122741,112,US : Planifier l'utilisation du matériel et des ressources non-humaines,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/641,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:44,2026-06-15 12:34:44,,,,,,,,,
+192573703,642,US : Planifier l'utilisation du matériel et des ressources non-humaines,"### 👤 Rôle utilisateur
 **En tant que** chef de projet logistique
 **Je souhaite** planifier et réserver des ressources physiques (salles de réunion, serveurs de test, véhicules) de la même manière que des personnes
 **Afin de** éviter des conflits d'utilisation d'équipements critiques le jour du lancement
@@ -1563,8 +1563,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/112,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:30,2026-05-27 13:28:30,,,,,,,,,
-191122743,113,US : Recommandation automatique de ressources par l'IA en fonction des compétences,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/642,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:45,2026-06-15 12:34:46,,,,,,,4h,,
+192573704,643,US : Recommandation automatique de ressources par l'IA en fonction des compétences,"### 👤 Rôle utilisateur
 **En tant que** chef de projet
 **Je souhaite** recevoir des suggestions automatiques de l'application me disant : 'Sarah est la personne idéale pour cette tâche de base de données car elle possède la compétence SQL et a 10h de libre cette semaine'
 **Afin de** optimiser l'affectation de nos experts sans chercher manuellement dans les CV de l'entreprise
@@ -1577,8 +1577,8 @@ L'application affiche que les collaborateurs sont disponibles à 100% de leur te
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/113,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:30,2026-05-27 13:28:30,,,,,,,,,
-191122744,114,Bug : Lenteur extrême de l'affichage du Gantt si plus de 50 ressources sont affichées,"### 🚨 Description de l'anomalie
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/643,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:46,2026-06-15 12:34:46,,,,,,,,,
+192573705,644,Bug : Lenteur extrême de l'affichage du Gantt si plus de 50 ressources sont affichées,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1593,8 +1593,8 @@ Le navigateur freeze pendant 6 à 8 secondes et la mémoire sature car l'applica
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/114,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:31,2026-05-27 13:28:31,,,,,,,,,
-191122747,115,US : Gérer des profils de compétences (Skills Matrix) pour chaque collaborateur,"### 👤 Rôle utilisateur
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/644,Open,No,No,Sprint 7,"Feature::F - Resources, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:34:47,2026-06-15 12:34:47,,,,,,,,,
+192573706,645,US : Gérer des profils de compétences (Skills Matrix) pour chaque collaborateur,"### 👤 Rôle utilisateur
 **En tant que** administrateur
 **Je souhaite** définir une liste de compétences (React, PostgreSQL, QA, Marketing) et les associer aux membres de l'équipe avec un niveau de maîtrise (Débutant, Confirmé, Expert)
 **Afin de** cartographier les forces et les faiblesses techniques de notre organisation
@@ -1607,8 +1607,8 @@ Le navigateur freeze pendant 6 à 8 secondes et la mémoire sature car l'applica
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/115,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:32,2026-05-27 13:28:32,,,,,,,,,
-191122749,116,US : Exporter le plan d'allocation des ressources au format Excel,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/645,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:48,2026-06-15 12:34:49,,,,,,,4h,,
+192573711,646,US : Exporter le plan d'allocation des ressources au format Excel,"### 👤 Rôle utilisateur
 **En tant que** directeur financier (CFO)
 **Je souhaite** télécharger le planning Gantt complet sous forme d'un tableau Excel de type plan de charge
 **Afin de** intégrer ces chiffres de planification dans nos outils de gestion de trésorerie
@@ -1621,8 +1621,8 @@ Le navigateur freeze pendant 6 à 8 secondes et la mémoire sature car l'applica
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/116,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:33,2026-05-27 13:28:33,,,,,,,,,
-191122750,117,US : Définir des plages horaires personnalisées et des plannings de travail par pays,"### 👤 Rôle utilisateur
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/646,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:50,2026-06-15 12:34:50,,,,,,,,,
+192573715,647,US : Définir des plages horaires personnalisées et des plannings de travail par pays,"### 👤 Rôle utilisateur
 **En tant que** manager d'équipes internationales
 **Je souhaite** configurer des calendriers de travail différents selon le pays d'affectation de mes collaborateurs (ex: week-end le vendredi/samedi au Moyen-Orient)
 **Afin de** calculer des capacités réelles conformes aux législations locales de nos salariés distants
@@ -1635,8 +1635,8 @@ Le navigateur freeze pendant 6 à 8 secondes et la mémoire sature car l'applica
 - [ ] Code propre, documenté et testé unitairement (couverture > 80%)
 - [ ] Revue de code approuvée par un développeur senior (Sarah ou Max)
 - [ ] Changements vérifiés en environnement de QA (Julie)
-- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/117,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:34,2026-05-27 13:28:34,,,,,,,,,
-191122751,118,Mise en place de l'intégration continue (CI/CD) sur GitLab avec tests Jest,"### 🛡️ Problématique technique (Dette accumulée)
+- [ ] Aucune régression sur le dashboard ou le mode hors-ligne",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/647,Open,No,No,Sprint 8,"Feature::F - Resources, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:34:51,2026-06-15 12:34:52,,,,,,,12h,,
+192573717,648,Mise en place de l'intégration continue (CI/CD) sur GitLab avec tests Jest,"### 🛡️ Problématique technique (Dette accumulée)
 Chaque mise en production est manuelle, risquée et prend plus de 2 heures, sans aucune assurance que le code ne contienne pas de régressions majeures.
 
 ### 💡 Solution proposée
@@ -1644,8 +1644,8 @@ Rdaction d'un fichier `.gitlab-ci.yml` configuré pour lancer automatiquement le
 
 ### ⚡ Impact attendu
 - Déploiement automatique sécurisé en < 10 min
-- Réduction des régressions de 80%",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/118,Closed,No,No,,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:35,2026-05-27 13:28:36,2026-05-27 13:28:35,,,,,,,,
-191122752,119,Migration technique : Passage de PostgreSQL 12 à PostgreSQL 15,"### 🛡️ Problématique technique (Dette accumulée)
+- Réduction des régressions de 80%",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/648,Closed,No,No,Sprint 1,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-04-16 14:34:53,2026-06-15 12:34:55,2026-06-15 12:34:55,,,,,,24h,,
+192573719,649,Migration technique : Passage de PostgreSQL 12 à PostgreSQL 15,"### 🛡️ Problématique technique (Dette accumulée)
 PostgreSQL 12 arrive en fin de support communautaire et nous prive de fonctionnalités de requêtage JSON avancées et d'améliorations de performances sur les index de tri.
 
 ### 💡 Solution proposée
@@ -1653,8 +1653,8 @@ Migration de notre base de données RDS vers PostgreSQL 15, réécriture de scri
 
 ### ⚡ Impact attendu
 - Amélioration générale des temps de requêtage de 15%
-- Support natif des index uniques partiels",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/119,Closed,No,No,,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:36,2026-05-27 13:28:37,2026-05-27 13:28:37,,,,,,,,
-191122754,120,Bug : Problème de connexion OAuth2 avec Google suite à la mise à jour des scopes,"### 🚨 Description de l'anomalie
+- Support natif des index uniques partiels",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/649,Closed,No,No,Sprint 2,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:34:55,2026-06-15 12:34:57,2026-06-15 12:34:57,,,,,,,32h,
+192573721,650,Bug : Problème de connexion OAuth2 avec Google suite à la mise à jour des scopes,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1669,8 +1669,8 @@ Cliquer sur 'Se connecter avec Google' doit connecter instantanément l'utilisat
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/120,Closed,No,No,,"General, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:38,2026-05-27 13:28:38,2026-05-27 13:28:38,,,,,,,,
-191122755,121,Optimisation technique : Indexation des tables de jointure pour la recherche de tâches,"### 🛡️ Problématique technique (Dette accumulée)
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/650,Closed,No,No,Sprint 2,"General, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-04-30 14:34:57,2026-06-15 12:35:00,2026-06-15 12:35:00,,,,,,40h,40h,
+192573725,651,Optimisation technique : Indexation des tables de jointure pour la recherche de tâches,"### 🛡️ Problématique technique (Dette accumulée)
 Le temps de chargement de la liste des tâches s'effondre pour les grands comptes (plus de 10 000 tâches actives) à cause de scans séquentiels répétitifs (Sequential Scans) en base de données.
 
 ### 💡 Solution proposée
@@ -1678,8 +1678,8 @@ Création d'index composites sur `project_id`, `assigned_to` et `status` et opti
 
 ### ⚡ Impact attendu
 - Temps de réponse API divisé par 20 (de 2500ms à 120ms pour 20 000 lignes)
-- CPU serveur soulagé de 40% en période de pointe",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/121,Closed,No,No,,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:39,2026-05-27 13:28:40,2026-05-27 13:28:40,,,,,,,,
-191122756,122,Bug : Les mots de passe contenant certains caractères complexes bloquent la connexion,"### 🚨 Description de l'anomalie
+- CPU serveur soulagé de 40% en période de pointe",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/651,Closed,No,No,Sprint 3,"General, Priority::High, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:35:01,2026-06-15 12:35:04,2026-06-15 12:35:04,,,,,,24h,20h,
+192573729,652,Bug : Les mots de passe contenant certains caractères complexes bloquent la connexion,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1694,8 +1694,8 @@ Les utilisateurs dont le mot de passe contient le symbole '%' ou '+' ne peuvent 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/122,Closed,No,No,,"General, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:41,2026-05-27 13:28:42,2026-05-27 13:28:41,,,,,,,,
-191122759,123,Mise en conformité RGPD : Script d'anonymisation et de suppression de compte,"### 🛡️ Problématique technique (Dette accumulée)
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/652,Closed,No,No,Sprint 3,"General, Priority::High, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-14 14:35:04,2026-06-15 12:35:07,2026-06-15 12:35:07,,,,,,32h,32h,
+192573734,653,Mise en conformité RGPD : Script d'anonymisation et de suppression de compte,"### 🛡️ Problématique technique (Dette accumulée)
 Pour respecter les obligations RGPD européennes, nous devons proposer un moyen automatisé et définitif à nos utilisateurs de supprimer toutes leurs données personnelles de nos serveurs sous 30 jours.
 
 ### 💡 Solution proposée
@@ -1703,8 +1703,8 @@ Développement d'un service backend anonymisant les commentaires de l'utilisateu
 
 ### ⚡ Impact attendu
 - Conformité légale RGPD assurée à 100%
-- Processus automatisé en moins de 10 secondes",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/123,Closed,No,No,,"General, Priority::Medium, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:42,2026-05-27 13:28:43,2026-05-27 13:28:43,,,,,,,,
-191122761,124,Refactoring technique : Remplacement du state management Redux par Zustand,"### 🛡️ Problématique technique (Dette accumulée)
+- Processus automatisé en moins de 10 secondes",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/653,Closed,No,No,Sprint 5,"General, Priority::Medium, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-06-11 14:35:08,2026-06-15 12:35:09,2026-06-15 12:35:09,,,,,,,,
+192573736,654,Refactoring technique : Remplacement du state management Redux par Zustand,"### 🛡️ Problématique technique (Dette accumulée)
 L'utilisation historique de Redux Toolkit génère un code boilerplate lourd et complexe pour notre petite équipe de 4 développeurs, ralentissant le time-to-market de nos fonctionnalités.
 
 ### 💡 Solution proposée
@@ -1712,8 +1712,8 @@ Migration progressive de notre gestion d'état frontend vers la bibliothèque ul
 
 ### ⚡ Impact attendu
 - Suppression de plus de 2500 lignes de code Redux inutiles
-- Courbe d'apprentissage réduite de moitié pour les nouveaux développeurs",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/124,Closed,No,No,,"General, Priority::Low, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:43,2026-05-27 13:28:44,2026-05-27 13:28:44,,,,,,,,
-191122764,125,Bug : Impossible de réordonner les colonnes Kanban en utilisant l'écran tactile,"### 🚨 Description de l'anomalie
+- Courbe d'apprentissage réduite de moitié pour les nouveaux développeurs",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/654,Closed,No,No,Sprint 6,"General, Priority::Low, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:35:10,2026-06-15 12:35:12,2026-06-15 12:35:12,,,,,,4h,6h,
+192573739,655,Bug : Impossible de réordonner les colonnes Kanban en utilisant l'écran tactile,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1729,8 +1729,8 @@ Sur iPad ou smartphone Android, glisser une colonne fait défiler toute la page 
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/125,Closed,No,No,,"General, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:45,2026-05-27 13:28:46,2026-05-27 13:28:46,,,,,,,,
-191122765,126,Refactoring : Découpage du composant géant 'TaskDetailsView',"### 🛡️ Problématique technique (Dette accumulée)
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/655,Closed,No,No,Sprint 6,"General, Priority::Medium, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-06-25 14:35:13,2026-06-15 12:35:15,2026-06-15 12:35:15,,,,,,16h,16h,
+192573742,656,Refactoring : Découpage du composant géant 'TaskDetailsView',"### 🛡️ Problématique technique (Dette accumulée)
 Le composant principal de détails d'une tâche `TaskDetailsView.tsx` fait plus de 1800 lignes de code. Il est devenu impossible à maintenir pour l'équipe sans introduire d'effets de bord indésirables à chaque modification.
 
 ### 💡 Solution proposée
@@ -1738,8 +1738,8 @@ Découpage du fichier en 5 sous-composants indépendants et autonomes : `TaskCom
 
 ### ⚡ Impact attendu
 - Lisibilité accrue (fichiers < 300 lignes)
-- Facilité de test unitaire augmentée",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/126,Open,No,No,Sprint 7,"General, Priority::Medium, Status::To Do, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:46,2026-05-27 13:28:46,,,,,,,,,
-191122766,127,Bug : L'export CSV global plante si une tâche contient des émojis non-standards,"### 🚨 Description de l'anomalie
+- Facilité de test unitaire augmentée",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/656,Open,No,No,Sprint 7,"General, Priority::Medium, Status::To Do, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:35:16,2026-06-15 12:35:17,,,,,,,,,
+192573744,657,Bug : L'export CSV global plante si une tâche contient des émojis non-standards,"### 🚨 Description de l'anomalie
 Un dysfonctionnement a été signalé par les utilisateurs ou l'équipe QA.
 
 ### 🎯 Comportement attendu
@@ -1754,9 +1754,9 @@ La génération du fichier CSV échoue avec un crash d'encodage backend (`Unicod
 
 ### 💻 Environnement
 - Navigateur: Chrome 124
-- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/127,Open,No,No,Sprint 7,"General, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:47,2026-05-27 13:28:47,,,,,,,,,
-191122768,128,Le dashboard bugue chez moi,Ça ne marche pas. Les utilisateurs ont signalé que 'le dashboard bugue chez moi' plante sans message d'erreur. Merci de regarder ça rapidement.,Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/128,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:51,2026-05-27 13:28:51,,,,,,,,,
-191122769,129,Faire marcher le mode hors-ligne sur les téléphones,"Il faut faire en sorte que faire marcher le mode hors-ligne sur les téléphones. C'est très important pour les clients, ils le demandent souvent. À voir comment on l'implémente.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/129,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:52,2026-05-27 13:28:52,,,,,,,,,
-191122772,130,Régler le problème avec l'importation Jira,Ça ne marche pas. Les utilisateurs ont signalé que 'régler le problème avec l'importation jira' plante sans message d'erreur. Merci de regarder ça rapidement.,Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/130,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:53,2026-05-27 13:28:53,,,,,,,,,
-191122774,131,Dette technique générale à nettoyer,"Il y a de la dette sur 'dette technique générale à nettoyer'. Le code est un peu sale, il faudrait refactorer ça un de ces jours.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/131,Open,No,No,Sprint 7,"General, Priority::Low, Status::To Do, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:54,2026-05-27 13:28:54,,,,,,,,,
-191122775,132,Pouvoir synchroniser les projets Jira facilement,"Il faut faire en sorte que pouvoir synchroniser les projets jira facilement. C'est très important pour les clients, ils le demandent souvent. À voir comment on l'implémente.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/132,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-05-27 13:28:55,2026-05-27 13:28:55,,,,,,,,,
+- OS: macOS Sonoma",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/657,Open,No,No,Sprint 7,"General, Priority::Medium, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:35:19,2026-06-15 12:35:19,,,,,,,,,
+192573746,658,Le dashboard bugue chez moi,Ça ne marche pas. Les utilisateurs ont signalé que 'le dashboard bugue chez moi' plante sans message d'erreur. Merci de regarder ça rapidement.,Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/658,Open,No,No,Sprint 7,"Feature::D - Dashboard, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:35:20,2026-06-15 12:35:20,,,,,,,,,
+192573749,659,Faire marcher le mode hors-ligne sur les téléphones,"Il faut faire en sorte que faire marcher le mode hors-ligne sur les téléphones. C'est très important pour les clients, ils le demandent souvent. À voir comment on l'implémente.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/659,Open,No,No,Sprint 8,"Feature::B - Offline, Priority::Medium, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:35:21,2026-06-15 12:35:21,,,,,,,,,
+192573750,660,Régler le problème avec l'importation Jira,Ça ne marche pas. Les utilisateurs ont signalé que 'régler le problème avec l'importation jira' plante sans message d'erreur. Merci de regarder ça rapidement.,Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/660,Open,No,No,Sprint 7,"Feature::E - Jira, Priority::High, Status::To Do, Type::Bug",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:35:22,2026-06-15 12:35:22,,,,,,,,,
+192573751,661,Dette technique générale à nettoyer,"Il y a de la dette sur 'dette technique générale à nettoyer'. Le code est un peu sale, il faudrait refactorer ça un de ces jours.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/661,Open,No,No,Sprint 7,"General, Priority::Low, Status::To Do, Type::Tech Debt",Philippe Pary,philippe.pary.astek,"","",2026-07-09 14:35:23,2026-06-15 12:35:23,,,,,,,,,
+192573752,662,Pouvoir synchroniser les projets Jira facilement,"Il faut faire en sorte que pouvoir synchroniser les projets jira facilement. C'est très important pour les clients, ils le demandent souvent. À voir comment on l'implémente.",Issue,https://gitlab.com/philippe.pary.astek/backlog-formation-popm/-/work_items/662,Open,No,No,Sprint 8,"Feature::E - Jira, Priority::Low, Status::To Do, Type::User Story",Philippe Pary,philippe.pary.astek,"","",2026-07-25 14:35:24,2026-06-15 12:35:25,,,,,,,12h,,
