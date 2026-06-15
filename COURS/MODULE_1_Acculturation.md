@@ -515,6 +515,14 @@ Maintenant, écris une user story similaire pour [nouvelle fonctionnalité]"
 3. **Pas d'itération** : Accepter le premier résultat sans affinement
 4. **Ignorer les limites** : Demander des choses impossibles ou hors contexte
 
+#### 5.4 Méthodologie en 5 points
+
+1. **Thinking** : Penser en amont son prompt
+2. **Prompting** : Respecter les recommandations vues précédemment
+3. **Evaluating** : Vérifier et challenger les réponses de l'IA
+4. **Refining** : Itérer pour améliorer les résultats
+5. **Documenting** : Conserver les bons prompts pour réusage
+
 ---
 
 ## 6. Ressources complémentaires
